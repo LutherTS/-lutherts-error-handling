@@ -2,17 +2,17 @@
 
 import { data } from "./comment-variables/data/index.js";
 
+/* myIgnoresOnly */
+
+const myIgnoresOnly = false; // can be omitted
+
 /* ignores */
 
-const ignores = [];
+const ignores = []; // can be omitted
 
 /* lintConfigImports */
 
 const lintConfigImports = false; // can be omitted
-
-/* myIgnoresOnly */
-
-const myIgnoresOnly = false; // can be omitted
 
 /* composedVariablesExclusives */
 
@@ -62,11 +62,13 @@ const libraries = {
     errorHandlingCommentVariablesData.libraryVariations.FR,
 }; // can be omitted // v3
 
+/* Comment Variables config */
+
 const config = {
   data,
+  myIgnoresOnly,
   ignores,
   lintConfigImports,
-  myIgnoresOnly,
   composedVariablesExclusives,
   variations,
   libraries, // v3

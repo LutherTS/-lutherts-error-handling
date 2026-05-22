@@ -1,6 +1,6 @@
 import { resolvedConfigData as commentVariablesData } from "../../comments.config.mjs";
 
-/* tests */
+/* constants */
 
 export const composedVariablesExclusives =
   commentVariablesData.en.composedVariablesExclusives;

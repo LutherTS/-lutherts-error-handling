@@ -18,7 +18,7 @@ export {
 
 /* secondary exports */
 
-// Additionally, it showcases how to access a library's comment variables as keys and values.
+// Additionally, it showcases how to access a library's Comment Variables as keys and values.
 // For the JS version (typed with literals):
 // - `import { commentVariablesData as errorHandlingCommentVariablesData } from "@lutherts/error-handling";`
 // For the JSON version (typed with strings):

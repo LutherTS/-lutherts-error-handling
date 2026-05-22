@@ -14,8 +14,7 @@
   "files": [
     "tsdown/index.mjs",
     "error-handling.public.d.ts",
-    "comments.config.public.json",
-    "comments.config.public.mjs"
+    "comments.config.public.json"
   ],
   "scripts": {
     "types": "tsc",
