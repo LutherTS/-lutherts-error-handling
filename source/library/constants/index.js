@@ -1,3 +1,5 @@
+import { ERROR, WARNING } from "../../constants/index.js";
+
 /* success objects */
 
 /**
@@ -22,12 +24,12 @@ export const successTrue = Object.freeze({
  * @public
  */
 export const typeError = Object.freeze({
-  type: "error",
+  type: ERROR,
 });
 /**
  * $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING
  * @public
  */
 export const typeWarning = Object.freeze({
-  type: "warning",
+  type: WARNING,
 });

@@ -11,6 +11,8 @@ import {
   // } from "../../source/library/index.js"; // dev
 } from "../../tsdown/index.mjs"; // prod
 
+import { ERROR, WARNING } from "../constants/index.js";
+
 import {
   SUCCESS_FALSE,
   SUCCESS_TRUE,
@@ -24,8 +26,6 @@ import {
   FALSE,
   TRUE,
   TYPE,
-  ERROR,
-  WARNING,
 } from "./constants/index.js";
 
 describe(SUCCESS_FALSE, () => {

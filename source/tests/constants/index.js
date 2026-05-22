@@ -24,5 +24,3 @@ export const SUCCESS = composedVariablesExclusives.success.value;
 export const FALSE = composedVariablesExclusives.false.value;
 export const TRUE = composedVariablesExclusives.true.value;
 export const TYPE = composedVariablesExclusives.type.value;
-export const ERROR = composedVariablesExclusives.error.value;
-export const WARNING = composedVariablesExclusives.warning.value;
