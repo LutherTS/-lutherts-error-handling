@@ -8,7 +8,8 @@ import {
   typeWarning,
   makeSuccessFalseTypeError,
   makeSuccessFalseTypeWarning,
-} from "../library/index.js";
+  // } from "../../source/library/index.js"; // dev
+} from "../../tsdown/index.mjs"; // prod
 
 import {
   SUCCESS_FALSE,

@@ -9,14 +9,21 @@
   "license": "UNLICENSED",
   "author": "Luther Tchofo Safo <luther@tchofo-safo-portfolio.me>",
   "type": "module",
-  "main": "source/library/index.js",
+  "main": "tsdown/index.mjs",
   "types": "error-handling.public.d.ts",
+  "files": [
+    "tsdown/index.mjs",
+    "error-handling.public.d.ts",
+    "comments.config.public.json",
+    "comments.config.public.mjs"
+  ],
   "scripts": {
     "types": "tsc",
     "doc": "comment-variables doc",
     "api": "api-extractor run",
+    "build": "tsdown",
     "test": "node --test",
-    "prepare": "npm run types && npm run doc && npm run api && npm run test"
+    "prepare": "npm run types && npm run doc && npm run api && npm run build && npm run test"
   },
   "devDependencies": {
     "@types/node": "^25.9.1",
