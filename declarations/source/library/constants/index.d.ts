@@ -26,3 +26,10 @@ export const typeError: Readonly<{
 export const typeWarning: Readonly<{
     type: "warning";
 }>;
+/** @public */
+export const errorNotStandardized: "The error encountered is not standardized.";
+/**
+ * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED
+ * @public
+ * */
+export const ERROR_NOT_STANDARDIZED: "ERROR_NOT_STANDARDIZED";

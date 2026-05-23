@@ -2,5 +2,7 @@ import { resolvedConfigData as commentVariablesData } from "../../comments.confi
 
 /* constants */
 
+export const consts = commentVariablesData.en.tsDoc.src.lib.consts;
+
 export const composedVariablesExclusives =
   commentVariablesData.en.composedVariablesExclusives;

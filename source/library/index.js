@@ -7,6 +7,8 @@ export {
   successTrue,
   typeError,
   typeWarning,
+  errorNotStandardized,
+  ERROR_NOT_STANDARDIZED,
 } from "./constants/index.js";
 
 // ... and utilities used across my projects for error handling.

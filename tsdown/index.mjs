@@ -1,6 +1,6 @@
-//#endregion
-//#region source/comment-variables/index.js
-const composedVariablesExclusives = {
+//#region comments.config.mjs
+/** @private */
+const resolvedConfigData = {
 	"en": {
 		"tsDoc": { "src": { "lib": {
 			"consts": { "public": {
@@ -19,6 +19,14 @@ const composedVariablesExclusives = {
 				"typeWarning": {
 					"value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.",
 					"key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING"
+				},
+				"errorNotStandardized": {
+					"value": "The error encountered is not standardized.",
+					"key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED"
+				},
+				"ERROR_NOT_STANDARDIZED": {
+					"value": "\"The error encountered is not standardized.\"",
+					"key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED"
 				}
 			} },
 			"defs": { "utils": { "public": {
@@ -177,6 +185,14 @@ const composedVariablesExclusives = {
 				"typeWarning": {
 					"value": "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.",
 					"key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING"
+				},
+				"errorNotStandardized": {
+					"value": "The error encountered is not standardized. / (En anglais uniquement.)",
+					"key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED"
+				},
+				"ERROR_NOT_STANDARDIZED": {
+					"value": "En anglais à l'exécution : \"The error encountered is not standardized.\"",
+					"key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED"
 				}
 			} },
 			"defs": { "utils": { "public": {
@@ -233,6 +249,14 @@ const composedVariablesExclusives = {
 				"value": "apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon",
 				"key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE"
 			},
+			"_enAnglais": {
+				"value": "En anglais à l'exécution",
+				"key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS"
+			},
+			"_enAnglais_": {
+				"value": "(En anglais uniquement.)",
+				"key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_"
+			},
 			"singleError": {
 				"value": "seule erreur dans son array `errors`",
 				"key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR"
@@ -243,7 +267,11 @@ const composedVariablesExclusives = {
 			}
 		}
 	}
-}.en.composedVariablesExclusives;
+};
+//#endregion
+//#region source/comment-variables/index.js
+const consts = resolvedConfigData.en.tsDoc.src.lib.consts;
+const composedVariablesExclusives = resolvedConfigData.en.composedVariablesExclusives;
 //#endregion
 //#region source/constants/index.js
 const ERROR = composedVariablesExclusives.error.value;
@@ -270,6 +298,13 @@ const typeError = Object.freeze({ type: ERROR });
 * @public
 */
 const typeWarning = Object.freeze({ type: WARNING });
+/** @public */
+const errorNotStandardized = consts.public.errorNotStandardized.value;
+/**
+* $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED
+* @public
+* */
+const ERROR_NOT_STANDARDIZED = "ERROR_NOT_STANDARDIZED";
 //#endregion
 //#region source/library/utilities/index.js
 /**
@@ -317,6 +352,8 @@ const resolvedPublicData = {
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.",
+			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED": "The error encountered is not standardized.",
+			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED": "\"The error encountered is not standardized.\"",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and the `status` it is meant to have.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE": "The human-readable message of the error.",
@@ -329,6 +366,8 @@ const resolvedPublicData = {
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING": "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.",
+			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED": "The error encountered is not standardized. / (En anglais uniquement.)",
+			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED": "En anglais à l'exécution : \"The error encountered is not standardized.\"",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE": "Le message en clair de l'erreur.",
@@ -339,4 +378,4 @@ const resolvedPublicData = {
 	}
 };
 //#endregion
-export { resolvedPublicData as commentVariablesData, makeSuccessFalseTypeError, makeSuccessFalseTypeWarning, successFalse, successTrue, typeError, typeWarning };
+export { ERROR_NOT_STANDARDIZED, resolvedPublicData as commentVariablesData, errorNotStandardized, makeSuccessFalseTypeError, makeSuccessFalseTypeWarning, successFalse, successTrue, typeError, typeWarning };

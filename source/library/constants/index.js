@@ -1,3 +1,5 @@
+import { consts } from "../../comment-variables/index.js";
+
 import { ERROR, WARNING } from "../../constants/index.js";
 
 /* success objects */
@@ -33,3 +35,13 @@ export const typeError = Object.freeze({
 export const typeWarning = Object.freeze({
   type: WARNING,
 });
+
+/* unstandardized error message and status */
+
+/** @public */
+export const errorNotStandardized = consts.public.errorNotStandardized.value;
+/**
+ * $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED
+ * @public
+ * */
+export const ERROR_NOT_STANDARDIZED = "ERROR_NOT_STANDARDIZED";

@@ -21,6 +21,14 @@ export const resolvedConfigData: {
                                 "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
                                 "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
                             };
+                            "errorNotStandardized": {
+                                "value": "The error encountered is not standardized.";
+                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED";
+                            };
+                            "ERROR_NOT_STANDARDIZED": {
+                                "value": "\"The error encountered is not standardized.\"";
+                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
+                            };
                         };
                     };
                     "defs": {
@@ -197,6 +205,14 @@ export const resolvedConfigData: {
                                 "value": "\u00C0 apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeWarning}`.";
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
                             };
+                            "errorNotStandardized": {
+                                "value": "The error encountered is not standardized. / (En anglais uniquement.)";
+                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED";
+                            };
+                            "ERROR_NOT_STANDARDIZED": {
+                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"The error encountered is not standardized.\"";
+                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
+                            };
                         };
                     };
                     "defs": {
@@ -266,6 +282,14 @@ export const resolvedConfigData: {
             "sitsAtTopLike": {
                 "value": "apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
+            };
+            "_enAnglais": {
+                "value": "En anglais \u00E0 l'ex\u00E9cution";
+                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
+            };
+            "_enAnglais_": {
+                "value": "(En anglais uniquement.)";
+                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_";
             };
             "singleError": {
                 "value": "seule erreur dans son array `errors`";

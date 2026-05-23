@@ -1,3 +1,31 @@
+export const consts: {
+    public: {
+        "successFalse": {
+            "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
+            "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
+        };
+        "successTrue": {
+            "value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
+            "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
+        };
+        "typeError": {
+            "value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
+            "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
+        };
+        "typeWarning": {
+            "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
+            "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
+        };
+        "errorNotStandardized": {
+            "value": "The error encountered is not standardized.";
+            "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED";
+        };
+        "ERROR_NOT_STANDARDIZED": {
+            "value": "\"The error encountered is not standardized.\"";
+            "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
+        };
+    };
+};
 export const composedVariablesExclusives: {
     variables: {
         "successFalse": {
