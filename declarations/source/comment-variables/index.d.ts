@@ -127,4 +127,8 @@ export const composedVariablesExclusives: {
         "value": "based on the `message` it is meant to display and the `status` it is meant to have";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
     };
+    atHand: {
+        "value": "at hand";
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
+    };
 };

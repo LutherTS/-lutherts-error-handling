@@ -51,3 +51,16 @@ export const makeSuccessFalseTypeWarning =
       ],
       ...successFalse,
     });
+
+/* escapeRegex */
+
+/**
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX
+ *
+ * @param string - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX
+ *
+ * @public
+ */
+export const escapeRegex = (/** @type {string} */ string) =>
+  string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");

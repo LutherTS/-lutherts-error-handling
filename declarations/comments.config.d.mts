@@ -42,6 +42,10 @@ export const resolvedConfigData: {
                                     "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.";
                                     "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
                                 };
+                                "escapeRegex": {
+                                    "value": "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex.";
+                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX";
+                                };
                             };
                         };
                     };
@@ -56,6 +60,10 @@ export const resolvedConfigData: {
                                     "value": "The static status text of the error.";
                                     "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
                                 };
+                                "string": {
+                                    "value": "The string at hand.";
+                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
+                                };
                             };
                         };
                     };
@@ -69,6 +77,10 @@ export const resolvedConfigData: {
                                 "makeSuccessFalseTypeWarning": {
                                     "value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
                                     "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                };
+                                "escapeRegex": {
+                                    "value": "The string with regex characters escaped.";
+                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX";
                                 };
                             };
                         };
@@ -181,6 +193,10 @@ export const resolvedConfigData: {
                 "value": "based on the `message` it is meant to display and the `status` it is meant to have";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
             };
+            "atHand": {
+                "value": "at hand";
+                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
+            };
         };
     };
     "fr": {
@@ -226,6 +242,10 @@ export const resolvedConfigData: {
                                     "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` bas\u00E9e sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.";
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
                                 };
+                                "escapeRegex": {
+                                    "value": "\u00C9chappe tous les caract\u00E8res regex d'une cha\u00EEne de caract\u00E8res avec un `\"\\\"` pour pr\u00E9parer cette derni\u00E8re \u00E0 \u00EAtre utilis\u00E9e dans une regex.";
+                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX";
+                                };
                             };
                         };
                     };
@@ -240,6 +260,10 @@ export const resolvedConfigData: {
                                     "value": "Le texte statique du statut de l'erreur.";
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
                                 };
+                                "string": {
+                                    "value": "La cha\u00EEne de caract\u00E8res concern\u00E9e.";
+                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
+                                };
                             };
                         };
                     };
@@ -253,6 +277,10 @@ export const resolvedConfigData: {
                                 "makeSuccessFalseTypeWarning": {
                                     "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                };
+                                "escapeRegex": {
+                                    "value": "La cha\u00EEne de caract\u00E8res avec ses caract\u00E8res regex \u00E9chapp\u00E9s.";
+                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX";
                                 };
                             };
                         };
@@ -298,6 +326,10 @@ export const resolvedConfigData: {
             "basedOnMessageAndStatus": {
                 "value": "bas\u00E9e sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
+            };
+            "concern\u00E9e": {
+                "value": "concern\u00E9e";
+                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERN\u00C9E";
             };
         };
     };

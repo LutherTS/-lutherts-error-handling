@@ -32,3 +32,12 @@ export function makeSuccessFalseTypeWarning<T extends string, U extends string>(
         readonly status: U;
     }];
 };
+/**
+ * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX
+ *
+ * @param string - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING
+ * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX
+ *
+ * @public
+ */
+export function escapeRegex(string: string): string;
