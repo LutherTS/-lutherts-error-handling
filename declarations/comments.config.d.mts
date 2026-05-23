@@ -24,7 +24,6 @@ export const resolvedConfigData: {
                         };
                     };
                     "defs": {
-                        "public": {};
                         "utils": {
                             "public": {
                                 "makeSuccessFalseTypeError": {
@@ -65,17 +64,6 @@ export const resolvedConfigData: {
                                 };
                             };
                         };
-                    };
-                };
-                "tests": {
-                    "defs": {
-                        "utils": {};
-                    };
-                    "params": {
-                        "utils": {};
-                    };
-                    "returns": {
-                        "utils": {};
                     };
                 };
             };
@@ -212,7 +200,6 @@ export const resolvedConfigData: {
                         };
                     };
                     "defs": {
-                        "public": {};
                         "utils": {
                             "public": {
                                 "makeSuccessFalseTypeError": {
@@ -253,17 +240,6 @@ export const resolvedConfigData: {
                                 };
                             };
                         };
-                    };
-                };
-                "tests": {
-                    "defs": {
-                        "utils": {};
-                    };
-                    "params": {
-                        "utils": {};
-                    };
-                    "returns": {
-                        "utils": {};
                     };
                 };
             };

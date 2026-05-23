@@ -17,7 +17,6 @@ export const frData = Object.freeze({
           }),
         }),
         defs: Object.freeze({
-          public: Object.freeze({}),
           utils: Object.freeze({
             public: Object.freeze({
               makeSuccessFalseTypeError:
@@ -46,17 +45,6 @@ export const frData = Object.freeze({
                 "Un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` avec une $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR de `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING}`." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING */,
             }),
           }),
-        }),
-      }),
-      tests: Object.freeze({
-        defs: Object.freeze({
-          utils: Object.freeze({}),
-        }),
-        params: Object.freeze({
-          utils: Object.freeze({}),
-        }),
-        returns: Object.freeze({
-          utils: Object.freeze({}),
         }),
       }),
     }),

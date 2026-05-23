@@ -2,66 +2,56 @@
 //#region source/comment-variables/index.js
 const composedVariablesExclusives = {
 	"en": {
-		"tsDoc": { "src": {
-			"lib": {
-				"consts": { "public": {
-					"successFalse": {
-						"value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.",
-						"key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE"
-					},
-					"successTrue": {
-						"value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.",
-						"key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE"
-					},
-					"typeError": {
-						"value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.",
-						"key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR"
-					},
-					"typeWarning": {
-						"value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.",
-						"key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING"
-					}
-				} },
-				"defs": {
-					"public": {},
-					"utils": { "public": {
-						"makeSuccessFalseTypeError": {
-							"value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and the `status` it is meant to have.",
-							"key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
-						},
-						"makeSuccessFalseTypeWarning": {
-							"value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.",
-							"key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
-						}
-					} }
+		"tsDoc": { "src": { "lib": {
+			"consts": { "public": {
+				"successFalse": {
+					"value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.",
+					"key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE"
 				},
-				"params": { "utils": { "public": {
-					"message": {
-						"value": "The human-readable message of the error.",
-						"key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE"
-					},
-					"status": {
-						"value": "The static status text of the error.",
-						"key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS"
-					}
-				} } },
-				"returns": { "utils": { "public": {
-					"makeSuccessFalseTypeError": {
-						"value": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.",
-						"key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
-					},
-					"makeSuccessFalseTypeWarning": {
-						"value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.",
-						"key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
-					}
-				} } }
-			},
-			"tests": {
-				"defs": { "utils": {} },
-				"params": { "utils": {} },
-				"returns": { "utils": {} }
-			}
-		} },
+				"successTrue": {
+					"value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.",
+					"key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE"
+				},
+				"typeError": {
+					"value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.",
+					"key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR"
+				},
+				"typeWarning": {
+					"value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.",
+					"key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING"
+				}
+			} },
+			"defs": { "utils": { "public": {
+				"makeSuccessFalseTypeError": {
+					"value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and the `status` it is meant to have.",
+					"key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
+				},
+				"makeSuccessFalseTypeWarning": {
+					"value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.",
+					"key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+				}
+			} } },
+			"params": { "utils": { "public": {
+				"message": {
+					"value": "The human-readable message of the error.",
+					"key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE"
+				},
+				"status": {
+					"value": "The static status text of the error.",
+					"key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS"
+				}
+			} } },
+			"returns": { "utils": { "public": {
+				"makeSuccessFalseTypeError": {
+					"value": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.",
+					"key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
+				},
+				"makeSuccessFalseTypeWarning": {
+					"value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.",
+					"key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+				}
+			} } }
+		} } },
 		"forComposedVariables": {
 			"variables": {},
 			"arguments": {}
@@ -170,66 +160,56 @@ const composedVariablesExclusives = {
 		}
 	},
 	"fr": {
-		"tsDoc": { "src": {
-			"lib": {
-				"consts": { "public": {
-					"successFalse": {
-						"value": "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`.",
-						"key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE"
-					},
-					"successTrue": {
-						"value": "À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`.",
-						"key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE"
-					},
-					"typeError": {
-						"value": "À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`.",
-						"key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR"
-					},
-					"typeWarning": {
-						"value": "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.",
-						"key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING"
-					}
-				} },
-				"defs": {
-					"public": {},
-					"utils": { "public": {
-						"makeSuccessFalseTypeError": {
-							"value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
-							"key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
-						},
-						"makeSuccessFalseTypeWarning": {
-							"value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
-							"key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
-						}
-					} }
+		"tsDoc": { "src": { "lib": {
+			"consts": { "public": {
+				"successFalse": {
+					"value": "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`.",
+					"key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE"
 				},
-				"params": { "utils": { "public": {
-					"message": {
-						"value": "Le message en clair de l'erreur.",
-						"key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE"
-					},
-					"status": {
-						"value": "Le texte statique du statut de l'erreur.",
-						"key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS"
-					}
-				} } },
-				"returns": { "utils": { "public": {
-					"makeSuccessFalseTypeError": {
-						"value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.",
-						"key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
-					},
-					"makeSuccessFalseTypeWarning": {
-						"value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.",
-						"key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
-					}
-				} } }
-			},
-			"tests": {
-				"defs": { "utils": {} },
-				"params": { "utils": {} },
-				"returns": { "utils": {} }
-			}
-		} },
+				"successTrue": {
+					"value": "À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`.",
+					"key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE"
+				},
+				"typeError": {
+					"value": "À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`.",
+					"key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR"
+				},
+				"typeWarning": {
+					"value": "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.",
+					"key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING"
+				}
+			} },
+			"defs": { "utils": { "public": {
+				"makeSuccessFalseTypeError": {
+					"value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
+					"key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
+				},
+				"makeSuccessFalseTypeWarning": {
+					"value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
+					"key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+				}
+			} } },
+			"params": { "utils": { "public": {
+				"message": {
+					"value": "Le message en clair de l'erreur.",
+					"key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE"
+				},
+				"status": {
+					"value": "Le texte statique du statut de l'erreur.",
+					"key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS"
+				}
+			} } },
+			"returns": { "utils": { "public": {
+				"makeSuccessFalseTypeError": {
+					"value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.",
+					"key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
+				},
+				"makeSuccessFalseTypeWarning": {
+					"value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.",
+					"key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+				}
+			} } }
+		} } },
 		"forComposedVariables": {
 			"variables": {},
 			"arguments": {}
