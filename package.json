@@ -4,7 +4,8 @@
   "description": "My personal library for how I handle errors across my projects under my own standards.",
   "keywords": [
     "errors",
-    "warnings"
+    "warnings",
+    "regex"
   ],
   "license": "UNLICENSED",
   "author": "Luther Tchofo Safo <luther@tchofo-safo-portfolio.me>",

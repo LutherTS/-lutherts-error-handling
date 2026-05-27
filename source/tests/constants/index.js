@@ -18,6 +18,13 @@ export const MAKE_SUCCESS_FALSE_TYPE_WARNING =
 export const MESSAGE = composedVariablesExclusives.arguments.message.value;
 export const STATUS = composedVariablesExclusives.arguments.status.value;
 
+export const ERROR_NOT_STANDARDIZED_MESSAGE =
+  composedVariablesExclusives.variables.errorNotStandardized.value;
+export const ERROR_NOT_STANDARDIZED_STATUS =
+  composedVariablesExclusives.variables.ERROR_NOT_STANDARDIZED.value;
+export const ESCAPE_REGEX =
+  composedVariablesExclusives.variables.escapeRegex.value;
+
 /* primary exports strings */
 
 export const SUCCESS = composedVariablesExclusives.success.value;
