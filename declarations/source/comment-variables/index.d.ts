@@ -52,6 +52,18 @@ export const composedVariablesExclusives: {
             "value": "makeSuccessFalseTypeWarning";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEWARNING";
         };
+        "errorNotStandardized": {
+            "value": "errorNotStandardized";
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED";
+        };
+        "ERROR_NOT_STANDARDIZED": {
+            "value": "ERROR_NOT_STANDARDIZED";
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED";
+        };
+        "escapeRegex": {
+            "value": "escapeRegex";
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ESCAPEREGEX";
+        };
     };
     arguments: {
         "message": {
