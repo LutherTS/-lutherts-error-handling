@@ -1,3 +1,5 @@
+import * as vscode from "vscode";
+
 import {
   successFalse,
   successTrue,
@@ -5,10 +7,15 @@ import {
   typeWarning,
   makeSuccessFalseTypeError,
   makeSuccessFalseTypeWarning,
+  showVSCodeError,
   errorNotStandardized,
   ERROR_NOT_STANDARDIZED,
   escapeRegex,
 } from "../../source/library/index.js";
+
+/**
+ * @typedef {typeof vscode} VSCode
+ */
 
 /**
  * @typedef {typeof successFalse} SuccessFalse
@@ -25,6 +32,13 @@ import {
  */
 
 /**
+ * @typedef {typeof errorNotStandardized} ErrorNotStandardized
+ */
+/**
+ * @typedef {typeof ERROR_NOT_STANDARDIZED} ERROR_NOT_STANDARDIZED_TYPE
+ */
+
+/**
  * @typedef {typeof makeSuccessFalseTypeError} MakeSuccessFalseTypeError
  */
 /**
@@ -32,10 +46,18 @@ import {
  */
 
 /**
- * @typedef {typeof errorNotStandardized} ErrorNotStandardized
+ * @typedef {typeof showVSCodeError} ShowVSCodeError
+ */
+
+/**
+ * @template {string} T
+ * @template {string} U
+ * @typedef {ReturnType<typeof makeSuccessFalseTypeError<T, U>>["errors"][0]} ErrorTypeError
  */
 /**
- * @typedef {typeof ERROR_NOT_STANDARDIZED} ERROR_NOT_STANDARDIZED_TYPE
+ * @template {string} T
+ * @template {string} U
+ * @typedef {ReturnType<typeof makeSuccessFalseTypeWarning<T, U>>["errors"][0]} ErrorTypeWarning
  */
 
 /**

@@ -1,4 +1,26 @@
-import { successFalse, typeError, typeWarning } from "../constants/index.js";
+import { ERROR, WARNING } from "../../constants/index.js";
+
+import {
+  successFalse,
+  typeError,
+  typeWarning,
+  errorNotStandardized,
+} from "../constants/index.js";
+
+/**
+ * @typedef {import("../../typedefs/index.js").VSCode} VSCode
+ */
+
+/**
+ * @template {string} T
+ * @template {string} U
+ * @typedef {import("../../typedefs/index.js").ErrorTypeError<T, U>} ErrorTypeError
+ */
+/**
+ * @template {string} T
+ * @template {string} U
+ * @typedef {import("../../typedefs/index.js").ErrorTypeWarning<T, U>} ErrorTypeWarning
+ */
 
 /* makeSuccessFalse */
 
@@ -51,6 +73,35 @@ export const makeSuccessFalseTypeWarning =
       ],
       ...successFalse,
     });
+
+/* showErrorVSCode */
+
+/**
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR
+ *
+ * @param vscode - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE
+ * @param error - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR
+ *
+ * @public
+ */
+export const showVSCodeError =
+  /** @template {string} T, @template {string} U */ (
+    /** @type {VSCode} */ vscode,
+    /** @type {ErrorTypeError<T, U> | ErrorTypeWarning<T, U>} */ error,
+  ) => {
+    switch (error.type) {
+      case ERROR:
+        vscode.window.showErrorMessage(error.message);
+        break;
+      case WARNING:
+        vscode.window.showWarningMessage(error.message);
+        break;
+      default:
+        vscode.window.showErrorMessage(`ERROR. ${errorNotStandardized}`);
+        break;
+    }
+  }; // For now, only shows `error.message`, but `error.status` might be handled and included at a later time.
 
 /* escapeRegex */
 

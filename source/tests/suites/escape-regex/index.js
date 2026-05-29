@@ -21,6 +21,11 @@ export const escapeRegexSuite = (/** @type {EscapeRegex} */ escapeRegex) => {
       assert.strictEqual(escapeRegexName, ESCAPE_REGEX);
     });
 
+    // input validations tests
+    // None. This is an internal utility with internal inputs, in which case a mistake in input type (like number instead of string) would be the responsibility of a developer and not that of a user. As such, the function does not validate inputs: developers bear that responsibility.
+
+    // input operations tests
+
     it(`results should have as many "\\"s as \`testInput\`'s length + 1 for its extra "\\" escaped`, () => {
       const testInput = ".*+?^${}()|[]\\";
       const escapeRegexResults = escapeRegex(testInput);
