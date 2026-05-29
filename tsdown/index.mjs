@@ -38,6 +38,10 @@ const resolvedConfigData = {
 					"value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.",
 					"key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
 				},
+				"showVSCodeError": {
+					"value": "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided.",
+					"key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR"
+				},
 				"escapeRegex": {
 					"value": "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex.",
 					"key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX"
@@ -52,6 +56,14 @@ const resolvedConfigData = {
 					"value": "The static status text of the error.",
 					"key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS"
 				},
+				"vscode": {
+					"value": "The VS Code API instance at hand, living in the VS Code Extension Host (and not in the extension's Node modules).",
+					"key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE"
+				},
+				"error": {
+					"value": "The error object at hand, with either the value `\"error\"` or `\"warning\"` at its `type` key.",
+					"key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR"
+				},
 				"string": {
 					"value": "The string at hand.",
 					"key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING"
@@ -65,6 +77,10 @@ const resolvedConfigData = {
 				"makeSuccessFalseTypeWarning": {
 					"value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.",
 					"key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+				},
+				"showVSCodeError": {
+					"value": "Void.",
+					"key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR"
 				},
 				"escapeRegex": {
 					"value": "The string with regex characters escaped.",
@@ -94,6 +110,14 @@ const resolvedConfigData = {
 					"value": "typeWarning",
 					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING"
 				},
+				"errorNotStandardized": {
+					"value": "errorNotStandardized",
+					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED"
+				},
+				"ERROR_NOT_STANDARDIZED": {
+					"value": "ERROR_NOT_STANDARDIZED",
+					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED"
+				},
 				"makeSuccessFalseTypeError": {
 					"value": "makeSuccessFalseTypeError",
 					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEERROR"
@@ -102,13 +126,9 @@ const resolvedConfigData = {
 					"value": "makeSuccessFalseTypeWarning",
 					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEWARNING"
 				},
-				"errorNotStandardized": {
-					"value": "errorNotStandardized",
-					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED"
-				},
-				"ERROR_NOT_STANDARDIZED": {
-					"value": "ERROR_NOT_STANDARDIZED",
-					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED"
+				"showVSCodeError": {
+					"value": "showVSCodeError",
+					"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SHOWVSCODEERROR"
 				},
 				"escapeRegex": {
 					"value": "escapeRegex",
@@ -192,6 +212,10 @@ const resolvedConfigData = {
 			"atHand": {
 				"value": "at hand",
 				"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND"
+			},
+			"_Void": {
+				"value": "Void",
+				"key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID"
 			}
 		}
 	},
@@ -232,6 +256,10 @@ const resolvedConfigData = {
 					"value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
 					"key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
 				},
+				"showVSCodeError": {
+					"value": "Affiche un message d'erreur ou d'avertissement via le système de toasts de VS Code dépendamment du `type` de l'erreur fournie.",
+					"key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR"
+				},
 				"escapeRegex": {
 					"value": "Échappe tous les caractères regex d'une chaîne de caractères avec un `\"\\\"` pour préparer cette dernière à être utilisée dans une regex.",
 					"key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX"
@@ -246,6 +274,14 @@ const resolvedConfigData = {
 					"value": "Le texte statique du statut de l'erreur.",
 					"key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS"
 				},
+				"vscode": {
+					"value": "L'instance concernée de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).",
+					"key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE"
+				},
+				"error": {
+					"value": "L'objet d'erreur concerné, avec `\"error\"` ou `\"warning\"` pour valeur à sa clé `type`.",
+					"key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR"
+				},
 				"string": {
 					"value": "La chaîne de caractères concernée.",
 					"key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING"
@@ -259,6 +295,10 @@ const resolvedConfigData = {
 				"makeSuccessFalseTypeWarning": {
 					"value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.",
 					"key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+				},
+				"showVSCodeError": {
+					"value": "Void. (Aucun retour.)",
+					"key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR"
 				},
 				"escapeRegex": {
 					"value": "La chaîne de caractères avec ses caractères regex échappés.",
@@ -304,6 +344,10 @@ const resolvedConfigData = {
 			"basedOnMessageAndStatus": {
 				"value": "basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir",
 				"key": "FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS"
+			},
+			"concerné": {
+				"value": "concerné",
+				"key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ"
 			},
 			"concernée": {
 				"value": "concernée",
@@ -352,6 +396,19 @@ const ERROR_NOT_STANDARDIZED = "ERROR_NOT_STANDARDIZED";
 //#endregion
 //#region source/library/utilities/index.js
 /**
+* @typedef {import("../../typedefs/index.js").VSCode} VSCode
+*/
+/**
+* @template {string} T
+* @template {string} U
+* @typedef {import("../../typedefs/index.js").ErrorTypeError<T, U>} ErrorTypeError
+*/
+/**
+* @template {string} T
+* @template {string} U
+* @typedef {import("../../typedefs/index.js").ErrorTypeWarning<T, U>} ErrorTypeWarning
+*/
+/**
 * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR
 *
 * @param message - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE
@@ -386,6 +443,28 @@ const makeSuccessFalseTypeWarning = (message, status) => ({
 	...successFalse
 });
 /**
+* $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR
+*
+* @param vscode - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE
+* @param error - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR
+* @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR
+*
+* @public
+*/
+const showVSCodeError = (vscode, error) => {
+	switch (error.type) {
+		case ERROR:
+			vscode.window.showErrorMessage(error.message);
+			break;
+		case WARNING:
+			vscode.window.showWarningMessage(error.message);
+			break;
+		default:
+			vscode.window.showErrorMessage(`ERROR. ${errorNotStandardized}`);
+			break;
+	}
+};
+/**
 * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX
 *
 * @param string - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING
@@ -409,12 +488,16 @@ const resolvedPublicData = {
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED": "\"The error encountered is not standardized.\"",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and the `status` it is meant to have.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.",
+			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR": "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX": "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE": "The human-readable message of the error.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS": "The static status text of the error.",
+			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE": "The VS Code API instance at hand, living in the VS Code Extension Host (and not in the extension's Node modules).",
+			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR": "The error object at hand, with either the value `\"error\"` or `\"warning\"` at its `type` key.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING": "The string at hand.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.",
+			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR": "Void.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX": "The string with regex characters escaped."
 		},
 		"FR": {
@@ -426,15 +509,19 @@ const resolvedPublicData = {
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED": "En anglais à l'exécution : \"The error encountered is not standardized.\"",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
+			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR": "Affiche un message d'erreur ou d'avertissement via le système de toasts de VS Code dépendamment du `type` de l'erreur fournie.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX": "Échappe tous les caractères regex d'une chaîne de caractères avec un `\"\\\"` pour préparer cette dernière à être utilisée dans une regex.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE": "Le message en clair de l'erreur.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS": "Le texte statique du statut de l'erreur.",
+			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE": "L'instance concernée de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).",
+			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR": "L'objet d'erreur concerné, avec `\"error\"` ou `\"warning\"` pour valeur à sa clé `type`.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING": "La chaîne de caractères concernée.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.",
+			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR": "Void. (Aucun retour.)",
 			"_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX": "La chaîne de caractères avec ses caractères regex échappés."
 		}
 	}
 };
 //#endregion
-export { ERROR_NOT_STANDARDIZED, resolvedPublicData as commentVariablesData, errorNotStandardized, escapeRegex, makeSuccessFalseTypeError, makeSuccessFalseTypeWarning, successFalse, successTrue, typeError, typeWarning };
+export { ERROR_NOT_STANDARDIZED, resolvedPublicData as commentVariablesData, errorNotStandardized, escapeRegex, makeSuccessFalseTypeError, makeSuccessFalseTypeWarning, showVSCodeError, successFalse, successTrue, typeError, typeWarning };
