@@ -41,7 +41,11 @@ export function makeSuccessFalseTypeWarning<T extends string, U extends string>(
  *
  * @public
  */
-export function showVSCodeError<T extends string, U extends string>(vscode: unknown, error: ErrorTypeError<T, U> | ErrorTypeWarning<T, U>): void;
+export function showVSCodeError<T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(vscode: unknown, error: {
+    readonly type: V;
+    readonly message: T;
+    readonly status: U;
+}): void;
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX
  *
@@ -51,6 +55,5 @@ export function showVSCodeError<T extends string, U extends string>(vscode: unkn
  * @public
  */
 export function escapeRegex(string: string): string;
-export type VSCode = import("../../typedefs/index.js").VSCode;
-export type ErrorTypeError<T extends string, U extends string> = import("../../typedefs/index.js").ErrorTypeError<T, U>;
-export type ErrorTypeWarning<T extends string, U extends string> = import("../../typedefs/index.js").ErrorTypeWarning<T, U>;
+import { ERROR } from "../../constants/index.js";
+import { WARNING } from "../../constants/index.js";

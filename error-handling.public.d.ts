@@ -47,6 +47,8 @@ export declare const commentVariablesData: {
     };
 };
 
+declare const ERROR: "error";
+
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED
  * @public
@@ -55,14 +57,6 @@ export declare const ERROR_NOT_STANDARDIZED: "ERROR_NOT_STANDARDIZED";
 
 /** @public */
 export declare const errorNotStandardized: "The error encountered is not standardized.";
-
-declare type ErrorTypeError<T extends string, U extends string> = ErrorTypeError_2<T, U>;
-
-declare type ErrorTypeError_2<T extends string, U extends string> = ReturnType<typeof makeSuccessFalseTypeError<T, U>>["errors"][0];
-
-declare type ErrorTypeWarning<T extends string, U extends string> = ErrorTypeWarning_2<T, U>;
-
-declare type ErrorTypeWarning_2<T extends string, U extends string> = ReturnType<typeof makeSuccessFalseTypeWarning<T, U>>["errors"][0];
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX
@@ -119,7 +113,11 @@ export declare function makeSuccessFalseTypeWarning<T extends string, U extends 
  *
  * @public
  */
-export declare function showVSCodeError<T extends string, U extends string>(vscode: unknown, error: ErrorTypeError<T, U> | ErrorTypeWarning<T, U>): void;
+export declare function showVSCodeError<T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(vscode: unknown, error: {
+    readonly type: V;
+    readonly message: T;
+    readonly status: U;
+}): void;
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE
@@ -152,5 +150,7 @@ export declare const typeError: Readonly<{
 export declare const typeWarning: Readonly<{
     type: "warning";
 }>;
+
+declare const WARNING: "warning";
 
 export { }

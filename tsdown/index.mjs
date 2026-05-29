@@ -396,19 +396,6 @@ const ERROR_NOT_STANDARDIZED = "ERROR_NOT_STANDARDIZED";
 //#endregion
 //#region source/library/utilities/index.js
 /**
-* @typedef {import("../../typedefs/index.js").VSCode} VSCode
-*/
-/**
-* @template {string} T
-* @template {string} U
-* @typedef {import("../../typedefs/index.js").ErrorTypeError<T, U>} ErrorTypeError
-*/
-/**
-* @template {string} T
-* @template {string} U
-* @typedef {import("../../typedefs/index.js").ErrorTypeWarning<T, U>} ErrorTypeWarning
-*/
-/**
 * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR
 *
 * @param message - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE

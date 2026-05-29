@@ -20,7 +20,7 @@ import {
 //  * @template {string} T
 //  * @template {string} U
 //  * @typedef {import("../../typedefs/index.js").ErrorTypeWarning<T, U>} ErrorTypeWarning
-//  */ // All this shouldn't actually be imported in tsdown though.
+//  */ // All this especially when relied on shouldn't actually be imported in tsdown though.
 
 /* makeSuccessFalse */
 
