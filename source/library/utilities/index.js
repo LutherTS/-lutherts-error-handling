@@ -7,20 +7,20 @@ import {
   errorNotStandardized,
 } from "../constants/index.js";
 
-/**
- * @typedef {import("../../typedefs/index.js").VSCode} VSCode
- */
+// /**
+//  * @typedef {import("../../typedefs/index.js").VSCode} VSCode
+//  */
 
-/**
- * @template {string} T
- * @template {string} U
- * @typedef {import("../../typedefs/index.js").ErrorTypeError<T, U>} ErrorTypeError
- */
-/**
- * @template {string} T
- * @template {string} U
- * @typedef {import("../../typedefs/index.js").ErrorTypeWarning<T, U>} ErrorTypeWarning
- */ // All this shouldn't actually be imported in tsdown though.
+// /**
+//  * @template {string} T
+//  * @template {string} U
+//  * @typedef {import("../../typedefs/index.js").ErrorTypeError<T, U>} ErrorTypeError
+//  */
+// /**
+//  * @template {string} T
+//  * @template {string} U
+//  * @typedef {import("../../typedefs/index.js").ErrorTypeWarning<T, U>} ErrorTypeWarning
+//  */ // All this shouldn't actually be imported in tsdown though.
 
 /* makeSuccessFalse */
 
@@ -86,10 +86,11 @@ export const makeSuccessFalseTypeWarning =
  * @public
  */
 export const showVSCodeError =
-  /** @template {string} T, @template {string} U */ (
+  /** @template {string} T, @template {string} U, @template {typeof ERROR | typeof WARNING} V */ (
     // /** @type {VSCode} */ vscode,
     /** @type {unknown} */ vscode,
-    /** @type {ErrorTypeError<T, U> | ErrorTypeWarning<T, U>} */ error,
+    // /** @type {ErrorTypeError<T, U> | ErrorTypeWarning<T, U>} */ error,
+    /** @type {{ readonly type: V; readonly message: T; readonly status: U;}} */ error,
   ) => {
     switch (error.type) {
       case ERROR:
