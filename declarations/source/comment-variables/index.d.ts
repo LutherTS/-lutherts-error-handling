@@ -44,6 +44,14 @@ export const composedVariablesExclusives: {
             "value": "typeWarning";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING";
         };
+        "errorNotStandardized": {
+            "value": "errorNotStandardized";
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED";
+        };
+        "ERROR_NOT_STANDARDIZED": {
+            "value": "ERROR_NOT_STANDARDIZED";
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED";
+        };
         "makeSuccessFalseTypeError": {
             "value": "makeSuccessFalseTypeError";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEERROR";
@@ -52,13 +60,9 @@ export const composedVariablesExclusives: {
             "value": "makeSuccessFalseTypeWarning";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEWARNING";
         };
-        "errorNotStandardized": {
-            "value": "errorNotStandardized";
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED";
-        };
-        "ERROR_NOT_STANDARDIZED": {
-            "value": "ERROR_NOT_STANDARDIZED";
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED";
+        "showVSCodeError": {
+            "value": "showVSCodeError";
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SHOWVSCODEERROR";
         };
         "escapeRegex": {
             "value": "escapeRegex";
@@ -142,5 +146,9 @@ export const composedVariablesExclusives: {
     atHand: {
         "value": "at hand";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
+    };
+    _Void: {
+        "value": "Void";
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
     };
 };

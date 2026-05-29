@@ -42,6 +42,10 @@ export const resolvedConfigData: {
                                     "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.";
                                     "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
                                 };
+                                "showVSCodeError": {
+                                    "value": "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided.";
+                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR";
+                                };
                                 "escapeRegex": {
                                     "value": "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex.";
                                     "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX";
@@ -60,6 +64,14 @@ export const resolvedConfigData: {
                                     "value": "The static status text of the error.";
                                     "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
                                 };
+                                "vscode": {
+                                    "value": "The VS Code API instance at hand, living in the VS Code Extension Host (and not in the extension's Node modules).";
+                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE";
+                                };
+                                "error": {
+                                    "value": "The error object at hand, with either the value `\"error\"` or `\"warning\"` at its `type` key.";
+                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR";
+                                };
                                 "string": {
                                     "value": "The string at hand.";
                                     "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
@@ -77,6 +89,10 @@ export const resolvedConfigData: {
                                 "makeSuccessFalseTypeWarning": {
                                     "value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
                                     "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                };
+                                "showVSCodeError": {
+                                    "value": "Void.";
+                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR";
                                 };
                                 "escapeRegex": {
                                     "value": "The string with regex characters escaped.";
@@ -110,6 +126,14 @@ export const resolvedConfigData: {
                     "value": "typeWarning";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING";
                 };
+                "errorNotStandardized": {
+                    "value": "errorNotStandardized";
+                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED";
+                };
+                "ERROR_NOT_STANDARDIZED": {
+                    "value": "ERROR_NOT_STANDARDIZED";
+                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED";
+                };
                 "makeSuccessFalseTypeError": {
                     "value": "makeSuccessFalseTypeError";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEERROR";
@@ -118,13 +142,9 @@ export const resolvedConfigData: {
                     "value": "makeSuccessFalseTypeWarning";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEWARNING";
                 };
-                "errorNotStandardized": {
-                    "value": "errorNotStandardized";
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED";
-                };
-                "ERROR_NOT_STANDARDIZED": {
-                    "value": "ERROR_NOT_STANDARDIZED";
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED";
+                "showVSCodeError": {
+                    "value": "showVSCodeError";
+                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SHOWVSCODEERROR";
                 };
                 "escapeRegex": {
                     "value": "escapeRegex";
@@ -209,6 +229,10 @@ export const resolvedConfigData: {
                 "value": "at hand";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
             };
+            "_Void": {
+                "value": "Void";
+                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
+            };
         };
     };
     "fr": {
@@ -254,6 +278,10 @@ export const resolvedConfigData: {
                                     "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` bas\u00E9e sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.";
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
                                 };
+                                "showVSCodeError": {
+                                    "value": "Affiche un message d'erreur ou d'avertissement via le syst\u00E8me de toasts de VS Code d\u00E9pendamment du `type` de l'erreur fournie.";
+                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR";
+                                };
                                 "escapeRegex": {
                                     "value": "\u00C9chappe tous les caract\u00E8res regex d'une cha\u00EEne de caract\u00E8res avec un `\"\\\"` pour pr\u00E9parer cette derni\u00E8re \u00E0 \u00EAtre utilis\u00E9e dans une regex.";
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX";
@@ -272,6 +300,14 @@ export const resolvedConfigData: {
                                     "value": "Le texte statique du statut de l'erreur.";
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
                                 };
+                                "vscode": {
+                                    "value": "L'instance concern\u00E9e de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).";
+                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE";
+                                };
+                                "error": {
+                                    "value": "L'objet d'erreur concern\u00E9, avec `\"error\"` ou `\"warning\"` pour valeur \u00E0 sa cl\u00E9 `type`.";
+                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR";
+                                };
                                 "string": {
                                     "value": "La cha\u00EEne de caract\u00E8res concern\u00E9e.";
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
@@ -289,6 +325,10 @@ export const resolvedConfigData: {
                                 "makeSuccessFalseTypeWarning": {
                                     "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                };
+                                "showVSCodeError": {
+                                    "value": "Void. (Aucun retour.)";
+                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR";
                                 };
                                 "escapeRegex": {
                                     "value": "La cha\u00EEne de caract\u00E8res avec ses caract\u00E8res regex \u00E9chapp\u00E9s.";
@@ -338,6 +378,10 @@ export const resolvedConfigData: {
             "basedOnMessageAndStatus": {
                 "value": "bas\u00E9e sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
+            };
+            "concern\u00E9": {
+                "value": "concern\u00E9";
+                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERN\u00C9";
             };
             "concern\u00E9e": {
                 "value": "concern\u00E9e";

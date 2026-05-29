@@ -9,8 +9,8 @@ import {
   makeSuccessFalseTypeWarning,
   showVSCodeError,
   escapeRegex,
-} from "../../source/library/index.js"; // dev
-// } from "../../tsdown/index.mjs"; // prod
+  // } from "../../source/library/index.js"; // dev
+} from "../../tsdown/index.mjs"; // prod
 
 import { successFalseSuite } from "./suites/success-false/index.js";
 import { successTrueSuite } from "./suites/success-true/index.js";

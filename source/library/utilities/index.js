@@ -87,7 +87,8 @@ export const makeSuccessFalseTypeWarning =
  */
 export const showVSCodeError =
   /** @template {string} T, @template {string} U */ (
-    /** @type {VSCode} */ vscode,
+    // /** @type {VSCode} */ vscode,
+    /** @type {unknown} */ vscode,
     /** @type {ErrorTypeError<T, U> | ErrorTypeWarning<T, U>} */ error,
   ) => {
     switch (error.type) {
