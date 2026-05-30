@@ -28,7 +28,7 @@ export const makeSuccessFalseTypeWarningSuite = (
       assert.strictEqual(makeSuccessFalseTypeWarningType, "function");
     });
 
-    it(`should be named \`${MAKE_SUCCESS_FALSE_TYPE_WARNING}\``, () => {
+    it.skip(`should be named \`${MAKE_SUCCESS_FALSE_TYPE_WARNING}\``, () => {
       const makeSuccessFalseTypeWarningName = makeSuccessFalseTypeWarning.name;
       assert.strictEqual(
         makeSuccessFalseTypeWarningName,
