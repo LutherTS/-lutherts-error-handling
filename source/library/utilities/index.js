@@ -1,6 +1,11 @@
 import { ERROR, WARNING } from "../../constants/index.js";
 
-import { successFalse, typeError, typeWarning, errorNotStandardized } from "../constants/index.js";
+import {
+  successFalse,
+  typeError,
+  typeWarning,
+  errorNotStandardized,
+} from "../constants/index.js";
 
 // /**
 //  * @typedef {import("../../typedefs/index.js").VSCode} VSCode

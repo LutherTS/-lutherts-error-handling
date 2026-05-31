@@ -29,7 +29,10 @@ export const makeSuccessFalseTypeWarningSuite = (
 
     it.skip(`should be named \`${MAKE_SUCCESS_FALSE_TYPE_WARNING}\``, () => {
       const makeSuccessFalseTypeWarningName = makeSuccessFalseTypeWarning.name;
-      assert.strictEqual(makeSuccessFalseTypeWarningName, MAKE_SUCCESS_FALSE_TYPE_WARNING);
+      assert.strictEqual(
+        makeSuccessFalseTypeWarningName,
+        MAKE_SUCCESS_FALSE_TYPE_WARNING,
+      );
     });
 
     // input validations tests

@@ -6,4 +6,5 @@ export const consts = commentVariablesData.en.tsDoc.src.lib.consts;
 
 /* generals */
 
-export const composedVariablesExclusives = commentVariablesData.en.composedVariablesExclusives;
+export const composedVariablesExclusives =
+  commentVariablesData.en.composedVariablesExclusives;
