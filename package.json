@@ -27,12 +27,15 @@
     "api": "api-extractor run",
     "build": "tsdown",
     "test": "node --test",
-    "prepare": "npm run types && npm run doc && npm run api && npm run build && npm run test"
+    "lint": "oxlint",
+    "prepare": "npm run types && npm run doc && npm run api && npm run build && npm run test && npm run lint"
   },
   "devDependencies": {
     "@types/node": "^25.9.1",
     "@types/vscode": "^1.120.0",
     "@typescript/native-preview": "^7.0.0-dev.20260421.2",
+    "eslint-plugin-tsdoc": "^0.5.2",
+    "oxlint": "^1.67.0",
     "tsdown": "^0.22.0",
     "typescript": "npm:@typescript/typescript6@^6.0.1"
   }
