@@ -1,11 +1,6 @@
 import { ERROR, WARNING } from "../../constants/index.js";
 
-import {
-  successFalse,
-  typeError,
-  typeWarning,
-  errorNotStandardized,
-} from "../constants/index.js";
+import { successFalse, typeError, typeWarning, errorNotStandardized } from "../constants/index.js";
 
 // /**
 //  * @typedef {import("../../typedefs/index.js").VSCode} VSCode
@@ -37,17 +32,16 @@ export const makeSuccessFalseTypeError =
   /** @template {string} T, @template {string} U */ (
     /** @type {T} */ message,
     /** @type {U} */ status,
-  ) =>
-    /** @type {const} */ ({
-      errors: [
-        {
-          message,
-          status,
-          ...typeError,
-        },
-      ],
-      ...successFalse,
-    });
+  ) => /** @type {const} */ ({
+    errors: [
+      {
+        message,
+        status,
+        ...typeError,
+      },
+    ],
+    ...successFalse,
+  });
 
 /**
  * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING
@@ -62,17 +56,16 @@ export const makeSuccessFalseTypeWarning =
   /** @template {string} T, @template {string} U */ (
     /** @type {T} */ message,
     /** @type {U} */ status,
-  ) =>
-    /** @type {const} */ ({
-      errors: [
-        {
-          message,
-          status,
-          ...typeWarning,
-        },
-      ],
-      ...successFalse,
-    });
+  ) => /** @type {const} */ ({
+    errors: [
+      {
+        message,
+        status,
+        ...typeWarning,
+      },
+    ],
+    ...successFalse,
+  });
 
 /* showErrorVSCode */
 

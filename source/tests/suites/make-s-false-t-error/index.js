@@ -29,10 +29,7 @@ export const makeSuccessFalseTypeErrorSuite = (
 
     it.skip(`should be named \`${MAKE_SUCCESS_FALSE_TYPE_ERROR}\``, () => {
       const makeSuccessFalseTypeErrorName = makeSuccessFalseTypeError.name;
-      assert.strictEqual(
-        makeSuccessFalseTypeErrorName,
-        MAKE_SUCCESS_FALSE_TYPE_ERROR,
-      );
+      assert.strictEqual(makeSuccessFalseTypeErrorName, MAKE_SUCCESS_FALSE_TYPE_ERROR);
     });
 
     // input validations tests
