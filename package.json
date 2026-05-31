@@ -1,6 +1,6 @@
 {
   "name": "@lutherts/error-handling",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "My personal library for how I handle errors across my projects under my own standards.",
   "keywords": [
     "errors",
