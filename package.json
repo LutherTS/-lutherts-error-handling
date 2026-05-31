@@ -28,7 +28,8 @@
     "build": "tsdown",
     "test": "node --test",
     "lint": "oxlint",
-    "prepare": "npm run types && npm run doc && npm run api && npm run build && npm run test && npm run lint"
+    "prepare": "npm run types && npm run doc && npm run api && npm run build && npm run test && npm run lint",
+    "comvar-readonly": "code --install-extension extensions/vscode/comvar-readonly-0.1.2.vsix"
   },
   "devDependencies": {
     "@types/node": "^25.9.1",
