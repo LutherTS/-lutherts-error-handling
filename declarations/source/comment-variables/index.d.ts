@@ -1,4 +1,4 @@
-export const consts: {
+export declare const consts: {
     public: {
         "successFalse": {
             "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
@@ -26,7 +26,7 @@ export const consts: {
         };
     };
 };
-export const composedVariablesExclusives: {
+export declare const composedVariablesExclusives: {
     variables: {
         "successFalse": {
             "value": "successFalse";

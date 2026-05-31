@@ -53,7 +53,7 @@ declare const ERROR: "error";
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED
  * @public
  * */
-export declare const ERROR_NOT_STANDARDIZED: "ERROR_NOT_STANDARDIZED";
+export declare const ERROR_NOT_STANDARDIZED = "ERROR_NOT_STANDARDIZED";
 
 /** @public */
 export declare const errorNotStandardized: "The error encountered is not standardized.";
@@ -66,7 +66,7 @@ export declare const errorNotStandardized: "The error encountered is not standar
  *
  * @public
  */
-export declare function escapeRegex(string: string): string;
+export declare const escapeRegex: (string: string) => string;
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR
@@ -77,7 +77,7 @@ export declare function escapeRegex(string: string): string;
  *
  * @public
  */
-export declare function makeSuccessFalseTypeError<T extends string, U extends string>(message: T, status: U): {
+export declare const makeSuccessFalseTypeError: <T extends string, U extends string>(message: T, status: U) => {
     readonly success: false;
     readonly errors: readonly [{
         readonly type: "error";
@@ -95,7 +95,7 @@ export declare function makeSuccessFalseTypeError<T extends string, U extends st
  *
  * @public
  */
-export declare function makeSuccessFalseTypeWarning<T extends string, U extends string>(message: T, status: U): {
+export declare const makeSuccessFalseTypeWarning: <T extends string, U extends string>(message: T, status: U) => {
     readonly success: false;
     readonly errors: readonly [{
         readonly type: "warning";
@@ -113,11 +113,11 @@ export declare function makeSuccessFalseTypeWarning<T extends string, U extends 
  *
  * @public
  */
-export declare function showVSCodeError<T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(vscode: unknown, error: {
+export declare const showVSCodeError: <T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(vscode: unknown, error: {
     readonly type: V;
     readonly message: T;
     readonly status: U;
-}): void;
+}) => void;
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE

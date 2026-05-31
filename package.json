@@ -22,7 +22,7 @@
     "comments.config.public.json"
   ],
   "scripts": {
-    "types": "tsc",
+    "types": "tsgo",
     "doc": "comment-variables doc",
     "api": "api-extractor run",
     "build": "tsdown",
@@ -32,7 +32,8 @@
   "devDependencies": {
     "@types/node": "^25.9.1",
     "@types/vscode": "^1.120.0",
+    "@typescript/native-preview": "^7.0.0-dev.20260421.2",
     "tsdown": "^0.22.0",
-    "typescript": "^6.0.3"
+    "typescript": "npm:@typescript/typescript6@^6.0.1"
   }
 }

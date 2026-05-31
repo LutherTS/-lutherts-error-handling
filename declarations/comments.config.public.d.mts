@@ -1,5 +1,5 @@
 /** @public */
-export const resolvedPublicData: {
+export declare const resolvedPublicData: {
     "libraryKey": "_LUTHERTS_ERROR_HANDLING";
     "libraryVariations": {
         "EN": {

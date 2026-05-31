@@ -1,4 +1,4 @@
-export const resolvedConfigData: {
+export declare const resolvedConfigData: {
     "en": {
         "tsDoc": {
             "src": {

@@ -1,2 +1,2 @@
-export const ERROR: "error";
-export const WARNING: "warning";
+export declare const ERROR: "error";
+export declare const WARNING: "warning";
