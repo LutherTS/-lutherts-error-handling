@@ -139,8 +139,12 @@ export declare const composedVariablesExclusives: {
         "value": "single error in its `errors` array";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
     };
+    errorObject: {
+        "value": "error object";
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT";
+    };
     basedOnMessageAndStatus: {
-        "value": "based on the `message` it is meant to display and the `status` it is meant to have";
+        "value": "based on the `message` it is meant to display and on the `status` it is meant to have";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
     };
     atHand: {
