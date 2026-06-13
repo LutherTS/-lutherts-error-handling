@@ -158,6 +158,14 @@
           "value": "makeSuccessFalseTypeWarning",
           "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEWARNING"
         },
+        "makeErrorTypeError": {
+          "value": "makeErrorTypeError",
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEERROR"
+        },
+        "makeErrorTypeWarning": {
+          "value": "makeErrorTypeWarning",
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEWARNING"
+        },
         "showVSCodeError": {
           "value": "showVSCodeError",
           "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SHOWVSCODEERROR"

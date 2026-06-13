@@ -7,10 +7,12 @@ import {
   ERROR_NOT_STANDARDIZED,
   makeSuccessFalseTypeError,
   makeSuccessFalseTypeWarning,
+  makeErrorTypeError,
+  makeErrorTypeWarning,
   showVSCodeError,
   escapeRegex,
-  // } from "../../source/library/index.js"; // dev
-} from "../../tsdown/index.mjs"; // prod
+} from "../../source/library/index.js"; // dev
+// } from "../../tsdown/index.mjs"; // prod
 
 import { successFalseSuite } from "./suites/success-false/index.js";
 import { successTrueSuite } from "./suites/success-true/index.js";
@@ -20,6 +22,8 @@ import { errorNotStandardizedSuite } from "./suites/unstandardized-message/index
 import { ERROR_NOT_STANDARDIZEDSuite } from "./suites/unstandardized-status/index.js";
 import { makeSuccessFalseTypeErrorSuite } from "./suites/make-s-false-t-error/index.js";
 import { makeSuccessFalseTypeWarningSuite } from "./suites/make-s-false-t-warning/index.js";
+import { makeErrorTypeErrorSuite } from "./suites/make-error-t-error/index.js";
+import { makeErrorTypeWarningSuite } from "./suites/make-error-t-warning/index.js";
 import { escapeRegexSuite } from "./suites/escape-regex/index.js";
 import { showVSCodeErrorSuite } from "./suites/show-vs-code-error/index.js";
 
@@ -31,5 +35,7 @@ errorNotStandardizedSuite(errorNotStandardized);
 ERROR_NOT_STANDARDIZEDSuite(ERROR_NOT_STANDARDIZED);
 makeSuccessFalseTypeErrorSuite(makeSuccessFalseTypeError);
 makeSuccessFalseTypeWarningSuite(makeSuccessFalseTypeWarning);
+makeErrorTypeErrorSuite(makeErrorTypeError);
+makeErrorTypeWarningSuite(makeErrorTypeWarning);
 showVSCodeErrorSuite(showVSCodeError);
 escapeRegexSuite(escapeRegex);

@@ -20,6 +20,11 @@ export const MAKE_SUCCESS_FALSE_TYPE_ERROR =
 export const MAKE_SUCCESS_FALSE_TYPE_WARNING =
   composedVariablesExclusives.variables.makeSuccessFalseTypeWarning.value;
 
+export const MAKE_ERROR_TYPE_ERROR =
+  composedVariablesExclusives.variables.makeErrorTypeError.value;
+export const MAKE_ERROR_TYPE_WARNING =
+  composedVariablesExclusives.variables.makeErrorTypeWarning.value;
+
 export const MESSAGE = composedVariablesExclusives.arguments.message.value;
 export const STATUS = composedVariablesExclusives.arguments.status.value;
 
