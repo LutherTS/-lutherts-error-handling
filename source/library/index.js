@@ -16,6 +16,8 @@ export {
 export {
   makeSuccessFalseTypeError,
   makeSuccessFalseTypeWarning,
+  makeErrorTypeError,
+  makeErrorTypeWarning,
   showVSCodeError,
   escapeRegex,
 } from "./utilities/index.js";

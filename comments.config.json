@@ -35,12 +35,20 @@
             "utils": {
               "public": {
                 "makeSuccessFalseTypeError": {
-                  "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and the `status` it is meant to have.",
+                  "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.",
                   "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
                 },
                 "makeSuccessFalseTypeWarning": {
-                  "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and the `status` it is meant to have.",
+                  "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.",
                   "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+                },
+                "makeErrorTypeError": {
+                  "value": "Makes an error object of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.",
+                  "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR"
+                },
+                "makeErrorTypeWarning": {
+                  "value": "Makes an error object of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.",
+                  "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING"
                 },
                 "showVSCodeError": {
                   "value": "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided.",
@@ -89,6 +97,14 @@
                 "makeSuccessFalseTypeWarning": {
                   "value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.",
                   "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+                },
+                "makeErrorTypeError": {
+                  "value": "An error object of `{type: error}`.",
+                  "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR"
+                },
+                "makeErrorTypeWarning": {
+                  "value": "An error object of `{type: warning}`.",
+                  "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING"
                 },
                 "showVSCodeError": {
                   "value": "Void.",
@@ -221,8 +237,12 @@
         "value": "single error in its `errors` array",
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR"
       },
+      "errorObject": {
+        "value": "error object",
+        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT"
+      },
       "basedOnMessageAndStatus": {
-        "value": "based on the `message` it is meant to display and the `status` it is meant to have",
+        "value": "based on the `message` it is meant to display and on the `status` it is meant to have",
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS"
       },
       "atHand": {
@@ -271,12 +291,20 @@
             "utils": {
               "public": {
                 "makeSuccessFalseTypeError": {
-                  "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
+                  "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.",
                   "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR"
                 },
                 "makeSuccessFalseTypeWarning": {
-                  "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir.",
+                  "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.",
                   "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+                },
+                "makeErrorTypeError": {
+                  "value": "Crée un objet d'erreur de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.",
+                  "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR"
+                },
+                "makeErrorTypeWarning": {
+                  "value": "Crée un objet d'erreur de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.",
+                  "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING"
                 },
                 "showVSCodeError": {
                   "value": "Affiche un message d'erreur ou d'avertissement via le système de toasts de VS Code dépendamment du `type` de l'erreur fournie.",
@@ -325,6 +353,14 @@
                 "makeSuccessFalseTypeWarning": {
                   "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.",
                   "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING"
+                },
+                "makeErrorTypeError": {
+                  "value": "Un objet d'erreur de `{type: error}`.",
+                  "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR"
+                },
+                "makeErrorTypeWarning": {
+                  "value": "Un objet d'erreur de `{type: warning}`.",
+                  "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING"
                 },
                 "showVSCodeError": {
                   "value": "Void. (Aucun retour.)",
@@ -375,8 +411,12 @@
         "value": "seule erreur dans son array `errors`",
         "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR"
       },
+      "errorObject": {
+        "value": "objet d'erreur",
+        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT"
+      },
       "basedOnMessageAndStatus": {
-        "value": "basée sur le `message` qu'elle doit montrer et le `status` qu'elle doit avoir",
+        "value": "basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir",
         "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS"
       },
       "concerné": {

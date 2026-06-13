@@ -5,11 +5,13 @@ import {
   successTrue,
   typeError,
   typeWarning,
-  makeSuccessFalseTypeError,
-  makeSuccessFalseTypeWarning,
-  showVSCodeError,
   errorNotStandardized,
   ERROR_NOT_STANDARDIZED,
+  makeSuccessFalseTypeError,
+  makeSuccessFalseTypeWarning,
+  makeErrorTypeError,
+  makeErrorTypeWarning,
+  showVSCodeError,
   escapeRegex,
 } from "../../source/library/index.js";
 
@@ -46,18 +48,14 @@ import {
  */
 
 /**
- * @typedef {typeof showVSCodeError} ShowVSCodeError
+ * @typedef {typeof makeErrorTypeError} MakeErrorTypeError
+ */
+/**
+ * @typedef {typeof makeErrorTypeWarning} MakeErrorTypeWarning
  */
 
 /**
- * @template {string} T
- * @template {string} U
- * @typedef {ReturnType<typeof makeSuccessFalseTypeError<T, U>>["errors"][0]} ErrorTypeError
- */
-/**
- * @template {string} T
- * @template {string} U
- * @typedef {ReturnType<typeof makeSuccessFalseTypeWarning<T, U>>["errors"][0]} ErrorTypeWarning
+ * @typedef {typeof showVSCodeError} ShowVSCodeError
  */
 
 /**

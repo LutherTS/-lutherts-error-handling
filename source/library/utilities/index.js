@@ -7,21 +7,6 @@ import {
   errorNotStandardized,
 } from "../constants/index.js";
 
-// /**
-//  * @typedef {import("../../typedefs/index.js").VSCode} VSCode
-//  */
-
-// /**
-//  * @template {string} T
-//  * @template {string} U
-//  * @typedef {import("../../typedefs/index.js").ErrorTypeError<T, U>} ErrorTypeError
-//  */
-// /**
-//  * @template {string} T
-//  * @template {string} U
-//  * @typedef {import("../../typedefs/index.js").ErrorTypeWarning<T, U>} ErrorTypeWarning
-//  */ // All this especially when relied on shouldn't actually be imported in tsdown though.
-
 /* makeSuccessFalse */
 
 /**
@@ -72,6 +57,48 @@ export const makeSuccessFalseTypeWarning =
     ...successFalse,
   });
 
+/* makeErrorTypeError */
+
+/**
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR
+ *
+ * @param message - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE
+ * @param status - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR
+ *
+ * @public
+ */
+export const makeErrorTypeError =
+  /** @template {string} T, @template {string} U */ (
+    /** @type {T} */ message,
+    /** @type {U} */ status,
+  ) => /** @type {const} */ ({
+    message,
+    status,
+    ...typeError,
+  });
+
+/* makeErrorTypeWarning */
+
+/**
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING
+ *
+ * @param message - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE
+ * @param status - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING
+ *
+ * @public
+ */
+export const makeErrorTypeWarning =
+  /** @template {string} T, @template {string} U */ (
+    /** @type {T} */ message,
+    /** @type {U} */ status,
+  ) => /** @type {const} */ ({
+    message,
+    status,
+    ...typeWarning,
+  });
+
 /* showErrorVSCode */
 
 /**
@@ -87,7 +114,7 @@ export const showVSCodeError =
   /** @template {string} T, @template {string} U, @template {typeof ERROR | typeof WARNING} V */ (
     // /** @type {VSCode} */ vscode,
     /** @type {unknown} */ vscode,
-    // /** @type {ErrorTypeError<T, U> | ErrorTypeWarning<T, U>} */ error,
+    // /** @type {ReturnType<MakeErrorTypeError<T, U>> | ReturnType<MakeErrorTypeWarning<T, U>>} */ error,
     /** @type {{ readonly type: V; readonly message: T; readonly status: U;}} */ error,
   ) => {
     switch (error.type) {
