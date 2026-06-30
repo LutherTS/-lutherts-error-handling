@@ -10,6 +10,7 @@ import {
   makeErrorTypeError,
   makeErrorTypeWarning,
   showVSCodeError,
+  logCLIError,
   escapeRegex,
   // } from "../../source/library/index.js"; // dev
 } from "../../tsdown/index.mjs"; // prod
@@ -24,8 +25,9 @@ import { makeSuccessFalseTypeErrorSuite } from "./suites/make-s-false-t-error/in
 import { makeSuccessFalseTypeWarningSuite } from "./suites/make-s-false-t-warning/index.js";
 import { makeErrorTypeErrorSuite } from "./suites/make-error-t-error/index.js";
 import { makeErrorTypeWarningSuite } from "./suites/make-error-t-warning/index.js";
-import { escapeRegexSuite } from "./suites/escape-regex/index.js";
 import { showVSCodeErrorSuite } from "./suites/show-vs-code-error/index.js";
+import { logCLIErrorSuite } from "./suites/log-cli-error/index.js";
+import { escapeRegexSuite } from "./suites/escape-regex/index.js";
 
 successFalseSuite(successFalse);
 successTrueSuite(successTrue);
@@ -38,4 +40,5 @@ makeSuccessFalseTypeWarningSuite(makeSuccessFalseTypeWarning);
 makeErrorTypeErrorSuite(makeErrorTypeError);
 makeErrorTypeWarningSuite(makeErrorTypeWarning);
 showVSCodeErrorSuite(showVSCodeError);
+logCLIErrorSuite(logCLIError);
 escapeRegexSuite(escapeRegex);

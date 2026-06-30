@@ -12,6 +12,7 @@ import {
   makeErrorTypeError,
   makeErrorTypeWarning,
   showVSCodeError,
+  logCLIError,
   escapeRegex,
 } from "../../source/library/index.js";
 
@@ -56,6 +57,9 @@ import {
 
 /**
  * @typedef {typeof showVSCodeError} ShowVSCodeError
+ */
+/**
+ * @typedef {typeof logCLIError} LogCLIError
  */
 
 /**

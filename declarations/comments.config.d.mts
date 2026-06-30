@@ -6,28 +6,28 @@ export declare const resolvedConfigData: {
                     "consts": {
                         "public": {
                             "successFalse": {
-                                "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
                                 "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
+                                "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
                             };
                             "successTrue": {
-                                "value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
                                 "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
+                                "value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
                             };
                             "typeError": {
-                                "value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
                                 "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
+                                "value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
                             };
                             "typeWarning": {
-                                "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
                                 "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
+                                "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
                             };
                             "errorNotStandardized": {
-                                "value": "The error encountered is not standardized.";
                                 "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED";
+                                "value": "The error encountered is not standardized.";
                             };
                             "ERROR_NOT_STANDARDIZED": {
-                                "value": "\"The error encountered is not standardized.\"";
                                 "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
+                                "value": "\"The error encountered is not standardized.\"";
                             };
                         };
                     };
@@ -35,28 +35,32 @@ export declare const resolvedConfigData: {
                         "utils": {
                             "public": {
                                 "makeSuccessFalseTypeError": {
-                                    "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
                                     "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                                    "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
                                 };
                                 "makeSuccessFalseTypeWarning": {
-                                    "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
                                     "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                    "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
                                 };
                                 "makeErrorTypeError": {
-                                    "value": "Makes an error object of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
                                     "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
+                                    "value": "Makes an error object of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
                                 };
                                 "makeErrorTypeWarning": {
-                                    "value": "Makes an error object of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
                                     "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
+                                    "value": "Makes an error object of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
                                 };
                                 "showVSCodeError": {
-                                    "value": "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided.";
                                     "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR";
+                                    "value": "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided.";
+                                };
+                                "logCLIError": {
+                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR";
+                                    "value": "Shows an error or warning message via the CLI's `console.error` or `console.warn` method depending on the `type` of the error provided.";
                                 };
                                 "escapeRegex": {
-                                    "value": "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex.";
                                     "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX";
+                                    "value": "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex.";
                                 };
                             };
                         };
@@ -65,24 +69,24 @@ export declare const resolvedConfigData: {
                         "utils": {
                             "public": {
                                 "message": {
-                                    "value": "The human-readable message of the error.";
                                     "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE";
+                                    "value": "The human-readable message of the error.";
                                 };
                                 "status": {
-                                    "value": "The static status text of the error.";
                                     "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
+                                    "value": "The static status text of the error.";
                                 };
                                 "vscode": {
-                                    "value": "The VS Code API instance at hand, living in the VS Code Extension Host (and not in the extension's Node modules).";
                                     "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE";
+                                    "value": "The VS Code API instance at hand, living in the VS Code Extension Host (and not in the extension's Node modules).";
                                 };
                                 "error": {
-                                    "value": "The error object at hand, with either the value `\"error\"` or `\"warning\"` at its `type` key.";
                                     "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR";
+                                    "value": "The error object at hand, with either the value `\"error\"` or `\"warning\"` at its `type` key.";
                                 };
                                 "string": {
-                                    "value": "The string at hand.";
                                     "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
+                                    "value": "The string at hand.";
                                 };
                             };
                         };
@@ -91,28 +95,32 @@ export declare const resolvedConfigData: {
                         "utils": {
                             "public": {
                                 "makeSuccessFalseTypeError": {
-                                    "value": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.";
                                     "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                                    "value": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.";
                                 };
                                 "makeSuccessFalseTypeWarning": {
-                                    "value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
                                     "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                    "value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
                                 };
                                 "makeErrorTypeError": {
-                                    "value": "An error object of `{type: error}`.";
                                     "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
+                                    "value": "An error object of `{type: error}`.";
                                 };
                                 "makeErrorTypeWarning": {
-                                    "value": "An error object of `{type: warning}`.";
                                     "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
+                                    "value": "An error object of `{type: warning}`.";
                                 };
                                 "showVSCodeError": {
-                                    "value": "Void.";
                                     "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR";
+                                    "value": "Void.";
+                                };
+                                "logCLIError": {
+                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR";
+                                    "value": "Void.";
                                 };
                                 "escapeRegex": {
-                                    "value": "The string with regex characters escaped.";
                                     "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX";
+                                    "value": "The string with regex characters escaped.";
                                 };
                             };
                         };
@@ -127,139 +135,143 @@ export declare const resolvedConfigData: {
         "composedVariablesExclusives": {
             "variables": {
                 "successFalse": {
-                    "value": "successFalse";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSFALSE";
+                    "value": "successFalse";
                 };
                 "successTrue": {
-                    "value": "successTrue";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSTRUE";
+                    "value": "successTrue";
                 };
                 "typeError": {
-                    "value": "typeError";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEERROR";
+                    "value": "typeError";
                 };
                 "typeWarning": {
-                    "value": "typeWarning";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING";
+                    "value": "typeWarning";
                 };
                 "errorNotStandardized": {
-                    "value": "errorNotStandardized";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED";
+                    "value": "errorNotStandardized";
                 };
                 "ERROR_NOT_STANDARDIZED": {
-                    "value": "ERROR_NOT_STANDARDIZED";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED";
+                    "value": "ERROR_NOT_STANDARDIZED";
                 };
                 "makeSuccessFalseTypeError": {
-                    "value": "makeSuccessFalseTypeError";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEERROR";
+                    "value": "makeSuccessFalseTypeError";
                 };
                 "makeSuccessFalseTypeWarning": {
-                    "value": "makeSuccessFalseTypeWarning";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEWARNING";
+                    "value": "makeSuccessFalseTypeWarning";
                 };
                 "makeErrorTypeError": {
-                    "value": "makeErrorTypeError";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEERROR";
+                    "value": "makeErrorTypeError";
                 };
                 "makeErrorTypeWarning": {
-                    "value": "makeErrorTypeWarning";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEWARNING";
+                    "value": "makeErrorTypeWarning";
                 };
                 "showVSCodeError": {
-                    "value": "showVSCodeError";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SHOWVSCODEERROR";
+                    "value": "showVSCodeError";
+                };
+                "logCLIError": {
+                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#LOGCLIERROR";
+                    "value": "logCLIError";
                 };
                 "escapeRegex": {
-                    "value": "escapeRegex";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ESCAPEREGEX";
+                    "value": "escapeRegex";
                 };
             };
             "arguments": {
                 "message": {
-                    "value": "message";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#MESSAGE";
+                    "value": "message";
                 };
                 "status": {
-                    "value": "status";
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#STATUS";
+                    "value": "status";
                 };
             };
             "success_false": {
-                "value": "success: false";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE";
+                "value": "success: false";
             };
             "success_true": {
-                "value": "success: true";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE";
+                "value": "success: true";
             };
             "type_error": {
-                "value": "type: error";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR";
+                "value": "type: error";
             };
             "type_warning": {
-                "value": "type: warning";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING";
+                "value": "type: warning";
             };
             "success": {
-                "value": "success";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS";
+                "value": "success";
             };
             "false": {
-                "value": "false";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE";
+                "value": "false";
             };
             "true": {
-                "value": "true";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE";
+                "value": "true";
             };
             "type": {
-                "value": "type";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE";
+                "value": "type";
             };
             "error": {
-                "value": "error";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR";
+                "value": "error";
             };
             "warning": {
-                "value": "warning";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING";
+                "value": "warning";
             };
             "_applyLastWith": {
-                "value": "Apply last with";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH";
+                "value": "Apply last with";
             };
             "toEnsure": {
-                "value": "to ensure that";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE";
+                "value": "to ensure that";
             };
             "sitsAtTopLike": {
-                "value": "sits at the top of its object's type definition, like";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
+                "value": "sits at the top of its object's type definition, like";
             };
             "propApropB": {
-                "value": "propertyA, propertyB";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB";
+                "value": "propertyA, propertyB";
             };
             "singleError": {
-                "value": "single error in its `errors` array";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
+                "value": "single error in its `errors` array";
             };
             "errorObject": {
-                "value": "error object";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT";
+                "value": "error object";
             };
             "basedOnMessageAndStatus": {
-                "value": "based on the `message` it is meant to display and on the `status` it is meant to have";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
+                "value": "based on the `message` it is meant to display and on the `status` it is meant to have";
             };
             "atHand": {
-                "value": "at hand";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
+                "value": "at hand";
             };
             "_Void": {
-                "value": "Void";
                 "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
+                "value": "Void";
             };
         };
     };
@@ -270,28 +282,28 @@ export declare const resolvedConfigData: {
                     "consts": {
                         "public": {
                             "successFalse": {
-                                "value": "\u00C0 apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successFalse}`.";
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
+                                "value": "\u00C0 apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successFalse}`.";
                             };
                             "successTrue": {
-                                "value": "\u00C0 apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successTrue}`.";
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
+                                "value": "\u00C0 apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successTrue}`.";
                             };
                             "typeError": {
-                                "value": "\u00C0 apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeError}`.";
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
+                                "value": "\u00C0 apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeError}`.";
                             };
                             "typeWarning": {
-                                "value": "\u00C0 apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeWarning}`.";
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
+                                "value": "\u00C0 apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeWarning}`.";
                             };
                             "errorNotStandardized": {
-                                "value": "The error encountered is not standardized. / (En anglais uniquement.)";
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED";
+                                "value": "The error encountered is not standardized. / (En anglais uniquement.)";
                             };
                             "ERROR_NOT_STANDARDIZED": {
-                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"The error encountered is not standardized.\"";
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
+                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"The error encountered is not standardized.\"";
                             };
                         };
                     };
@@ -299,28 +311,32 @@ export declare const resolvedConfigData: {
                         "utils": {
                             "public": {
                                 "makeSuccessFalseTypeError": {
-                                    "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                                    "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
                                 "makeSuccessFalseTypeWarning": {
-                                    "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                    "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
                                 "makeErrorTypeError": {
-                                    "value": "Cr\u00E9e un objet d'erreur de `{type: error}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
+                                    "value": "Cr\u00E9e un objet d'erreur de `{type: error}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
                                 "makeErrorTypeWarning": {
-                                    "value": "Cr\u00E9e un objet d'erreur de `{type: warning}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
+                                    "value": "Cr\u00E9e un objet d'erreur de `{type: warning}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
                                 "showVSCodeError": {
-                                    "value": "Affiche un message d'erreur ou d'avertissement via le syst\u00E8me de toasts de VS Code d\u00E9pendamment du `type` de l'erreur fournie.";
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR";
+                                    "value": "Affiche un message d'erreur ou d'avertissement via le syst\u00E8me de toasts de VS Code d\u00E9pendamment du `type` de l'erreur fournie.";
+                                };
+                                "logCLIError": {
+                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR";
+                                    "value": "Affiche un message d'erreur ou d'avertissement via les m\u00E9thodes `console.error` et `console.warn` d'interface de ligne de commande d\u00E9pendamment du `type` de l'erreur fournie.";
                                 };
                                 "escapeRegex": {
-                                    "value": "\u00C9chappe tous les caract\u00E8res regex d'une cha\u00EEne de caract\u00E8res avec un `\"\\\"` pour pr\u00E9parer cette derni\u00E8re \u00E0 \u00EAtre utilis\u00E9e dans une regex.";
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX";
+                                    "value": "\u00C9chappe tous les caract\u00E8res regex d'une cha\u00EEne de caract\u00E8res avec un `\"\\\"` pour pr\u00E9parer cette derni\u00E8re \u00E0 \u00EAtre utilis\u00E9e dans une regex.";
                                 };
                             };
                         };
@@ -329,24 +345,24 @@ export declare const resolvedConfigData: {
                         "utils": {
                             "public": {
                                 "message": {
-                                    "value": "Le message en clair de l'erreur.";
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE";
+                                    "value": "Le message en clair de l'erreur.";
                                 };
                                 "status": {
-                                    "value": "Le texte statique du statut de l'erreur.";
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
+                                    "value": "Le texte statique du statut de l'erreur.";
                                 };
                                 "vscode": {
-                                    "value": "L'instance concern\u00E9e de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).";
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE";
+                                    "value": "L'instance concern\u00E9e de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).";
                                 };
                                 "error": {
-                                    "value": "L'objet d'erreur concern\u00E9, avec `\"error\"` ou `\"warning\"` pour valeur \u00E0 sa cl\u00E9 `type`.";
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR";
+                                    "value": "L'objet d'erreur concern\u00E9, avec `\"error\"` ou `\"warning\"` pour valeur \u00E0 sa cl\u00E9 `type`.";
                                 };
                                 "string": {
-                                    "value": "La cha\u00EEne de caract\u00E8res concern\u00E9e.";
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
+                                    "value": "La cha\u00EEne de caract\u00E8res concern\u00E9e.";
                                 };
                             };
                         };
@@ -355,28 +371,32 @@ export declare const resolvedConfigData: {
                         "utils": {
                             "public": {
                                 "makeSuccessFalseTypeError": {
-                                    "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.";
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                                    "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.";
                                 };
                                 "makeSuccessFalseTypeWarning": {
-                                    "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                    "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
                                 };
                                 "makeErrorTypeError": {
-                                    "value": "Un objet d'erreur de `{type: error}`.";
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
+                                    "value": "Un objet d'erreur de `{type: error}`.";
                                 };
                                 "makeErrorTypeWarning": {
-                                    "value": "Un objet d'erreur de `{type: warning}`.";
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
+                                    "value": "Un objet d'erreur de `{type: warning}`.";
                                 };
                                 "showVSCodeError": {
-                                    "value": "Void. (Aucun retour.)";
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR";
+                                    "value": "Void. (Aucun retour.)";
+                                };
+                                "logCLIError": {
+                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR";
+                                    "value": "Void. (Aucun retour.)";
                                 };
                                 "escapeRegex": {
-                                    "value": "La cha\u00EEne de caract\u00E8res avec ses caract\u00E8res regex \u00E9chapp\u00E9s.";
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX";
+                                    "value": "La cha\u00EEne de caract\u00E8res avec ses caract\u00E8res regex \u00E9chapp\u00E9s.";
                                 };
                             };
                         };
@@ -392,48 +412,48 @@ export declare const resolvedConfigData: {
             "variables": {};
             "arguments": {};
             "error": {
-                "value": "erreur";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR";
+                "value": "erreur";
             };
             "_applyLastWith": {
-                "value": "\u00C0 apposer en dernier via";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH";
+                "value": "\u00C0 apposer en dernier via";
             };
             "toEnsure": {
-                "value": "pour s'assurer que";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE";
+                "value": "pour s'assurer que";
             };
             "sitsAtTopLike": {
-                "value": "apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
+                "value": "apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on";
             };
             "_enAnglais": {
-                "value": "En anglais \u00E0 l'ex\u00E9cution";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
+                "value": "En anglais \u00E0 l'ex\u00E9cution";
             };
             "_enAnglais_": {
-                "value": "(En anglais uniquement.)";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_";
+                "value": "(En anglais uniquement.)";
             };
             "singleError": {
-                "value": "seule erreur dans son array `errors`";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
+                "value": "seule erreur dans son array `errors`";
             };
             "errorObject": {
-                "value": "objet d'erreur";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT";
+                "value": "objet d'erreur";
             };
             "basedOnMessageAndStatus": {
-                "value": "bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
+                "value": "bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir";
             };
             "concern\u00E9": {
-                "value": "concern\u00E9";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERN\u00C9";
+                "value": "concern\u00E9";
             };
             "concern\u00E9e": {
-                "value": "concern\u00E9e";
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERN\u00C9E";
+                "value": "concern\u00E9e";
             };
         };
     };

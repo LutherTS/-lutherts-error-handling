@@ -1,166 +1,170 @@
 export declare const consts: {
     public: {
         "successFalse": {
-            "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
             "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
+            "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
         };
         "successTrue": {
-            "value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
             "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
+            "value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
         };
         "typeError": {
-            "value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
             "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
+            "value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
         };
         "typeWarning": {
-            "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
             "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
+            "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
         };
         "errorNotStandardized": {
-            "value": "The error encountered is not standardized.";
             "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED";
+            "value": "The error encountered is not standardized.";
         };
         "ERROR_NOT_STANDARDIZED": {
-            "value": "\"The error encountered is not standardized.\"";
             "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
+            "value": "\"The error encountered is not standardized.\"";
         };
     };
 };
 export declare const composedVariablesExclusives: {
     variables: {
         "successFalse": {
-            "value": "successFalse";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSFALSE";
+            "value": "successFalse";
         };
         "successTrue": {
-            "value": "successTrue";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSTRUE";
+            "value": "successTrue";
         };
         "typeError": {
-            "value": "typeError";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEERROR";
+            "value": "typeError";
         };
         "typeWarning": {
-            "value": "typeWarning";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING";
+            "value": "typeWarning";
         };
         "errorNotStandardized": {
-            "value": "errorNotStandardized";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED";
+            "value": "errorNotStandardized";
         };
         "ERROR_NOT_STANDARDIZED": {
-            "value": "ERROR_NOT_STANDARDIZED";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED";
+            "value": "ERROR_NOT_STANDARDIZED";
         };
         "makeSuccessFalseTypeError": {
-            "value": "makeSuccessFalseTypeError";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEERROR";
+            "value": "makeSuccessFalseTypeError";
         };
         "makeSuccessFalseTypeWarning": {
-            "value": "makeSuccessFalseTypeWarning";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEWARNING";
+            "value": "makeSuccessFalseTypeWarning";
         };
         "makeErrorTypeError": {
-            "value": "makeErrorTypeError";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEERROR";
+            "value": "makeErrorTypeError";
         };
         "makeErrorTypeWarning": {
-            "value": "makeErrorTypeWarning";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEWARNING";
+            "value": "makeErrorTypeWarning";
         };
         "showVSCodeError": {
-            "value": "showVSCodeError";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SHOWVSCODEERROR";
+            "value": "showVSCodeError";
+        };
+        "logCLIError": {
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#LOGCLIERROR";
+            "value": "logCLIError";
         };
         "escapeRegex": {
-            "value": "escapeRegex";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ESCAPEREGEX";
+            "value": "escapeRegex";
         };
     };
     arguments: {
         "message": {
-            "value": "message";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#MESSAGE";
+            "value": "message";
         };
         "status": {
-            "value": "status";
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#STATUS";
+            "value": "status";
         };
     };
     success_false: {
-        "value": "success: false";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE";
+        "value": "success: false";
     };
     success_true: {
-        "value": "success: true";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE";
+        "value": "success: true";
     };
     type_error: {
-        "value": "type: error";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR";
+        "value": "type: error";
     };
     type_warning: {
-        "value": "type: warning";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING";
+        "value": "type: warning";
     };
     success: {
-        "value": "success";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS";
+        "value": "success";
     };
     false: {
-        "value": "false";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE";
+        "value": "false";
     };
     true: {
-        "value": "true";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE";
+        "value": "true";
     };
     type: {
-        "value": "type";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE";
+        "value": "type";
     };
     error: {
-        "value": "error";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR";
+        "value": "error";
     };
     warning: {
-        "value": "warning";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING";
+        "value": "warning";
     };
     _applyLastWith: {
-        "value": "Apply last with";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH";
+        "value": "Apply last with";
     };
     toEnsure: {
-        "value": "to ensure that";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE";
+        "value": "to ensure that";
     };
     sitsAtTopLike: {
-        "value": "sits at the top of its object's type definition, like";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
+        "value": "sits at the top of its object's type definition, like";
     };
     propApropB: {
-        "value": "propertyA, propertyB";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB";
+        "value": "propertyA, propertyB";
     };
     singleError: {
-        "value": "single error in its `errors` array";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
+        "value": "single error in its `errors` array";
     };
     errorObject: {
-        "value": "error object";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT";
+        "value": "error object";
     };
     basedOnMessageAndStatus: {
-        "value": "based on the `message` it is meant to display and on the `status` it is meant to have";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
+        "value": "based on the `message` it is meant to display and on the `status` it is meant to have";
     };
     atHand: {
-        "value": "at hand";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
+        "value": "at hand";
     };
     _Void: {
-        "value": "Void";
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
+        "value": "Void";
     };
 };

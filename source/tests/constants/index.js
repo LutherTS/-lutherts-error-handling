@@ -30,6 +30,8 @@ export const STATUS = composedVariablesExclusives.arguments.status.value;
 
 export const SHOW_VS_CODE_ERROR =
   composedVariablesExclusives.variables.showVSCodeError.value;
+export const LOG_CLI_ERROR =
+  composedVariablesExclusives.variables.logCLIError.value;
 
 export const ESCAPE_REGEX =
   composedVariablesExclusives.variables.escapeRegex.value;

@@ -19,6 +19,7 @@ export {
   makeErrorTypeError,
   makeErrorTypeWarning,
   showVSCodeError,
+  logCLIError,
   escapeRegex,
 } from "./utilities/index.js";
 
