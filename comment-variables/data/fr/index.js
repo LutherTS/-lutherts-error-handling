@@ -33,6 +33,8 @@ export const frData = Object.freeze({
                 "Crée un $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT de `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING}` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING */,
               showVSCodeError:
                 "Affiche un message d'erreur ou d'avertissement via le système de toasts de VS Code dépendamment du `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE` de l'erreur fournie." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR */,
+              logCLIError:
+                "Affiche un message d'erreur ou d'avertissement via les méthodes `console.error` et `console.warn` d'interface de ligne de commande dépendamment du `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE` de l'erreur fournie." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR */,
               escapeRegex:
                 'Échappe tous les caractères regex d\'une chaîne de caractères avec un `"\\"` pour préparer cette dernière à être utilisée dans une regex.' /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX */,
             }),
@@ -67,6 +69,8 @@ export const frData = Object.freeze({
                 "Un $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT de `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING}`." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING */,
               showVSCodeError:
                 "$COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR (Aucun retour.)" /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR */,
+              logCLIError:
+                "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR" /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR */,
               escapeRegex:
                 "La chaîne de caractères avec ses caractères regex échappés." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX */,
             }),

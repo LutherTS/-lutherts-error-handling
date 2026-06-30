@@ -5,6 +5,7 @@ import {
   typeError,
   typeWarning,
   errorNotStandardized,
+  ERROR_NOT_STANDARDIZED,
 } from "../constants/index.js";
 
 /* makeSuccessFalse */
@@ -129,6 +130,33 @@ export const showVSCodeError =
         break;
     }
   }; // For now, only shows `error.message`, but `error.status` might be handled and included at a later time.
+
+/**
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR
+ *
+ * @param error - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR
+ *
+ * @public
+ */
+export const logCLIError =
+  /** @template {string} T, @template {string} U, @template {typeof ERROR | typeof WARNING} V */ (
+    /** @type {{ readonly type: V; readonly message: T; readonly status: U;}} */ error,
+  ) => {
+    switch (error.type) {
+      case ERROR:
+        console.error(`${error.message} | ${error.status}`);
+        break;
+      case WARNING:
+        console.warn(`${error.message} | ${error.status}`);
+        break;
+      default:
+        console.error(
+          `ERROR. ${errorNotStandardized} | ${ERROR_NOT_STANDARDIZED}`,
+        );
+        break;
+    }
+  }; // Also handles `error.status` because the CLI model encourages verbosity.
 
 /* escapeRegex */
 

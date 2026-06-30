@@ -54,6 +54,10 @@
                   "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR",
                   "value": "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided."
                 },
+                "logCLIError": {
+                  "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR",
+                  "value": "Shows an error or warning message via the CLI's `console.error` or `console.warn` method depending on the `type` of the error provided."
+                },
                 "escapeRegex": {
                   "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX",
                   "value": "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex."
@@ -108,6 +112,10 @@
                 },
                 "showVSCodeError": {
                   "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR",
+                  "value": "Void."
+                },
+                "logCLIError": {
+                  "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR",
                   "value": "Void."
                 },
                 "escapeRegex": {
@@ -318,6 +326,10 @@
                   "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR",
                   "value": "Affiche un message d'erreur ou d'avertissement via le système de toasts de VS Code dépendamment du `type` de l'erreur fournie."
                 },
+                "logCLIError": {
+                  "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR",
+                  "value": "Affiche un message d'erreur ou d'avertissement via les méthodes `console.error` et `console.warn` d'interface de ligne de commande dépendamment du `type` de l'erreur fournie."
+                },
                 "escapeRegex": {
                   "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX",
                   "value": "Échappe tous les caractères regex d'une chaîne de caractères avec un `\"\\\"` pour préparer cette dernière à être utilisée dans une regex."
@@ -372,6 +384,10 @@
                 },
                 "showVSCodeError": {
                   "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR",
+                  "value": "Void. (Aucun retour.)"
+                },
+                "logCLIError": {
+                  "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR",
                   "value": "Void. (Aucun retour.)"
                 },
                 "escapeRegex": {
