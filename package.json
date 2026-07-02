@@ -14,16 +14,16 @@
     "url": "git+https://github.com/LutherTS/-lutherts-error-handling.git"
   },
   "files": [
-    "tsdown/index.mjs",
+    "tsdown/library/index.mjs",
     "error-handling.public.d.ts",
     "comments.config.public.json"
   ],
   "type": "module",
-  "main": "tsdown/index.mjs",
+  "main": "tsdown/library/index.mjs",
   "types": "error-handling.public.d.ts",
   "scripts": {
     "types": "tsgo",
-    "doc": "comment-variables doc",
+    "doc": "comvar doc",
     "api": "api-extractor run",
     "build": "tsdown",
     "test": "node --test",
