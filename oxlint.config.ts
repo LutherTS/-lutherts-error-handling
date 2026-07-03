@@ -10,8 +10,8 @@ export default defineConfig({
   },
   overrides: [
     {
-      jsPlugins: ["eslint-plugin-tsdoc"],
       files: ["error-handling.public.d.ts"],
+      jsPlugins: ["eslint-plugin-tsdoc"],
       rules: { "tsdoc/syntax": "error" },
     },
   ],
