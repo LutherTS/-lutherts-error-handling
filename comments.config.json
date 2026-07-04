@@ -128,10 +128,6 @@
         }
       }
     },
-    "forComposedVariables": {
-      "variables": {},
-      "arguments": {}
-    },
     "composedVariablesExclusives": {
       "variables": {
         "successFalse": {
@@ -403,10 +399,6 @@
           }
         }
       }
-    },
-    "forComposedVariables": {
-      "variables": {},
-      "arguments": {}
     },
     "composedVariablesExclusives": {
       "variables": {},
