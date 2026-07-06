@@ -39,7 +39,7 @@ export const typeWarning = Object.freeze({
 /* unstandardized error message and status */
 
 /** @public */
-export const errorNotStandardized = consts.public.errorNotStandardized.value;
+export const errorNotStandardized = consts.errorNotStandardized.value;
 /**
  * $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED
  * @public

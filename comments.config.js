@@ -56,10 +56,12 @@ const variations = Object.freeze({
 /* libraries */
 
 import { resolvedPublicData as errorHandlingCommentVariablesData } from "./comments.config.public.mjs";
+import errorHandlingCommentVariablesDataIntl from "./comment-variables/miscellaneous/librairies/error-handling.intl.json" with { type: "json" };
 
 const libraries = {
   [errorHandlingCommentVariablesData.libraryKey]:
     errorHandlingCommentVariablesData.libraryVariations.FR,
+  // errorHandlingCommentVariablesDataIntl.FR,
 }; // can be omitted // v3
 
 /* Comment Variables config */
