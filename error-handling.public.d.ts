@@ -1,4 +1,4 @@
-/** @public */
+/** @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#COMMENTVARIABLESDATA */
 export declare const commentVariablesData: {
   libraryKey: "_LUTHERTS_ERROR_HANDLING";
   libraryVariations: {
@@ -63,11 +63,11 @@ declare const ERROR: "error";
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED
  * */
 export declare const ERROR_NOT_STANDARDIZED = "ERROR_NOT_STANDARDIZED";
 
-/** @public */
+/** @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ERRORNOTSTANDARDIZED */
 export declare const errorNotStandardized: "The error encountered is not standardized.";
 
 /**
@@ -76,7 +76,7 @@ export declare const errorNotStandardized: "The error encountered is not standar
  * @param string - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX
  */
 export declare const escapeRegex: (string: string) => string;
 
@@ -86,7 +86,7 @@ export declare const escapeRegex: (string: string) => string;
  * @param error - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR
  */
 export declare const logCLIError: <
   T extends string,
@@ -105,7 +105,7 @@ export declare const logCLIError: <
  * @param status - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEERROR
  */
 export declare const makeErrorTypeError: <T extends string, U extends string>(
   message: T,
@@ -123,7 +123,7 @@ export declare const makeErrorTypeError: <T extends string, U extends string>(
  * @param status - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEWARNING
  */
 export declare const makeErrorTypeWarning: <T extends string, U extends string>(
   message: T,
@@ -141,7 +141,7 @@ export declare const makeErrorTypeWarning: <T extends string, U extends string>(
  * @param status - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR
  */
 export declare const makeSuccessFalseTypeError: <
   T extends string,
@@ -167,7 +167,7 @@ export declare const makeSuccessFalseTypeError: <
  * @param status - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEWARNING
  */
 export declare const makeSuccessFalseTypeWarning: <
   T extends string,
@@ -193,7 +193,7 @@ export declare const makeSuccessFalseTypeWarning: <
  * @param error - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR
  */
 export declare const showVSCodeError: <
   T extends string,
@@ -210,7 +210,7 @@ export declare const showVSCodeError: <
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE
  */
 export declare const successFalse: Readonly<{
   success: false;
@@ -218,7 +218,7 @@ export declare const successFalse: Readonly<{
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE
  */
 export declare const successTrue: Readonly<{
   success: true;
@@ -226,7 +226,7 @@ export declare const successTrue: Readonly<{
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR
  */
 export declare const typeError: Readonly<{
   type: "error";
@@ -234,7 +234,7 @@ export declare const typeError: Readonly<{
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING
  */
 export declare const typeWarning: Readonly<{
   type: "warning";
