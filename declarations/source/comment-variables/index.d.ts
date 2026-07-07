@@ -1,4 +1,8 @@
 export declare const consts: {
+    errorNotStandardized: {
+        "key": "EN#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED";
+        "value": "The error encountered is not standardized.";
+    };
     public: {
         "successFalse": {
             "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
@@ -15,10 +19,6 @@ export declare const consts: {
         "typeWarning": {
             "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
             "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
-        };
-        "errorNotStandardized": {
-            "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED";
-            "value": "The error encountered is not standardized.";
         };
         "ERROR_NOT_STANDARDIZED": {
             "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";

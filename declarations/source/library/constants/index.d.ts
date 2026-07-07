@@ -1,35 +1,35 @@
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE
  */
 export declare const successFalse: Readonly<{
     success: false;
 }>;
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE
  */
 export declare const successTrue: Readonly<{
     success: true;
 }>;
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR
  */
 export declare const typeError: Readonly<{
     type: "error";
 }>;
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING
  */
 export declare const typeWarning: Readonly<{
     type: "warning";
 }>;
-/** @public */
+/** @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ERRORNOTSTANDARDIZED */
 export declare const errorNotStandardized: "The error encountered is not standardized.";
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED
  * */
 export declare const ERROR_NOT_STANDARDIZED = "ERROR_NOT_STANDARDIZED";

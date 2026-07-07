@@ -1,4 +1,4 @@
-/** @public */
+/** @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA */
 export declare const commentVariablesData: {
     "libraryKey": "_LUTHERTS_ERROR_HANDLING";
     "libraryVariations": {
@@ -7,7 +7,6 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
-            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED": "The error encountered is not standardized.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED": "\"The error encountered is not standardized.\"";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
@@ -28,13 +27,26 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR": "Void.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX": "The string with regex characters escaped.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR": "Void.";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEERROR": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEWARNING": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERRORNOTSTANDARDIZED": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED": "";
         };
         "FR": {
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE": "\u00C0 apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successFalse}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "\u00C0 apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successTrue}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "\u00C0 apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeError}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING": "\u00C0 apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeWarning}`.";
-            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED": "The error encountered is not standardized. / (En anglais uniquement.)";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED": "En anglais \u00E0 l'ex\u00E9cution : \"The error encountered is not standardized.\"";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
@@ -55,6 +67,20 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR": "Void. (Aucun retour.)";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX": "La cha\u00EEne de caract\u00E8res avec ses caract\u00E8res regex \u00E9chapp\u00E9s.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR": "Void. (Aucun retour.)";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEERROR": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEWARNING": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERRORNOTSTANDARDIZED": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED": "";
         };
     };
 };
@@ -63,11 +89,11 @@ declare const ERROR: "error";
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED
  * */
 export declare const ERROR_NOT_STANDARDIZED = "ERROR_NOT_STANDARDIZED";
 
-/** @public */
+/** @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ERRORNOTSTANDARDIZED */
 export declare const errorNotStandardized: "The error encountered is not standardized.";
 
 /**
@@ -76,7 +102,7 @@ export declare const errorNotStandardized: "The error encountered is not standar
  * @param string - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX
  */
 export declare const escapeRegex: (string: string) => string;
 
@@ -86,7 +112,7 @@ export declare const escapeRegex: (string: string) => string;
  * @param error - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR
  */
 export declare const logCLIError: <T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(error: {
     readonly type: V;
@@ -101,7 +127,7 @@ export declare const logCLIError: <T extends string, U extends string, V extends
  * @param status - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEERROR
  */
 export declare const makeErrorTypeError: <T extends string, U extends string>(message: T, status: U) => {
     readonly type: "error";
@@ -116,7 +142,7 @@ export declare const makeErrorTypeError: <T extends string, U extends string>(me
  * @param status - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEWARNING
  */
 export declare const makeErrorTypeWarning: <T extends string, U extends string>(message: T, status: U) => {
     readonly type: "warning";
@@ -131,7 +157,7 @@ export declare const makeErrorTypeWarning: <T extends string, U extends string>(
  * @param status - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR
  */
 export declare const makeSuccessFalseTypeError: <T extends string, U extends string>(message: T, status: U) => {
     readonly success: false;
@@ -149,7 +175,7 @@ export declare const makeSuccessFalseTypeError: <T extends string, U extends str
  * @param status - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEWARNING
  */
 export declare const makeSuccessFalseTypeWarning: <T extends string, U extends string>(message: T, status: U) => {
     readonly success: false;
@@ -167,7 +193,7 @@ export declare const makeSuccessFalseTypeWarning: <T extends string, U extends s
  * @param error - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR
  */
 export declare const showVSCodeError: <T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(vscode: unknown, error: {
     readonly type: V;
@@ -177,7 +203,7 @@ export declare const showVSCodeError: <T extends string, U extends string, V ext
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE
  */
 export declare const successFalse: Readonly<{
     success: false;
@@ -185,7 +211,7 @@ export declare const successFalse: Readonly<{
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE
  */
 export declare const successTrue: Readonly<{
     success: true;
@@ -193,7 +219,7 @@ export declare const successTrue: Readonly<{
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR
  */
 export declare const typeError: Readonly<{
     type: "error";
@@ -201,7 +227,7 @@ export declare const typeError: Readonly<{
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING
  */
 export declare const typeWarning: Readonly<{
     type: "warning";

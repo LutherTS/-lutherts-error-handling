@@ -4,6 +4,10 @@ export declare const resolvedConfigData: {
             "src": {
                 "lib": {
                     "consts": {
+                        "errorNotStandardized": {
+                            "key": "EN#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED";
+                            "value": "The error encountered is not standardized.";
+                        };
                         "public": {
                             "successFalse": {
                                 "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
@@ -20,10 +24,6 @@ export declare const resolvedConfigData: {
                             "typeWarning": {
                                 "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
                                 "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
-                            };
-                            "errorNotStandardized": {
-                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED";
-                                "value": "The error encountered is not standardized.";
                             };
                             "ERROR_NOT_STANDARDIZED": {
                                 "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
@@ -127,10 +127,6 @@ export declare const resolvedConfigData: {
                     };
                 };
             };
-        };
-        "forComposedVariables": {
-            "variables": {};
-            "arguments": {};
         };
         "composedVariablesExclusives": {
             "variables": {
@@ -280,6 +276,10 @@ export declare const resolvedConfigData: {
             "src": {
                 "lib": {
                     "consts": {
+                        "errorNotStandardized": {
+                            "key": "FR#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED";
+                            "value": "The error encountered is not standardized. / (En anglais uniquement.)";
+                        };
                         "public": {
                             "successFalse": {
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
@@ -296,10 +296,6 @@ export declare const resolvedConfigData: {
                             "typeWarning": {
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
                                 "value": "\u00C0 apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeWarning}`.";
-                            };
-                            "errorNotStandardized": {
-                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERRORNOTSTANDARDIZED";
-                                "value": "The error encountered is not standardized. / (En anglais uniquement.)";
                             };
                             "ERROR_NOT_STANDARDIZED": {
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
@@ -403,10 +399,6 @@ export declare const resolvedConfigData: {
                     };
                 };
             };
-        };
-        "forComposedVariables": {
-            "variables": {};
-            "arguments": {};
         };
         "composedVariablesExclusives": {
             "variables": {};

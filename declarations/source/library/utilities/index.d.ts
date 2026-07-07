@@ -6,7 +6,7 @@ import { ERROR, WARNING } from "../../constants/index.js";
  * @param status - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR
  */
 export declare const makeSuccessFalseTypeError: <T extends string, U extends string>(message: T, status: U) => {
     readonly success: false;
@@ -23,7 +23,7 @@ export declare const makeSuccessFalseTypeError: <T extends string, U extends str
  * @param status - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEWARNING
  */
 export declare const makeSuccessFalseTypeWarning: <T extends string, U extends string>(message: T, status: U) => {
     readonly success: false;
@@ -40,7 +40,7 @@ export declare const makeSuccessFalseTypeWarning: <T extends string, U extends s
  * @param status - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEERROR
  */
 export declare const makeErrorTypeError: <T extends string, U extends string>(message: T, status: U) => {
     readonly type: "error";
@@ -54,7 +54,7 @@ export declare const makeErrorTypeError: <T extends string, U extends string>(me
  * @param status - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEWARNING
  */
 export declare const makeErrorTypeWarning: <T extends string, U extends string>(message: T, status: U) => {
     readonly type: "warning";
@@ -68,7 +68,7 @@ export declare const makeErrorTypeWarning: <T extends string, U extends string>(
  * @param error - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR
  */
 export declare const showVSCodeError: <T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(vscode: unknown, error: {
     readonly type: V;
@@ -81,7 +81,7 @@ export declare const showVSCodeError: <T extends string, U extends string, V ext
  * @param error - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR
  */
 export declare const logCLIError: <T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(error: {
     readonly type: V;
@@ -94,6 +94,6 @@ export declare const logCLIError: <T extends string, U extends string, V extends
  * @param string - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING
  * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX
  *
- * @public
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX
  */
 export declare const escapeRegex: (string: string) => string;
