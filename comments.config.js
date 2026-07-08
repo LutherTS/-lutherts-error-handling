@@ -45,12 +45,12 @@ const variations = Object.freeze({
   // Defines the behavior of the error handling in case of variations that do not match one-to-one with the reference variation. If `true`, allows incomplete variations data to remain. If `false`, errors and guides the fixing of missing variations data (while ignoring composed variables exclusives).
   allowIncompleteVariations: false,
   // Defines which variants' `#PUBLIC#` Comment Variables should be publicly available, by default through `comments.config.public.mjs` and `comments.config.public.json`.
-  public: [EN, FR], // can be omitted, otherwise must first include `variations.referenceVariant` as its first element // v3
+  public: [EN, FR], // can be omitted, otherwise must first include `variations.referenceVariant` as its first element
   // Defines the declarations directory and the root directory relative to this configuration file for the `comvar doc` command, which reapplies your library's public Comment Variables as documentation to the applicable exported members of your API.
   docCommandData: Object.freeze({
     declarationDir: tsConfigJson.compilerOptions.declarationDir,
     rootDir: tsConfigJson.compilerOptions.rootDir,
-  }), // can be omitted // v3
+  }), // can be omitted
 });
 
 /* libraries */
@@ -61,10 +61,10 @@ import errorHandlingCommentVariablesDataIntl from "./comment-variables/miscellan
 const libraries = {
   [errorHandlingCommentVariablesData.libraryKey]:
     // errorHandlingCommentVariablesData.libraryVariations.FR,
-    errorHandlingCommentVariablesDataIntl.EN,
-}; // can be omitted // v3
+    errorHandlingCommentVariablesDataIntl.FR,
+}; // can be omitted
 
-/* Comment Variables config */
+/* config */
 
 const config = {
   data,
@@ -73,7 +73,7 @@ const config = {
   lintConfigImports,
   composedVariablesExclusives,
   variations,
-  libraries, // v3
+  libraries,
 };
 
 export default config;
