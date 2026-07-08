@@ -61,7 +61,7 @@ import errorHandlingCommentVariablesDataIntl from "./comment-variables/miscellan
 const libraries = {
   [errorHandlingCommentVariablesData.libraryKey]:
     // errorHandlingCommentVariablesData.libraryVariations.FR,
-    errorHandlingCommentVariablesDataIntl.FR,
+    errorHandlingCommentVariablesDataIntl.EN,
 }; // can be omitted // v3
 
 /* Comment Variables config */
