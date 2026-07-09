@@ -8,7 +8,7 @@ const myIgnoresOnly = false; // can be omitted
 
 /* ignores */
 
-const ignores = []; // can be omitted
+const ignores = ["**/typedefs/**"]; // can be omitted
 
 /* lintConfigImports */
 
