@@ -1,6 +1,8 @@
 /* data */
 
 export const enData = Object.freeze({
+  // You know what? This is going to stay for safekeeping for now.
+
   // public: Object.freeze({
   //   details:
   //     "*(Your details here.)*" /* variations: $COMMENT#PUBLIC#DETAILS / core: $COMMENT#EN#PUBLIC#DETAILS */,
