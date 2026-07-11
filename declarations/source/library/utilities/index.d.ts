@@ -97,3 +97,13 @@ export declare const logCLIError: <T extends string, U extends string, V extends
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX
  */
 export declare const escapeRegex: (string: string) => string;
+/**
+ * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT
+ *
+ * @param string - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING
+ * @param limit - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT
+ * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT
+ *
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT
+ */
+export declare const trimStringWithLimit: (string: string, limit: number) => string;

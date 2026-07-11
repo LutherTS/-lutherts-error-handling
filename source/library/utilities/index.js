@@ -1,4 +1,4 @@
-import { ERROR, WARNING } from "../../constants/index.js";
+import { ERROR, WARNING, ellipsis } from "../../constants/index.js";
 
 import {
   successFalse,
@@ -177,8 +177,6 @@ export const escapeRegex = (/** @type {string} */ string) =>
 
 /* trimStringWithLimit */
 
-const ellipsis = "...";
-
 /**
  * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT
  *
@@ -193,5 +191,5 @@ export const trimStringWithLimit = (
   /** @type {number} */ limit,
 ) =>
   string.length > limit
-    ? string.slice(0, limit - ellipsis.length) + ellipsis
+    ? string.slice(0, Math.max(limit - ellipsis.length, 0)) + ellipsis
     : string;

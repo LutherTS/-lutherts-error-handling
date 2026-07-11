@@ -36,6 +36,9 @@ export const LOG_CLI_ERROR =
 export const ESCAPE_REGEX =
   composedVariablesExclusives.variables.escapeRegex.value;
 
+export const TRIM_STRING_WITH_LIMIT =
+  composedVariablesExclusives.variables.trimStringWithLimit.value;
+
 /* primary exports strings */
 
 export const SUCCESS = composedVariablesExclusives.success.value;

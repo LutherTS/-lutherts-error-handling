@@ -15,17 +15,20 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR": "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR": "Shows an error or warning message via the CLI's `console.error` or `console.warn` method depending on the `type` of the error provided.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX": "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "Trims a string with an ellipsis based on a provided length limit.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE": "The human-readable message of the error.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS": "The static status text of the error.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE": "The VS Code API instance at hand, living in the VS Code Extension Host (and not in the extension's Node modules).";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR": "The error object at hand, with either the value `\"error\"` or `\"warning\"` at its `type` key.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING": "The string at hand.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT": "The provided length limit. The string will be trimmed if its length is strictly superior to this given number.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "An error object of `{type: error}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING": "An error object of `{type: warning}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR": "Void.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX": "The string with regex characters escaped.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "The provided string if its length is lower or equal to the provided length limit; a trimmed version of that string otherwise.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR": "Void.";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
@@ -35,6 +38,7 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
@@ -55,17 +59,20 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR": "Affiche un message d'erreur ou d'avertissement via le syst\u00E8me de toasts de VS Code d\u00E9pendamment du `type` de l'erreur fournie.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR": "Affiche un message d'erreur ou d'avertissement via les m\u00E9thodes `console.error` et `console.warn` d'interface de ligne de commande d\u00E9pendamment du `type` de l'erreur fournie.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX": "\u00C9chappe tous les caract\u00E8res regex d'une cha\u00EEne de caract\u00E8res avec un `\"\\\"` pour pr\u00E9parer cette derni\u00E8re \u00E0 \u00EAtre utilis\u00E9e dans une regex.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "Tronque une cha\u00EEne de caract\u00E8res par trois points de suspension en se basant sur la limite de longueur renseign\u00E9e.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE": "Le message en clair de l'erreur.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS": "Le texte statique du statut de l'erreur.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE": "L'instance concern\u00E9e de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR": "L'objet d'erreur concern\u00E9, avec `\"error\"` ou `\"warning\"` pour valeur \u00E0 sa cl\u00E9 `type`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING": "La cha\u00EEne de caract\u00E8res concern\u00E9e.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT": "La limite de longueur renseign\u00E9e. La cha\u00EEne de caract\u00E8res sera tronqu\u00E9e si sa longueur est strictement sup\u00E9rieure \u00E0 celle de ce nombre donn\u00E9.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "Un objet d'erreur de `{type: error}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING": "Un objet d'erreur de `{type: warning}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR": "Void. (Aucun retour.)";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX": "La cha\u00EEne de caract\u00E8res avec ses caract\u00E8res regex \u00E9chapp\u00E9s.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "La cha\u00EEne de caract\u00E8res renseign\u00E9e si sa longueur est plus petite ou \u00E9gale \u00E0 celle de la limite de longueur renseign\u00E9e ; une version tronqu\u00E9e le cas \u00E9ch\u00E9ant.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR": "Void. (Aucun retour.)";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
@@ -75,6 +82,7 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
@@ -216,6 +224,17 @@ export declare const successFalse: Readonly<{
 export declare const successTrue: Readonly<{
     success: true;
 }>;
+
+/**
+ * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT
+ *
+ * @param string - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING
+ * @param limit - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT
+ * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT
+ *
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT
+ */
+export declare const trimStringWithLimit: (string: string, limit: number) => string;
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR

@@ -12,6 +12,7 @@ import {
   showVSCodeError,
   logCLIError,
   escapeRegex,
+  trimStringWithLimit,
   // } from "../../source/library/index.js"; // dev
 } from "../../tsdown/library/index.mjs"; // prod
 
@@ -28,6 +29,7 @@ import { makeErrorTypeWarningSuite } from "./suites/make-error-t-warning/index.j
 import { showVSCodeErrorSuite } from "./suites/show-vs-code-error/index.js";
 import { logCLIErrorSuite } from "./suites/log-cli-error/index.js";
 import { escapeRegexSuite } from "./suites/escape-regex/index.js";
+import { trimStringWithLimitSuite } from "./suites/trim-string-with-limit/index.js";
 
 successFalseSuite(successFalse);
 successTrueSuite(successTrue);
@@ -42,3 +44,4 @@ makeErrorTypeWarningSuite(makeErrorTypeWarning);
 showVSCodeErrorSuite(showVSCodeError);
 logCLIErrorSuite(logCLIError);
 escapeRegexSuite(escapeRegex);
+trimStringWithLimitSuite(trimStringWithLimit);

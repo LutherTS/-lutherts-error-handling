@@ -14,6 +14,7 @@ import {
   showVSCodeError,
   logCLIError,
   escapeRegex,
+  trimStringWithLimit,
 } from "../../source/library/index.js";
 
 export type VSCode = typeof vscode;
@@ -43,3 +44,5 @@ export type ShowVSCodeError = typeof showVSCodeError;
 export type LogCLIError = typeof logCLIError;
 
 export type EscapeRegex = typeof escapeRegex;
+
+export type TrimStringWithLimit = typeof trimStringWithLimit;

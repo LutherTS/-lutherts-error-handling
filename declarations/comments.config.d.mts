@@ -62,6 +62,10 @@ export declare const resolvedConfigData: {
                                     "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX";
                                     "value": "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex.";
                                 };
+                                "trimStringWithLimit": {
+                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
+                                    "value": "Trims a string with an ellipsis based on a provided length limit.";
+                                };
                             };
                         };
                     };
@@ -87,6 +91,10 @@ export declare const resolvedConfigData: {
                                 "string": {
                                     "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
                                     "value": "The string at hand.";
+                                };
+                                "limit": {
+                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT";
+                                    "value": "The provided length limit. The string will be trimmed if its length is strictly superior to this given number.";
                                 };
                             };
                         };
@@ -121,6 +129,10 @@ export declare const resolvedConfigData: {
                                 "escapeRegex": {
                                     "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX";
                                     "value": "The string with regex characters escaped.";
+                                };
+                                "trimStringWithLimit": {
+                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
+                                    "value": "The provided string if its length is lower or equal to the provided length limit; a trimmed version of that string otherwise.";
                                 };
                             };
                         };
@@ -181,6 +193,10 @@ export declare const resolvedConfigData: {
                 "escapeRegex": {
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ESCAPEREGEX";
                     "value": "escapeRegex";
+                };
+                "trimStringWithLimit": {
+                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TRIMSTRINGWITHLIMIT";
+                    "value": "trimStringWithLimit";
                 };
             };
             "arguments": {
@@ -334,6 +350,10 @@ export declare const resolvedConfigData: {
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX";
                                     "value": "\u00C9chappe tous les caract\u00E8res regex d'une cha\u00EEne de caract\u00E8res avec un `\"\\\"` pour pr\u00E9parer cette derni\u00E8re \u00E0 \u00EAtre utilis\u00E9e dans une regex.";
                                 };
+                                "trimStringWithLimit": {
+                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
+                                    "value": "Tronque une cha\u00EEne de caract\u00E8res par trois points de suspension en se basant sur la limite de longueur renseign\u00E9e.";
+                                };
                             };
                         };
                     };
@@ -359,6 +379,10 @@ export declare const resolvedConfigData: {
                                 "string": {
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
                                     "value": "La cha\u00EEne de caract\u00E8res concern\u00E9e.";
+                                };
+                                "limit": {
+                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT";
+                                    "value": "La limite de longueur renseign\u00E9e. La cha\u00EEne de caract\u00E8res sera tronqu\u00E9e si sa longueur est strictement sup\u00E9rieure \u00E0 celle de ce nombre donn\u00E9.";
                                 };
                             };
                         };
@@ -393,6 +417,10 @@ export declare const resolvedConfigData: {
                                 "escapeRegex": {
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX";
                                     "value": "La cha\u00EEne de caract\u00E8res avec ses caract\u00E8res regex \u00E9chapp\u00E9s.";
+                                };
+                                "trimStringWithLimit": {
+                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
+                                    "value": "La cha\u00EEne de caract\u00E8res renseign\u00E9e si sa longueur est plus petite ou \u00E9gale \u00E0 celle de la limite de longueur renseign\u00E9e ; une version tronqu\u00E9e le cas \u00E9ch\u00E9ant.";
                                 };
                             };
                         };

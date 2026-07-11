@@ -80,6 +80,10 @@ export declare const composedVariablesExclusives: {
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ESCAPEREGEX";
             "value": "escapeRegex";
         };
+        "trimStringWithLimit": {
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TRIMSTRINGWITHLIMIT";
+            "value": "trimStringWithLimit";
+        };
     };
     arguments: {
         "message": {
