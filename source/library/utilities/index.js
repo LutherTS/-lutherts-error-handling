@@ -8,7 +8,7 @@ import {
   ERROR_NOT_STANDARDIZED,
 } from "../constants/index.js";
 
-/* makeSuccessFalse */
+/* makeSuccessFalseTypeError */
 
 /**
  * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR
@@ -33,6 +33,8 @@ export const makeSuccessFalseTypeError =
     ],
     ...successFalse,
   });
+
+/* makeSuccessFalseTypeWarning */
 
 /**
  * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING
@@ -100,7 +102,7 @@ export const makeErrorTypeWarning =
     ...typeWarning,
   });
 
-/* showErrorVSCode */
+/* showVSCodeError */
 
 /**
  * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR
@@ -130,6 +132,8 @@ export const showVSCodeError =
         break;
     }
   }; // For now, only shows `error.message`, but `error.status` might be handled and included at a later time.
+
+/* logCLIError */
 
 /**
  * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR
