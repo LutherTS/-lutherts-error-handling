@@ -21,6 +21,7 @@ export {
   showVSCodeError,
   logCLIError,
   escapeRegex,
+  trimStringWithLimit,
 } from "./utilities/index.js";
 
 /* secondary exports */

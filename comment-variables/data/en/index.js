@@ -37,6 +37,8 @@ export const enData = Object.freeze({
                 "Shows an error or warning message via the CLI's `console.error` or `console.warn` method depending on the `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE` of the error provided." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR */,
               escapeRegex:
                 'Escapes all regex characters with a `"\\"` in a string to prepare said string for use in a regex.' /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX */,
+              trimStringWithLimit:
+                "Trims a string with an ellipsis based on a provided length limit." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT */,
             }),
           }),
         }),
@@ -53,6 +55,8 @@ export const enData = Object.freeze({
                 'The error object $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND, with either the value `"$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR"` or `"$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING"` at its `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE` key.' /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR */,
               string:
                 "The string $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING */,
+              limit:
+                "The provided length limit. The string will be trimmed if its length is strictly superior to this given number." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT */,
             }),
           }),
         }),
@@ -73,6 +77,8 @@ export const enData = Object.freeze({
                 "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR" /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR */,
               escapeRegex:
                 "The string with regex characters escaped." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX */,
+              trimStringWithLimit:
+                "The provided string if its length is lower or equal to the provided length limit; a trimmed version of that string otherwise." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT */,
             }),
           }),
         }),

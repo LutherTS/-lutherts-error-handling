@@ -37,6 +37,8 @@ export const frData = Object.freeze({
                 "Affiche un message d'erreur ou d'avertissement via les méthodes `console.error` et `console.warn` d'interface de ligne de commande dépendamment du `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE` de l'erreur fournie." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR */,
               escapeRegex:
                 'Échappe tous les caractères regex d\'une chaîne de caractères avec un `"\\"` pour préparer cette dernière à être utilisée dans une regex.' /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX */,
+              trimStringWithLimit:
+                "Tronque une chaîne de caractères par trois points de suspension en se basant sur la limite de longueur renseignée." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT */,
             }),
           }),
         }),
@@ -53,6 +55,8 @@ export const frData = Object.freeze({
                 'L\'objet d\'erreur $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ, avec `"$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR"` ou `"$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING"` pour valeur à sa clé `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE`.' /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR */,
               string:
                 "La chaîne de caractères $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING */,
+              limit:
+                "La limite de longueur renseignée. La chaîne de caractères sera tronquée si sa longueur est strictement supérieure à celle de ce nombre donné." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT */,
             }),
           }),
         }),
@@ -73,6 +77,8 @@ export const frData = Object.freeze({
                 "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR" /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR */,
               escapeRegex:
                 "La chaîne de caractères avec ses caractères regex échappés." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX */,
+              trimStringWithLimit:
+                "La chaîne de caractères renseignée si sa longueur est plus petite ou égale à celle de la limite de longueur renseignée ; une version tronquée le cas échéant." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT */,
             }),
           }),
         }),

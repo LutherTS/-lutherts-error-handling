@@ -61,6 +61,10 @@
                 "escapeRegex": {
                   "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX",
                   "value": "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex."
+                },
+                "trimStringWithLimit": {
+                  "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT",
+                  "value": "Trims a string with an ellipsis based on a provided length limit."
                 }
               }
             }
@@ -87,6 +91,10 @@
                 "string": {
                   "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING",
                   "value": "The string at hand."
+                },
+                "limit": {
+                  "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT",
+                  "value": "The provided length limit. The string will be trimmed if its length is strictly superior to this given number."
                 }
               }
             }
@@ -121,6 +129,10 @@
                 "escapeRegex": {
                   "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX",
                   "value": "The string with regex characters escaped."
+                },
+                "trimStringWithLimit": {
+                  "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT",
+                  "value": "The provided string if its length is lower or equal to the provided length limit; a trimmed version of that string otherwise."
                 }
               }
             }
@@ -333,6 +345,10 @@
                 "escapeRegex": {
                   "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX",
                   "value": "Échappe tous les caractères regex d'une chaîne de caractères avec un `\"\\\"` pour préparer cette dernière à être utilisée dans une regex."
+                },
+                "trimStringWithLimit": {
+                  "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT",
+                  "value": "Tronque une chaîne de caractères par trois points de suspension en se basant sur la limite de longueur renseignée."
                 }
               }
             }
@@ -359,6 +375,10 @@
                 "string": {
                   "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING",
                   "value": "La chaîne de caractères concernée."
+                },
+                "limit": {
+                  "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT",
+                  "value": "La limite de longueur renseignée. La chaîne de caractères sera tronquée si sa longueur est strictement supérieure à celle de ce nombre donné."
                 }
               }
             }
@@ -393,6 +413,10 @@
                 "escapeRegex": {
                   "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX",
                   "value": "La chaîne de caractères avec ses caractères regex échappés."
+                },
+                "trimStringWithLimit": {
+                  "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT",
+                  "value": "La chaîne de caractères renseignée si sa longueur est plus petite ou égale à celle de la limite de longueur renseignée ; une version tronquée le cas échéant."
                 }
               }
             }
