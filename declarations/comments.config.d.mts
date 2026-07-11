@@ -299,23 +299,23 @@ export declare const resolvedConfigData: {
                         "public": {
                             "successFalse": {
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
-                                "value": "\u00C0 apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successFalse}`.";
+                                "value": "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`.";
                             };
                             "successTrue": {
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
-                                "value": "\u00C0 apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...successTrue}`.";
+                                "value": "À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`.";
                             };
                             "typeError": {
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
-                                "value": "\u00C0 apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeError}`.";
+                                "value": "À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`.";
                             };
                             "typeWarning": {
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
-                                "value": "\u00C0 apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on `{propertyA, propertyB, ...typeWarning}`.";
+                                "value": "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.";
                             };
                             "ERROR_NOT_STANDARDIZED": {
                                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
-                                "value": "En anglais \u00E0 l'ex\u00E9cution : \"The error encountered is not standardized.\"";
+                                "value": "En anglais à l'exécution : \"The error encountered is not standardized.\"";
                             };
                         };
                     };
@@ -324,35 +324,35 @@ export declare const resolvedConfigData: {
                             "public": {
                                 "makeSuccessFalseTypeError": {
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
-                                    "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+                                    "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
                                 "makeSuccessFalseTypeWarning": {
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
-                                    "value": "Cr\u00E9e un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+                                    "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
                                 "makeErrorTypeError": {
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
-                                    "value": "Cr\u00E9e un objet d'erreur de `{type: error}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+                                    "value": "Crée un objet d'erreur de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
                                 "makeErrorTypeWarning": {
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
-                                    "value": "Cr\u00E9e un objet d'erreur de `{type: warning}` bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+                                    "value": "Crée un objet d'erreur de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
                                 "showVSCodeError": {
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR";
-                                    "value": "Affiche un message d'erreur ou d'avertissement via le syst\u00E8me de toasts de VS Code d\u00E9pendamment du `type` de l'erreur fournie.";
+                                    "value": "Affiche un message d'erreur ou d'avertissement via le système de toasts de VS Code dépendamment du `type` de l'erreur fournie.";
                                 };
                                 "logCLIError": {
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR";
-                                    "value": "Affiche un message d'erreur ou d'avertissement via les m\u00E9thodes `console.error` et `console.warn` d'interface de ligne de commande d\u00E9pendamment du `type` de l'erreur fournie.";
+                                    "value": "Affiche un message d'erreur ou d'avertissement via les méthodes `console.error` et `console.warn` d'interface de ligne de commande dépendamment du `type` de l'erreur fournie.";
                                 };
                                 "escapeRegex": {
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX";
-                                    "value": "\u00C9chappe tous les caract\u00E8res regex d'une cha\u00EEne de caract\u00E8res avec un `\"\\\"` pour pr\u00E9parer cette derni\u00E8re \u00E0 \u00EAtre utilis\u00E9e dans une regex.";
+                                    "value": "Échappe tous les caractères regex d'une chaîne de caractères avec un `\"\\\"` pour préparer cette dernière à être utilisée dans une regex.";
                                 };
                                 "trimStringWithLimit": {
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
-                                    "value": "Tronque une cha\u00EEne de caract\u00E8res par trois points de suspension en se basant sur la limite de longueur renseign\u00E9e.";
+                                    "value": "Tronque une chaîne de caractères par trois points de suspension en se basant sur la limite de longueur renseignée.";
                                 };
                             };
                         };
@@ -370,19 +370,19 @@ export declare const resolvedConfigData: {
                                 };
                                 "vscode": {
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE";
-                                    "value": "L'instance concern\u00E9e de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).";
+                                    "value": "L'instance concernée de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).";
                                 };
                                 "error": {
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR";
-                                    "value": "L'objet d'erreur concern\u00E9, avec `\"error\"` ou `\"warning\"` pour valeur \u00E0 sa cl\u00E9 `type`.";
+                                    "value": "L'objet d'erreur concerné, avec `\"error\"` ou `\"warning\"` pour valeur à sa clé `type`.";
                                 };
                                 "string": {
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
-                                    "value": "La cha\u00EEne de caract\u00E8res concern\u00E9e.";
+                                    "value": "La chaîne de caractères concernée.";
                                 };
                                 "limit": {
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT";
-                                    "value": "La limite de longueur renseign\u00E9e. La cha\u00EEne de caract\u00E8res sera tronqu\u00E9e si sa longueur est strictement sup\u00E9rieure \u00E0 celle de ce nombre donn\u00E9.";
+                                    "value": "La limite de longueur renseignée. La chaîne de caractères sera tronquée si sa longueur est strictement supérieure à celle de ce nombre donné.";
                                 };
                             };
                         };
@@ -416,11 +416,11 @@ export declare const resolvedConfigData: {
                                 };
                                 "escapeRegex": {
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX";
-                                    "value": "La cha\u00EEne de caract\u00E8res avec ses caract\u00E8res regex \u00E9chapp\u00E9s.";
+                                    "value": "La chaîne de caractères avec ses caractères regex échappés.";
                                 };
                                 "trimStringWithLimit": {
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
-                                    "value": "La cha\u00EEne de caract\u00E8res renseign\u00E9e si sa longueur est plus petite ou \u00E9gale \u00E0 celle de la limite de longueur renseign\u00E9e ; une version tronqu\u00E9e le cas \u00E9ch\u00E9ant.";
+                                    "value": "La chaîne de caractères renseignée si sa longueur est plus petite ou égale à celle de la limite de longueur renseignée ; une version tronquée le cas échéant.";
                                 };
                             };
                         };
@@ -437,7 +437,7 @@ export declare const resolvedConfigData: {
             };
             "_applyLastWith": {
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH";
-                "value": "\u00C0 apposer en dernier via";
+                "value": "À apposer en dernier via";
             };
             "toEnsure": {
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE";
@@ -445,11 +445,11 @@ export declare const resolvedConfigData: {
             };
             "sitsAtTopLike": {
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
-                "value": "apparaisse au sommet de la d\u00E9finition du type de l'objet auquel il appartient, fa\u00E7on";
+                "value": "apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon";
             };
             "_enAnglais": {
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
-                "value": "En anglais \u00E0 l'ex\u00E9cution";
+                "value": "En anglais à l'exécution";
             };
             "_enAnglais_": {
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_";
@@ -465,15 +465,15 @@ export declare const resolvedConfigData: {
             };
             "basedOnMessageAndStatus": {
                 "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
-                "value": "bas\u00E9e sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir";
+                "value": "basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir";
             };
-            "concern\u00E9": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERN\u00C9";
-                "value": "concern\u00E9";
+            "concerné": {
+                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ";
+                "value": "concerné";
             };
-            "concern\u00E9e": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERN\u00C9E";
-                "value": "concern\u00E9e";
+            "concernée": {
+                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE";
+                "value": "concernée";
             };
         };
     };

@@ -22,7 +22,7 @@
   "main": "tsdown/library/index.mjs",
   "types": "error-handling.public.d.ts",
   "scripts": {
-    "types": "tsgo",
+    "types": "tsc",
     "doc": "comvar doc",
     "api": "api-extractor run",
     "build": "tsdown",
@@ -34,11 +34,11 @@
   "devDependencies": {
     "@types/node": "^25.9.1",
     "@types/vscode": "^1.120.0",
-    "@typescript/native-preview": "^7.0.0-dev.20260421.2",
+    "@typescript/native": "npm:typescript@^7.0.2",
     "eslint-plugin-tsdoc": "^0.5.2",
     "oxfmt": "^0.52.0",
     "oxlint": "^1.67.0",
     "tsdown": "^0.22.0",
-    "typescript": "npm:@typescript/typescript6@^6.0.1"
+    "typescript": "npm:@typescript/typescript6@^6.0.2"
   }
 }
