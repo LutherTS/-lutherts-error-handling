@@ -13,7 +13,7 @@ import {
 } from "../../constants/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").MakeSuccessFalseTypeError} MakeSuccessFalseTypeError
+ * @typedef {import("../../../types/index.ts").MakeSuccessFalseTypeError} MakeSuccessFalseTypeError
  */
 
 export const makeSuccessFalseTypeErrorSuite = (

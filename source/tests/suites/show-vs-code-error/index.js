@@ -4,7 +4,7 @@ import assert from "node:assert";
 import { SHOW_VS_CODE_ERROR } from "../../constants/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").ShowVSCodeError} ShowVSCodeError
+ * @typedef {import("../../../types/index.ts").ShowVSCodeError} ShowVSCodeError
  */
 
 export const showVSCodeErrorSuite = (

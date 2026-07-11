@@ -6,7 +6,7 @@ import { WARNING } from "../../../constants/index.js";
 import { TYPE_WARNING, TYPE } from "../../constants/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").TypeWarning} TypeWarning
+ * @typedef {import("../../../types/index.ts").TypeWarning} TypeWarning
  */
 
 export const typeWarningSuite = (/** @type {TypeWarning} */ typeWarning) => {

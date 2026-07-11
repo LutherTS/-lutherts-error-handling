@@ -6,7 +6,7 @@ import { ERROR } from "../../../constants/index.js";
 import { TYPE_ERROR, TYPE } from "../../constants/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").TypeError} TypeError
+ * @typedef {import("../../../types/index.ts").TypeError} TypeError
  */
 
 export const typeErrorSuite = (/** @type {TypeError} */ typeError) => {

@@ -4,7 +4,7 @@ import assert from "node:assert";
 import { ERROR_NOT_STANDARDIZED_MESSAGE } from "../../constants/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").ErrorNotStandardized} ErrorNotStandardized
+ * @typedef {import("../../../types/index.ts").ErrorNotStandardized} ErrorNotStandardized
  */
 
 export const errorNotStandardizedSuite = (

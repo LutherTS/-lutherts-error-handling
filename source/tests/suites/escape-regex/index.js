@@ -4,7 +4,7 @@ import assert from "node:assert";
 import { ESCAPE_REGEX } from "../../constants/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").EscapeRegex} EscapeRegex
+ * @typedef {import("../../../types/index.ts").EscapeRegex} EscapeRegex
  */
 
 export const escapeRegexSuite = (/** @type {EscapeRegex} */ escapeRegex) => {

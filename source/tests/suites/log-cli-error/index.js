@@ -4,7 +4,7 @@ import assert from "node:assert";
 import { LOG_CLI_ERROR } from "../../constants/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").LogCLIError} LogCLIError
+ * @typedef {import("../../../types/index.ts").LogCLIError} LogCLIError
  */
 
 export const logCLIErrorSuite = (/** @type {LogCLIError} */ logCLIError) => {

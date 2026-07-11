@@ -11,7 +11,7 @@ import {
 } from "../../constants/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").MakeErrorTypeError} MakeErrorTypeError
+ * @typedef {import("../../../types/index.ts").MakeErrorTypeError} MakeErrorTypeError
  */
 
 export const makeErrorTypeErrorSuite = (

@@ -38,7 +38,7 @@ import {
  * @typedef {typeof errorNotStandardized} ErrorNotStandardized
  */
 /**
- * @typedef {typeof ERROR_NOT_STANDARDIZED} ERROR_NOT_STANDARDIZED_TYPE
+ * @typedef {typeof ERROR_NOT_STANDARDIZED} ERROR_NOT_STANDARDIZED__TYPE
  */
 
 /**
@@ -65,3 +65,5 @@ import {
 /**
  * @typedef {typeof escapeRegex} EscapeRegex
  */
+
+export {};

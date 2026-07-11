@@ -4,7 +4,7 @@ import { resolvedConfigData as commentVariablesData } from "../../comments.confi
 
 export const consts = commentVariablesData.en.tsDoc.src.lib.consts;
 
-/* generals */
+/* composedVariablesExclusives */
 
 export const composedVariablesExclusives =
   commentVariablesData.en.composedVariablesExclusives;

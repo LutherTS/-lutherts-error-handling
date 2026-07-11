@@ -4,7 +4,7 @@ import assert from "node:assert";
 import { SUCCESS_FALSE, SUCCESS, FALSE } from "../../constants/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").SuccessFalse} SuccessFalse
+ * @typedef {import("../../../types/index.ts").SuccessFalse} SuccessFalse
  */
 
 export const successFalseSuite = (/** @type {SuccessFalse} */ successFalse) => {

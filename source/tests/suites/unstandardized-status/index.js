@@ -4,11 +4,11 @@ import assert from "node:assert";
 import { ERROR_NOT_STANDARDIZED_STATUS } from "../../constants/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").ERROR_NOT_STANDARDIZED_TYPE} ERROR_NOT_STANDARDIZED_TYPE
+ * @typedef {import("../../../types/index.ts").ERROR_NOT_STANDARDIZED__TYPE} ERROR_NOT_STANDARDIZED__TYPE
  */
 
-export const ERROR_NOT_STANDARDIZEDSuite = (
-  /** @type {ERROR_NOT_STANDARDIZED_TYPE} */ ERROR_NOT_STANDARDIZED,
+export const ERROR_NOT_STANDARDIZED__Suite = (
+  /** @type {ERROR_NOT_STANDARDIZED__TYPE} */ ERROR_NOT_STANDARDIZED,
 ) => {
   describe(ERROR_NOT_STANDARDIZED_STATUS, () => {
     // initial tests

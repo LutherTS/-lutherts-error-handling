@@ -4,7 +4,7 @@ import assert from "node:assert";
 import { SUCCESS_TRUE, SUCCESS, TRUE } from "../../constants/index.js";
 
 /**
- * @typedef {import("../../../typedefs/index.js").SuccessTrue} SuccessTrue
+ * @typedef {import("../../../types/index.ts").SuccessTrue} SuccessTrue
  */
 
 export const successTrueSuite = (/** @type {SuccessTrue} */ successTrue) => {

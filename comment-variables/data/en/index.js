@@ -1,38 +1,6 @@
 /* data */
 
 export const enData = Object.freeze({
-  // You know what? This is going to stay for safekeeping for now.
-
-  // public: Object.freeze({
-  //   details:
-  //     "*(Your details here.)*" /* variations: $COMMENT#PUBLIC#DETAILS / core: $COMMENT#EN#PUBLIC#DETAILS */,
-  //   successFalse:
-  //     "$COMMENT#EN#PUBLIC#DETAILS – *successFalse*" /* variations: $COMMENT#PUBLIC#SUCCESSFALSE / core: $COMMENT#EN#PUBLIC#SUCCESSFALSE */,
-  //   successTrue:
-  //     "$COMMENT#EN#PUBLIC#DETAILS – *successTrue*" /* variations: $COMMENT#PUBLIC#SUCCESSTRUE / core: $COMMENT#EN#PUBLIC#SUCCESSTRUE */,
-  //   typeError:
-  //     "$COMMENT#EN#PUBLIC#DETAILS – *typeError*" /* variations: $COMMENT#PUBLIC#TYPEERROR / core: $COMMENT#EN#PUBLIC#TYPEERROR */,
-  //   typeWarning:
-  //     "$COMMENT#EN#PUBLIC#DETAILS – *typeWarning*" /* variations: $COMMENT#PUBLIC#TYPEWARNING / core: $COMMENT#EN#PUBLIC#TYPEWARNING */,
-  //   errorNotStandardized:
-  //     "$COMMENT#EN#PUBLIC#DETAILS – *errorNotStandardized*" /* variations: $COMMENT#PUBLIC#ERRORNOTSTANDARDIZED / core: $COMMENT#EN#PUBLIC#ERRORNOTSTANDARDIZED */,
-  //   ERROR_NOT_STANDARDIZED:
-  //     "$COMMENT#EN#PUBLIC#DETAILS – *ERROR_NOT_STANDARDIZED*" /* variations: $COMMENT#PUBLIC#ERROR_NOT_STANDARDIZED / core: $COMMENT#EN#PUBLIC#ERROR_NOT_STANDARDIZED */,
-  //   makeSuccessFalseTypeError:
-  //     "$COMMENT#EN#PUBLIC#DETAILS – *makeSuccessFalseTypeError*" /* variations: $COMMENT#PUBLIC#MAKESUCCESSFALSETYPEERROR / core: $COMMENT#EN#PUBLIC#MAKESUCCESSFALSETYPEERROR */,
-  //   makeSuccessFalseTypeWarning:
-  //     "$COMMENT#EN#PUBLIC#DETAILS – *makeSuccessFalseTypeWarning*" /* variations: $COMMENT#PUBLIC#MAKESUCCESSFALSETYPEWARNING / core: $COMMENT#EN#PUBLIC#MAKESUCCESSFALSETYPEWARNING */,
-  //   makeErrorTypeError:
-  //     "$COMMENT#EN#PUBLIC#DETAILS – *makeErrorTypeError*" /* variations: $COMMENT#PUBLIC#MAKEERRORTYPEERROR / core: $COMMENT#EN#PUBLIC#MAKEERRORTYPEERROR */,
-  //   makeErrorTypeWarning:
-  //     "$COMMENT#EN#PUBLIC#DETAILS – *makeErrorTypeWarning*" /* variations: $COMMENT#PUBLIC#MAKEERRORTYPEWARNING / core: $COMMENT#EN#PUBLIC#MAKEERRORTYPEWARNING */,
-  //   showVSCodeError:
-  //     "$COMMENT#EN#PUBLIC#DETAILS – *showVSCodeError*" /* variations: $COMMENT#PUBLIC#SHOWVSCODEERROR / core: $COMMENT#EN#PUBLIC#SHOWVSCODEERROR */,
-  //   logCLIError:
-  //     "$COMMENT#EN#PUBLIC#DETAILS – *logCLIError*" /* variations: $COMMENT#PUBLIC#LOGCLIERROR / core: $COMMENT#EN#PUBLIC#LOGCLIERROR */,
-  //   escapeRegex:
-  //     "$COMMENT#EN#PUBLIC#DETAILS – *escapeRegex*" /* variations: $COMMENT#PUBLIC#ESCAPEREGEX / core: $COMMENT#EN#PUBLIC#ESCAPEREGEX */,
-  // }),
   tsDoc: Object.freeze({
     src: Object.freeze({
       lib: Object.freeze({
