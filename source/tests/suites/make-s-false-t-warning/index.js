@@ -23,7 +23,8 @@ export const makeSuccessFalseTypeWarningSuite = (
     // initial tests
 
     it(`should be a function`, () => {
-      const makeSuccessFalseTypeWarningType = typeof makeSuccessFalseTypeWarning;
+      const makeSuccessFalseTypeWarningType =
+        typeof makeSuccessFalseTypeWarning;
       assert.strictEqual(makeSuccessFalseTypeWarningType, "function");
     });
 
