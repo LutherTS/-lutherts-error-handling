@@ -9,6 +9,8 @@ import { TYPE_ERROR, TYPE } from "../../constants/index.js";
  * @typedef {import("../../../types/index.ts").TypeError} TypeError
  */
 
+/* typeErrorSuite */
+
 export const typeErrorSuite = (/** @type {TypeError} */ typeError) => {
   describe(TYPE_ERROR, () => {
     // initial tests

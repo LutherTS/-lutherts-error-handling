@@ -9,6 +9,8 @@ import { TRIM_STRING_WITH_LIMIT } from "../../constants/index.js";
  * @typedef {import("../../../types/index.ts").TrimStringWithLimit} TrimStringWithLimit
  */
 
+/* trimStringWithLimitSuite */
+
 export const trimStringWithLimitSuite = (
   /** @type {TrimStringWithLimit} */ trimStringWithLimit,
 ) => {

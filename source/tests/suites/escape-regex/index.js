@@ -7,6 +7,8 @@ import { ESCAPE_REGEX } from "../../constants/index.js";
  * @typedef {import("../../../types/index.ts").EscapeRegex} EscapeRegex
  */
 
+/* escapeRegexSuite */
+
 export const escapeRegexSuite = (/** @type {EscapeRegex} */ escapeRegex) => {
   describe(ESCAPE_REGEX, () => {
     // initial tests

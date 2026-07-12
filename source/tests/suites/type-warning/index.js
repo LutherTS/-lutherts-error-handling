@@ -9,6 +9,8 @@ import { TYPE_WARNING, TYPE } from "../../constants/index.js";
  * @typedef {import("../../../types/index.ts").TypeWarning} TypeWarning
  */
 
+/* typeWarningSuite */
+
 export const typeWarningSuite = (/** @type {TypeWarning} */ typeWarning) => {
   describe(TYPE_WARNING, () => {
     // initial tests

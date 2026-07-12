@@ -7,6 +7,8 @@ import { SUCCESS_FALSE, SUCCESS, FALSE } from "../../constants/index.js";
  * @typedef {import("../../../types/index.ts").SuccessFalse} SuccessFalse
  */
 
+/* successFalseSuite */
+
 export const successFalseSuite = (/** @type {SuccessFalse} */ successFalse) => {
   describe(SUCCESS_FALSE, () => {
     // initial tests

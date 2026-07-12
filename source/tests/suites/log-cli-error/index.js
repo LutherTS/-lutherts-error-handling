@@ -7,6 +7,8 @@ import { LOG_CLI_ERROR } from "../../constants/index.js";
  * @typedef {import("../../../types/index.ts").LogCLIError} LogCLIError
  */
 
+/* logCLIErrorSuite */
+
 export const logCLIErrorSuite = (/** @type {LogCLIError} */ logCLIError) => {
   describe(LOG_CLI_ERROR, () => {
     // initial tests

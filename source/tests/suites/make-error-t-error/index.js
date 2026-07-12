@@ -14,6 +14,8 @@ import {
  * @typedef {import("../../../types/index.ts").MakeErrorTypeError} MakeErrorTypeError
  */
 
+/* makeErrorTypeErrorSuite */
+
 export const makeErrorTypeErrorSuite = (
   /** @type {MakeErrorTypeError} */ makeErrorTypeError,
 ) => {

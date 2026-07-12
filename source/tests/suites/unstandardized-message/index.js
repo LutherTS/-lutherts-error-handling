@@ -7,6 +7,8 @@ import { ERROR_NOT_STANDARDIZED_MESSAGE } from "../../constants/index.js";
  * @typedef {import("../../../types/index.ts").ErrorNotStandardized} ErrorNotStandardized
  */
 
+/* errorNotStandardizedSuite */
+
 export const errorNotStandardizedSuite = (
   /** @type {ErrorNotStandardized} */ errorNotStandardized,
 ) => {

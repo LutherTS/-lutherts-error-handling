@@ -16,6 +16,8 @@ import {
  * @typedef {import("../../../types/index.ts").MakeSuccessFalseTypeError} MakeSuccessFalseTypeError
  */
 
+/* makeSuccessFalseTypeErrorSuite */
+
 export const makeSuccessFalseTypeErrorSuite = (
   /** @type {MakeSuccessFalseTypeError} */ makeSuccessFalseTypeError,
 ) => {

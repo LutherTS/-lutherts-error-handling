@@ -7,6 +7,8 @@ import { ERROR_NOT_STANDARDIZED_STATUS } from "../../constants/index.js";
  * @typedef {import("../../../types/index.ts").ERROR_NOT_STANDARDIZED__TYPE} ERROR_NOT_STANDARDIZED__TYPE
  */
 
+/* ERROR_NOT_STANDARDIZED__Suite */
+
 export const ERROR_NOT_STANDARDIZED__Suite = (
   /** @type {ERROR_NOT_STANDARDIZED__TYPE} */ ERROR_NOT_STANDARDIZED,
 ) => {

@@ -16,6 +16,8 @@ import {
  * @typedef {import("../../../types/index.ts").MakeSuccessFalseTypeWarning} MakeSuccessFalseTypeWarning
  */
 
+/* makeSuccessFalseTypeWarningSuite */
+
 export const makeSuccessFalseTypeWarningSuite = (
   /** @type {MakeSuccessFalseTypeWarning} */ makeSuccessFalseTypeWarning,
 ) => {

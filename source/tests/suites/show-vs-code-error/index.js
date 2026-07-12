@@ -7,6 +7,8 @@ import { SHOW_VS_CODE_ERROR } from "../../constants/index.js";
  * @typedef {import("../../../types/index.ts").ShowVSCodeError} ShowVSCodeError
  */
 
+/* showVSCodeErrorSuite */
+
 export const showVSCodeErrorSuite = (
   /** @type {ShowVSCodeError} */ showVSCodeError,
 ) => {

@@ -14,6 +14,8 @@ import {
  * @typedef {import("../../../types/index.ts").MakeErrorTypeWarning} MakeErrorTypeWarning
  */
 
+/* makeErrorTypeWarningSuite */
+
 export const makeErrorTypeWarningSuite = (
   /** @type {MakeErrorTypeWarning} */ makeErrorTypeWarning,
 ) => {
