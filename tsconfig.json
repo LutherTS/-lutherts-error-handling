@@ -9,5 +9,5 @@
     "removeComments": true,
     "types": ["node"]
   },
-  "files": ["source/library/index.js"]
+  "files": ["source/library/index.ts"]
 }
