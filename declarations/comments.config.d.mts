@@ -66,6 +66,10 @@ export declare const resolvedConfigData: {
                                     "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
                                     "value": "Trims a string with an ellipsis based on a provided length limit.";
                                 };
+                                "spaceOutESLintMessage": {
+                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
+                                    "value": "Adds a single space to the end of a string, notably in the context of ESLint rule messages.";
+                                };
                             };
                         };
                     };
@@ -134,6 +138,10 @@ export declare const resolvedConfigData: {
                                     "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
                                     "value": "The provided string if its length is lower or equal to the provided length limit; a trimmed version of that string otherwise.";
                                 };
+                                "spaceOutESLintMessage": {
+                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
+                                    "value": "The string spaced out, so that an ESLint rule message shown on hovered reports has a bit of breathing room before its plugin name and rule name are suffixed.";
+                                };
                             };
                         };
                     };
@@ -197,6 +205,10 @@ export declare const resolvedConfigData: {
                 "trimStringWithLimit": {
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TRIMSTRINGWITHLIMIT";
                     "value": "trimStringWithLimit";
+                };
+                "spaceOutESLintMessage": {
+                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SPACEOUTESLINTMESSAGE";
+                    "value": "spaceOutESLintMessage";
                 };
             };
             "arguments": {
@@ -354,6 +366,10 @@ export declare const resolvedConfigData: {
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
                                     "value": "Tronque une chaîne de caractères par trois points de suspension en se basant sur la limite de longueur renseignée.";
                                 };
+                                "spaceOutESLintMessage": {
+                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
+                                    "value": "Ajoute un seul espace à la fin d'une chaîne de caractères, notamment pour les messages des règles ESLint.";
+                                };
                             };
                         };
                     };
@@ -421,6 +437,10 @@ export declare const resolvedConfigData: {
                                 "trimStringWithLimit": {
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
                                     "value": "La chaîne de caractères renseignée si sa longueur est plus petite ou égale à celle de la limite de longueur renseignée ; une version tronquée le cas échéant.";
+                                };
+                                "spaceOutESLintMessage": {
+                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
+                                    "value": "La chaîne de caractères espacée, de sorte qu'un messsage de règle ESLint ait un peu de marge avant que le nom de son plugin et le nom de sa règle n'y soient ajoutés.";
                                 };
                             };
                         };

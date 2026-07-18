@@ -107,3 +107,12 @@ export declare const escapeRegex: (string: string) => string;
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT
  */
 export declare const trimStringWithLimit: (string: string, limit: number) => string;
+/**
+ * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE
+ *
+ * @param string - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING
+ * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE
+ *
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SPACEOUTESLINTMESSAGE
+ */
+export declare const spaceOutESLintMessage: (string: string) => string;

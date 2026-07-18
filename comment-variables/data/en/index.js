@@ -39,6 +39,8 @@ export const enData = Object.freeze({
                 'Escapes all regex characters with a `"\\"` in a string to prepare said string for use in a regex.' /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX */,
               trimStringWithLimit:
                 "Trims a string with an ellipsis based on a provided length limit." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT */,
+              spaceOutESLintMessage:
+                "Adds a single space to the end of a string, notably in the context of ESLint rule messages." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE */,
             }),
           }),
         }),
@@ -79,6 +81,8 @@ export const enData = Object.freeze({
                 "The string with regex characters escaped." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX */,
               trimStringWithLimit:
                 "The provided string if its length is lower or equal to the provided length limit; a trimmed version of that string otherwise." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT */,
+              spaceOutESLintMessage:
+                "The string spaced out, so that an ESLint rule message shown on hovered reports has a bit of breathing room before its plugin name and rule name are suffixed." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE */,
             }),
           }),
         }),
@@ -115,6 +119,7 @@ export const enData = Object.freeze({
         "escapeRegex" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ESCAPEREGEX / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ESCAPEREGEX */,
       trimStringWithLimit:
         "trimStringWithLimit" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TRIMSTRINGWITHLIMIT / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TRIMSTRINGWITHLIMIT */,
+      spaceOutESLintMessage: "spaceOutESLintMessage",
     }),
     arguments: Object.freeze({
       message:

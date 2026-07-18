@@ -193,3 +193,16 @@ export const trimStringWithLimit = (
   string.length > limit
     ? string.slice(0, Math.max(limit - ellipsis.length, 0)) + ellipsis
     : string;
+
+/* spaceOutESLintMessage */
+
+/**
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE
+ *
+ * @param string - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE
+ *
+ * @public
+ */
+export const spaceOutESLintMessage = (/** @type {string} */ string) =>
+  string + " ";

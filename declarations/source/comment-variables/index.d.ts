@@ -84,6 +84,10 @@ export declare const composedVariablesExclusives: {
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TRIMSTRINGWITHLIMIT";
             "value": "trimStringWithLimit";
         };
+        "spaceOutESLintMessage": {
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SPACEOUTESLINTMESSAGE";
+            "value": "spaceOutESLintMessage";
+        };
     };
     arguments: {
         "message": {

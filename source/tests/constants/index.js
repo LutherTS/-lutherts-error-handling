@@ -39,6 +39,9 @@ export const ESCAPE_REGEX =
 export const TRIM_STRING_WITH_LIMIT =
   composedVariablesExclusives.variables.trimStringWithLimit.value;
 
+export const SPACE_OUT_ESLINT_MESSAGE =
+  composedVariablesExclusives.variables.spaceOutESLintMessage.value;
+
 /* primary exports strings */
 
 export const SUCCESS = composedVariablesExclusives.success.value;

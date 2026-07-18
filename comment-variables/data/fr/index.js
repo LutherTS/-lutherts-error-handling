@@ -39,6 +39,8 @@ export const frData = Object.freeze({
                 'Échappe tous les caractères regex d\'une chaîne de caractères avec un `"\\"` pour préparer cette dernière à être utilisée dans une regex.' /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX */,
               trimStringWithLimit:
                 "Tronque une chaîne de caractères par trois points de suspension en se basant sur la limite de longueur renseignée." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT */,
+              spaceOutESLintMessage:
+                "Ajoute un seul espace à la fin d'une chaîne de caractères, notamment pour les messages des règles ESLint." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE */,
             }),
           }),
         }),
@@ -79,6 +81,8 @@ export const frData = Object.freeze({
                 "La chaîne de caractères avec ses caractères regex échappés." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX */,
               trimStringWithLimit:
                 "La chaîne de caractères renseignée si sa longueur est plus petite ou égale à celle de la limite de longueur renseignée ; une version tronquée le cas échéant." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT */,
+              spaceOutESLintMessage:
+                "La chaîne de caractères espacée, de sorte qu'un messsage de règle ESLint ait un peu de marge avant que le nom de son plugin et le nom de sa règle n'y soient ajoutés." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE */,
             }),
           }),
         }),

@@ -22,6 +22,7 @@ export {
   logCLIError,
   escapeRegex,
   trimStringWithLimit,
+  spaceOutESLintMessage,
 } from "./utilities/index.js";
 
 /* secondary exports */

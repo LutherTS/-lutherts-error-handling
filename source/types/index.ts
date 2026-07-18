@@ -15,6 +15,7 @@ import {
   logCLIError,
   escapeRegex,
   trimStringWithLimit,
+  spaceOutESLintMessage,
 } from "../../source/library/index.js";
 
 export type VSCode = typeof vscode;
@@ -46,3 +47,5 @@ export type LogCLIError = typeof logCLIError;
 export type EscapeRegex = typeof escapeRegex;
 
 export type TrimStringWithLimit = typeof trimStringWithLimit;
+
+export type SpaceOutESLintMessage = typeof spaceOutESLintMessage;
