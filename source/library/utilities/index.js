@@ -204,5 +204,6 @@ export const trimStringWithLimit = (
  *
  * @public
  */
-export const spaceOutESLintMessage = (/** @type {string} */ string) =>
-  string + " ";
+export const spaceOutESLintMessage = /** @template {string} T */ (
+  /** @type {T} */ string,
+) => /** @type {const} */ (`${string} `);
