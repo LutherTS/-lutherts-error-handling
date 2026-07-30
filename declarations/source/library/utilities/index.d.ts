@@ -1,4 +1,5 @@
 import { ERROR, WARNING } from "../../constants/index.js";
+export type VSCode = import("../../types/index.ts").VSCode;
 export type SourceCode = import("../../types/index.ts").SourceCode;
 export type SourceLocation = import("../../types/index.ts").SourceLocation;
 /**
@@ -72,7 +73,7 @@ export declare const makeErrorTypeWarning: <T extends string, U extends string>(
  *
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR
  */
-export declare const showVSCodeError: <T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(vscode: unknown, error: {
+export declare const showVSCodeError: <T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(vscode: VSCode, error: {
     readonly type: V;
     readonly message: T;
     readonly status: U;

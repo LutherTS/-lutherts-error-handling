@@ -1,6 +1,6 @@
-import * as vscode from "vscode";
+import type * as vscode from "vscode";
 import type { TSESTree } from "@typescript-eslint/utils";
-import { successFalse, successTrue, typeError, typeWarning, errorNotStandardized, ERROR_NOT_STANDARDIZED, makeSuccessFalseTypeError, makeSuccessFalseTypeWarning, makeErrorTypeError, makeErrorTypeWarning, showVSCodeError, logCLIError, escapeRegex, trimStringWithLimit, spaceOutESLintMessage } from "../../source/library/index.js";
+import type { successFalse, successTrue, typeError, typeWarning, errorNotStandardized, ERROR_NOT_STANDARDIZED, makeSuccessFalseTypeError, makeSuccessFalseTypeWarning, makeErrorTypeError, makeErrorTypeWarning, showVSCodeError, logCLIError, escapeRegex, trimStringWithLimit, spaceOutESLintMessage, highlightFirstLineOfCode } from "../../source/library/index.js";
 export type VSCode = typeof vscode;
 export type { SourceCode } from "eslint";
 export type SourceLocation = TSESTree.SourceLocation;
@@ -19,3 +19,4 @@ export type LogCLIError = typeof logCLIError;
 export type EscapeRegex = typeof escapeRegex;
 export type TrimStringWithLimit = typeof trimStringWithLimit;
 export type SpaceOutESLintMessage = typeof spaceOutESLintMessage;
+export type HighlightFirstLineOfCode = typeof highlightFirstLineOfCode;
