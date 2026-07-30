@@ -88,6 +88,10 @@ export declare const composedVariablesExclusives: {
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SPACEOUTESLINTMESSAGE";
             "value": "spaceOutESLintMessage";
         };
+        "highlightFirstLineOfCode": {
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#HIGHLIGHTFIRSTLINEOFCODE";
+            "value": "highlightFirstLineOfCode";
+        };
     };
     arguments: {
         "message": {
