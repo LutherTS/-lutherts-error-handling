@@ -70,6 +70,10 @@ export declare const resolvedConfigData: {
                                     "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
                                     "value": "Adds a single space to the end of a string, notably in the context of ESLint rule messages.";
                                 };
+                                "highlightFirstLineOfCode": {
+                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
+                                    "value": "Highlights the first line of code of a file via its ESLint `SourceCode` object to illustrate general linting errors.";
+                                };
                             };
                         };
                     };
@@ -99,6 +103,10 @@ export declare const resolvedConfigData: {
                                 "limit": {
                                     "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT";
                                     "value": "The provided length limit. The string will be trimmed if its length is strictly superior to this given number.";
+                                };
+                                "sourceCode": {
+                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE";
+                                    "value": "The file's `SourceCode` object at hand.";
                                 };
                             };
                         };
@@ -141,6 +149,10 @@ export declare const resolvedConfigData: {
                                 "spaceOutESLintMessage": {
                                     "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
                                     "value": "The string spaced out, so that an ESLint rule message shown on hovered reports has a bit of breathing room before its plugin name and rule name are suffixed.";
+                                };
+                                "highlightFirstLineOfCode": {
+                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
+                                    "value": "A `SourceLocation` object (`loc`) as the effective range of the file's first line of code.";
                                 };
                             };
                         };
@@ -370,6 +382,10 @@ export declare const resolvedConfigData: {
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
                                     "value": "Ajoute un seul espace à la fin d'une chaîne de caractères, notamment pour les messages des règles ESLint.";
                                 };
+                                "highlightFirstLineOfCode": {
+                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
+                                    "value": "Souligne la première ligne de code d'un fichier à partir de son objet `SourceCode` pour mettre en valeur ses erreurs générales d'analyse statique.";
+                                };
                             };
                         };
                     };
@@ -399,6 +415,10 @@ export declare const resolvedConfigData: {
                                 "limit": {
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT";
                                     "value": "La limite de longueur renseignée. La chaîne de caractères sera tronquée si sa longueur est strictement supérieure à celle de ce nombre donné.";
+                                };
+                                "sourceCode": {
+                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE";
+                                    "value": "L'objet `SourceCode` du fichier concerné.";
                                 };
                             };
                         };
@@ -441,6 +461,10 @@ export declare const resolvedConfigData: {
                                 "spaceOutESLintMessage": {
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
                                     "value": "La chaîne de caractères espacée, de sorte qu'un messsage de règle ESLint ait un peu de marge avant que le nom de son plugin et le nom de sa règle n'y soient ajoutés.";
+                                };
+                                "highlightFirstLineOfCode": {
+                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
+                                    "value": "Un objet `SourceLocation` (`loc`) servant de rangée effective pour la première ligne de code du fichier.";
                                 };
                             };
                         };

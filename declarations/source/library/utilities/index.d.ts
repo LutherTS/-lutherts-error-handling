@@ -1,4 +1,6 @@
 import { ERROR, WARNING } from "../../constants/index.js";
+export type SourceCode = import("../../types/index.ts").SourceCode;
+export type SourceLocation = import("../../types/index.ts").SourceLocation;
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR
  *
@@ -115,4 +117,22 @@ export declare const trimStringWithLimit: (string: string, limit: number) => str
  *
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SPACEOUTESLINTMESSAGE
  */
-export declare const spaceOutESLintMessage: (string: string) => string;
+export declare const spaceOutESLintMessage: <T extends string>(string: T) => `${T} `;
+/**
+ * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE
+ *
+ * @param sourceCode - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE
+ * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE
+ *
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE
+ */
+export declare const highlightFirstLineOfCode: (sourceCode: SourceCode) => {
+    start: {
+        line: number;
+        column: number;
+    };
+    end: {
+        line: number;
+        column: number;
+    };
+};
