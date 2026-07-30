@@ -14,6 +14,7 @@ import {
   escapeRegex,
   trimStringWithLimit,
   spaceOutESLintMessage,
+  highlightFirstLineOfCode,
   // } from "../../source/library/index.js"; // dev
 } from "../../tsdown/library/index.mjs"; // prod
 
@@ -32,6 +33,7 @@ import { logCLIErrorSuite } from "./suites/log-cli-error/index.js";
 import { escapeRegexSuite } from "./suites/escape-regex/index.js";
 import { trimStringWithLimitSuite } from "./suites/trim-string-with-limit/index.js";
 import { spaceOutESLintMessageSuite } from "./suites/space-out-eslint/index.js";
+import { highlightFirstLineOfCodeSuite } from "./suites/highlight-first-line/index.js";
 
 successFalseSuite(successFalse);
 successTrueSuite(successTrue);
@@ -48,3 +50,4 @@ logCLIErrorSuite(logCLIError);
 escapeRegexSuite(escapeRegex);
 trimStringWithLimitSuite(trimStringWithLimit);
 spaceOutESLintMessageSuite(spaceOutESLintMessage);
+highlightFirstLineOfCodeSuite(highlightFirstLineOfCode);

@@ -42,6 +42,9 @@ export const TRIM_STRING_WITH_LIMIT =
 export const SPACE_OUT_ESLINT_MESSAGE =
   composedVariablesExclusives.variables.spaceOutESLintMessage.value;
 
+export const HIGHLIGHT_FIRST_LINE_OF_CODE =
+  composedVariablesExclusives.variables.highlightFirstLineOfCode.value;
+
 /* primary exports strings */
 
 export const SUCCESS = composedVariablesExclusives.success.value;
