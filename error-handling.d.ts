@@ -1,5 +1,4 @@
 import { SourceCode as SourceCode_2 } from 'eslint';
-import type * as vscode from 'vscode';
 
 /** @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA */
 export declare const commentVariablesData: {
@@ -239,7 +238,7 @@ export declare const makeSuccessFalseTypeWarning: <T extends string, U extends s
  *
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR
  */
-export declare const showVSCodeError: <T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(vscode: VSCode, error: {
+export declare const showVSCodeError: <T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(vscode: unknown, error: {
     readonly type: V;
     readonly message: T;
     readonly status: U;
@@ -299,10 +298,6 @@ export declare const typeError: Readonly<{
 export declare const typeWarning: Readonly<{
     type: "warning";
 }>;
-
-declare type VSCode = VSCode_2;
-
-declare type VSCode_2 = typeof vscode;
 
 declare const WARNING: "warning";
 
