@@ -1,8 +1,8 @@
-import * as vscode from "vscode";
+import type * as vscode from "vscode";
 
 import type { TSESTree } from "@typescript-eslint/utils";
 
-import {
+import type {
   successFalse,
   successTrue,
   typeError,
@@ -18,6 +18,7 @@ import {
   escapeRegex,
   trimStringWithLimit,
   spaceOutESLintMessage,
+  highlightFirstLineOfCode,
 } from "../../source/library/index.js";
 
 export type VSCode = typeof vscode;
@@ -55,3 +56,5 @@ export type EscapeRegex = typeof escapeRegex;
 export type TrimStringWithLimit = typeof trimStringWithLimit;
 
 export type SpaceOutESLintMessage = typeof spaceOutESLintMessage;
+
+export type HighlightFirstLineOfCode = typeof highlightFirstLineOfCode;

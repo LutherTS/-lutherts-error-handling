@@ -9,6 +9,7 @@ import {
 } from "../constants/index.js";
 
 /**
+ * @typedef {import("../../types/index.ts").VSCode} VSCode
  * @typedef {import("../../types/index.ts").SourceCode} SourceCode
  * @typedef {import("../../types/index.ts").SourceLocation} SourceLocation
  */
@@ -120,8 +121,8 @@ export const makeErrorTypeWarning =
  */
 export const showVSCodeError =
   /** @template {string} T, @template {string} U, @template {typeof ERROR | typeof WARNING} V */ (
-    // /** @type {VSCode} */ vscode,
-    /** @type {unknown} */ vscode,
+    /** @type {VSCode} */ vscode,
+    // /** @type {unknown} */ vscode,
     // /** @type {ReturnType<MakeErrorTypeError<T, U>> | ReturnType<MakeErrorTypeWarning<T, U>>} */ error,
     /** @type {{ readonly type: V; readonly message: T; readonly status: U;}} */ error,
   ) => {
