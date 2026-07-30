@@ -41,6 +41,8 @@ export const enData = Object.freeze({
                 "Trims a string with an ellipsis based on a provided length limit." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT */,
               spaceOutESLintMessage:
                 "Adds a single space to the end of a string, notably in the context of ESLint rule messages." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE */,
+              highlightFirstLineOfCode:
+                "Highlights the first line of code of a file via its ESLint `SourceCode` object to illustrate general linting errors." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE */,
             }),
           }),
         }),
@@ -59,6 +61,8 @@ export const enData = Object.freeze({
                 "The string $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING */,
               limit:
                 "The provided length limit. The string will be trimmed if its length is strictly superior to this given number." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT */,
+              sourceCode:
+                "The file's `SourceCode` object $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE */,
             }),
           }),
         }),
@@ -83,6 +87,8 @@ export const enData = Object.freeze({
                 "The provided string if its length is lower or equal to the provided length limit; a trimmed version of that string otherwise." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT */,
               spaceOutESLintMessage:
                 "The string spaced out, so that an ESLint rule message shown on hovered reports has a bit of breathing room before its plugin name and rule name are suffixed." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE */,
+              highlightFirstLineOfCode:
+                "A `SourceLocation` object (`loc`) as the effective range of the file's first line of code." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE */,
             }),
           }),
         }),

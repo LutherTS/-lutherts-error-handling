@@ -23,6 +23,7 @@ export {
   escapeRegex,
   trimStringWithLimit,
   spaceOutESLintMessage,
+  highlightFirstLineOfCode,
 } from "./utilities/index.js";
 
 /* secondary exports */

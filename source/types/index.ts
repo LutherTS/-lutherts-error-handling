@@ -1,5 +1,7 @@
 import * as vscode from "vscode";
 
+import type { TSESTree } from "@typescript-eslint/utils";
+
 import {
   successFalse,
   successTrue,
@@ -19,6 +21,10 @@ import {
 } from "../../source/library/index.js";
 
 export type VSCode = typeof vscode;
+
+export type { SourceCode } from "eslint";
+
+export type SourceLocation = TSESTree.SourceLocation;
 
 export type SuccessFalse = typeof successFalse;
 

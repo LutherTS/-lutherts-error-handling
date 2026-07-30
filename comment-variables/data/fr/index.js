@@ -41,6 +41,8 @@ export const frData = Object.freeze({
                 "Tronque une chaîne de caractères par trois points de suspension en se basant sur la limite de longueur renseignée." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT */,
               spaceOutESLintMessage:
                 "Ajoute un seul espace à la fin d'une chaîne de caractères, notamment pour les messages des règles ESLint." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE */,
+              highlightFirstLineOfCode:
+                "Souligne la première ligne de code d'un fichier à partir de son objet `SourceCode` pour mettre en valeur ses erreurs générales d'analyse statique." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE */,
             }),
           }),
         }),
@@ -59,6 +61,8 @@ export const frData = Object.freeze({
                 "La chaîne de caractères $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING */,
               limit:
                 "La limite de longueur renseignée. La chaîne de caractères sera tronquée si sa longueur est strictement supérieure à celle de ce nombre donné." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT */,
+              sourceCode:
+                "L'objet `SourceCode` du fichier $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE */,
             }),
           }),
         }),
@@ -83,6 +87,8 @@ export const frData = Object.freeze({
                 "La chaîne de caractères renseignée si sa longueur est plus petite ou égale à celle de la limite de longueur renseignée ; une version tronquée le cas échéant." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT */,
               spaceOutESLintMessage:
                 "La chaîne de caractères espacée, de sorte qu'un messsage de règle ESLint ait un peu de marge avant que le nom de son plugin et le nom de sa règle n'y soient ajoutés." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE */,
+              highlightFirstLineOfCode:
+                "Un objet `SourceLocation` (`loc`) servant de rangée effective pour la première ligne de code du fichier." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE */,
             }),
           }),
         }),

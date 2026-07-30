@@ -8,6 +8,11 @@ import {
   ERROR_NOT_STANDARDIZED,
 } from "../constants/index.js";
 
+/**
+ * @typedef {import("../../types/index.ts").SourceCode} SourceCode
+ * @typedef {import("../../types/index.ts").SourceLocation} SourceLocation
+ */
+
 /* makeSuccessFalseTypeError */
 
 /**
@@ -207,3 +212,20 @@ export const trimStringWithLimit = (
 export const spaceOutESLintMessage = /** @template {string} T */ (
   /** @type {T} */ string,
 ) => /** @type {const} */ (`${string} `);
+
+/* highlightFirstLineOfCode */
+
+/**
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE
+ *
+ * @param sourceCode - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE
+ *
+ * @public
+ */
+export const highlightFirstLineOfCode = (
+  /** @type {SourceCode} */ sourceCode,
+) => /** @satisfies {SourceLocation} */ ({
+  start: { line: 1, column: 0 },
+  end: { line: 1, column: sourceCode.lines[0].length }, // There's no such thing as a valid file (and a valid `SourceCode`) that doesn't have at least its first line.
+});

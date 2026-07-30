@@ -34,7 +34,9 @@
   "devDependencies": {
     "@types/node": "^25.9.1",
     "@types/vscode": "^1.120.0",
+    "@typescript-eslint/utils": "^8.65.0",
     "@typescript/native": "npm:typescript@^7.0.2",
+    "eslint": "^10.8.0",
     "eslint-plugin-tsdoc": "^0.5.2",
     "oxfmt": "^0.52.0",
     "oxlint": "^1.67.0",
