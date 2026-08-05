@@ -249,6 +249,9 @@ export const pathExistsAsAFile = (/** @type {string} */ absolutePath) => {
   const hasExtension = !!path.extname(absolutePath);
   if (!hasExtension) return false;
 
+  const isAbsolute = path.isAbsolute(absolutePath);
+  if (!isAbsolute) return false;
+
   const exists = fs.existsSync(absolutePath);
   if (!exists) return false;
 
@@ -273,6 +276,9 @@ export const pathExistsAsADirectory = (/** @type {string} */ absolutePath) => {
 
   const hasExtension = !!path.extname(absolutePath);
   if (hasExtension) return false;
+
+  const isAbsolute = path.isAbsolute(absolutePath);
+  if (!isAbsolute) return false;
 
   const exists = fs.existsSync(absolutePath);
   if (!exists) return false;

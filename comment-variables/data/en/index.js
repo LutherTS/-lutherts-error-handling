@@ -43,7 +43,8 @@ export const enData = Object.freeze({
                 "Adds a single space to the end of a string, notably in the context of ESLint rule messages." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE */,
               highlightFirstLineOfCode:
                 "Highlights the first line of code of a file via its ESLint `SourceCode` object to illustrate general linting errors." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE */,
-              pathExistsAsAFile: "Tells if a path actually exists as a file." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE */,
+              pathExistsAsAFile:
+                "Tells if a path actually exists as a file." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE */,
               pathExistsAsADirectory:
                 "Tells if a path actually exists as a directory." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY */,
             }),
@@ -138,6 +139,8 @@ export const enData = Object.freeze({
         "spaceOutESLintMessage" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SPACEOUTESLINTMESSAGE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SPACEOUTESLINTMESSAGE */,
       highlightFirstLineOfCode:
         "highlightFirstLineOfCode" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#HIGHLIGHTFIRSTLINEOFCODE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#HIGHLIGHTFIRSTLINEOFCODE */,
+      pathExistsAsAFile: "pathExistsAsAFile" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASAFILE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASAFILE */,
+      pathExistsAsADirectory: "pathExistsAsADirectory" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASADIRECTORY / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASADIRECTORY */,
     }),
     arguments: Object.freeze({
       message:

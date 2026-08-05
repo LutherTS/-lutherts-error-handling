@@ -8,7 +8,10 @@ const myIgnoresOnly = false; // can be omitted
 
 /* ignores */
 
-const ignores = ["**/typedefs/**"]; // can be omitted
+const ignores = [
+  "**/typedefs/**",
+  "source/tests/suites/path-exists/not-a-file.js",
+]; // can be omitted
 
 /* lintConfigImports */
 

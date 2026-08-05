@@ -4,7 +4,10 @@ export default defineConfig({
   categories: {
     correctness: "warn",
   },
-  ignorePatterns: ["tsdown/library/index.mjs"],
+  ignorePatterns: [
+    "tsdown/library/index.mjs",
+    "source/tests/suites/path-exists/a-file.js",
+  ],
   overrides: [
     {
       files: ["error-handling.d.ts", "error-handling.public.d.ts"],

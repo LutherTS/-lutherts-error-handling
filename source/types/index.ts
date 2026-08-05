@@ -19,6 +19,8 @@ import type {
   trimStringWithLimit,
   spaceOutESLintMessage,
   highlightFirstLineOfCode,
+  pathExistsAsAFile,
+  pathExistsAsADirectory,
 } from "../../source/library/index.js";
 
 export type VSCode = typeof vscode;
@@ -58,3 +60,7 @@ export type TrimStringWithLimit = typeof trimStringWithLimit;
 export type SpaceOutESLintMessage = typeof spaceOutESLintMessage;
 
 export type HighlightFirstLineOfCode = typeof highlightFirstLineOfCode;
+
+export type PathExistsAsAFile = typeof pathExistsAsAFile;
+
+export type PathExistsAsADirectory = typeof pathExistsAsADirectory;

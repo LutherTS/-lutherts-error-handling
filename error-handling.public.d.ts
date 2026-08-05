@@ -20,6 +20,8 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "Trims a string with an ellipsis based on a provided length limit.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE": "Adds a single space to the end of a string, notably in the context of ESLint rule messages.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "Highlights the first line of code of a file via its ESLint `SourceCode` object to illustrate general linting errors.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE": "Tells if a path actually exists as a file.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY": "Tells if a path actually exists as a directory.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE": "The human-readable message of the error.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS": "The static status text of the error.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE": "The VS Code API instance at hand, living in the VS Code Extension Host (and not in the extension's Node modules).";
@@ -27,6 +29,7 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING": "The string at hand.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT": "The provided length limit. The string will be trimmed if its length is strictly superior to this given number.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE": "The file's `SourceCode` object at hand.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH": "The absolute path at hand.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "An error object of `{type: error}`.";
@@ -36,6 +39,8 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "The provided string if its length is lower or equal to the provided length limit; a trimmed version of that string otherwise.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE": "The string spaced out, so that an ESLint rule message shown on hovered reports has a bit of breathing room before its plugin name and rule name are suffixed.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "A `SourceLocation` object (`loc`) as the effective range of the file's first line of code.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE": "`true` if the path is a file, `false` otherwise.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY": "`true` if the path is a directory, `false` otherwise.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR": "Void.";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
@@ -48,6 +53,8 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#SPACEOUTESLINTMESSAGE": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASAFILE": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASADIRECTORY": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
@@ -71,6 +78,8 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "Tronque une chaîne de caractères par trois points de suspension en se basant sur la limite de longueur renseignée.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE": "Ajoute un seul espace à la fin d'une chaîne de caractères, notamment pour les messages des règles ESLint.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "Souligne la première ligne de code d'un fichier à partir de son objet `SourceCode` pour mettre en valeur ses erreurs générales d'analyse statique.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE": "Informe de l'existence d'un chemin en tant que fichier.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY": "Informe de l'existence d'un chemin en tant que dossier.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE": "Le message en clair de l'erreur.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS": "Le texte statique du statut de l'erreur.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE": "L'instance concernée de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).";
@@ -78,6 +87,7 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING": "La chaîne de caractères concernée.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT": "La limite de longueur renseignée. La chaîne de caractères sera tronquée si sa longueur est strictement supérieure à celle de ce nombre donné.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE": "L'objet `SourceCode` du fichier concerné.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH": "Le chemin absolu concerné.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "Un objet d'erreur de `{type: error}`.";
@@ -87,6 +97,8 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "La chaîne de caractères renseignée si sa longueur est plus petite ou égale à celle de la limite de longueur renseignée ; une version tronquée le cas échéant.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE": "La chaîne de caractères espacée, de sorte qu'un messsage de règle ESLint ait un peu de marge avant que le nom de son plugin et le nom de sa règle n'y soient ajoutés.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "Un objet `SourceLocation` (`loc`) servant de rangée effective pour la première ligne de code du fichier.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE": "`true` si le chemin est un fichier, `false` sinon.";
+            "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY": "`true` si le chemin est un dossier, `false` sinon.";
             "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR": "Void. (Aucun retour.)";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
@@ -99,6 +111,8 @@ export declare const commentVariablesData: {
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#SPACEOUTESLINTMESSAGE": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASAFILE": "";
+            "_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASADIRECTORY": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
             "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
@@ -228,6 +242,26 @@ export declare const makeSuccessFalseTypeWarning: <T extends string, U extends s
         readonly status: U;
     }];
 };
+
+/**
+ * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY
+ *
+ * @param absolutePath - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH
+ * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY
+ *
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASADIRECTORY
+ */
+export declare const pathExistsAsADirectory: (absolutePath: string) => boolean;
+
+/**
+ * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE
+ *
+ * @param absolutePath - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH
+ * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE
+ *
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASAFILE
+ */
+export declare const pathExistsAsAFile: (absolutePath: string) => boolean;
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR

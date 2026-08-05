@@ -15,7 +15,9 @@ import {
   trimStringWithLimit,
   spaceOutESLintMessage,
   highlightFirstLineOfCode,
-  // } from "../../source/library/index.js"; // dev
+  pathExistsAsAFile,
+  pathExistsAsADirectory,
+  // } from "../../source/library/index.ts"; // dev
 } from "../../tsdown/library/index.mjs"; // prod
 
 import { successFalseSuite } from "./suites/success-false/index.js";
@@ -34,6 +36,10 @@ import { escapeRegexSuite } from "./suites/escape-regex/index.js";
 import { trimStringWithLimitSuite } from "./suites/trim-string-with-limit/index.js";
 import { spaceOutESLintMessageSuite } from "./suites/space-out-eslint/index.js";
 import { highlightFirstLineOfCodeSuite } from "./suites/highlight-first-line/index.js";
+import {
+  pathExistsAsAFileSuite,
+  pathExistsAsADirectorySuite,
+} from "./suites/path-exists/index.js";
 
 successFalseSuite(successFalse);
 successTrueSuite(successTrue);
@@ -51,3 +57,5 @@ escapeRegexSuite(escapeRegex);
 trimStringWithLimitSuite(trimStringWithLimit);
 spaceOutESLintMessageSuite(spaceOutESLintMessage);
 highlightFirstLineOfCodeSuite(highlightFirstLineOfCode);
+pathExistsAsAFileSuite(pathExistsAsAFile);
+pathExistsAsADirectorySuite(pathExistsAsADirectory);

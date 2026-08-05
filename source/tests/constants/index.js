@@ -45,6 +45,11 @@ export const SPACE_OUT_ESLINT_MESSAGE =
 export const HIGHLIGHT_FIRST_LINE_OF_CODE =
   composedVariablesExclusives.variables.highlightFirstLineOfCode.value;
 
+export const PATH_EXISTS_AS_A_FILE =
+  composedVariablesExclusives.variables.pathExistsAsAFile.value;
+export const PATH_EXISTS_AS_A_DIRECTORY =
+  composedVariablesExclusives.variables.pathExistsAsADirectory.value;
+
 /* primary exports strings */
 
 export const SUCCESS = composedVariablesExclusives.success.value;

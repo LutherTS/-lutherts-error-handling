@@ -92,6 +92,14 @@ export declare const composedVariablesExclusives: {
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#HIGHLIGHTFIRSTLINEOFCODE";
             "value": "highlightFirstLineOfCode";
         };
+        "pathExistsAsAFile": {
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASAFILE";
+            "value": "pathExistsAsAFile";
+        };
+        "pathExistsAsADirectory": {
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASADIRECTORY";
+            "value": "pathExistsAsADirectory";
+        };
     };
     arguments: {
         "message": {

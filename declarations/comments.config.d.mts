@@ -74,6 +74,14 @@ export declare const resolvedConfigData: {
                                     "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
                                     "value": "Highlights the first line of code of a file via its ESLint `SourceCode` object to illustrate general linting errors.";
                                 };
+                                "pathExistsAsAFile": {
+                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE";
+                                    "value": "Tells if a path actually exists as a file.";
+                                };
+                                "pathExistsAsADirectory": {
+                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY";
+                                    "value": "Tells if a path actually exists as a directory.";
+                                };
                             };
                         };
                     };
@@ -107,6 +115,10 @@ export declare const resolvedConfigData: {
                                 "sourceCode": {
                                     "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE";
                                     "value": "The file's `SourceCode` object at hand.";
+                                };
+                                "absolutePath": {
+                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH";
+                                    "value": "The absolute path at hand.";
                                 };
                             };
                         };
@@ -153,6 +165,14 @@ export declare const resolvedConfigData: {
                                 "highlightFirstLineOfCode": {
                                     "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
                                     "value": "A `SourceLocation` object (`loc`) as the effective range of the file's first line of code.";
+                                };
+                                "pathExistsAsAFile": {
+                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE";
+                                    "value": "`true` if the path is a file, `false` otherwise.";
+                                };
+                                "pathExistsAsADirectory": {
+                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY";
+                                    "value": "`true` if the path is a directory, `false` otherwise.";
                                 };
                             };
                         };
@@ -225,6 +245,14 @@ export declare const resolvedConfigData: {
                 "highlightFirstLineOfCode": {
                     "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#HIGHLIGHTFIRSTLINEOFCODE";
                     "value": "highlightFirstLineOfCode";
+                };
+                "pathExistsAsAFile": {
+                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASAFILE";
+                    "value": "pathExistsAsAFile";
+                };
+                "pathExistsAsADirectory": {
+                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASADIRECTORY";
+                    "value": "pathExistsAsADirectory";
                 };
             };
             "arguments": {
@@ -390,6 +418,14 @@ export declare const resolvedConfigData: {
                                     "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
                                     "value": "Souligne la première ligne de code d'un fichier à partir de son objet `SourceCode` pour mettre en valeur ses erreurs générales d'analyse statique.";
                                 };
+                                "pathExistsAsAFile": {
+                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE";
+                                    "value": "Informe de l'existence d'un chemin en tant que fichier.";
+                                };
+                                "pathExistsAsADirectory": {
+                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY";
+                                    "value": "Informe de l'existence d'un chemin en tant que dossier.";
+                                };
                             };
                         };
                     };
@@ -423,6 +459,10 @@ export declare const resolvedConfigData: {
                                 "sourceCode": {
                                     "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE";
                                     "value": "L'objet `SourceCode` du fichier concerné.";
+                                };
+                                "absolutePath": {
+                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH";
+                                    "value": "Le chemin absolu concerné.";
                                 };
                             };
                         };
@@ -469,6 +509,14 @@ export declare const resolvedConfigData: {
                                 "highlightFirstLineOfCode": {
                                     "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
                                     "value": "Un objet `SourceLocation` (`loc`) servant de rangée effective pour la première ligne de code du fichier.";
+                                };
+                                "pathExistsAsAFile": {
+                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE";
+                                    "value": "`true` si le chemin est un fichier, `false` sinon.";
+                                };
+                                "pathExistsAsADirectory": {
+                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY";
+                                    "value": "`true` si le chemin est un dossier, `false` sinon.";
                                 };
                             };
                         };
