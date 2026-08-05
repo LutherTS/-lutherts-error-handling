@@ -1,3 +1,6 @@
+import fs from "fs";
+import path from "path";
+
 import { ERROR, WARNING, ellipsis } from "../../constants/index.js";
 
 import {
@@ -229,3 +232,53 @@ export const highlightFirstLineOfCode = (
   start: { line: 1, column: 0 },
   end: { line: 1, column: sourceCode.lines[0].length }, // There's no such thing as a valid file (and a valid `SourceCode`) that doesn't have at least its first line.
 });
+
+/* pathExistsAsAFile */
+
+/**
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE
+ *
+ * @param absolutePath - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE
+ *
+ * @public
+ */
+export const pathExistsAsAFile = (/** @type {string} */ absolutePath) => {
+  if (typeof absolutePath !== "string") return false;
+
+  const hasExtension = !!path.extname(absolutePath);
+  if (!hasExtension) return false;
+
+  const exists = fs.existsSync(absolutePath);
+  if (!exists) return false;
+
+  const isFile = fs.statSync(absolutePath).isFile();
+  if (!isFile) return false;
+
+  return true;
+};
+
+/* pathExistsAsADirectory */
+
+/**
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY
+ *
+ * @param absolutePath - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY
+ *
+ * @public
+ */
+export const pathExistsAsADirectory = (/** @type {string} */ absolutePath) => {
+  if (typeof absolutePath !== "string") return false;
+
+  const hasExtension = !!path.extname(absolutePath);
+  if (hasExtension) return false;
+
+  const exists = fs.existsSync(absolutePath);
+  if (!exists) return false;
+
+  const isDirectory = fs.statSync(absolutePath).isDirectory();
+  if (!isDirectory) return false;
+
+  return true;
+};

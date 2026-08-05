@@ -24,6 +24,8 @@ export {
   trimStringWithLimit,
   spaceOutESLintMessage,
   highlightFirstLineOfCode,
+  pathExistsAsAFile,
+  pathExistsAsADirectory,
 } from "./utilities/index.js";
 
 /* secondary exports */
