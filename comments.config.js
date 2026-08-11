@@ -60,6 +60,10 @@ const libraries = {
   // errorHandlingCommentVariablesDataIntl.FR,
 }; // can be omitted
 
+/* sharedVariables */
+
+const sharedVariables = undefined; // can be omitted
+
 /* templateFunctions */
 
 const templateFunctions = {
@@ -89,6 +93,7 @@ const config = {
   composedVariablesExclusives,
   variations,
   libraries,
+  sharedVariables,
   templateFunctions,
 };
 
