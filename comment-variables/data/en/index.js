@@ -1,13 +1,13 @@
 /* data */
 
-export const enData = Object.freeze({
-  tsDoc: Object.freeze({
-    src: Object.freeze({
-      lib: Object.freeze({
-        consts: Object.freeze({
+export const enData = /** @type {const} */ ({
+  tsDoc: {
+    src: {
+      lib: {
+        consts: {
           errorNotStandardized:
             "The error encountered is not standardized." /* variations: $COMMENT#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED / core: $COMMENT#EN#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED */,
-          public: Object.freeze({
+          public: {
             successFalse:
               "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSFALSE` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSFALSE}`." /* variations: $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE / core: $COMMENT#EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE */,
             successTrue:
@@ -18,11 +18,11 @@ export const enData = Object.freeze({
               "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING}`." /* variations: $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING / core: $COMMENT#EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING */,
             ERROR_NOT_STANDARDIZED:
               '"$COMMENT#EN#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED"' /* variations: $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED / core: $COMMENT#EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED */,
-          }),
-        }),
-        defs: Object.freeze({
-          utils: Object.freeze({
-            public: Object.freeze({
+          },
+        },
+        defs: {
+          utils: {
+            public: {
               makeSuccessFalseTypeError:
                 "Makes a `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` object with a $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR of `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR}` $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR */,
               makeSuccessFalseTypeWarning:
@@ -47,12 +47,12 @@ export const enData = Object.freeze({
                 "Tells if a path actually exists as a file." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE */,
               pathExistsAsADirectory:
                 "Tells if a path actually exists as a directory." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY / core: $COMMENT#EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY */,
-            }),
-          }),
-        }),
-        params: Object.freeze({
-          utils: Object.freeze({
-            public: Object.freeze({
+            },
+          },
+        },
+        params: {
+          utils: {
+            public: {
               message:
                 "The human-readable message of the $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE */,
               status:
@@ -62,19 +62,27 @@ export const enData = Object.freeze({
               error:
                 'The error object $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND, with either the value `"$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR"` or `"$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING"` at its `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE` key.' /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR */,
               string:
-                "The string $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING */,
+                "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING */,
               limit:
                 "The provided length limit. The string will be trimmed if its length is strictly superior to this given number." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT */,
               sourceCode:
-                "The file's `SourceCode` object $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE */,
+                "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE */,
               absolutePath:
-                "The absolute path $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH */,
-            }),
-          }),
-        }),
-        returns: Object.freeze({
-          utils: Object.freeze({
-            public: Object.freeze({
+                "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH */,
+            },
+            atHand: {
+              string:
+                "The string§" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING */,
+              sourceCode:
+                "The file's `SourceCode` object§" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE */,
+              absolutePath:
+                "The absolute path§" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH / core: $COMMENT#EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH */,
+            },
+          },
+        },
+        returns: {
+          utils: {
+            public: {
               makeSuccessFalseTypeError:
                 "A `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` object with a $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR of `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR}`." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR */,
               makeSuccessFalseTypeWarning:
@@ -99,14 +107,14 @@ export const enData = Object.freeze({
                 "`true` if the path is a file, `false` otherwise." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE */,
               pathExistsAsADirectory:
                 "`true` if the path is a directory, `false` otherwise." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY / core: $COMMENT#EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY */,
-            }),
-          }),
-        }),
-      }),
-    }),
-  }),
-  composedVariablesExclusives: Object.freeze({
-    variables: Object.freeze({
+            },
+          },
+        },
+      },
+    },
+  },
+  composedVariablesExclusives: {
+    variables: {
       successFalse:
         "successFalse" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSFALSE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSFALSE */,
       successTrue:
@@ -139,15 +147,17 @@ export const enData = Object.freeze({
         "spaceOutESLintMessage" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SPACEOUTESLINTMESSAGE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SPACEOUTESLINTMESSAGE */,
       highlightFirstLineOfCode:
         "highlightFirstLineOfCode" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#HIGHLIGHTFIRSTLINEOFCODE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#HIGHLIGHTFIRSTLINEOFCODE */,
-      pathExistsAsAFile: "pathExistsAsAFile" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASAFILE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASAFILE */,
-      pathExistsAsADirectory: "pathExistsAsADirectory" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASADIRECTORY / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASADIRECTORY */,
-    }),
-    arguments: Object.freeze({
+      pathExistsAsAFile:
+        "pathExistsAsAFile" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASAFILE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASAFILE */,
+      pathExistsAsADirectory:
+        "pathExistsAsADirectory" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASADIRECTORY / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASADIRECTORY */,
+    },
+    arguments: {
       message:
         "message" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#MESSAGE / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#MESSAGE */,
       status:
         "status" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#STATUS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#STATUS */,
-    }),
+    },
 
     // tsDoc.src.lib.consts
     success_false:
@@ -192,7 +202,7 @@ export const enData = Object.freeze({
     // tsDoc.src.lib.returns
     _Void:
       "Void" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_VOID / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID */,
-  }),
+  },
 });
 
 /* manual composedVariablesExclusives */

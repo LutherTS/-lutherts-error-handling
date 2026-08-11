@@ -60,6 +60,25 @@ const libraries = {
   // errorHandlingCommentVariablesDataIntl.FR,
 }; // can be omitted
 
+/* templateFunctions */
+
+const templateFunctions = {
+  [EN]: {
+    // #ATHAND#
+    atHand: {
+      beforeComposed: (/** @type {string} */ string) => {
+        const parts = string.split("§");
+        const part = parts[0];
+
+        return part + " $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND.";
+        // $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND
+      },
+      afterComposed: (/** @type {string} */ string) => string,
+    },
+  },
+  // N'est pas (aisément) applicable au français étant donné "concerné"/"concernée", auquel cas il demeure préférable de continuer à créer ces variables à la main via des variables composées.
+}; // can be omitted
+
 /* config */
 
 const config = {
@@ -70,6 +89,7 @@ const config = {
   composedVariablesExclusives,
   variations,
   libraries,
+  templateFunctions,
 };
 
 export default config;

@@ -1,13 +1,13 @@
 /* data */
 
-export const frData = Object.freeze({
-  tsDoc: Object.freeze({
-    src: Object.freeze({
-      lib: Object.freeze({
-        consts: Object.freeze({
+export const frData = /** @type {const} */ ({
+  tsDoc: {
+    src: {
+      lib: {
+        consts: {
           errorNotStandardized:
             "$COMMENT#EN#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED / $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_" /* variations: $COMMENT#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED / core: $COMMENT#FR#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED */,
-          public: Object.freeze({
+          public: {
             successFalse:
               "$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSFALSE` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSFALSE}`." /* variations: $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE / core: $COMMENT#FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE */,
             successTrue:
@@ -18,11 +18,11 @@ export const frData = Object.freeze({
               "$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH  `...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB, ...$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING}`." /* variations: $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING / core: $COMMENT#FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING */,
             ERROR_NOT_STANDARDIZED:
               '$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS : "$COMMENT#EN#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED"' /* variations: $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED / core: $COMMENT#FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED */,
-          }),
-        }),
-        defs: Object.freeze({
-          utils: Object.freeze({
-            public: Object.freeze({
+          },
+        },
+        defs: {
+          utils: {
+            public: {
               makeSuccessFalseTypeError:
                 "Crée un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` avec une $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR de `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR}` $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR */,
               makeSuccessFalseTypeWarning:
@@ -47,12 +47,12 @@ export const frData = Object.freeze({
                 "Informe de l'existence d'un chemin en tant que fichier." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE */,
               pathExistsAsADirectory:
                 "Informe de l'existence d'un chemin en tant que dossier." /* variations: $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY / core: $COMMENT#FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY */,
-            }),
-          }),
-        }),
-        params: Object.freeze({
-          utils: Object.freeze({
-            public: Object.freeze({
+            },
+          },
+        },
+        params: {
+          utils: {
+            public: {
               message:
                 "Le message en clair de l'$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE */,
               status:
@@ -62,19 +62,27 @@ export const frData = Object.freeze({
               error:
                 'L\'objet d\'erreur $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ, avec `"$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR"` ou `"$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING"` pour valeur à sa clé `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE`.' /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR */,
               string:
-                "La chaîne de caractères $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING */,
+                "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING */,
               limit:
                 "La limite de longueur renseignée. La chaîne de caractères sera tronquée si sa longueur est strictement supérieure à celle de ce nombre donné." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT */,
               sourceCode:
-                "L'objet `SourceCode` du fichier $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE */,
+                "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE */,
               absolutePath:
-                "Le chemin absolu $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH */,
-            }),
-          }),
-        }),
-        returns: Object.freeze({
-          utils: Object.freeze({
-            public: Object.freeze({
+                "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH */,
+            },
+            atHand: {
+              string:
+                "La chaîne de caractères $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING */,
+              sourceCode:
+                "L'objet `SourceCode` du fichier $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE */,
+              absolutePath:
+                "Le chemin absolu $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH */,
+            },
+          },
+        },
+        returns: {
+          utils: {
+            public: {
               makeSuccessFalseTypeError:
                 "Un objet `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE}` avec une $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR de `{$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR}`." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR */,
               makeSuccessFalseTypeWarning:
@@ -99,15 +107,15 @@ export const frData = Object.freeze({
                 "`true` si le chemin est un fichier, `false` sinon." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE */,
               pathExistsAsADirectory:
                 "`true` si le chemin est un dossier, `false` sinon." /* variations: $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY / core: $COMMENT#FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY */,
-            }),
-          }),
-        }),
-      }),
-    }),
-  }),
-  composedVariablesExclusives: Object.freeze({
-    variables: Object.freeze({}),
-    arguments: Object.freeze({}),
+            },
+          },
+        },
+      },
+    },
+  },
+  composedVariablesExclusives: {
+    variables: {},
+    arguments: {},
 
     // tsDoc.src.lib.consts
     error:
@@ -137,7 +145,7 @@ export const frData = Object.freeze({
       "concerné" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ */,
     concernée:
       "concernée" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE */,
-  }),
+  },
 });
 
 /* manual composedVariablesExclusives */
