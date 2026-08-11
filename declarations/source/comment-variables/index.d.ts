@@ -1,190 +1,190 @@
 export declare const consts: {
-    errorNotStandardized: {
-        "key": "EN#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED";
-        "value": "The error encountered is not standardized.";
+    readonly errorNotStandardized: {
+        readonly key: "EN#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED";
+        readonly value: "The error encountered is not standardized.";
     };
-    public: {
-        "successFalse": {
-            "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
-            "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
+    readonly public: {
+        readonly successFalse: {
+            readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
+            readonly value: "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
         };
-        "successTrue": {
-            "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
-            "value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
+        readonly successTrue: {
+            readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
+            readonly value: "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
         };
-        "typeError": {
-            "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
-            "value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
+        readonly typeError: {
+            readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
+            readonly value: "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
         };
-        "typeWarning": {
-            "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
-            "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
+        readonly typeWarning: {
+            readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
+            readonly value: "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
         };
-        "ERROR_NOT_STANDARDIZED": {
-            "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
-            "value": "\"The error encountered is not standardized.\"";
+        readonly ERROR_NOT_STANDARDIZED: {
+            readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
+            readonly value: "\"The error encountered is not standardized.\"";
         };
     };
 };
 export declare const composedVariablesExclusives: {
-    variables: {
-        "successFalse": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSFALSE";
-            "value": "successFalse";
+    readonly variables: {
+        readonly successFalse: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSFALSE";
+            readonly value: "successFalse";
         };
-        "successTrue": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSTRUE";
-            "value": "successTrue";
+        readonly successTrue: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSTRUE";
+            readonly value: "successTrue";
         };
-        "typeError": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEERROR";
-            "value": "typeError";
+        readonly typeError: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEERROR";
+            readonly value: "typeError";
         };
-        "typeWarning": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING";
-            "value": "typeWarning";
+        readonly typeWarning: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING";
+            readonly value: "typeWarning";
         };
-        "errorNotStandardized": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED";
-            "value": "errorNotStandardized";
+        readonly errorNotStandardized: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED";
+            readonly value: "errorNotStandardized";
         };
-        "ERROR_NOT_STANDARDIZED": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED";
-            "value": "ERROR_NOT_STANDARDIZED";
+        readonly ERROR_NOT_STANDARDIZED: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED";
+            readonly value: "ERROR_NOT_STANDARDIZED";
         };
-        "makeSuccessFalseTypeError": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEERROR";
-            "value": "makeSuccessFalseTypeError";
+        readonly makeSuccessFalseTypeError: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEERROR";
+            readonly value: "makeSuccessFalseTypeError";
         };
-        "makeSuccessFalseTypeWarning": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEWARNING";
-            "value": "makeSuccessFalseTypeWarning";
+        readonly makeSuccessFalseTypeWarning: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEWARNING";
+            readonly value: "makeSuccessFalseTypeWarning";
         };
-        "makeErrorTypeError": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEERROR";
-            "value": "makeErrorTypeError";
+        readonly makeErrorTypeError: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEERROR";
+            readonly value: "makeErrorTypeError";
         };
-        "makeErrorTypeWarning": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEWARNING";
-            "value": "makeErrorTypeWarning";
+        readonly makeErrorTypeWarning: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEWARNING";
+            readonly value: "makeErrorTypeWarning";
         };
-        "showVSCodeError": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SHOWVSCODEERROR";
-            "value": "showVSCodeError";
+        readonly showVSCodeError: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SHOWVSCODEERROR";
+            readonly value: "showVSCodeError";
         };
-        "logCLIError": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#LOGCLIERROR";
-            "value": "logCLIError";
+        readonly logCLIError: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#LOGCLIERROR";
+            readonly value: "logCLIError";
         };
-        "escapeRegex": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ESCAPEREGEX";
-            "value": "escapeRegex";
+        readonly escapeRegex: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ESCAPEREGEX";
+            readonly value: "escapeRegex";
         };
-        "trimStringWithLimit": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TRIMSTRINGWITHLIMIT";
-            "value": "trimStringWithLimit";
+        readonly trimStringWithLimit: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TRIMSTRINGWITHLIMIT";
+            readonly value: "trimStringWithLimit";
         };
-        "spaceOutESLintMessage": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SPACEOUTESLINTMESSAGE";
-            "value": "spaceOutESLintMessage";
+        readonly spaceOutESLintMessage: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SPACEOUTESLINTMESSAGE";
+            readonly value: "spaceOutESLintMessage";
         };
-        "highlightFirstLineOfCode": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#HIGHLIGHTFIRSTLINEOFCODE";
-            "value": "highlightFirstLineOfCode";
+        readonly highlightFirstLineOfCode: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#HIGHLIGHTFIRSTLINEOFCODE";
+            readonly value: "highlightFirstLineOfCode";
         };
-        "pathExistsAsAFile": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASAFILE";
-            "value": "pathExistsAsAFile";
+        readonly pathExistsAsAFile: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASAFILE";
+            readonly value: "pathExistsAsAFile";
         };
-        "pathExistsAsADirectory": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASADIRECTORY";
-            "value": "pathExistsAsADirectory";
-        };
-    };
-    arguments: {
-        "message": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#MESSAGE";
-            "value": "message";
-        };
-        "status": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#STATUS";
-            "value": "status";
+        readonly pathExistsAsADirectory: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASADIRECTORY";
+            readonly value: "pathExistsAsADirectory";
         };
     };
-    success_false: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE";
-        "value": "success: false";
+    readonly arguments: {
+        readonly message: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#MESSAGE";
+            readonly value: "message";
+        };
+        readonly status: {
+            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#STATUS";
+            readonly value: "status";
+        };
     };
-    success_true: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE";
-        "value": "success: true";
+    readonly success_false: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE";
+        readonly value: "success: false";
     };
-    type_error: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR";
-        "value": "type: error";
+    readonly success_true: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE";
+        readonly value: "success: true";
     };
-    type_warning: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING";
-        "value": "type: warning";
+    readonly type_error: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR";
+        readonly value: "type: error";
     };
-    success: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS";
-        "value": "success";
+    readonly type_warning: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING";
+        readonly value: "type: warning";
     };
-    false: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE";
-        "value": "false";
+    readonly success: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS";
+        readonly value: "success";
     };
-    true: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE";
-        "value": "true";
+    readonly false: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE";
+        readonly value: "false";
     };
-    type: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE";
-        "value": "type";
+    readonly true: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE";
+        readonly value: "true";
     };
-    error: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR";
-        "value": "error";
+    readonly type: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE";
+        readonly value: "type";
     };
-    warning: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING";
-        "value": "warning";
+    readonly error: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR";
+        readonly value: "error";
     };
-    _applyLastWith: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH";
-        "value": "Apply last with";
+    readonly warning: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING";
+        readonly value: "warning";
     };
-    toEnsure: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE";
-        "value": "to ensure that";
+    readonly _applyLastWith: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH";
+        readonly value: "Apply last with";
     };
-    sitsAtTopLike: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
-        "value": "sits at the top of its object's type definition, like";
+    readonly toEnsure: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE";
+        readonly value: "to ensure that";
     };
-    propApropB: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB";
-        "value": "propertyA, propertyB";
+    readonly sitsAtTopLike: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
+        readonly value: "sits at the top of its object's type definition, like";
     };
-    singleError: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
-        "value": "single error in its `errors` array";
+    readonly propApropB: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB";
+        readonly value: "propertyA, propertyB";
     };
-    errorObject: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT";
-        "value": "error object";
+    readonly singleError: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
+        readonly value: "single error in its `errors` array";
     };
-    basedOnMessageAndStatus: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
-        "value": "based on the `message` it is meant to display and on the `status` it is meant to have";
+    readonly errorObject: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT";
+        readonly value: "error object";
     };
-    atHand: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
-        "value": "at hand";
+    readonly basedOnMessageAndStatus: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
+        readonly value: "based on the `message` it is meant to display and on the `status` it is meant to have";
     };
-    _Void: {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
-        "value": "Void";
+    readonly atHand: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
+        readonly value: "at hand";
+    };
+    readonly _Void: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
+        readonly value: "Void";
     };
 };

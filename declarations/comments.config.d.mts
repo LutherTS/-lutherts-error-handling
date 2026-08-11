@@ -1,178 +1,192 @@
 export declare const resolvedConfigData: {
-    "en": {
-        "tsDoc": {
-            "src": {
-                "lib": {
-                    "consts": {
-                        "errorNotStandardized": {
-                            "key": "EN#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED";
-                            "value": "The error encountered is not standardized.";
+    readonly en: {
+        readonly tsDoc: {
+            readonly src: {
+                readonly lib: {
+                    readonly consts: {
+                        readonly errorNotStandardized: {
+                            readonly key: "EN#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED";
+                            readonly value: "The error encountered is not standardized.";
                         };
-                        "public": {
-                            "successFalse": {
-                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
-                                "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
+                        readonly public: {
+                            readonly successFalse: {
+                                readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
+                                readonly value: "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
                             };
-                            "successTrue": {
-                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
-                                "value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
+                            readonly successTrue: {
+                                readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
+                                readonly value: "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
                             };
-                            "typeError": {
-                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
-                                "value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
+                            readonly typeError: {
+                                readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
+                                readonly value: "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
                             };
-                            "typeWarning": {
-                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
-                                "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
+                            readonly typeWarning: {
+                                readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
+                                readonly value: "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
                             };
-                            "ERROR_NOT_STANDARDIZED": {
-                                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
-                                "value": "\"The error encountered is not standardized.\"";
-                            };
-                        };
-                    };
-                    "defs": {
-                        "utils": {
-                            "public": {
-                                "makeSuccessFalseTypeError": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
-                                    "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
-                                };
-                                "makeSuccessFalseTypeWarning": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
-                                    "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
-                                };
-                                "makeErrorTypeError": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
-                                    "value": "Makes an error object of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
-                                };
-                                "makeErrorTypeWarning": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
-                                    "value": "Makes an error object of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
-                                };
-                                "showVSCodeError": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR";
-                                    "value": "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided.";
-                                };
-                                "logCLIError": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR";
-                                    "value": "Shows an error or warning message via the CLI's `console.error` or `console.warn` method depending on the `type` of the error provided.";
-                                };
-                                "escapeRegex": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX";
-                                    "value": "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex.";
-                                };
-                                "trimStringWithLimit": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
-                                    "value": "Trims a string with an ellipsis based on a provided length limit.";
-                                };
-                                "spaceOutESLintMessage": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
-                                    "value": "Adds a single space to the end of a string, notably in the context of ESLint rule messages.";
-                                };
-                                "highlightFirstLineOfCode": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
-                                    "value": "Highlights the first line of code of a file via its ESLint `SourceCode` object to illustrate general linting errors.";
-                                };
-                                "pathExistsAsAFile": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE";
-                                    "value": "Tells if a path actually exists as a file.";
-                                };
-                                "pathExistsAsADirectory": {
-                                    "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY";
-                                    "value": "Tells if a path actually exists as a directory.";
-                                };
+                            readonly ERROR_NOT_STANDARDIZED: {
+                                readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
+                                readonly value: "\"The error encountered is not standardized.\"";
                             };
                         };
                     };
-                    "params": {
-                        "utils": {
-                            "public": {
-                                "message": {
-                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE";
-                                    "value": "The human-readable message of the error.";
+                    readonly defs: {
+                        readonly utils: {
+                            readonly public: {
+                                readonly makeSuccessFalseTypeError: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                                    readonly value: "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
                                 };
-                                "status": {
-                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
-                                    "value": "The static status text of the error.";
+                                readonly makeSuccessFalseTypeWarning: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                    readonly value: "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
                                 };
-                                "vscode": {
-                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE";
-                                    "value": "The VS Code API instance at hand, living in the VS Code Extension Host (and not in the extension's Node modules).";
+                                readonly makeErrorTypeError: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
+                                    readonly value: "Makes an error object of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
                                 };
-                                "error": {
-                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR";
-                                    "value": "The error object at hand, with either the value `\"error\"` or `\"warning\"` at its `type` key.";
+                                readonly makeErrorTypeWarning: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
+                                    readonly value: "Makes an error object of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
                                 };
-                                "string": {
-                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
-                                    "value": "The string at hand.";
+                                readonly showVSCodeError: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR";
+                                    readonly value: "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided.";
                                 };
-                                "limit": {
-                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT";
-                                    "value": "The provided length limit. The string will be trimmed if its length is strictly superior to this given number.";
+                                readonly logCLIError: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR";
+                                    readonly value: "Shows an error or warning message via the CLI's `console.error` or `console.warn` method depending on the `type` of the error provided.";
                                 };
-                                "sourceCode": {
-                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE";
-                                    "value": "The file's `SourceCode` object at hand.";
+                                readonly escapeRegex: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX";
+                                    readonly value: "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex.";
                                 };
-                                "absolutePath": {
-                                    "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH";
-                                    "value": "The absolute path at hand.";
+                                readonly trimStringWithLimit: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
+                                    readonly value: "Trims a string with an ellipsis based on a provided length limit.";
+                                };
+                                readonly spaceOutESLintMessage: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
+                                    readonly value: "Adds a single space to the end of a string, notably in the context of ESLint rule messages.";
+                                };
+                                readonly highlightFirstLineOfCode: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
+                                    readonly value: "Highlights the first line of code of a file via its ESLint `SourceCode` object to illustrate general linting errors.";
+                                };
+                                readonly pathExistsAsAFile: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE";
+                                    readonly value: "Tells if a path actually exists as a file.";
+                                };
+                                readonly pathExistsAsADirectory: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY";
+                                    readonly value: "Tells if a path actually exists as a directory.";
                                 };
                             };
                         };
                     };
-                    "returns": {
-                        "utils": {
-                            "public": {
-                                "makeSuccessFalseTypeError": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
-                                    "value": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.";
+                    readonly params: {
+                        readonly utils: {
+                            readonly public: {
+                                readonly message: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE";
+                                    readonly value: "The human-readable message of the error.";
                                 };
-                                "makeSuccessFalseTypeWarning": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
-                                    "value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
+                                readonly status: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
+                                    readonly value: "The static status text of the error.";
                                 };
-                                "makeErrorTypeError": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
-                                    "value": "An error object of `{type: error}`.";
+                                readonly vscode: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE";
+                                    readonly value: "The VS Code API instance at hand, living in the VS Code Extension Host (and not in the extension's Node modules).";
                                 };
-                                "makeErrorTypeWarning": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
-                                    "value": "An error object of `{type: warning}`.";
+                                readonly error: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR";
+                                    readonly value: "The error object at hand, with either the value `\"error\"` or `\"warning\"` at its `type` key.";
                                 };
-                                "showVSCodeError": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR";
-                                    "value": "Void.";
+                                readonly string: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
+                                    readonly value: "The string at hand.";
                                 };
-                                "logCLIError": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR";
-                                    "value": "Void.";
+                                readonly limit: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT";
+                                    readonly value: "The provided length limit. The string will be trimmed if its length is strictly superior to this given number.";
                                 };
-                                "escapeRegex": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX";
-                                    "value": "The string with regex characters escaped.";
+                                readonly sourceCode: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE";
+                                    readonly value: "The file's `SourceCode` object at hand.";
                                 };
-                                "trimStringWithLimit": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
-                                    "value": "The provided string if its length is lower or equal to the provided length limit; a trimmed version of that string otherwise.";
+                                readonly absolutePath: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH";
+                                    readonly value: "The absolute path at hand.";
                                 };
-                                "spaceOutESLintMessage": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
-                                    "value": "The string spaced out, so that an ESLint rule message shown on hovered reports has a bit of breathing room before its plugin name and rule name are suffixed.";
+                            };
+                            readonly atHand: {
+                                readonly string: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING";
+                                    readonly value: "The string§";
                                 };
-                                "highlightFirstLineOfCode": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
-                                    "value": "A `SourceLocation` object (`loc`) as the effective range of the file's first line of code.";
+                                readonly sourceCode: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE";
+                                    readonly value: "The file's `SourceCode` object§";
                                 };
-                                "pathExistsAsAFile": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE";
-                                    "value": "`true` if the path is a file, `false` otherwise.";
+                                readonly absolutePath: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH";
+                                    readonly value: "The absolute path§";
                                 };
-                                "pathExistsAsADirectory": {
-                                    "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY";
-                                    "value": "`true` if the path is a directory, `false` otherwise.";
+                            };
+                        };
+                    };
+                    readonly returns: {
+                        readonly utils: {
+                            readonly public: {
+                                readonly makeSuccessFalseTypeError: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                                    readonly value: "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.";
+                                };
+                                readonly makeSuccessFalseTypeWarning: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                    readonly value: "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
+                                };
+                                readonly makeErrorTypeError: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
+                                    readonly value: "An error object of `{type: error}`.";
+                                };
+                                readonly makeErrorTypeWarning: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
+                                    readonly value: "An error object of `{type: warning}`.";
+                                };
+                                readonly showVSCodeError: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR";
+                                    readonly value: "Void.";
+                                };
+                                readonly logCLIError: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR";
+                                    readonly value: "Void.";
+                                };
+                                readonly escapeRegex: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX";
+                                    readonly value: "The string with regex characters escaped.";
+                                };
+                                readonly trimStringWithLimit: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
+                                    readonly value: "The provided string if its length is lower or equal to the provided length limit; a trimmed version of that string otherwise.";
+                                };
+                                readonly spaceOutESLintMessage: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
+                                    readonly value: "The string spaced out, so that an ESLint rule message shown on hovered reports has a bit of breathing room before its plugin name and rule name are suffixed.";
+                                };
+                                readonly highlightFirstLineOfCode: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
+                                    readonly value: "A `SourceLocation` object (`loc`) as the effective range of the file's first line of code.";
+                                };
+                                readonly pathExistsAsAFile: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE";
+                                    readonly value: "`true` if the path is a file, `false` otherwise.";
+                                };
+                                readonly pathExistsAsADirectory: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY";
+                                    readonly value: "`true` if the path is a directory, `false` otherwise.";
                                 };
                             };
                         };
@@ -180,343 +194,357 @@ export declare const resolvedConfigData: {
                 };
             };
         };
-        "composedVariablesExclusives": {
-            "variables": {
-                "successFalse": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSFALSE";
-                    "value": "successFalse";
+        readonly composedVariablesExclusives: {
+            readonly variables: {
+                readonly successFalse: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSFALSE";
+                    readonly value: "successFalse";
                 };
-                "successTrue": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSTRUE";
-                    "value": "successTrue";
+                readonly successTrue: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSTRUE";
+                    readonly value: "successTrue";
                 };
-                "typeError": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEERROR";
-                    "value": "typeError";
+                readonly typeError: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEERROR";
+                    readonly value: "typeError";
                 };
-                "typeWarning": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING";
-                    "value": "typeWarning";
+                readonly typeWarning: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING";
+                    readonly value: "typeWarning";
                 };
-                "errorNotStandardized": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED";
-                    "value": "errorNotStandardized";
+                readonly errorNotStandardized: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED";
+                    readonly value: "errorNotStandardized";
                 };
-                "ERROR_NOT_STANDARDIZED": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED";
-                    "value": "ERROR_NOT_STANDARDIZED";
+                readonly ERROR_NOT_STANDARDIZED: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED";
+                    readonly value: "ERROR_NOT_STANDARDIZED";
                 };
-                "makeSuccessFalseTypeError": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEERROR";
-                    "value": "makeSuccessFalseTypeError";
+                readonly makeSuccessFalseTypeError: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEERROR";
+                    readonly value: "makeSuccessFalseTypeError";
                 };
-                "makeSuccessFalseTypeWarning": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEWARNING";
-                    "value": "makeSuccessFalseTypeWarning";
+                readonly makeSuccessFalseTypeWarning: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEWARNING";
+                    readonly value: "makeSuccessFalseTypeWarning";
                 };
-                "makeErrorTypeError": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEERROR";
-                    "value": "makeErrorTypeError";
+                readonly makeErrorTypeError: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEERROR";
+                    readonly value: "makeErrorTypeError";
                 };
-                "makeErrorTypeWarning": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEWARNING";
-                    "value": "makeErrorTypeWarning";
+                readonly makeErrorTypeWarning: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEWARNING";
+                    readonly value: "makeErrorTypeWarning";
                 };
-                "showVSCodeError": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SHOWVSCODEERROR";
-                    "value": "showVSCodeError";
+                readonly showVSCodeError: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SHOWVSCODEERROR";
+                    readonly value: "showVSCodeError";
                 };
-                "logCLIError": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#LOGCLIERROR";
-                    "value": "logCLIError";
+                readonly logCLIError: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#LOGCLIERROR";
+                    readonly value: "logCLIError";
                 };
-                "escapeRegex": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ESCAPEREGEX";
-                    "value": "escapeRegex";
+                readonly escapeRegex: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ESCAPEREGEX";
+                    readonly value: "escapeRegex";
                 };
-                "trimStringWithLimit": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TRIMSTRINGWITHLIMIT";
-                    "value": "trimStringWithLimit";
+                readonly trimStringWithLimit: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TRIMSTRINGWITHLIMIT";
+                    readonly value: "trimStringWithLimit";
                 };
-                "spaceOutESLintMessage": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SPACEOUTESLINTMESSAGE";
-                    "value": "spaceOutESLintMessage";
+                readonly spaceOutESLintMessage: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SPACEOUTESLINTMESSAGE";
+                    readonly value: "spaceOutESLintMessage";
                 };
-                "highlightFirstLineOfCode": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#HIGHLIGHTFIRSTLINEOFCODE";
-                    "value": "highlightFirstLineOfCode";
+                readonly highlightFirstLineOfCode: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#HIGHLIGHTFIRSTLINEOFCODE";
+                    readonly value: "highlightFirstLineOfCode";
                 };
-                "pathExistsAsAFile": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASAFILE";
-                    "value": "pathExistsAsAFile";
+                readonly pathExistsAsAFile: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASAFILE";
+                    readonly value: "pathExistsAsAFile";
                 };
-                "pathExistsAsADirectory": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASADIRECTORY";
-                    "value": "pathExistsAsADirectory";
-                };
-            };
-            "arguments": {
-                "message": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#MESSAGE";
-                    "value": "message";
-                };
-                "status": {
-                    "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#STATUS";
-                    "value": "status";
+                readonly pathExistsAsADirectory: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASADIRECTORY";
+                    readonly value: "pathExistsAsADirectory";
                 };
             };
-            "success_false": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE";
-                "value": "success: false";
+            readonly arguments: {
+                readonly message: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#MESSAGE";
+                    readonly value: "message";
+                };
+                readonly status: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#STATUS";
+                    readonly value: "status";
+                };
             };
-            "success_true": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE";
-                "value": "success: true";
+            readonly success_false: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_FALSE";
+                readonly value: "success: false";
             };
-            "type_error": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR";
-                "value": "type: error";
+            readonly success_true: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS_TRUE";
+                readonly value: "success: true";
             };
-            "type_warning": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING";
-                "value": "type: warning";
+            readonly type_error: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_ERROR";
+                readonly value: "type: error";
             };
-            "success": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS";
-                "value": "success";
+            readonly type_warning: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING";
+                readonly value: "type: warning";
             };
-            "false": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE";
-                "value": "false";
+            readonly success: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS";
+                readonly value: "success";
             };
-            "true": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE";
-                "value": "true";
+            readonly false: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE";
+                readonly value: "false";
             };
-            "type": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE";
-                "value": "type";
+            readonly true: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE";
+                readonly value: "true";
             };
-            "error": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR";
-                "value": "error";
+            readonly type: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE";
+                readonly value: "type";
             };
-            "warning": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING";
-                "value": "warning";
+            readonly error: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR";
+                readonly value: "error";
             };
-            "_applyLastWith": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH";
-                "value": "Apply last with";
+            readonly warning: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING";
+                readonly value: "warning";
             };
-            "toEnsure": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE";
-                "value": "to ensure that";
+            readonly _applyLastWith: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH";
+                readonly value: "Apply last with";
             };
-            "sitsAtTopLike": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
-                "value": "sits at the top of its object's type definition, like";
+            readonly toEnsure: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE";
+                readonly value: "to ensure that";
             };
-            "propApropB": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB";
-                "value": "propertyA, propertyB";
+            readonly sitsAtTopLike: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
+                readonly value: "sits at the top of its object's type definition, like";
             };
-            "singleError": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
-                "value": "single error in its `errors` array";
+            readonly propApropB: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#PROPAPROPB";
+                readonly value: "propertyA, propertyB";
             };
-            "errorObject": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT";
-                "value": "error object";
+            readonly singleError: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
+                readonly value: "single error in its `errors` array";
             };
-            "basedOnMessageAndStatus": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
-                "value": "based on the `message` it is meant to display and on the `status` it is meant to have";
+            readonly errorObject: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT";
+                readonly value: "error object";
             };
-            "atHand": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
-                "value": "at hand";
+            readonly basedOnMessageAndStatus: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
+                readonly value: "based on the `message` it is meant to display and on the `status` it is meant to have";
             };
-            "_Void": {
-                "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
-                "value": "Void";
+            readonly atHand: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND";
+                readonly value: "at hand";
+            };
+            readonly _Void: {
+                readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
+                readonly value: "Void";
             };
         };
     };
-    "fr": {
-        "tsDoc": {
-            "src": {
-                "lib": {
-                    "consts": {
-                        "errorNotStandardized": {
-                            "key": "FR#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED";
-                            "value": "The error encountered is not standardized. / (En anglais uniquement.)";
+    readonly fr: {
+        readonly tsDoc: {
+            readonly src: {
+                readonly lib: {
+                    readonly consts: {
+                        readonly errorNotStandardized: {
+                            readonly key: "FR#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED";
+                            readonly value: "The error encountered is not standardized. / (En anglais uniquement.)";
                         };
-                        "public": {
-                            "successFalse": {
-                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
-                                "value": "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`.";
+                        readonly public: {
+                            readonly successFalse: {
+                                readonly key: "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
+                                readonly value: "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`.";
                             };
-                            "successTrue": {
-                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
-                                "value": "À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`.";
+                            readonly successTrue: {
+                                readonly key: "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE";
+                                readonly value: "À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`.";
                             };
-                            "typeError": {
-                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
-                                "value": "À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`.";
+                            readonly typeError: {
+                                readonly key: "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR";
+                                readonly value: "À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`.";
                             };
-                            "typeWarning": {
-                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
-                                "value": "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.";
+                            readonly typeWarning: {
+                                readonly key: "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
+                                readonly value: "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.";
                             };
-                            "ERROR_NOT_STANDARDIZED": {
-                                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
-                                "value": "En anglais à l'exécution : \"The error encountered is not standardized.\"";
-                            };
-                        };
-                    };
-                    "defs": {
-                        "utils": {
-                            "public": {
-                                "makeSuccessFalseTypeError": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
-                                    "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
-                                };
-                                "makeSuccessFalseTypeWarning": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
-                                    "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
-                                };
-                                "makeErrorTypeError": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
-                                    "value": "Crée un objet d'erreur de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
-                                };
-                                "makeErrorTypeWarning": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
-                                    "value": "Crée un objet d'erreur de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
-                                };
-                                "showVSCodeError": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR";
-                                    "value": "Affiche un message d'erreur ou d'avertissement via le système de toasts de VS Code dépendamment du `type` de l'erreur fournie.";
-                                };
-                                "logCLIError": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR";
-                                    "value": "Affiche un message d'erreur ou d'avertissement via les méthodes `console.error` et `console.warn` d'interface de ligne de commande dépendamment du `type` de l'erreur fournie.";
-                                };
-                                "escapeRegex": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX";
-                                    "value": "Échappe tous les caractères regex d'une chaîne de caractères avec un `\"\\\"` pour préparer cette dernière à être utilisée dans une regex.";
-                                };
-                                "trimStringWithLimit": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
-                                    "value": "Tronque une chaîne de caractères par trois points de suspension en se basant sur la limite de longueur renseignée.";
-                                };
-                                "spaceOutESLintMessage": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
-                                    "value": "Ajoute un seul espace à la fin d'une chaîne de caractères, notamment pour les messages des règles ESLint.";
-                                };
-                                "highlightFirstLineOfCode": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
-                                    "value": "Souligne la première ligne de code d'un fichier à partir de son objet `SourceCode` pour mettre en valeur ses erreurs générales d'analyse statique.";
-                                };
-                                "pathExistsAsAFile": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE";
-                                    "value": "Informe de l'existence d'un chemin en tant que fichier.";
-                                };
-                                "pathExistsAsADirectory": {
-                                    "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY";
-                                    "value": "Informe de l'existence d'un chemin en tant que dossier.";
-                                };
+                            readonly ERROR_NOT_STANDARDIZED: {
+                                readonly key: "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
+                                readonly value: "En anglais à l'exécution : \"The error encountered is not standardized.\"";
                             };
                         };
                     };
-                    "params": {
-                        "utils": {
-                            "public": {
-                                "message": {
-                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE";
-                                    "value": "Le message en clair de l'erreur.";
+                    readonly defs: {
+                        readonly utils: {
+                            readonly public: {
+                                readonly makeSuccessFalseTypeError: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                                    readonly value: "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
-                                "status": {
-                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
-                                    "value": "Le texte statique du statut de l'erreur.";
+                                readonly makeSuccessFalseTypeWarning: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                    readonly value: "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
-                                "vscode": {
-                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE";
-                                    "value": "L'instance concernée de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).";
+                                readonly makeErrorTypeError: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
+                                    readonly value: "Crée un objet d'erreur de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
-                                "error": {
-                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR";
-                                    "value": "L'objet d'erreur concerné, avec `\"error\"` ou `\"warning\"` pour valeur à sa clé `type`.";
+                                readonly makeErrorTypeWarning: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
+                                    readonly value: "Crée un objet d'erreur de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
-                                "string": {
-                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
-                                    "value": "La chaîne de caractères concernée.";
+                                readonly showVSCodeError: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR";
+                                    readonly value: "Affiche un message d'erreur ou d'avertissement via le système de toasts de VS Code dépendamment du `type` de l'erreur fournie.";
                                 };
-                                "limit": {
-                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT";
-                                    "value": "La limite de longueur renseignée. La chaîne de caractères sera tronquée si sa longueur est strictement supérieure à celle de ce nombre donné.";
+                                readonly logCLIError: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR";
+                                    readonly value: "Affiche un message d'erreur ou d'avertissement via les méthodes `console.error` et `console.warn` d'interface de ligne de commande dépendamment du `type` de l'erreur fournie.";
                                 };
-                                "sourceCode": {
-                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE";
-                                    "value": "L'objet `SourceCode` du fichier concerné.";
+                                readonly escapeRegex: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX";
+                                    readonly value: "Échappe tous les caractères regex d'une chaîne de caractères avec un `\"\\\"` pour préparer cette dernière à être utilisée dans une regex.";
                                 };
-                                "absolutePath": {
-                                    "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH";
-                                    "value": "Le chemin absolu concerné.";
+                                readonly trimStringWithLimit: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
+                                    readonly value: "Tronque une chaîne de caractères par trois points de suspension en se basant sur la limite de longueur renseignée.";
+                                };
+                                readonly spaceOutESLintMessage: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
+                                    readonly value: "Ajoute un seul espace à la fin d'une chaîne de caractères, notamment pour les messages des règles ESLint.";
+                                };
+                                readonly highlightFirstLineOfCode: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
+                                    readonly value: "Souligne la première ligne de code d'un fichier à partir de son objet `SourceCode` pour mettre en valeur ses erreurs générales d'analyse statique.";
+                                };
+                                readonly pathExistsAsAFile: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE";
+                                    readonly value: "Informe de l'existence d'un chemin en tant que fichier.";
+                                };
+                                readonly pathExistsAsADirectory: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY";
+                                    readonly value: "Informe de l'existence d'un chemin en tant que dossier.";
                                 };
                             };
                         };
                     };
-                    "returns": {
-                        "utils": {
-                            "public": {
-                                "makeSuccessFalseTypeError": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
-                                    "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.";
+                    readonly params: {
+                        readonly utils: {
+                            readonly public: {
+                                readonly message: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE";
+                                    readonly value: "Le message en clair de l'erreur.";
                                 };
-                                "makeSuccessFalseTypeWarning": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
-                                    "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
+                                readonly status: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS";
+                                    readonly value: "Le texte statique du statut de l'erreur.";
                                 };
-                                "makeErrorTypeError": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
-                                    "value": "Un objet d'erreur de `{type: error}`.";
+                                readonly vscode: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE";
+                                    readonly value: "L'instance concernée de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).";
                                 };
-                                "makeErrorTypeWarning": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
-                                    "value": "Un objet d'erreur de `{type: warning}`.";
+                                readonly error: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR";
+                                    readonly value: "L'objet d'erreur concerné, avec `\"error\"` ou `\"warning\"` pour valeur à sa clé `type`.";
                                 };
-                                "showVSCodeError": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR";
-                                    "value": "Void. (Aucun retour.)";
+                                readonly string: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
+                                    readonly value: "La chaîne de caractères concernée.";
                                 };
-                                "logCLIError": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR";
-                                    "value": "Void. (Aucun retour.)";
+                                readonly limit: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT";
+                                    readonly value: "La limite de longueur renseignée. La chaîne de caractères sera tronquée si sa longueur est strictement supérieure à celle de ce nombre donné.";
                                 };
-                                "escapeRegex": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX";
-                                    "value": "La chaîne de caractères avec ses caractères regex échappés.";
+                                readonly sourceCode: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE";
+                                    readonly value: "L'objet `SourceCode` du fichier concerné.";
                                 };
-                                "trimStringWithLimit": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
-                                    "value": "La chaîne de caractères renseignée si sa longueur est plus petite ou égale à celle de la limite de longueur renseignée ; une version tronquée le cas échéant.";
+                                readonly absolutePath: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH";
+                                    readonly value: "Le chemin absolu concerné.";
                                 };
-                                "spaceOutESLintMessage": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
-                                    "value": "La chaîne de caractères espacée, de sorte qu'un messsage de règle ESLint ait un peu de marge avant que le nom de son plugin et le nom de sa règle n'y soient ajoutés.";
+                            };
+                            readonly atHand: {
+                                readonly string: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING";
+                                    readonly value: "La chaîne de caractères concernée.";
                                 };
-                                "highlightFirstLineOfCode": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
-                                    "value": "Un objet `SourceLocation` (`loc`) servant de rangée effective pour la première ligne de code du fichier.";
+                                readonly sourceCode: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE";
+                                    readonly value: "L'objet `SourceCode` du fichier concerné.";
                                 };
-                                "pathExistsAsAFile": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE";
-                                    "value": "`true` si le chemin est un fichier, `false` sinon.";
+                                readonly absolutePath: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH";
+                                    readonly value: "Le chemin absolu concerné.";
                                 };
-                                "pathExistsAsADirectory": {
-                                    "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY";
-                                    "value": "`true` si le chemin est un dossier, `false` sinon.";
+                            };
+                        };
+                    };
+                    readonly returns: {
+                        readonly utils: {
+                            readonly public: {
+                                readonly makeSuccessFalseTypeError: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR";
+                                    readonly value: "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.";
+                                };
+                                readonly makeSuccessFalseTypeWarning: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING";
+                                    readonly value: "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
+                                };
+                                readonly makeErrorTypeError: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
+                                    readonly value: "Un objet d'erreur de `{type: error}`.";
+                                };
+                                readonly makeErrorTypeWarning: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
+                                    readonly value: "Un objet d'erreur de `{type: warning}`.";
+                                };
+                                readonly showVSCodeError: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR";
+                                    readonly value: "Void. (Aucun retour.)";
+                                };
+                                readonly logCLIError: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR";
+                                    readonly value: "Void. (Aucun retour.)";
+                                };
+                                readonly escapeRegex: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX";
+                                    readonly value: "La chaîne de caractères avec ses caractères regex échappés.";
+                                };
+                                readonly trimStringWithLimit: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT";
+                                    readonly value: "La chaîne de caractères renseignée si sa longueur est plus petite ou égale à celle de la limite de longueur renseignée ; une version tronquée le cas échéant.";
+                                };
+                                readonly spaceOutESLintMessage: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE";
+                                    readonly value: "La chaîne de caractères espacée, de sorte qu'un messsage de règle ESLint ait un peu de marge avant que le nom de son plugin et le nom de sa règle n'y soient ajoutés.";
+                                };
+                                readonly highlightFirstLineOfCode: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE";
+                                    readonly value: "Un objet `SourceLocation` (`loc`) servant de rangée effective pour la première ligne de code du fichier.";
+                                };
+                                readonly pathExistsAsAFile: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE";
+                                    readonly value: "`true` si le chemin est un fichier, `false` sinon.";
+                                };
+                                readonly pathExistsAsADirectory: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY";
+                                    readonly value: "`true` si le chemin est un dossier, `false` sinon.";
                                 };
                             };
                         };
@@ -524,52 +552,52 @@ export declare const resolvedConfigData: {
                 };
             };
         };
-        "composedVariablesExclusives": {
-            "variables": {};
-            "arguments": {};
-            "error": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR";
-                "value": "erreur";
+        readonly composedVariablesExclusives: {
+            readonly variables: {};
+            readonly arguments: {};
+            readonly error: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR";
+                readonly value: "erreur";
             };
-            "_applyLastWith": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH";
-                "value": "À apposer en dernier via";
+            readonly _applyLastWith: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH";
+                readonly value: "À apposer en dernier via";
             };
-            "toEnsure": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE";
-                "value": "pour s'assurer que";
+            readonly toEnsure: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#TOENSURE";
+                readonly value: "pour s'assurer que";
             };
-            "sitsAtTopLike": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
-                "value": "apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon";
+            readonly sitsAtTopLike: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
+                readonly value: "apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon";
             };
-            "_enAnglais": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
-                "value": "En anglais à l'exécution";
+            readonly _enAnglais: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
+                readonly value: "En anglais à l'exécution";
             };
-            "_enAnglais_": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_";
-                "value": "(En anglais uniquement.)";
+            readonly _enAnglais_: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_";
+                readonly value: "(En anglais uniquement.)";
             };
-            "singleError": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
-                "value": "seule erreur dans son array `errors`";
+            readonly singleError: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
+                readonly value: "seule erreur dans son array `errors`";
             };
-            "errorObject": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT";
-                "value": "objet d'erreur";
+            readonly errorObject: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROROBJECT";
+                readonly value: "objet d'erreur";
             };
-            "basedOnMessageAndStatus": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
-                "value": "basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir";
+            readonly basedOnMessageAndStatus: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#BASEDONMESSAGEANDSTATUS";
+                readonly value: "basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir";
             };
-            "concerné": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ";
-                "value": "concerné";
+            readonly concerné: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ";
+                readonly value: "concerné";
             };
-            "concernée": {
-                "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE";
-                "value": "concernée";
+            readonly concernée: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE";
+                readonly value: "concernée";
             };
         };
     };
