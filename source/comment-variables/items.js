@@ -22,7 +22,7 @@ export const ERROR_NOT_STANDARDIZED_MESSAGE =
 /**
  * $COMMENT#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS
  * @public
- * */
+ */
 export const ERROR_NOT_STANDARDIZED_STATUS =
   errorStatuses.errorNotStandardized.value;
 
