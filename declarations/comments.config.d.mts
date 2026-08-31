@@ -2,6 +2,16 @@ export declare const resolvedConfigData: {
     readonly en: {
         readonly tsDoc: {
             readonly src: {
+                readonly comvar: {
+                    readonly items: {
+                        readonly public: {
+                            readonly ERROR_NOT_STANDARDIZED_STATUS: {
+                                readonly key: "EN#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS";
+                                readonly value: "\"The error encountered is not standardized.\"";
+                            };
+                        };
+                    };
+                };
                 readonly lib: {
                     readonly consts: {
                         readonly public: {
@@ -20,10 +30,6 @@ export declare const resolvedConfigData: {
                             readonly typeWarning: {
                                 readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
                                 readonly value: "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
-                            };
-                            readonly ERROR_NOT_STANDARDIZED: {
-                                readonly key: "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
-                                readonly value: "\"The error encountered is not standardized.\"";
                             };
                         };
                     };
@@ -398,12 +404,18 @@ export declare const resolvedConfigData: {
     readonly fr: {
         readonly tsDoc: {
             readonly src: {
+                readonly comvar: {
+                    readonly items: {
+                        readonly public: {
+                            readonly ERROR_NOT_STANDARDIZED_STATUS: {
+                                readonly key: "FR#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS";
+                                readonly value: "En anglais à l'exécution : \"The error encountered is not standardized.\"";
+                            };
+                        };
+                    };
+                };
                 readonly lib: {
                     readonly consts: {
-                        readonly errorNotStandardized: {
-                            readonly key: "FR#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED";
-                            readonly value: "The error encountered is not standardized. / (En anglais uniquement.)";
-                        };
                         readonly public: {
                             readonly successFalse: {
                                 readonly key: "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE";
@@ -420,10 +432,6 @@ export declare const resolvedConfigData: {
                             readonly typeWarning: {
                                 readonly key: "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING";
                                 readonly value: "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.";
-                            };
-                            readonly ERROR_NOT_STANDARDIZED: {
-                                readonly key: "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED";
-                                readonly value: "En anglais à l'exécution : \"The error encountered is not standardized.\"";
                             };
                         };
                     };

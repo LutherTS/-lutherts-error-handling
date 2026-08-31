@@ -38,7 +38,7 @@ const variations = Object.freeze({
     [EN]: Object.freeze({ label: ENGLISH }),
     [FR]: Object.freeze({ label: FRANÇAIS }),
   }),
-  variant: EN,
+  variant: FR,
   referenceData: enData,
   referenceVariant: EN,
   allowIncompleteVariations: false,

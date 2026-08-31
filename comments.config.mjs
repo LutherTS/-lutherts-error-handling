@@ -3,6 +3,16 @@ export const resolvedConfigData = /** @type {const} */ ({
   "en": {
     "tsDoc": {
       "src": {
+        "comvar": {
+          "items": {
+            "public": {
+              "ERROR_NOT_STANDARDIZED_STATUS": {
+                "key": "EN#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS",
+                "value": "\"The error encountered is not standardized.\""
+              }
+            }
+          }
+        },
         "lib": {
           "consts": {
             "public": {
@@ -21,10 +31,6 @@ export const resolvedConfigData = /** @type {const} */ ({
               "typeWarning": {
                 "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING",
                 "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`."
-              },
-              "ERROR_NOT_STANDARDIZED": {
-                "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED",
-                "value": "\"The error encountered is not standardized.\""
               }
             }
           },
@@ -399,12 +405,18 @@ export const resolvedConfigData = /** @type {const} */ ({
   "fr": {
     "tsDoc": {
       "src": {
+        "comvar": {
+          "items": {
+            "public": {
+              "ERROR_NOT_STANDARDIZED_STATUS": {
+                "key": "FR#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS",
+                "value": "En anglais à l'exécution : \"The error encountered is not standardized.\""
+              }
+            }
+          }
+        },
         "lib": {
           "consts": {
-            "errorNotStandardized": {
-              "key": "FR#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED",
-              "value": "The error encountered is not standardized. / (En anglais uniquement.)"
-            },
             "public": {
               "successFalse": {
                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE",
@@ -421,10 +433,6 @@ export const resolvedConfigData = /** @type {const} */ ({
               "typeWarning": {
                 "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING",
                 "value": "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`."
-              },
-              "ERROR_NOT_STANDARDIZED": {
-                "key": "FR#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED",
-                "value": "En anglais à l'exécution : \"The error encountered is not standardized.\""
               }
             }
           },

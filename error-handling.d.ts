@@ -5,11 +5,11 @@ export declare const commentVariablesData: {
     readonly libraryKey: "_LUTHERTS_ERROR_HANDLING";
     readonly libraryVariations: {
         readonly EN: {
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "\"The error encountered is not standardized.\"";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
-            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED": "\"The error encountered is not standardized.\"";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "Makes an error object of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
@@ -63,11 +63,11 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "";
         };
         readonly FR: {
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "En anglais à l'exécution : \"The error encountered is not standardized.\"";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE": "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING": "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.";
-            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED": "En anglais à l'exécution : \"The error encountered is not standardized.\"";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "Crée un objet d'erreur de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
@@ -129,7 +129,7 @@ declare const ERROR: "error";
 export declare const ERROR_NOT_STANDARDIZED_MESSAGE: "The error encountered is not standardized.";
 
 /**
- * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED
+ * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS
  * */
 export declare const ERROR_NOT_STANDARDIZED_STATUS: "ERROR_NOT_STANDARDIZED";
