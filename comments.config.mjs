@@ -5,10 +5,6 @@ export const resolvedConfigData = /** @type {const} */ ({
       "src": {
         "lib": {
           "consts": {
-            "errorNotStandardized": {
-              "key": "EN#TSDOC#SRC#LIB#CONSTS#ERRORNOTSTANDARDIZED",
-              "value": "The error encountered is not standardized."
-            },
             "public": {
               "successFalse": {
                 "key": "EN#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE",
@@ -196,88 +192,154 @@ export const resolvedConfigData = /** @type {const} */ ({
       }
     },
     "composedVariablesExclusives": {
-      "variables": {
-        "successFalse": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSFALSE",
-          "value": "successFalse"
+      "runtimeVariables": {
+        "errors": {
+          "messages": {
+            "errorNotStandardized": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#ERRORS#MESSAGES#ERRORNOTSTANDARDIZED",
+              "value": "The error encountered is not standardized."
+            }
+          },
+          "statuses": {
+            "errorNotStandardized": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#ERRORS#STATUSES#ERRORNOTSTANDARDIZED",
+              "value": "ERROR_NOT_STANDARDIZED"
+            }
+          },
+          "types": {
+            "error": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#ERRORS#TYPES#ERROR",
+              "value": "error"
+            },
+            "warning": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#ERRORS#TYPES#WARNING",
+              "value": "warning"
+            }
+          }
         },
-        "successTrue": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SUCCESSTRUE",
-          "value": "successTrue"
+        "miscellaneous": {
+          "ellipsis": {
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#ELLIPSIS",
+            "value": "..."
+          }
         },
-        "typeError": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEERROR",
-          "value": "typeError"
-        },
-        "typeWarning": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TYPEWARNING",
-          "value": "typeWarning"
-        },
-        "errorNotStandardized": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERRORNOTSTANDARDIZED",
-          "value": "errorNotStandardized"
-        },
-        "ERROR_NOT_STANDARDIZED": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ERROR_NOT_STANDARDIZED",
-          "value": "ERROR_NOT_STANDARDIZED"
-        },
-        "makeSuccessFalseTypeError": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEERROR",
-          "value": "makeSuccessFalseTypeError"
-        },
-        "makeSuccessFalseTypeWarning": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKESUCCESSFALSETYPEWARNING",
-          "value": "makeSuccessFalseTypeWarning"
-        },
-        "makeErrorTypeError": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEERROR",
-          "value": "makeErrorTypeError"
-        },
-        "makeErrorTypeWarning": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#MAKEERRORTYPEWARNING",
-          "value": "makeErrorTypeWarning"
-        },
-        "showVSCodeError": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SHOWVSCODEERROR",
-          "value": "showVSCodeError"
-        },
-        "logCLIError": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#LOGCLIERROR",
-          "value": "logCLIError"
-        },
-        "escapeRegex": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#ESCAPEREGEX",
-          "value": "escapeRegex"
-        },
-        "trimStringWithLimit": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#TRIMSTRINGWITHLIMIT",
-          "value": "trimStringWithLimit"
-        },
-        "spaceOutESLintMessage": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#SPACEOUTESLINTMESSAGE",
-          "value": "spaceOutESLintMessage"
-        },
-        "highlightFirstLineOfCode": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#HIGHLIGHTFIRSTLINEOFCODE",
-          "value": "highlightFirstLineOfCode"
-        },
-        "pathExistsAsAFile": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASAFILE",
-          "value": "pathExistsAsAFile"
-        },
-        "pathExistsAsADirectory": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#VARIABLES#PATHEXISTSASADIRECTORY",
-          "value": "pathExistsAsADirectory"
-        }
-      },
-      "arguments": {
-        "message": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#MESSAGE",
-          "value": "message"
-        },
-        "status": {
-          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ARGUMENTS#STATUS",
-          "value": "status"
+        "names": {
+          "variables": {
+            "successFalse": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#VARIABLES#SUCCESSFALSE",
+              "value": "successFalse"
+            },
+            "successTrue": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#VARIABLES#SUCCESSTRUE",
+              "value": "successTrue"
+            },
+            "typeError": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#VARIABLES#TYPEERROR",
+              "value": "typeError"
+            },
+            "typeWarning": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#VARIABLES#TYPEWARNING",
+              "value": "typeWarning"
+            }
+          },
+          "strings": {
+            "errorNotStandardizedMessage": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#STRINGS#ERRORNOTSTANDARDIZEDMESSAGE",
+              "value": "ERROR_NOT_STANDARDIZED_MESSAGE"
+            },
+            "errorNotStandardizedStatus": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#STRINGS#ERRORNOTSTANDARDIZEDSTATUS",
+              "value": "ERROR_NOT_STANDARDIZED_STATUS"
+            },
+            "ellipsis": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#STRINGS#ELLIPSIS",
+              "value": "ELLIPSIS"
+            }
+          },
+          "functions": {
+            "makeSuccessFalseTypeError": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#MAKESUCCESSFALSETYPEERROR",
+              "value": "makeSuccessFalseTypeError"
+            },
+            "makeSuccessFalseTypeWarning": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING",
+              "value": "makeSuccessFalseTypeWarning"
+            },
+            "makeErrorTypeError": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#MAKEERRORTYPEERROR",
+              "value": "makeErrorTypeError"
+            },
+            "makeErrorTypeWarning": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#MAKEERRORTYPEWARNING",
+              "value": "makeErrorTypeWarning"
+            },
+            "showVSCodeError": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#SHOWVSCODEERROR",
+              "value": "showVSCodeError"
+            },
+            "logCLIError": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#LOGCLIERROR",
+              "value": "logCLIError"
+            },
+            "escapeRegex": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#ESCAPEREGEX",
+              "value": "escapeRegex"
+            },
+            "trimStringWithLimit": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#TRIMSTRINGWITHLIMIT",
+              "value": "trimStringWithLimit"
+            },
+            "spaceOutESLintMessage": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#SPACEOUTESLINTMESSAGE",
+              "value": "spaceOutESLintMessage"
+            },
+            "highlightFirstLineOfCode": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE",
+              "value": "highlightFirstLineOfCode"
+            },
+            "pathExistsAsAFile": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#PATHEXISTSASAFILE",
+              "value": "pathExistsAsAFile"
+            },
+            "pathExistsAsADirectory": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#PATHEXISTSASADIRECTORY",
+              "value": "pathExistsAsADirectory"
+            }
+          },
+          "arguments": {
+            "message": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#ARGUMENTS#MESSAGE",
+              "value": "message"
+            },
+            "status": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#ARGUMENTS#STATUS",
+              "value": "status"
+            }
+          },
+          "keys": {
+            "success": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#KEYS#SUCCESS",
+              "value": "success"
+            },
+            "type": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#KEYS#TYPE",
+              "value": "type"
+            },
+            "errors": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#KEYS#ERRORS",
+              "value": "errors"
+            }
+          },
+          "booleans": {
+            "true": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#BOOLEANS#TRUE",
+              "value": "true"
+            },
+            "false": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#BOOLEANS#FALSE",
+              "value": "false"
+            }
+          }
         }
       },
       "success_false": {
@@ -295,30 +357,6 @@ export const resolvedConfigData = /** @type {const} */ ({
       "type_warning": {
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE_WARNING",
         "value": "type: warning"
-      },
-      "success": {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#SUCCESS",
-        "value": "success"
-      },
-      "false": {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#FALSE",
-        "value": "false"
-      },
-      "true": {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TRUE",
-        "value": "true"
-      },
-      "type": {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TYPE",
-        "value": "type"
-      },
-      "error": {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#ERROR",
-        "value": "error"
-      },
-      "warning": {
-        "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WARNING",
-        "value": "warning"
       },
       "_applyLastWith": {
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH",

@@ -1,10 +1,12 @@
-import { resolvedConfigData as commentVariablesData } from "../../comments.config.mjs";
+// import { resolvedConfigData as commentVariablesData } from "../../comments.config.mjs";
 
-/* constants */
+// /* constants */
 
-export const consts = commentVariablesData.en.tsDoc.src.lib.consts;
+// export const consts = commentVariablesData.en.tsDoc.src.lib.consts;
 
-/* composedVariablesExclusives */
+// /* composedVariablesExclusives */
 
-export const composedVariablesExclusives =
-  commentVariablesData.en.composedVariablesExclusives;
+// export const composedVariablesExclusives =
+//   commentVariablesData.en.composedVariablesExclusives;
+
+export {}; // file will be removed

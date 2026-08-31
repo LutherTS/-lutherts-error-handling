@@ -1,15 +1,15 @@
 import fs from "fs";
 import path from "path";
 
-import { ERROR, WARNING, ellipsis } from "../../constants/index.js";
-
 import {
-  successFalse,
-  typeError,
-  typeWarning,
-  errorNotStandardized,
-  ERROR_NOT_STANDARDIZED,
-} from "../constants/index.js";
+  ERROR,
+  WARNING,
+  ELLIPSIS,
+  ERROR_NOT_STANDARDIZED_MESSAGE,
+  ERROR_NOT_STANDARDIZED_STATUS,
+} from "../../comment-variables/items.js";
+
+import { successFalse, typeError, typeWarning } from "../constants/index.js";
 
 /**
  * @typedef {import("../../types/index.ts").SourceCode} SourceCode
@@ -136,7 +136,9 @@ export const showVSCodeError =
         vscode.window.showWarningMessage(error.message);
         break;
       default:
-        vscode.window.showErrorMessage(`ERROR. ${errorNotStandardized}`);
+        vscode.window.showErrorMessage(
+          `ERROR. ${ERROR_NOT_STANDARDIZED_MESSAGE}`,
+        );
         break;
     }
   }; // For now, only shows `error.message`, but `error.status` might be handled and included at a later time.
@@ -164,7 +166,7 @@ export const logCLIError =
         break;
       default:
         console.error(
-          `ERROR. ${errorNotStandardized} | ${ERROR_NOT_STANDARDIZED}`,
+          `ERROR. ${ERROR_NOT_STANDARDIZED_MESSAGE} | ${ERROR_NOT_STANDARDIZED_STATUS}`,
         );
         break;
     }
@@ -199,7 +201,7 @@ export const trimStringWithLimit = (
   /** @type {number} */ limit,
 ) =>
   string.length > limit
-    ? string.slice(0, Math.max(limit - ellipsis.length, 0)) + ellipsis
+    ? string.slice(0, Math.max(limit - ELLIPSIS.length, 0)) + ELLIPSIS
     : string;
 
 /* spaceOutESLintMessage */

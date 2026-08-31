@@ -5,9 +5,9 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
-  PATH_EXISTS_AS_A_FILE,
-  PATH_EXISTS_AS_A_DIRECTORY,
-} from "../../constants/index.js";
+  PATH_EXISTS_AS_A_FILE_NAME,
+  PATH_EXISTS_AS_A_DIRECTORY_NAME,
+} from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").PathExistsAsAFile} PathExistsAsAFile
@@ -27,7 +27,7 @@ const aFilePath = path.join(currentDirectoryPath, "a-file.js");
 export const pathExistsAsAFileSuite = (
   /** @type {PathExistsAsAFile} */ pathExistsAsAFile,
 ) => {
-  describe(PATH_EXISTS_AS_A_FILE, () => {
+  describe(PATH_EXISTS_AS_A_FILE_NAME, () => {
     // initial tests
 
     it(`should be a function`, () => {
@@ -35,9 +35,9 @@ export const pathExistsAsAFileSuite = (
       assert.strictEqual(pathExistsAsAFileType, "function");
     });
 
-    it.skip(`should be named \`${PATH_EXISTS_AS_A_FILE}\``, () => {
+    it.skip(`should be named \`${PATH_EXISTS_AS_A_FILE_NAME}\``, () => {
       const pathExistsAsAFileName = pathExistsAsAFile.name;
-      assert.strictEqual(pathExistsAsAFileName, PATH_EXISTS_AS_A_FILE);
+      assert.strictEqual(pathExistsAsAFileName, PATH_EXISTS_AS_A_FILE_NAME);
     });
 
     // input validations tests
@@ -85,7 +85,7 @@ const aDirectoryPath = path.join(currentDirectoryPath, "a-directory");
 export const pathExistsAsADirectorySuite = (
   /** @type {PathExistsAsADirectory} */ pathExistsAsADirectory,
 ) => {
-  describe(PATH_EXISTS_AS_A_DIRECTORY, () => {
+  describe(PATH_EXISTS_AS_A_DIRECTORY_NAME, () => {
     // initial tests
 
     it(`should be a function`, () => {
@@ -93,11 +93,11 @@ export const pathExistsAsADirectorySuite = (
       assert.strictEqual(pathExistsAsADirectoryType, "function");
     });
 
-    it.skip(`should be named \`${PATH_EXISTS_AS_A_DIRECTORY}\``, () => {
+    it.skip(`should be named \`${PATH_EXISTS_AS_A_DIRECTORY_NAME}\``, () => {
       const pathExistsAsADirectoryName = pathExistsAsADirectory.name;
       assert.strictEqual(
         pathExistsAsADirectoryName,
-        PATH_EXISTS_AS_A_DIRECTORY,
+        PATH_EXISTS_AS_A_DIRECTORY_NAME,
       );
     });
 

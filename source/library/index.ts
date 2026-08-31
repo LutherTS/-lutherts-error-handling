@@ -1,14 +1,21 @@
 /* primary exports */
 
-// This library exports the basic constants ...
+// This library exports the basic strings ...
+
+export {
+  ERROR_NOT_STANDARDIZED_MESSAGE,
+  ERROR_NOT_STANDARDIZED_STATUS,
+} from "../comment-variables/items.js";
+
+// ... constants ...
 
 export {
   successFalse,
   successTrue,
   typeError,
   typeWarning,
-  errorNotStandardized,
-  ERROR_NOT_STANDARDIZED,
+  // errorNotStandardized,
+  // ERROR_NOT_STANDARDIZED,
 } from "./constants/index.js";
 
 // ... and utilities used across my projects for error handling.

@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { ESCAPE_REGEX } from "../../constants/index.js";
+import { ESCAPE_REGEX_NAME } from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").EscapeRegex} EscapeRegex
@@ -10,7 +10,7 @@ import { ESCAPE_REGEX } from "../../constants/index.js";
 /* escapeRegexSuite */
 
 export const escapeRegexSuite = (/** @type {EscapeRegex} */ escapeRegex) => {
-  describe(ESCAPE_REGEX, () => {
+  describe(ESCAPE_REGEX_NAME, () => {
     // initial tests
 
     it(`should be a function`, () => {
@@ -18,9 +18,9 @@ export const escapeRegexSuite = (/** @type {EscapeRegex} */ escapeRegex) => {
       assert.strictEqual(escapeRegexType, "function");
     });
 
-    it.skip(`should be named \`${ESCAPE_REGEX}\``, () => {
+    it.skip(`should be named \`${ESCAPE_REGEX_NAME}\``, () => {
       const escapeRegexName = escapeRegex.name;
-      assert.strictEqual(escapeRegexName, ESCAPE_REGEX);
+      assert.strictEqual(escapeRegexName, ESCAPE_REGEX_NAME);
     });
 
     // input validations tests

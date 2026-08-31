@@ -1,23 +1,24 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { ERROR_NOT_STANDARDIZED_MESSAGE } from "../../constants/index.js";
+import { ERROR_NOT_STANDARDIZED_MESSAGE_NAME } from "../../../comment-variables/items.js";
 
 /**
- * @typedef {import("../../../types/index.ts").ErrorNotStandardized} ErrorNotStandardized
+ * @typedef {import("../../../types/index.ts").ErrorNotStandardizedMessage} ErrorNotStandardizedMessage
  */
 
-/* errorNotStandardizedSuite */
+/* errorNotStandardizedMessageSuite */
 
-export const errorNotStandardizedSuite = (
-  /** @type {ErrorNotStandardized} */ errorNotStandardized,
+export const errorNotStandardizedMessageSuite = (
+  /** @type {ErrorNotStandardizedMessage} */ errorNotStandardizedMessage,
 ) => {
-  describe(ERROR_NOT_STANDARDIZED_MESSAGE, () => {
+  describe(ERROR_NOT_STANDARDIZED_MESSAGE_NAME, () => {
     // initial tests
 
     it(`should be a string`, () => {
-      const errorNotStandardizedType = typeof errorNotStandardized;
-      assert.strictEqual(errorNotStandardizedType, "string");
+      const errorNotStandardizedMessageType =
+        typeof errorNotStandardizedMessage;
+      assert.strictEqual(errorNotStandardizedMessageType, "string");
     });
   });
 };

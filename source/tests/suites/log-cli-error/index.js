@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { LOG_CLI_ERROR } from "../../constants/index.js";
+import { LOG_CLI_ERROR_NAME } from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").LogCLIError} LogCLIError
@@ -10,7 +10,7 @@ import { LOG_CLI_ERROR } from "../../constants/index.js";
 /* logCLIErrorSuite */
 
 export const logCLIErrorSuite = (/** @type {LogCLIError} */ logCLIError) => {
-  describe(LOG_CLI_ERROR, () => {
+  describe(LOG_CLI_ERROR_NAME, () => {
     // initial tests
 
     it(`should be a function`, () => {
@@ -18,9 +18,9 @@ export const logCLIErrorSuite = (/** @type {LogCLIError} */ logCLIError) => {
       assert.strictEqual(logCLIErrorType, "function");
     });
 
-    it.skip(`should be named \`${LOG_CLI_ERROR}\``, () => {
+    it.skip(`should be named \`${LOG_CLI_ERROR_NAME}\``, () => {
       const logCLIErrorName = logCLIError.name;
-      assert.strictEqual(logCLIErrorName, LOG_CLI_ERROR);
+      assert.strictEqual(logCLIErrorName, LOG_CLI_ERROR_NAME);
     });
   });
 };

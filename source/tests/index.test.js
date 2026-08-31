@@ -3,8 +3,8 @@ import {
   successTrue,
   typeError,
   typeWarning,
-  errorNotStandardized,
-  ERROR_NOT_STANDARDIZED,
+  ERROR_NOT_STANDARDIZED_MESSAGE,
+  ERROR_NOT_STANDARDIZED_STATUS,
   makeSuccessFalseTypeError,
   makeSuccessFalseTypeWarning,
   makeErrorTypeError,
@@ -24,8 +24,8 @@ import { successFalseSuite } from "./suites/success-false/index.js";
 import { successTrueSuite } from "./suites/success-true/index.js";
 import { typeErrorSuite } from "./suites/type-error/index.js";
 import { typeWarningSuite } from "./suites/type-warning/index.js";
-import { errorNotStandardizedSuite } from "./suites/unstandardized-message/index.js";
-import { ERROR_NOT_STANDARDIZED__Suite } from "./suites/unstandardized-status/index.js";
+import { errorNotStandardizedMessageSuite } from "./suites/unstandardized-message/index.js";
+import { errorNotStandardizedStatusSuite } from "./suites/unstandardized-status/index.js";
 import { makeSuccessFalseTypeErrorSuite } from "./suites/make-s-false-t-error/index.js";
 import { makeSuccessFalseTypeWarningSuite } from "./suites/make-s-false-t-warning/index.js";
 import { makeErrorTypeErrorSuite } from "./suites/make-error-t-error/index.js";
@@ -45,8 +45,8 @@ successFalseSuite(successFalse);
 successTrueSuite(successTrue);
 typeErrorSuite(typeError);
 typeWarningSuite(typeWarning);
-errorNotStandardizedSuite(errorNotStandardized);
-ERROR_NOT_STANDARDIZED__Suite(ERROR_NOT_STANDARDIZED);
+errorNotStandardizedMessageSuite(ERROR_NOT_STANDARDIZED_MESSAGE);
+errorNotStandardizedStatusSuite(ERROR_NOT_STANDARDIZED_STATUS);
 makeSuccessFalseTypeErrorSuite(makeSuccessFalseTypeError);
 makeSuccessFalseTypeWarningSuite(makeSuccessFalseTypeWarning);
 makeErrorTypeErrorSuite(makeErrorTypeError);

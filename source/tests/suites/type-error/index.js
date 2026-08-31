@@ -1,9 +1,11 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { ERROR } from "../../../constants/index.js";
-
-import { TYPE_ERROR, TYPE } from "../../constants/index.js";
+import {
+  TYPE_ERROR_NAME,
+  ERROR,
+  TYPE_NAME,
+} from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").TypeError} TypeError
@@ -12,7 +14,7 @@ import { TYPE_ERROR, TYPE } from "../../constants/index.js";
 /* typeErrorSuite */
 
 export const typeErrorSuite = (/** @type {TypeError} */ typeError) => {
-  describe(TYPE_ERROR, () => {
+  describe(TYPE_ERROR_NAME, () => {
     // initial tests
 
     it(`should be an object`, () => {
@@ -20,12 +22,12 @@ export const typeErrorSuite = (/** @type {TypeError} */ typeError) => {
       assert.strictEqual(typeErrorType, "object");
     });
 
-    it(`should have a value of \`"${ERROR}"\` at its \`${TYPE}\` key`, () => {
+    it(`should have a value of \`"${ERROR}"\` at its \`${TYPE_NAME}\` key`, () => {
       const typeErrorTypeKeyValue = typeError.type;
       assert.strictEqual(typeErrorTypeKeyValue, ERROR);
     });
 
-    it(`should have no other keys than its \`${TYPE}\` key`, () => {
+    it(`should have no other keys than its \`${TYPE_NAME}\` key`, () => {
       const typeErrorKeys = Object.keys(typeError);
       const typeErrorKeysLength = typeErrorKeys.length;
       assert.strictEqual(typeErrorKeysLength, 1);

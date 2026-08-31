@@ -1,9 +1,11 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { ellipsis } from "../../../constants/index.js";
-
-import { TRIM_STRING_WITH_LIMIT } from "../../constants/index.js";
+import {
+  ELLIPSIS_NAME,
+  ELLIPSIS,
+  TRIM_STRING_WITH_LIMIT_NAME,
+} from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").TrimStringWithLimit} TrimStringWithLimit
@@ -14,7 +16,7 @@ import { TRIM_STRING_WITH_LIMIT } from "../../constants/index.js";
 export const trimStringWithLimitSuite = (
   /** @type {TrimStringWithLimit} */ trimStringWithLimit,
 ) => {
-  describe(TRIM_STRING_WITH_LIMIT, () => {
+  describe(TRIM_STRING_WITH_LIMIT_NAME, () => {
     // initial tests
 
     it(`should be a function`, () => {
@@ -22,9 +24,9 @@ export const trimStringWithLimitSuite = (
       assert.strictEqual(trimStringWithLimitType, "function");
     });
 
-    it.skip(`should be named \`${TRIM_STRING_WITH_LIMIT}\``, () => {
+    it.skip(`should be named \`${TRIM_STRING_WITH_LIMIT_NAME}\``, () => {
       const trimStringWithLimitName = trimStringWithLimit.name;
-      assert.strictEqual(trimStringWithLimitName, TRIM_STRING_WITH_LIMIT);
+      assert.strictEqual(trimStringWithLimitName, TRIM_STRING_WITH_LIMIT_NAME);
     });
 
     // input validations tests
@@ -68,7 +70,7 @@ export const trimStringWithLimitSuite = (
       assert.strictEqual(trimStringWithLimitResults.length, testLimit);
     });
 
-    it(`results should have a minimum length of \`ellipsis.length\` when its input limit is actually shorter even than the length of the replacement ellipsis`, () => {
+    it(`results should have a minimum length of \`${ELLIPSIS_NAME}.length\` when its input limit is actually shorter even than the length of the replacement ellipsis`, () => {
       const testString = "12";
       const testLimit = 1;
       const trimStringWithLimitResults = trimStringWithLimit(
@@ -76,8 +78,8 @@ export const trimStringWithLimitSuite = (
         testLimit,
       );
 
-      assert.strictEqual(testLimit < ellipsis.length, true);
-      assert.strictEqual(trimStringWithLimitResults.length, ellipsis.length);
+      assert.strictEqual(testLimit < ELLIPSIS.length, true);
+      assert.strictEqual(trimStringWithLimitResults.length, ELLIPSIS.length);
     });
   });
 };

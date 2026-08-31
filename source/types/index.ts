@@ -2,13 +2,16 @@ import type * as vscode from "vscode";
 
 import type { TSESTree } from "@typescript-eslint/utils";
 
+import {
+  ERROR_NOT_STANDARDIZED_MESSAGE,
+  ERROR_NOT_STANDARDIZED_STATUS,
+} from "../comment-variables/items.js";
+
 import type {
   successFalse,
   successTrue,
   typeError,
   typeWarning,
-  errorNotStandardized,
-  ERROR_NOT_STANDARDIZED,
   makeSuccessFalseTypeError,
   makeSuccessFalseTypeWarning,
   makeErrorTypeError,
@@ -21,7 +24,7 @@ import type {
   highlightFirstLineOfCode,
   pathExistsAsAFile,
   pathExistsAsADirectory,
-} from "../../source/library/index.js";
+} from "../library/index.js";
 
 export type VSCode = typeof vscode;
 
@@ -37,9 +40,9 @@ export type TypeError = typeof typeError;
 
 export type TypeWarning = typeof typeWarning;
 
-export type ErrorNotStandardized = typeof errorNotStandardized;
+export type ErrorNotStandardizedMessage = typeof ERROR_NOT_STANDARDIZED_MESSAGE;
 
-export type ERROR_NOT_STANDARDIZED__TYPE = typeof ERROR_NOT_STANDARDIZED;
+export type ErrorNotStandardizedStatus = typeof ERROR_NOT_STANDARDIZED_STATUS;
 
 export type MakeSuccessFalseTypeError = typeof makeSuccessFalseTypeError;
 
