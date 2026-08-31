@@ -57,8 +57,8 @@ export declare const resolvedPublicData: {
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
-            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERRORNOTSTANDARDIZED": "";
-            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_MESSAGE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "";
         };
         readonly FR: {
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE": "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`.";
@@ -115,8 +115,8 @@ export declare const resolvedPublicData: {
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
-            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERRORNOTSTANDARDIZED": "";
-            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_MESSAGE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "";
         };
     };
 };

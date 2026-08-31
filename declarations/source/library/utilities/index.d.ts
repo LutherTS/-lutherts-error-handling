@@ -1,4 +1,4 @@
-import { ERROR, WARNING } from "../../constants/index.js";
+import { ERROR, WARNING } from "../../comment-variables/items.js";
 export type SourceCode = import("../../types/index.ts").SourceCode;
 export type SourceLocation = import("../../types/index.ts").SourceLocation;
 /**

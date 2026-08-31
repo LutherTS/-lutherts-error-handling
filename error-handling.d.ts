@@ -59,8 +59,8 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
-            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERRORNOTSTANDARDIZED": "";
-            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_MESSAGE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "";
         };
         readonly FR: {
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE": "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`.";
@@ -117,22 +117,22 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
-            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERRORNOTSTANDARDIZED": "";
-            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_MESSAGE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "";
         };
     };
 };
 
 declare const ERROR: "error";
 
+/** @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_MESSAGE */
+export declare const ERROR_NOT_STANDARDIZED_MESSAGE: "The error encountered is not standardized.";
+
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#ERROR_NOT_STANDARDIZED
- * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS
  * */
-export declare const ERROR_NOT_STANDARDIZED = "ERROR_NOT_STANDARDIZED";
-
-/** @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ERRORNOTSTANDARDIZED */
-export declare const errorNotStandardized: "The error encountered is not standardized.";
+export declare const ERROR_NOT_STANDARDIZED_STATUS: "ERROR_NOT_STANDARDIZED";
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX
