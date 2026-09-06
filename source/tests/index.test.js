@@ -10,6 +10,7 @@ import {
   makeErrorTypeError,
   makeErrorTypeWarning,
   showVSCodeError,
+  treatVSCodeErrors,
   logCLIError,
   escapeRegex,
   trimStringWithLimit,
@@ -31,6 +32,7 @@ import { makeSuccessFalseTypeWarningSuite } from "./suites/make-s-false-t-warnin
 import { makeErrorTypeErrorSuite } from "./suites/make-error-t-error/index.js";
 import { makeErrorTypeWarningSuite } from "./suites/make-error-t-warning/index.js";
 import { showVSCodeErrorSuite } from "./suites/show-vs-code-error/index.js";
+import { treatVSCodeErrorsSuite } from "./suites/treat-vs-code-errors/index.js";
 import { logCLIErrorSuite } from "./suites/log-cli-error/index.js";
 import { escapeRegexSuite } from "./suites/escape-regex/index.js";
 import { trimStringWithLimitSuite } from "./suites/trim-string-with-limit/index.js";
@@ -52,6 +54,7 @@ makeSuccessFalseTypeWarningSuite(makeSuccessFalseTypeWarning);
 makeErrorTypeErrorSuite(makeErrorTypeError);
 makeErrorTypeWarningSuite(makeErrorTypeWarning);
 showVSCodeErrorSuite(showVSCodeError);
+treatVSCodeErrorsSuite(treatVSCodeErrors);
 logCLIErrorSuite(logCLIError);
 escapeRegexSuite(escapeRegex);
 trimStringWithLimitSuite(trimStringWithLimit);
