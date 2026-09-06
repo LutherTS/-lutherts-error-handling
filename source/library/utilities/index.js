@@ -7,6 +7,7 @@ import {
   ELLIPSIS,
   ERROR_NOT_STANDARDIZED_MESSAGE,
   ERROR_NOT_STANDARDIZED_STATUS,
+  DEFAULT_NUMBER_OF_ERRORS,
 } from "../../comment-variables/items.js";
 
 import { successFalse, typeError, typeWarning } from "../constants/index.js";
@@ -14,6 +15,7 @@ import { successFalse, typeError, typeWarning } from "../constants/index.js";
 /**
  * @typedef {import("../../types/index.ts").SourceCode} SourceCode
  * @typedef {import("../../types/index.ts").SourceLocation} SourceLocation
+ * @typedef {import("../../types/index.ts").MakeErrorTypeError} MakeErrorTypeError
  */
 
 /* makeSuccessFalseTypeError */
@@ -142,6 +144,28 @@ export const showVSCodeError =
         break;
     }
   }; // For now, only shows `error.message`, but `error.status` might be handled and included at a later time.
+
+/* treatVSCodeError */
+
+/**
+ * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS
+ *
+ * @param errors - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS
+ * @param numberOfErrors - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS
+ * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR
+ *
+ * @public
+ */
+export const treatVSCodeErrors = (
+  /** @type {ReturnType<MakeErrorTypeError>[]} */ errors,
+  /** @type {number} */ numberOfErrors = +DEFAULT_NUMBER_OF_ERRORS,
+) => {
+  const errorsMax = errors.slice(0, numberOfErrors);
+
+  for (const error of errorsMax) {
+    showVSCodeError(vscode, error);
+  }
+};
 
 /* logCLIError */
 

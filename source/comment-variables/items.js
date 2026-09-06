@@ -2,6 +2,7 @@ import {
   errorMessages,
   errorStatuses,
   errorTypes,
+  defaults,
   miscellaneous,
   variableNames,
   stringNames,
@@ -30,6 +31,10 @@ export const ERROR_NOT_STANDARDIZED_STATUS =
 
 export const ERROR = errorTypes.error.value;
 export const WARNING = errorTypes.warning.value;
+
+/* defaults */
+
+export const DEFAULT_NUMBER_OF_ERRORS = defaults.numberOfErrors.value;
 
 /* miscellaneous */
 
@@ -62,6 +67,7 @@ export const MAKE_ERROR_TYPE_ERROR_NAME =
 export const MAKE_ERROR_TYPE_WARNING_NAME =
   functionNames.makeErrorTypeWarning.value;
 export const SHOW_VS_CODE_ERROR_NAME = functionNames.showVSCodeError.value;
+export const TREAT_VS_CODE_ERRORS_NAME = functionNames.treatVSCodeErrors.value;
 export const LOG_CLI_ERROR_NAME = functionNames.logCLIError.value;
 export const ESCAPE_REGEX_NAME = functionNames.escapeRegex.value;
 export const TRIM_STRING_WITH_LIMIT_NAME =

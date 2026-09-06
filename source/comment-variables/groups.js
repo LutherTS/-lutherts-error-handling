@@ -11,6 +11,10 @@ export const errorMessages = runtimeVariables.errors.messages;
 export const errorStatuses = runtimeVariables.errors.statuses;
 export const errorTypes = runtimeVariables.errors.types;
 
+/* defaults */
+
+export const defaults = runtimeVariables.defaults;
+
 /* miscellaneous */
 
 export const miscellaneous = runtimeVariables.miscellaneous;

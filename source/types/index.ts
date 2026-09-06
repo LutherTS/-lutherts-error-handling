@@ -17,6 +17,7 @@ import type {
   makeErrorTypeError,
   makeErrorTypeWarning,
   showVSCodeError,
+  treatVSCodeErrors,
   logCLIError,
   escapeRegex,
   trimStringWithLimit,
@@ -53,6 +54,8 @@ export type MakeErrorTypeError = typeof makeErrorTypeError;
 export type MakeErrorTypeWarning = typeof makeErrorTypeWarning;
 
 export type ShowVSCodeError = typeof showVSCodeError;
+
+export type TreatVSCodeErrors = typeof treatVSCodeErrors;
 
 export type LogCLIError = typeof logCLIError;
 

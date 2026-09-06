@@ -57,6 +57,10 @@ export const resolvedConfigData = /** @type {const} */ ({
                   "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR",
                   "value": "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided."
                 },
+                "treatVSCodeErrors": {
+                  "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS",
+                  "value": "Displays a set amount of errors via the `vscode.window.showErrorMessage` method (through the `showVSCodeError` utility)."
+                },
                 "logCLIError": {
                   "key": "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR",
                   "value": "Shows an error or warning message via the CLI's `console.error` or `console.warn` method depending on the `type` of the error provided."
@@ -106,6 +110,14 @@ export const resolvedConfigData = /** @type {const} */ ({
                 "error": {
                   "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR",
                   "value": "The error object at hand, with either the value `\"error\"` or `\"warning\"` at its `type` key."
+                },
+                "errors": {
+                  "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS",
+                  "value": "The array of errors to be displayed."
+                },
+                "numberOfErrors": {
+                  "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS",
+                  "value": "The number of errors to be displayed, instantiated at `3` by default to match the maximum amount of error messages VS Code displays simultaneously."
                 },
                 "string": {
                   "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING",
@@ -161,6 +173,10 @@ export const resolvedConfigData = /** @type {const} */ ({
                 },
                 "showVSCodeError": {
                   "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR",
+                  "value": "Void."
+                },
+                "treatVSCodeErrors": {
+                  "key": "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TREATVSCODEERRORS",
                   "value": "Void."
                 },
                 "logCLIError": {
@@ -223,6 +239,12 @@ export const resolvedConfigData = /** @type {const} */ ({
             }
           }
         },
+        "defaults": {
+          "numberOfErrors": {
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#DEFAULTS#NUMBEROFERRORS",
+            "value": "3"
+          }
+        },
         "miscellaneous": {
           "ellipsis": {
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#ELLIPSIS",
@@ -282,6 +304,10 @@ export const resolvedConfigData = /** @type {const} */ ({
             "showVSCodeError": {
               "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#SHOWVSCODEERROR",
               "value": "showVSCodeError"
+            },
+            "treatVSCodeErrors": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#TREATVSCODEERRORS",
+              "value": "treatVSCodeErrors"
             },
             "logCLIError": {
               "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#LOGCLIERROR",
@@ -459,6 +485,10 @@ export const resolvedConfigData = /** @type {const} */ ({
                   "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR",
                   "value": "Affiche un message d'erreur ou d'avertissement via le système de toasts de VS Code dépendamment du `type` de l'erreur fournie."
                 },
+                "treatVSCodeErrors": {
+                  "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS",
+                  "value": "Affiche un nombre défini d'erreurs via la méthode `vscode.window.showErrorMessage` par le biais de l'utilitaire `showVSCodeError`."
+                },
                 "logCLIError": {
                   "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR",
                   "value": "Affiche un message d'erreur ou d'avertissement via les méthodes `console.error` et `console.warn` d'interface de ligne de commande dépendamment du `type` de l'erreur fournie."
@@ -508,6 +538,14 @@ export const resolvedConfigData = /** @type {const} */ ({
                 "error": {
                   "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR",
                   "value": "L'objet d'erreur concerné, avec `\"error\"` ou `\"warning\"` pour valeur à sa clé `type`."
+                },
+                "errors": {
+                  "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS",
+                  "value": "La liste des erreurs qui doivent être affichées."
+                },
+                "numberOfErrors": {
+                  "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS",
+                  "value": "Le nombre d'erreurs à afficher, instantié à `3` par défaut en accord avec le nombre maximum de messages d'erreur que VS Code peut afficher simultanément."
                 },
                 "string": {
                   "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING",
@@ -563,6 +601,10 @@ export const resolvedConfigData = /** @type {const} */ ({
                 },
                 "showVSCodeError": {
                   "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR",
+                  "value": "Void. (Aucun retour.)"
+                },
+                "treatVSCodeErrors": {
+                  "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TREATVSCODEERRORS",
                   "value": "Void. (Aucun retour.)"
                 },
                 "logCLIError": {
