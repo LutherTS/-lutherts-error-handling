@@ -135,20 +135,6 @@ export declare const resolvedConfigData: {
                                     readonly value: "The absolute path at hand.";
                                 };
                             };
-                            readonly atHand: {
-                                readonly string: {
-                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING";
-                                    readonly value: "The string§";
-                                };
-                                readonly sourceCode: {
-                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE";
-                                    readonly value: "The file's `SourceCode` object§";
-                                };
-                                readonly absolutePath: {
-                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH";
-                                    readonly value: "The absolute path§";
-                                };
-                            };
                         };
                     };
                     readonly returns: {
@@ -213,6 +199,22 @@ export declare const resolvedConfigData: {
             };
         };
         readonly composedVariablesExclusives: {
+            readonly templateFunctions: {
+                readonly atHand: {
+                    readonly string: {
+                        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#STRING";
+                        readonly value: "The string§";
+                    };
+                    readonly sourceCode: {
+                        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#SOURCECODE";
+                        readonly value: "The file's `SourceCode` object§";
+                    };
+                    readonly absolutePath: {
+                        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#ABSOLUTEPATH";
+                        readonly value: "The absolute path§";
+                    };
+                };
+            };
             readonly runtimeVariables: {
                 readonly errors: {
                     readonly messages: {
@@ -563,20 +565,6 @@ export declare const resolvedConfigData: {
                                     readonly value: "Le chemin absolu concerné.";
                                 };
                             };
-                            readonly atHand: {
-                                readonly string: {
-                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING";
-                                    readonly value: "La chaîne de caractères concernée.";
-                                };
-                                readonly sourceCode: {
-                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE";
-                                    readonly value: "L'objet `SourceCode` du fichier concerné.";
-                                };
-                                readonly absolutePath: {
-                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH";
-                                    readonly value: "Le chemin absolu concerné.";
-                                };
-                            };
                         };
                     };
                     readonly returns: {
@@ -641,8 +629,6 @@ export declare const resolvedConfigData: {
             };
         };
         readonly composedVariablesExclusives: {
-            readonly variables: {};
-            readonly arguments: {};
             readonly error: {
                 readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR";
                 readonly value: "erreur";
@@ -662,10 +648,6 @@ export declare const resolvedConfigData: {
             readonly _enAnglais: {
                 readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
                 readonly value: "En anglais à l'exécution";
-            };
-            readonly _enAnglais_: {
-                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_";
-                readonly value: "(En anglais uniquement.)";
             };
             readonly singleError: {
                 readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
