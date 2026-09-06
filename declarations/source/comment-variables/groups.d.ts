@@ -20,6 +20,12 @@ export declare const errorTypes: {
         readonly value: "warning";
     };
 };
+export declare const defaults: {
+    readonly numberOfErrors: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#DEFAULTS#NUMBEROFERRORS";
+        readonly value: "3";
+    };
+};
 export declare const miscellaneous: {
     readonly ellipsis: {
         readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#ELLIPSIS";
@@ -78,6 +84,10 @@ export declare const functionNames: {
     readonly showVSCodeError: {
         readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#SHOWVSCODEERROR";
         readonly value: "showVSCodeError";
+    };
+    readonly treatVSCodeErrors: {
+        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#TREATVSCODEERRORS";
+        readonly value: "treatVSCodeErrors";
     };
     readonly logCLIError: {
         readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#LOGCLIERROR";

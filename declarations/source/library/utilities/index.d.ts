@@ -1,6 +1,7 @@
 import { ERROR, WARNING } from "../../comment-variables/items.js";
 export type SourceCode = import("../../types/index.ts").SourceCode;
 export type SourceLocation = import("../../types/index.ts").SourceLocation;
+export type MakeErrorTypeError = import("../../types/index.ts").MakeErrorTypeError;
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR
  *
@@ -77,6 +78,16 @@ export declare const showVSCodeError: <T extends string, U extends string, V ext
     readonly message: T;
     readonly status: U;
 }) => void;
+/**
+ * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS
+ *
+ * @param errors - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS
+ * @param numberOfErrors - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS
+ * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR
+ *
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TREATVSCODEERRORS
+ */
+export declare const treatVSCodeErrors: (errors: ReturnType<MakeErrorTypeError>[], numberOfErrors?: number) => void;
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR
  *

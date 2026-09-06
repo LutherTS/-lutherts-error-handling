@@ -7,6 +7,7 @@ export declare const ERROR_NOT_STANDARDIZED_MESSAGE: "The error encountered is n
 export declare const ERROR_NOT_STANDARDIZED_STATUS: "ERROR_NOT_STANDARDIZED";
 export declare const ERROR: "error";
 export declare const WARNING: "warning";
+export declare const DEFAULT_NUMBER_OF_ERRORS: "3";
 export declare const ELLIPSIS: "...";
 export declare const SUCCESS_FALSE_NAME: "successFalse";
 export declare const SUCCESS_TRUE_NAME: "successTrue";
@@ -20,6 +21,7 @@ export declare const MAKE_SUCCESS_FALSE_TYPE_WARNING_NAME: "makeSuccessFalseType
 export declare const MAKE_ERROR_TYPE_ERROR_NAME: "makeErrorTypeError";
 export declare const MAKE_ERROR_TYPE_WARNING_NAME: "makeErrorTypeWarning";
 export declare const SHOW_VS_CODE_ERROR_NAME: "showVSCodeError";
+export declare const TREAT_VS_CODE_ERRORS_NAME: "treatVSCodeErrors";
 export declare const LOG_CLI_ERROR_NAME: "logCLIError";
 export declare const ESCAPE_REGEX_NAME: "escapeRegex";
 export declare const TRIM_STRING_WITH_LIMIT_NAME: "trimStringWithLimit";

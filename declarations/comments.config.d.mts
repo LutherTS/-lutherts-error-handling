@@ -56,6 +56,10 @@ export declare const resolvedConfigData: {
                                     readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR";
                                     readonly value: "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided.";
                                 };
+                                readonly treatVSCodeErrors: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS";
+                                    readonly value: "Displays a set amount of errors via the `vscode.window.showErrorMessage` method (through the `showVSCodeError` utility).";
+                                };
                                 readonly logCLIError: {
                                     readonly key: "EN#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR";
                                     readonly value: "Shows an error or warning message via the CLI's `console.error` or `console.warn` method depending on the `type` of the error provided.";
@@ -105,6 +109,14 @@ export declare const resolvedConfigData: {
                                 readonly error: {
                                     readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR";
                                     readonly value: "The error object at hand, with either the value `\"error\"` or `\"warning\"` at its `type` key.";
+                                };
+                                readonly errors: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS";
+                                    readonly value: "The array of errors to be displayed.";
+                                };
+                                readonly numberOfErrors: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS";
+                                    readonly value: "The number of errors to be displayed, instantiated at `3` by default to match the maximum amount of error messages VS Code displays simultaneously.";
                                 };
                                 readonly string: {
                                     readonly key: "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
@@ -160,6 +172,10 @@ export declare const resolvedConfigData: {
                                 };
                                 readonly showVSCodeError: {
                                     readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR";
+                                    readonly value: "Void.";
+                                };
+                                readonly treatVSCodeErrors: {
+                                    readonly key: "EN#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TREATVSCODEERRORS";
                                     readonly value: "Void.";
                                 };
                                 readonly logCLIError: {
@@ -222,6 +238,12 @@ export declare const resolvedConfigData: {
                         };
                     };
                 };
+                readonly defaults: {
+                    readonly numberOfErrors: {
+                        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#DEFAULTS#NUMBEROFERRORS";
+                        readonly value: "3";
+                    };
+                };
                 readonly miscellaneous: {
                     readonly ellipsis: {
                         readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#ELLIPSIS";
@@ -281,6 +303,10 @@ export declare const resolvedConfigData: {
                         readonly showVSCodeError: {
                             readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#SHOWVSCODEERROR";
                             readonly value: "showVSCodeError";
+                        };
+                        readonly treatVSCodeErrors: {
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#TREATVSCODEERRORS";
+                            readonly value: "treatVSCodeErrors";
                         };
                         readonly logCLIError: {
                             readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#LOGCLIERROR";
@@ -458,6 +484,10 @@ export declare const resolvedConfigData: {
                                     readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR";
                                     readonly value: "Affiche un message d'erreur ou d'avertissement via le système de toasts de VS Code dépendamment du `type` de l'erreur fournie.";
                                 };
+                                readonly treatVSCodeErrors: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS";
+                                    readonly value: "Affiche un nombre défini d'erreurs via la méthode `vscode.window.showErrorMessage` par le biais de l'utilitaire `showVSCodeError`.";
+                                };
                                 readonly logCLIError: {
                                     readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR";
                                     readonly value: "Affiche un message d'erreur ou d'avertissement via les méthodes `console.error` et `console.warn` d'interface de ligne de commande dépendamment du `type` de l'erreur fournie.";
@@ -507,6 +537,14 @@ export declare const resolvedConfigData: {
                                 readonly error: {
                                     readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR";
                                     readonly value: "L'objet d'erreur concerné, avec `\"error\"` ou `\"warning\"` pour valeur à sa clé `type`.";
+                                };
+                                readonly errors: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS";
+                                    readonly value: "La liste des erreurs qui doivent être affichées.";
+                                };
+                                readonly numberOfErrors: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS";
+                                    readonly value: "Le nombre d'erreurs à afficher, instantié à `3` par défaut en accord avec le nombre maximum de messages d'erreur que VS Code peut afficher simultanément.";
                                 };
                                 readonly string: {
                                     readonly key: "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING";
@@ -562,6 +600,10 @@ export declare const resolvedConfigData: {
                                 };
                                 readonly showVSCodeError: {
                                     readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR";
+                                    readonly value: "Void. (Aucun retour.)";
+                                };
+                                readonly treatVSCodeErrors: {
+                                    readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TREATVSCODEERRORS";
                                     readonly value: "Void. (Aucun retour.)";
                                 };
                                 readonly logCLIError: {

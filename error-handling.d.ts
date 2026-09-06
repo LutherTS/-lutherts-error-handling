@@ -15,6 +15,7 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "Makes an error object of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING": "Makes an error object of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR": "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS": "Displays a set amount of errors via the `vscode.window.showErrorMessage` method (through the `showVSCodeError` utility).";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR": "Shows an error or warning message via the CLI's `console.error` or `console.warn` method depending on the `type` of the error provided.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX": "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "Trims a string with an ellipsis based on a provided length limit.";
@@ -26,6 +27,8 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS": "The static status text of the error.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE": "The VS Code API instance at hand, living in the VS Code Extension Host (and not in the extension's Node modules).";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR": "The error object at hand, with either the value `\"error\"` or `\"warning\"` at its `type` key.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS": "The array of errors to be displayed.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS": "The number of errors to be displayed, instantiated at `3` by default to match the maximum amount of error messages VS Code displays simultaneously.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT": "The provided length limit. The string will be trimmed if its length is strictly superior to this given number.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
@@ -41,6 +44,7 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING": "The string at hand.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE": "The file's `SourceCode` object at hand.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH": "The absolute path at hand.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TREATVSCODEERRORS": "Void.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR": "Void.";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
@@ -48,6 +52,7 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEERROR": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEWARNING": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TREATVSCODEERRORS": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT": "";
@@ -73,6 +78,7 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "Crée un objet d'erreur de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING": "Crée un objet d'erreur de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR": "Affiche un message d'erreur ou d'avertissement via le système de toasts de VS Code dépendamment du `type` de l'erreur fournie.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS": "Affiche un nombre défini d'erreurs via la méthode `vscode.window.showErrorMessage` par le biais de l'utilitaire `showVSCodeError`.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR": "Affiche un message d'erreur ou d'avertissement via les méthodes `console.error` et `console.warn` d'interface de ligne de commande dépendamment du `type` de l'erreur fournie.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX": "Échappe tous les caractères regex d'une chaîne de caractères avec un `\"\\\"` pour préparer cette dernière à être utilisée dans une regex.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "Tronque une chaîne de caractères par trois points de suspension en se basant sur la limite de longueur renseignée.";
@@ -84,6 +90,8 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS": "Le texte statique du statut de l'erreur.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE": "L'instance concernée de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR": "L'objet d'erreur concerné, avec `\"error\"` ou `\"warning\"` pour valeur à sa clé `type`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS": "La liste des erreurs qui doivent être affichées.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS": "Le nombre d'erreurs à afficher, instantié à `3` par défaut en accord avec le nombre maximum de messages d'erreur que VS Code peut afficher simultanément.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT": "La limite de longueur renseignée. La chaîne de caractères sera tronquée si sa longueur est strictement supérieure à celle de ce nombre donné.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
@@ -99,6 +107,7 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING": "La chaîne de caractères concernée.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE": "L'objet `SourceCode` du fichier concerné.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH": "Le chemin absolu concerné.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TREATVSCODEERRORS": "Void. (Aucun retour.)";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR": "Void. (Aucun retour.)";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
@@ -106,6 +115,7 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEERROR": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEWARNING": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TREATVSCODEERRORS": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT": "";
@@ -177,6 +187,8 @@ export declare const logCLIError: <T extends string, U extends string, V extends
     readonly status: U;
 }) => void;
 
+declare type MakeErrorTypeError = MakeErrorTypeError_2;
+
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR
  *
@@ -191,6 +203,8 @@ export declare const makeErrorTypeError: <T extends string, U extends string>(me
     readonly message: T;
     readonly status: U;
 };
+
+declare type MakeErrorTypeError_2 = typeof makeErrorTypeError;
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING
@@ -305,6 +319,17 @@ export declare const successFalse: Readonly<{
 export declare const successTrue: Readonly<{
     success: true;
 }>;
+
+/**
+ * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS
+ *
+ * @param errors - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS
+ * @param numberOfErrors - $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS
+ * @returns $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR
+ *
+ * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TREATVSCODEERRORS
+ */
+export declare const treatVSCodeErrors: (errors: ReturnType<MakeErrorTypeError>[], numberOfErrors?: number) => void;
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT
