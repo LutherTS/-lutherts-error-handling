@@ -67,25 +67,18 @@ export const frData = /** @type {const} */ ({
                 "L'instance $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension)." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE */,
               error:
                 'L\'objet d\'erreur $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ, avec `"$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#ERRORS#TYPES#ERROR"` ou `"$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#ERRORS#TYPES#WARNING"` pour valeur à sa clé `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#KEYS#TYPE`.' /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR */,
-              errors: "La liste des erreurs qui doivent être affichées." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS */,
+              errors:
+                "La liste des erreurs qui doivent être affichées." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS */,
               numberOfErrors:
                 "Le nombre d'erreurs à afficher, instantié à `$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#DEFAULTS#NUMBEROFERRORS` par défaut en accord avec le nombre maximum de messages d'erreur que VS Code peut afficher simultanément." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS */,
               string:
-                "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING */,
+                "La chaîne de caractères $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING */,
               limit:
                 "La limite de longueur renseignée. La chaîne de caractères sera tronquée si sa longueur est strictement supérieure à celle de ce nombre donné." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT */,
               sourceCode:
-                "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE */,
+                "L'objet `SourceCode` du fichier $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE */,
               absolutePath:
-                "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH" /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH */,
-            },
-            atHand: {
-              string:
-                "La chaîne de caractères $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING */,
-              sourceCode:
-                "L'objet `SourceCode` du fichier $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE */,
-              absolutePath:
-                "Le chemin absolu $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH */,
+                "Le chemin absolu $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉ." /* variations: $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH / core: $COMMENT#FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH */,
             },
           },
         },
@@ -125,9 +118,6 @@ export const frData = /** @type {const} */ ({
     },
   },
   composedVariablesExclusives: {
-    variables: {},
-    arguments: {},
-
     // tsDoc.src.lib.consts
     error:
       "erreur" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ERROR / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR */,
@@ -140,8 +130,6 @@ export const frData = /** @type {const} */ ({
 
     _enAnglais:
       "En anglais à l'exécution" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS */,
-    _enAnglais_:
-      "(En anglais uniquement.)" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_ / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_ */,
 
     // tsDoc.src.lib.defs
     singleError:

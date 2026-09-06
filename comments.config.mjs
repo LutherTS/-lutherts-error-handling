@@ -135,20 +135,6 @@ export const resolvedConfigData = /** @type {const} */ ({
                   "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH",
                   "value": "The absolute path at hand."
                 }
-              },
-              "atHand": {
-                "string": {
-                  "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING",
-                  "value": "The string§"
-                },
-                "sourceCode": {
-                  "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE",
-                  "value": "The file's `SourceCode` object§"
-                },
-                "absolutePath": {
-                  "key": "EN#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH",
-                  "value": "The absolute path§"
-                }
               }
             }
           },
@@ -214,6 +200,22 @@ export const resolvedConfigData = /** @type {const} */ ({
       }
     },
     "composedVariablesExclusives": {
+      "templateFunctions": {
+        "atHand": {
+          "string": {
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#STRING",
+            "value": "The string§"
+          },
+          "sourceCode": {
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#SOURCECODE",
+            "value": "The file's `SourceCode` object§"
+          },
+          "absolutePath": {
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#ABSOLUTEPATH",
+            "value": "The absolute path§"
+          }
+        }
+      },
       "runtimeVariables": {
         "errors": {
           "messages": {
@@ -563,20 +565,6 @@ export const resolvedConfigData = /** @type {const} */ ({
                   "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH",
                   "value": "Le chemin absolu concerné."
                 }
-              },
-              "atHand": {
-                "string": {
-                  "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#STRING",
-                  "value": "La chaîne de caractères concernée."
-                },
-                "sourceCode": {
-                  "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#SOURCECODE",
-                  "value": "L'objet `SourceCode` du fichier concerné."
-                },
-                "absolutePath": {
-                  "key": "FR#TSDOC#SRC#LIB#PARAMS#UTILS#ATHAND#ABSOLUTEPATH",
-                  "value": "Le chemin absolu concerné."
-                }
               }
             }
           },
@@ -642,8 +630,6 @@ export const resolvedConfigData = /** @type {const} */ ({
       }
     },
     "composedVariablesExclusives": {
-      "variables": {},
-      "arguments": {},
       "error": {
         "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR",
         "value": "erreur"
@@ -663,10 +649,6 @@ export const resolvedConfigData = /** @type {const} */ ({
       "_enAnglais": {
         "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS",
         "value": "En anglais à l'exécution"
-      },
-      "_enAnglais_": {
-        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS_",
-        "value": "(En anglais uniquement.)"
       },
       "singleError": {
         "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR",
