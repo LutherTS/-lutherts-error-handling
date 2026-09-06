@@ -179,6 +179,10 @@ const runtimeVariables = [
     ["SHOW_VS_CODE_ERROR_NAME", "functionNames", "showVSCodeError"],
   ],
   [
+    "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#TREATVSCODEERRORS",
+    ["TREAT_VS_CODE_ERRORS_NAME", "functionNames", "treatVSCodeErrors"],
+  ],
+  [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#LOGCLIERROR",
     ["LOG_CLI_ERROR_NAME", "functionNames", "logCLIError"],
   ],
