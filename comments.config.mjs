@@ -204,15 +204,15 @@ export const resolvedConfigData = /** @type {const} */ ({
         "atHand": {
           "string": {
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#STRING",
-            "value": "The string§"
+            "value": "The string at hand."
           },
           "sourceCode": {
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#SOURCECODE",
-            "value": "The file's `SourceCode` object§"
+            "value": "The file's `SourceCode` object at hand."
           },
           "absolutePath": {
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#ABSOLUTEPATH",
-            "value": "The absolute path§"
+            "value": "The absolute path at hand."
           }
         }
       },
