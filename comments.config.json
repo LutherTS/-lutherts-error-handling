@@ -599,11 +599,11 @@
                 },
                 "makeErrorTypeError": {
                   "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR",
-                  "value": "Crée un objet d'erreur de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir."
+                  "value": "Crée un objet d'erreur de `{type: error}` dont l'erreur est basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir."
                 },
                 "makeErrorTypeWarning": {
                   "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING",
-                  "value": "Crée un objet d'erreur de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir."
+                  "value": "Crée un objet d'erreur de `{type: warning}` dont l'erreur est basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir."
                 },
                 "showVSCodeError": {
                   "key": "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR",
@@ -739,11 +739,11 @@
                 },
                 "pathExistsAsAFile": {
                   "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE",
-                  "value": "`true` si le chemin est un fichier, `false` sinon."
+                  "value": "`true` si le chemin est un fichier, `false` le cas échéant."
                 },
                 "pathExistsAsADirectory": {
                   "key": "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY",
-                  "value": "`true` si le chemin est un dossier, `false` sinon."
+                  "value": "`true` si le chemin est un dossier, `false` le cas échéant."
                 }
               }
             }
@@ -751,11 +751,102 @@
         }
       }
     },
-    "composedVariablesExclusives": {
-      "error": {
-        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR",
-        "value": "erreur"
+    "templateFunctions": {
+      "applyLast": {
+        "successFalse": {
+          "key": "FR#TEMPLATEFUNCTIONS#APPLYLAST#SUCCESSFALSE",
+          "value": "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`."
+        },
+        "successTrue": {
+          "key": "FR#TEMPLATEFUNCTIONS#APPLYLAST#SUCCESSTRUE",
+          "value": "À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`."
+        },
+        "typeError": {
+          "key": "FR#TEMPLATEFUNCTIONS#APPLYLAST#TYPEERROR",
+          "value": "À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`."
+        },
+        "typeWarning": {
+          "key": "FR#TEMPLATEFUNCTIONS#APPLYLAST#TYPEWARNING",
+          "value": "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`."
+        }
       },
+      "defMakeSuccessFalseType": {
+        "error": {
+          "key": "FR#TEMPLATEFUNCTIONS#DEFMAKESUCCESSFALSETYPE#ERROR",
+          "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir."
+        },
+        "warning": {
+          "key": "FR#TEMPLATEFUNCTIONS#DEFMAKESUCCESSFALSETYPE#WARNING",
+          "value": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir."
+        }
+      },
+      "defMakeErrorType": {
+        "error": {
+          "key": "FR#TEMPLATEFUNCTIONS#DEFMAKEERRORTYPE#ERROR",
+          "value": "Crée un objet d'erreur de `{type: error}` dont l'erreur est basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir."
+        },
+        "warning": {
+          "key": "FR#TEMPLATEFUNCTIONS#DEFMAKEERRORTYPE#WARNING",
+          "value": "Crée un objet d'erreur de `{type: warning}` dont l'erreur est basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir."
+        }
+      },
+      "defPathExistsAsA": {
+        "file": {
+          "key": "FR#TEMPLATEFUNCTIONS#DEFPATHEXISTSASA#FILE",
+          "value": "Informe de l'existence d'un chemin en tant que fichier."
+        },
+        "directory": {
+          "key": "FR#TEMPLATEFUNCTIONS#DEFPATHEXISTSASA#DIRECTORY",
+          "value": "Informe de l'existence d'un chemin en tant que dossier."
+        }
+      },
+      "returnMakeSuccessFalseType": {
+        "error": {
+          "key": "FR#TEMPLATEFUNCTIONS#RETURNMAKESUCCESSFALSETYPE#ERROR",
+          "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`."
+        },
+        "warning": {
+          "key": "FR#TEMPLATEFUNCTIONS#RETURNMAKESUCCESSFALSETYPE#WARNING",
+          "value": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`."
+        }
+      },
+      "returnMakeErrorType": {
+        "error": {
+          "key": "FR#TEMPLATEFUNCTIONS#RETURNMAKEERRORTYPE#ERROR",
+          "value": "Un objet d'erreur de `{type: error}`."
+        },
+        "warning": {
+          "key": "FR#TEMPLATEFUNCTIONS#RETURNMAKEERRORTYPE#WARNING",
+          "value": "Un objet d'erreur de `{type: warning}`."
+        }
+      },
+      "returnPathExistsAsA": {
+        "file": {
+          "key": "FR#TEMPLATEFUNCTIONS#RETURNPATHEXISTSASA#FILE",
+          "value": "`true` si le chemin est un fichier, `false` le cas échéant."
+        },
+        "directory": {
+          "key": "FR#TEMPLATEFUNCTIONS#RETURNPATHEXISTSASA#DIRECTORY",
+          "value": "`true` si le chemin est un dossier, `false` le cas échéant."
+        }
+      }
+    },
+    "composedVariablesExclusives": {
+      "words": {
+        "error": {
+          "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#WORDS#ERROR",
+          "value": "erreur"
+        },
+        "file": {
+          "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#WORDS#FILE",
+          "value": "fichier"
+        },
+        "directory": {
+          "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#WORDS#DIRECTORY",
+          "value": "dossier"
+        }
+      },
+      "phrases": {},
       "_applyLastWith": {
         "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH",
         "value": "À apposer en dernier via"
@@ -767,10 +858,6 @@
       "sitsAtTopLike": {
         "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE",
         "value": "apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon"
-      },
-      "_enAnglais": {
-        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS",
-        "value": "En anglais à l'exécution"
       },
       "singleError": {
         "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR",
@@ -791,6 +878,10 @@
       "concernée": {
         "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE",
         "value": "concernée"
+      },
+      "_enAnglais": {
+        "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS",
+        "value": "En anglais à l'exécution"
       }
     }
   }
