@@ -203,15 +203,15 @@ export declare const resolvedConfigData: {
                 readonly atHand: {
                     readonly string: {
                         readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#STRING";
-                        readonly value: "The string§";
+                        readonly value: "The string at hand.";
                     };
                     readonly sourceCode: {
                         readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#SOURCECODE";
-                        readonly value: "The file's `SourceCode` object§";
+                        readonly value: "The file's `SourceCode` object at hand.";
                     };
                     readonly absolutePath: {
                         readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#ABSOLUTEPATH";
-                        readonly value: "The absolute path§";
+                        readonly value: "The absolute path at hand.";
                     };
                 };
             };
