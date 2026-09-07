@@ -7,7 +7,7 @@ import {
   STATUS_NAME,
   ERRORS_NAME,
   SUCCESS_NAME,
-  FALSE_NAME,
+  FALSE,
   TYPE_NAME,
   ERROR,
 } from "../../../comment-variables/items.js";
@@ -52,7 +52,7 @@ export const makeSuccessFalseTypeErrorSuite = (
       assert.strictEqual(resultsType, "object");
     });
 
-    it(`results should have a value of \`${FALSE_NAME}\` at their \`${SUCCESS_NAME}\` key`, () => {
+    it(`results should have a value of \`${FALSE}\` at their \`${SUCCESS_NAME}\` key`, () => {
       const resultsSuccessKeyValue = results.success;
       assert.strictEqual(resultsSuccessKeyValue, false);
     });

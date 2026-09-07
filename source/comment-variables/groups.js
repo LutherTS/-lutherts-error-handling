@@ -21,9 +21,8 @@ export const miscellaneous = runtimeVariables.miscellaneous;
 
 /* identifiers */
 
-export const variableIdentifiers = runtimeVariables.identifiers.variables;
-export const stringNames = runtimeVariables.identifiers.strings;
-export const functionNames = runtimeVariables.identifiers.functions;
-export const argumentNames = runtimeVariables.identifiers.arguments;
-export const keyNames = runtimeVariables.identifiers.keys;
-export const booleanNames = runtimeVariables.identifiers.booleans;
+export const stringIdentifiers = runtimeVariables.identifiers.strings;
+export const objectIdentifiers = runtimeVariables.identifiers.objects;
+export const functionIdentifiers = runtimeVariables.identifiers.functions;
+export const argumentIdentifiers = runtimeVariables.identifiers.arguments;
+export const propertyIdentifiers = runtimeVariables.identifiers.properties;

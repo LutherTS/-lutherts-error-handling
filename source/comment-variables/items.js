@@ -4,12 +4,11 @@ import {
   errorTypes,
   defaults,
   miscellaneous,
-  variableIdentifiers,
-  stringNames,
-  functionNames,
-  argumentNames,
-  keyNames,
-  booleanNames,
+  stringIdentifiers,
+  objectIdentifiers,
+  functionIdentifiers,
+  argumentIdentifiers,
+  propertyIdentifiers,
 } from "./groups.js";
 
 /* error messages */
@@ -39,59 +38,59 @@ export const DEFAULT_NUMBER_OF_ERRORS = defaults.numberOfErrors.value;
 /* miscellaneous */
 
 export const ELLIPSIS = miscellaneous.ellipsis.value;
-
-/* variable names */
-
-export const SUCCESS_FALSE_NAME = variableIdentifiers.successFalse.value;
-export const SUCCESS_TRUE_NAME = variableIdentifiers.successTrue.value;
-export const TYPE_ERROR_NAME = variableIdentifiers.typeError.value;
-export const TYPE_WARNING_NAME = variableIdentifiers.typeWarning.value;
+export const TRUE = miscellaneous.true.value;
+export const FALSE = miscellaneous.false.value;
 
 /* string names */
 
 export const ERROR_NOT_STANDARDIZED_MESSAGE_NAME =
-  stringNames.errorNotStandardizedMessage.value;
+  stringIdentifiers.errorNotStandardizedMessage.value;
 export const ERROR_NOT_STANDARDIZED_STATUS_NAME =
-  stringNames.errorNotStandardizedStatus.value;
+  stringIdentifiers.errorNotStandardizedStatus.value;
 
-export const ELLIPSIS_NAME = stringNames.ellipsis.value;
+export const ELLIPSIS_NAME = stringIdentifiers.ellipsis.value;
+
+/* object names */
+
+export const SUCCESS_FALSE_NAME = objectIdentifiers.successFalse.value;
+export const SUCCESS_TRUE_NAME = objectIdentifiers.successTrue.value;
+export const TYPE_ERROR_NAME = objectIdentifiers.typeError.value;
+export const TYPE_WARNING_NAME = objectIdentifiers.typeWarning.value;
 
 /* function names */
 
 export const MAKE_SUCCESS_FALSE_TYPE_ERROR_NAME =
-  functionNames.makeSuccessFalseTypeError.value;
+  functionIdentifiers.makeSuccessFalseTypeError.value;
 export const MAKE_SUCCESS_FALSE_TYPE_WARNING_NAME =
-  functionNames.makeSuccessFalseTypeWarning.value;
+  functionIdentifiers.makeSuccessFalseTypeWarning.value;
 export const MAKE_ERROR_TYPE_ERROR_NAME =
-  functionNames.makeErrorTypeError.value;
+  functionIdentifiers.makeErrorTypeError.value;
 export const MAKE_ERROR_TYPE_WARNING_NAME =
-  functionNames.makeErrorTypeWarning.value;
-export const SHOW_VS_CODE_ERROR_NAME = functionNames.showVSCodeError.value;
-export const TREAT_VS_CODE_ERRORS_NAME = functionNames.treatVSCodeErrors.value;
-export const LOG_CLI_ERROR_NAME = functionNames.logCLIError.value;
-export const ESCAPE_REGEX_NAME = functionNames.escapeRegex.value;
+  functionIdentifiers.makeErrorTypeWarning.value;
+export const SHOW_VS_CODE_ERROR_NAME =
+  functionIdentifiers.showVSCodeError.value;
+export const TREAT_VS_CODE_ERRORS_NAME =
+  functionIdentifiers.treatVSCodeErrors.value;
+export const LOG_CLI_ERROR_NAME = functionIdentifiers.logCLIError.value;
+export const ESCAPE_REGEX_NAME = functionIdentifiers.escapeRegex.value;
 export const TRIM_STRING_WITH_LIMIT_NAME =
-  functionNames.trimStringWithLimit.value;
+  functionIdentifiers.trimStringWithLimit.value;
 export const SPACE_OUT_ESLINT_MESSAGE_NAME =
-  functionNames.spaceOutESLintMessage.value;
+  functionIdentifiers.spaceOutESLintMessage.value;
 export const HIGHLIGHT_FIRST_LINE_OF_CODE_NAME =
-  functionNames.highlightFirstLineOfCode.value;
-export const PATH_EXISTS_AS_A_FILE_NAME = functionNames.pathExistsAsAFile.value;
+  functionIdentifiers.highlightFirstLineOfCode.value;
+export const PATH_EXISTS_AS_A_FILE_NAME =
+  functionIdentifiers.pathExistsAsAFile.value;
 export const PATH_EXISTS_AS_A_DIRECTORY_NAME =
-  functionNames.pathExistsAsADirectory.value;
+  functionIdentifiers.pathExistsAsADirectory.value;
 
 /* argument names */
 
-export const MESSAGE_NAME = argumentNames.message.value;
-export const STATUS_NAME = argumentNames.status.value;
+export const MESSAGE_NAME = argumentIdentifiers.message.value;
+export const STATUS_NAME = argumentIdentifiers.status.value;
 
-/* key names */
+/* property names */
 
-export const SUCCESS_NAME = keyNames.success.value;
-export const TYPE_NAME = keyNames.type.value;
-export const ERRORS_NAME = keyNames.errors.value;
-
-/* boolean names */
-
-export const TRUE_NAME = booleanNames.true.value;
-export const FALSE_NAME = booleanNames.false.value;
+export const SUCCESS_NAME = propertyIdentifiers.success.value;
+export const TYPE_NAME = propertyIdentifiers.type.value;
+export const ERRORS_NAME = propertyIdentifiers.errors.value;

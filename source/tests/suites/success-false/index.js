@@ -4,7 +4,7 @@ import assert from "node:assert";
 import {
   SUCCESS_FALSE_NAME,
   SUCCESS_NAME,
-  FALSE_NAME,
+  FALSE,
 } from "../../../comment-variables/items.js";
 
 /**
@@ -22,7 +22,7 @@ export const successFalseSuite = (/** @type {SuccessFalse} */ successFalse) => {
       assert.strictEqual(successFalseType, "object");
     });
 
-    it(`should have a value of \`${FALSE_NAME}\` at its \`${SUCCESS_NAME}\` key`, () => {
+    it(`should have a value of \`${FALSE}\` at its \`${SUCCESS_NAME}\` key`, () => {
       const successFalseSuccessKeyValue = successFalse.success;
       assert.strictEqual(successFalseSuccessKeyValue, false);
     });
