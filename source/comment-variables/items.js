@@ -4,7 +4,7 @@ import {
   errorTypes,
   defaults,
   miscellaneous,
-  variableNames,
+  variableIdentifiers,
   stringNames,
   functionNames,
   argumentNames,
@@ -42,10 +42,10 @@ export const ELLIPSIS = miscellaneous.ellipsis.value;
 
 /* variable names */
 
-export const SUCCESS_FALSE_NAME = variableNames.successFalse.value;
-export const SUCCESS_TRUE_NAME = variableNames.successTrue.value;
-export const TYPE_ERROR_NAME = variableNames.typeError.value;
-export const TYPE_WARNING_NAME = variableNames.typeWarning.value;
+export const SUCCESS_FALSE_NAME = variableIdentifiers.successFalse.value;
+export const SUCCESS_TRUE_NAME = variableIdentifiers.successTrue.value;
+export const TYPE_ERROR_NAME = variableIdentifiers.typeError.value;
+export const TYPE_WARNING_NAME = variableIdentifiers.typeWarning.value;
 
 /* string names */
 

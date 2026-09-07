@@ -19,11 +19,11 @@ export const defaults = runtimeVariables.defaults;
 
 export const miscellaneous = runtimeVariables.miscellaneous;
 
-/* names */
+/* identifiers */
 
-export const variableNames = runtimeVariables.names.variables;
-export const stringNames = runtimeVariables.names.strings;
-export const functionNames = runtimeVariables.names.functions;
-export const argumentNames = runtimeVariables.names.arguments;
-export const keyNames = runtimeVariables.names.keys;
-export const booleanNames = runtimeVariables.names.booleans;
+export const variableIdentifiers = runtimeVariables.identifiers.variables;
+export const stringNames = runtimeVariables.identifiers.strings;
+export const functionNames = runtimeVariables.identifiers.functions;
+export const argumentNames = runtimeVariables.identifiers.arguments;
+export const keyNames = runtimeVariables.identifiers.keys;
+export const booleanNames = runtimeVariables.identifiers.booleans;

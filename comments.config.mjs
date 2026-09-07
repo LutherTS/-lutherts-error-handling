@@ -199,23 +199,148 @@ export const resolvedConfigData = /** @type {const} */ ({
         }
       }
     },
-    "composedVariablesExclusives": {
-      "templateFunctions": {
-        "atHand": {
-          "string": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#STRING",
-            "value": "The string at hand."
-          },
-          "sourceCode": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#SOURCECODE",
-            "value": "The file's `SourceCode` object at hand."
-          },
-          "absolutePath": {
-            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#ABSOLUTEPATH",
-            "value": "The absolute path at hand."
-          }
+    "templateFunctions": {
+      "atHand": {
+        "string": {
+          "key": "EN#TEMPLATEFUNCTIONS#ATHAND#STRING",
+          "value": "The string at hand."
+        },
+        "sourceCode": {
+          "key": "EN#TEMPLATEFUNCTIONS#ATHAND#SOURCECODE",
+          "value": "The file's `SourceCode` object at hand."
+        },
+        "absolutePath": {
+          "key": "EN#TEMPLATEFUNCTIONS#ATHAND#ABSOLUTEPATH",
+          "value": "The absolute path at hand."
         }
       },
+      "applyLast": {
+        "successFalse": {
+          "key": "EN#TEMPLATEFUNCTIONS#APPLYLAST#SUCCESSFALSE",
+          "value": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`."
+        },
+        "successTrue": {
+          "key": "EN#TEMPLATEFUNCTIONS#APPLYLAST#SUCCESSTRUE",
+          "value": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`."
+        },
+        "typeError": {
+          "key": "EN#TEMPLATEFUNCTIONS#APPLYLAST#TYPEERROR",
+          "value": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`."
+        },
+        "typeWarning": {
+          "key": "EN#TEMPLATEFUNCTIONS#APPLYLAST#TYPEWARNING",
+          "value": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`."
+        }
+      },
+      "defMakeSuccessFalseType": {
+        "error": {
+          "key": "EN#TEMPLATEFUNCTIONS#DEFMAKESUCCESSFALSETYPE#ERROR",
+          "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have."
+        },
+        "warning": {
+          "key": "EN#TEMPLATEFUNCTIONS#DEFMAKESUCCESSFALSETYPE#WARNING",
+          "value": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have."
+        }
+      },
+      "defMakeErrorType": {
+        "error": {
+          "key": "EN#TEMPLATEFUNCTIONS#DEFMAKEERRORTYPE#ERROR",
+          "value": "Makes an error object of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have."
+        },
+        "warning": {
+          "key": "EN#TEMPLATEFUNCTIONS#DEFMAKEERRORTYPE#WARNING",
+          "value": "Makes an error object of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have."
+        }
+      },
+      "defPathExistsAsA": {
+        "file": {
+          "key": "EN#TEMPLATEFUNCTIONS#DEFPATHEXISTSASA#FILE",
+          "value": "Tells if a path actually exists as a file."
+        },
+        "directory": {
+          "key": "EN#TEMPLATEFUNCTIONS#DEFPATHEXISTSASA#DIRECTORY",
+          "value": "Tells if a path actually exists as a directory."
+        }
+      },
+      "returnMakeSuccessFalseType": {
+        "error": {
+          "key": "EN#TEMPLATEFUNCTIONS#RETURNMAKESUCCESSFALSETYPE#ERROR",
+          "value": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`."
+        },
+        "warning": {
+          "key": "EN#TEMPLATEFUNCTIONS#RETURNMAKESUCCESSFALSETYPE#WARNING",
+          "value": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`."
+        }
+      },
+      "returnMakeErrorType": {
+        "error": {
+          "key": "EN#TEMPLATEFUNCTIONS#RETURNMAKEERRORTYPE#ERROR",
+          "value": "An error object of `{type: error}`."
+        },
+        "warning": {
+          "key": "EN#TEMPLATEFUNCTIONS#RETURNMAKEERRORTYPE#WARNING",
+          "value": "An error object of `{type: warning}`."
+        }
+      },
+      "returnPathExistsAsA": {
+        "file": {
+          "key": "EN#TEMPLATEFUNCTIONS#RETURNPATHEXISTSASA#FILE",
+          "value": "`true` if the path is a file, `false` otherwise."
+        },
+        "directory": {
+          "key": "EN#TEMPLATEFUNCTIONS#RETURNPATHEXISTSASA#DIRECTORY",
+          "value": "`true` if the path is a directory, `false` otherwise."
+        }
+      }
+    },
+    "composedVariablesExclusives": {
+      "words": {
+        "success": {
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#SUCCESS",
+          "value": "success"
+        },
+        "false": {
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#FALSE",
+          "value": "false"
+        },
+        "true": {
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#TRUE",
+          "value": "true"
+        },
+        "type": {
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#TYPE",
+          "value": "type"
+        },
+        "error": {
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#ERROR",
+          "value": "error"
+        },
+        "warning": {
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#WARNING",
+          "value": "warning"
+        },
+        "message": {
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#MESSAGE",
+          "value": "message"
+        },
+        "status": {
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#STATUS",
+          "value": "status"
+        },
+        "errors": {
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#ERRORS",
+          "value": "errors"
+        },
+        "file": {
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#FILE",
+          "value": "file"
+        },
+        "directory": {
+          "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#DIRECTORY",
+          "value": "directory"
+        }
+      },
+      "phrases": {},
       "runtimeVariables": {
         "errors": {
           "messages": {
@@ -251,127 +376,125 @@ export const resolvedConfigData = /** @type {const} */ ({
           "ellipsis": {
             "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#ELLIPSIS",
             "value": "..."
+          },
+          "true": {
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#TRUE",
+            "value": "true"
+          },
+          "false": {
+            "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#FALSE",
+            "value": "false"
           }
         },
-        "names": {
-          "variables": {
-            "successFalse": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#VARIABLES#SUCCESSFALSE",
-              "value": "successFalse"
-            },
-            "successTrue": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#VARIABLES#SUCCESSTRUE",
-              "value": "successTrue"
-            },
-            "typeError": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#VARIABLES#TYPEERROR",
-              "value": "typeError"
-            },
-            "typeWarning": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#VARIABLES#TYPEWARNING",
-              "value": "typeWarning"
-            }
-          },
+        "identifiers": {
           "strings": {
             "errorNotStandardizedMessage": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#STRINGS#ERRORNOTSTANDARDIZEDMESSAGE",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDMESSAGE",
               "value": "ERROR_NOT_STANDARDIZED_MESSAGE"
             },
             "errorNotStandardizedStatus": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#STRINGS#ERRORNOTSTANDARDIZEDSTATUS",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDSTATUS",
               "value": "ERROR_NOT_STANDARDIZED_STATUS"
             },
             "ellipsis": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#STRINGS#ELLIPSIS",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#STRINGS#ELLIPSIS",
               "value": "ELLIPSIS"
+            }
+          },
+          "objects": {
+            "successFalse": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#OBJECTS#SUCCESSFALSE",
+              "value": "successFalse"
+            },
+            "successTrue": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#OBJECTS#SUCCESSTRUE",
+              "value": "successTrue"
+            },
+            "typeError": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#OBJECTS#TYPEERROR",
+              "value": "typeError"
+            },
+            "typeWarning": {
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#OBJECTS#TYPEWARNING",
+              "value": "typeWarning"
             }
           },
           "functions": {
             "makeSuccessFalseTypeError": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#MAKESUCCESSFALSETYPEERROR",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEERROR",
               "value": "makeSuccessFalseTypeError"
             },
             "makeSuccessFalseTypeWarning": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING",
               "value": "makeSuccessFalseTypeWarning"
             },
             "makeErrorTypeError": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#MAKEERRORTYPEERROR",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEERROR",
               "value": "makeErrorTypeError"
             },
             "makeErrorTypeWarning": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#MAKEERRORTYPEWARNING",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEWARNING",
               "value": "makeErrorTypeWarning"
             },
             "showVSCodeError": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#SHOWVSCODEERROR",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#SHOWVSCODEERROR",
               "value": "showVSCodeError"
             },
             "treatVSCodeErrors": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#TREATVSCODEERRORS",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#TREATVSCODEERRORS",
               "value": "treatVSCodeErrors"
             },
             "logCLIError": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#LOGCLIERROR",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#LOGCLIERROR",
               "value": "logCLIError"
             },
             "escapeRegex": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#ESCAPEREGEX",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#ESCAPEREGEX",
               "value": "escapeRegex"
             },
             "trimStringWithLimit": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#TRIMSTRINGWITHLIMIT",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#TRIMSTRINGWITHLIMIT",
               "value": "trimStringWithLimit"
             },
             "spaceOutESLintMessage": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#SPACEOUTESLINTMESSAGE",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#SPACEOUTESLINTMESSAGE",
               "value": "spaceOutESLintMessage"
             },
             "highlightFirstLineOfCode": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE",
               "value": "highlightFirstLineOfCode"
             },
             "pathExistsAsAFile": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#PATHEXISTSASAFILE",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#PATHEXISTSASAFILE",
               "value": "pathExistsAsAFile"
             },
             "pathExistsAsADirectory": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#PATHEXISTSASADIRECTORY",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY",
               "value": "pathExistsAsADirectory"
             }
           },
           "arguments": {
             "message": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#ARGUMENTS#MESSAGE",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#ARGUMENTS#MESSAGE",
               "value": "message"
             },
             "status": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#ARGUMENTS#STATUS",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#ARGUMENTS#STATUS",
               "value": "status"
             }
           },
-          "keys": {
+          "properties": {
             "success": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#KEYS#SUCCESS",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#PROPERTIES#SUCCESS",
               "value": "success"
             },
             "type": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#KEYS#TYPE",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#PROPERTIES#TYPE",
               "value": "type"
             },
             "errors": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#KEYS#ERRORS",
+              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#PROPERTIES#ERRORS",
               "value": "errors"
-            }
-          },
-          "booleans": {
-            "true": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#BOOLEANS#TRUE",
-              "value": "true"
-            },
-            "false": {
-              "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#BOOLEANS#FALSE",
-              "value": "false"
             }
           }
         }
