@@ -2,9 +2,9 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
-  ELLIPSIS_NAME,
+  ELLIPSIS_IDENTIFIER,
   ELLIPSIS,
-  TRIM_STRING_WITH_LIMIT_NAME,
+  TRIM_STRING_WITH_LIMIT_IDENTIFIER,
 } from "../../../comment-variables/items.js";
 
 /**
@@ -16,7 +16,7 @@ import {
 export const trimStringWithLimitSuite = (
   /** @type {TrimStringWithLimit} */ trimStringWithLimit,
 ) => {
-  describe(TRIM_STRING_WITH_LIMIT_NAME, () => {
+  describe(TRIM_STRING_WITH_LIMIT_IDENTIFIER, () => {
     // initial tests
 
     it(`should be a function`, () => {
@@ -24,9 +24,12 @@ export const trimStringWithLimitSuite = (
       assert.strictEqual(trimStringWithLimitType, "function");
     });
 
-    it.skip(`should be named \`${TRIM_STRING_WITH_LIMIT_NAME}\``, () => {
+    it.skip(`should be named \`${TRIM_STRING_WITH_LIMIT_IDENTIFIER}\``, () => {
       const trimStringWithLimitName = trimStringWithLimit.name;
-      assert.strictEqual(trimStringWithLimitName, TRIM_STRING_WITH_LIMIT_NAME);
+      assert.strictEqual(
+        trimStringWithLimitName,
+        TRIM_STRING_WITH_LIMIT_IDENTIFIER,
+      );
     });
 
     // input validations tests
@@ -70,7 +73,7 @@ export const trimStringWithLimitSuite = (
       assert.strictEqual(trimStringWithLimitResults.length, testLimit);
     });
 
-    it(`results should have a minimum length of \`${ELLIPSIS_NAME}.length\` when its input limit is actually shorter even than the length of the replacement ellipsis`, () => {
+    it(`results should have a minimum length of \`${ELLIPSIS_IDENTIFIER}.length\` when its input limit is actually shorter even than the length of the replacement ellipsis`, () => {
       const testString = "12";
       const testLimit = 1;
       const trimStringWithLimitResults = trimStringWithLimit(

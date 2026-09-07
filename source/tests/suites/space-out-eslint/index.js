@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { SPACE_OUT_ESLINT_MESSAGE_NAME } from "../../../comment-variables/items.js";
+import { SPACE_OUT_ESLINT_MESSAGE_IDENTIFIER } from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").SpaceOutESLintMessage} SpaceOutESLintMessage
@@ -12,7 +12,7 @@ import { SPACE_OUT_ESLINT_MESSAGE_NAME } from "../../../comment-variables/items.
 export const spaceOutESLintMessageSuite = (
   /** @type {SpaceOutESLintMessage} */ spaceOutESLintMessage,
 ) => {
-  describe(SPACE_OUT_ESLINT_MESSAGE_NAME, () => {
+  describe(SPACE_OUT_ESLINT_MESSAGE_IDENTIFIER, () => {
     // initial tests
 
     it(`should be a function`, () => {
@@ -20,11 +20,11 @@ export const spaceOutESLintMessageSuite = (
       assert.strictEqual(spaceOutESLintMessageType, "function");
     });
 
-    it.skip(`should be named \`${SPACE_OUT_ESLINT_MESSAGE_NAME}\``, () => {
+    it.skip(`should be named \`${SPACE_OUT_ESLINT_MESSAGE_IDENTIFIER}\``, () => {
       const spaceOutESLintMessageName = spaceOutESLintMessage.name;
       assert.strictEqual(
         spaceOutESLintMessageName,
-        SPACE_OUT_ESLINT_MESSAGE_NAME,
+        SPACE_OUT_ESLINT_MESSAGE_IDENTIFIER,
       );
     });
 

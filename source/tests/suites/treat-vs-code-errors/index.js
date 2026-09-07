@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { TREAT_VS_CODE_ERRORS_NAME } from "../../../comment-variables/items.js";
+import { TREAT_VS_CODE_ERRORS_IDENTIFIER } from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").TreatVSCodeErrors} TreatVSCodeErrors
@@ -12,7 +12,7 @@ import { TREAT_VS_CODE_ERRORS_NAME } from "../../../comment-variables/items.js";
 export const treatVSCodeErrorsSuite = (
   /** @type {TreatVSCodeErrors} */ treatVSCodeErrors,
 ) => {
-  describe(TREAT_VS_CODE_ERRORS_NAME, () => {
+  describe(TREAT_VS_CODE_ERRORS_IDENTIFIER, () => {
     // initial tests
 
     it(`should be a function`, () => {
@@ -20,9 +20,12 @@ export const treatVSCodeErrorsSuite = (
       assert.strictEqual(treatVSCodeErrorsType, "function");
     });
 
-    it.skip(`should be named \`${TREAT_VS_CODE_ERRORS_NAME}\``, () => {
+    it.skip(`should be named \`${TREAT_VS_CODE_ERRORS_IDENTIFIER}\``, () => {
       const treatVSCodeErrorsName = treatVSCodeErrors.name;
-      assert.strictEqual(treatVSCodeErrorsName, TREAT_VS_CODE_ERRORS_NAME);
+      assert.strictEqual(
+        treatVSCodeErrorsName,
+        TREAT_VS_CODE_ERRORS_IDENTIFIER,
+      );
     });
   });
 };

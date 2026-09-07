@@ -2,13 +2,13 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
-  MAKE_SUCCESS_FALSE_TYPE_ERROR_NAME,
-  MESSAGE_NAME,
-  STATUS_NAME,
-  ERRORS_NAME,
-  SUCCESS_NAME,
+  MAKE_SUCCESS_FALSE_TYPE_ERROR_IDENTIFIER,
+  MESSAGE_IDENTIFIER,
+  STATUS_IDENTIFIER,
+  ERRORS_IDENTIFIER,
+  SUCCESS_IDENTIFIER,
   FALSE,
-  TYPE_NAME,
+  TYPE_IDENTIFIER,
   ERROR,
 } from "../../../comment-variables/items.js";
 
@@ -21,7 +21,7 @@ import {
 export const makeSuccessFalseTypeErrorSuite = (
   /** @type {MakeSuccessFalseTypeError} */ makeSuccessFalseTypeError,
 ) => {
-  describe(MAKE_SUCCESS_FALSE_TYPE_ERROR_NAME, () => {
+  describe(MAKE_SUCCESS_FALSE_TYPE_ERROR_IDENTIFIER, () => {
     // initial tests
 
     it(`should be a function`, () => {
@@ -29,11 +29,11 @@ export const makeSuccessFalseTypeErrorSuite = (
       assert.strictEqual(makeSuccessFalseTypeErrorType, "function");
     });
 
-    it.skip(`should be named \`${MAKE_SUCCESS_FALSE_TYPE_ERROR_NAME}\``, () => {
+    it.skip(`should be named \`${MAKE_SUCCESS_FALSE_TYPE_ERROR_IDENTIFIER}\``, () => {
       const makeSuccessFalseTypeErrorName = makeSuccessFalseTypeError.name;
       assert.strictEqual(
         makeSuccessFalseTypeErrorName,
-        MAKE_SUCCESS_FALSE_TYPE_ERROR_NAME,
+        MAKE_SUCCESS_FALSE_TYPE_ERROR_IDENTIFIER,
       );
     });
 
@@ -52,44 +52,44 @@ export const makeSuccessFalseTypeErrorSuite = (
       assert.strictEqual(resultsType, "object");
     });
 
-    it(`results should have a value of \`${FALSE}\` at their \`${SUCCESS_NAME}\` key`, () => {
+    it(`results should have a value of \`${FALSE}\` at their \`${SUCCESS_IDENTIFIER}\` key`, () => {
       const resultsSuccessKeyValue = results.success;
       assert.strictEqual(resultsSuccessKeyValue, false);
     });
 
-    it(`results should have an array at their \`${ERRORS_NAME}\` key`, () => {
+    it(`results should have an array at their \`${ERRORS_IDENTIFIER}\` key`, () => {
       const resultsErrors = results.errors;
       assert.strictEqual(Array.isArray(resultsErrors), true);
     });
 
-    it(`results' \`${ERRORS_NAME}\` key array should have a single element`, () => {
+    it(`results' \`${ERRORS_IDENTIFIER}\` key array should have a single element`, () => {
       const resultsErrorsLength = results.errors.length;
       assert.strictEqual(resultsErrorsLength, 1);
     });
 
     const resultsErrorsElement = results.errors[0];
 
-    it(`results' \`${ERRORS_NAME}\` key array single element should be an object`, () => {
+    it(`results' \`${ERRORS_IDENTIFIER}\` key array single element should be an object`, () => {
       const resultsErrorsElementType = typeof resultsErrorsElement;
       assert.strictEqual(resultsErrorsElementType, "object");
     });
 
-    it(`results' \`${ERRORS_NAME}\` key array single element should have a value of \`"${ERROR}"\` at its \`${TYPE_NAME}\` key`, () => {
+    it(`results' \`${ERRORS_IDENTIFIER}\` key array single element should have a value of \`"${ERROR}"\` at its \`${TYPE_IDENTIFIER}\` key`, () => {
       const resultsErrorsElementTypeKeyValue = resultsErrorsElement.type;
       assert.strictEqual(resultsErrorsElementTypeKeyValue, ERROR);
     });
 
-    it(`results' \`${ERRORS_NAME}\` key array single element should have the value of \`testMessage\` at its \`${MESSAGE_NAME}\` key`, () => {
+    it(`results' \`${ERRORS_IDENTIFIER}\` key array single element should have the value of \`testMessage\` at its \`${MESSAGE_IDENTIFIER}\` key`, () => {
       const resultsErrorsElementMessageKeyValue = resultsErrorsElement.message;
       assert.strictEqual(resultsErrorsElementMessageKeyValue, testMessage);
     });
 
-    it(`results' \`${ERRORS_NAME}\` key array single element should have the value of \`testStatus\` at its \`${STATUS_NAME}\` key`, () => {
+    it(`results' \`${ERRORS_IDENTIFIER}\` key array single element should have the value of \`testStatus\` at its \`${STATUS_IDENTIFIER}\` key`, () => {
       const resultsErrorsElementStatusKeyValue = resultsErrorsElement.status;
       assert.strictEqual(resultsErrorsElementStatusKeyValue, testStatus);
     });
 
-    it(`results' \`${ERRORS_NAME}\` key array single element should have no other keys than its 3 aforementioned keys`, () => {
+    it(`results' \`${ERRORS_IDENTIFIER}\` key array single element should have no other keys than its 3 aforementioned keys`, () => {
       const resultsErrorsElementKeys = Object.keys(resultsErrorsElement);
       const resultsErrorsElementKeysLength = resultsErrorsElementKeys.length;
       assert.strictEqual(resultsErrorsElementKeysLength, 3);

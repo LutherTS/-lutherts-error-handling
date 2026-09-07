@@ -198,23 +198,148 @@ export declare const resolvedConfigData: {
                 };
             };
         };
-        readonly composedVariablesExclusives: {
-            readonly templateFunctions: {
-                readonly atHand: {
-                    readonly string: {
-                        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#STRING";
-                        readonly value: "The string at hand.";
-                    };
-                    readonly sourceCode: {
-                        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#SOURCECODE";
-                        readonly value: "The file's `SourceCode` object at hand.";
-                    };
-                    readonly absolutePath: {
-                        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#TEMPLATEFUNCTIONS#ATHAND#ABSOLUTEPATH";
-                        readonly value: "The absolute path at hand.";
-                    };
+        readonly templateFunctions: {
+            readonly atHand: {
+                readonly string: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#ATHAND#STRING";
+                    readonly value: "The string at hand.";
+                };
+                readonly sourceCode: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#ATHAND#SOURCECODE";
+                    readonly value: "The file's `SourceCode` object at hand.";
+                };
+                readonly absolutePath: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#ATHAND#ABSOLUTEPATH";
+                    readonly value: "The absolute path at hand.";
                 };
             };
+            readonly applyLast: {
+                readonly successFalse: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#APPLYLAST#SUCCESSFALSE";
+                    readonly value: "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
+                };
+                readonly successTrue: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#APPLYLAST#SUCCESSTRUE";
+                    readonly value: "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
+                };
+                readonly typeError: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#APPLYLAST#TYPEERROR";
+                    readonly value: "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
+                };
+                readonly typeWarning: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#APPLYLAST#TYPEWARNING";
+                    readonly value: "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
+                };
+            };
+            readonly defMakeSuccessFalseType: {
+                readonly error: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#DEFMAKESUCCESSFALSETYPE#ERROR";
+                    readonly value: "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
+                };
+                readonly warning: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#DEFMAKESUCCESSFALSETYPE#WARNING";
+                    readonly value: "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
+                };
+            };
+            readonly defMakeErrorType: {
+                readonly error: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#DEFMAKEERRORTYPE#ERROR";
+                    readonly value: "Makes an error object of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
+                };
+                readonly warning: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#DEFMAKEERRORTYPE#WARNING";
+                    readonly value: "Makes an error object of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
+                };
+            };
+            readonly defPathExistsAsA: {
+                readonly file: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#DEFPATHEXISTSASA#FILE";
+                    readonly value: "Tells if a path actually exists as a file.";
+                };
+                readonly directory: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#DEFPATHEXISTSASA#DIRECTORY";
+                    readonly value: "Tells if a path actually exists as a directory.";
+                };
+            };
+            readonly returnMakeSuccessFalseType: {
+                readonly error: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#RETURNMAKESUCCESSFALSETYPE#ERROR";
+                    readonly value: "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.";
+                };
+                readonly warning: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#RETURNMAKESUCCESSFALSETYPE#WARNING";
+                    readonly value: "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
+                };
+            };
+            readonly returnMakeErrorType: {
+                readonly error: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#RETURNMAKEERRORTYPE#ERROR";
+                    readonly value: "An error object of `{type: error}`.";
+                };
+                readonly warning: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#RETURNMAKEERRORTYPE#WARNING";
+                    readonly value: "An error object of `{type: warning}`.";
+                };
+            };
+            readonly returnPathExistsAsA: {
+                readonly file: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#RETURNPATHEXISTSASA#FILE";
+                    readonly value: "`true` if the path is a file, `false` otherwise.";
+                };
+                readonly directory: {
+                    readonly key: "EN#TEMPLATEFUNCTIONS#RETURNPATHEXISTSASA#DIRECTORY";
+                    readonly value: "`true` if the path is a directory, `false` otherwise.";
+                };
+            };
+        };
+        readonly composedVariablesExclusives: {
+            readonly words: {
+                readonly success: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#SUCCESS";
+                    readonly value: "success";
+                };
+                readonly false: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#FALSE";
+                    readonly value: "false";
+                };
+                readonly true: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#TRUE";
+                    readonly value: "true";
+                };
+                readonly type: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#TYPE";
+                    readonly value: "type";
+                };
+                readonly error: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#ERROR";
+                    readonly value: "error";
+                };
+                readonly warning: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#WARNING";
+                    readonly value: "warning";
+                };
+                readonly message: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#MESSAGE";
+                    readonly value: "message";
+                };
+                readonly status: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#STATUS";
+                    readonly value: "status";
+                };
+                readonly errors: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#ERRORS";
+                    readonly value: "errors";
+                };
+                readonly file: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#FILE";
+                    readonly value: "file";
+                };
+                readonly directory: {
+                    readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#WORDS#DIRECTORY";
+                    readonly value: "directory";
+                };
+            };
+            readonly phrases: {};
             readonly runtimeVariables: {
                 readonly errors: {
                     readonly messages: {
@@ -251,126 +376,124 @@ export declare const resolvedConfigData: {
                         readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#ELLIPSIS";
                         readonly value: "...";
                     };
-                };
-                readonly names: {
-                    readonly variables: {
-                        readonly successFalse: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#VARIABLES#SUCCESSFALSE";
-                            readonly value: "successFalse";
-                        };
-                        readonly successTrue: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#VARIABLES#SUCCESSTRUE";
-                            readonly value: "successTrue";
-                        };
-                        readonly typeError: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#VARIABLES#TYPEERROR";
-                            readonly value: "typeError";
-                        };
-                        readonly typeWarning: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#VARIABLES#TYPEWARNING";
-                            readonly value: "typeWarning";
-                        };
+                    readonly true: {
+                        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#TRUE";
+                        readonly value: "true";
                     };
+                    readonly false: {
+                        readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#FALSE";
+                        readonly value: "false";
+                    };
+                };
+                readonly identifiers: {
                     readonly strings: {
                         readonly errorNotStandardizedMessage: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#STRINGS#ERRORNOTSTANDARDIZEDMESSAGE";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDMESSAGE";
                             readonly value: "ERROR_NOT_STANDARDIZED_MESSAGE";
                         };
                         readonly errorNotStandardizedStatus: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#STRINGS#ERRORNOTSTANDARDIZEDSTATUS";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDSTATUS";
                             readonly value: "ERROR_NOT_STANDARDIZED_STATUS";
                         };
                         readonly ellipsis: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#STRINGS#ELLIPSIS";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#STRINGS#ELLIPSIS";
                             readonly value: "ELLIPSIS";
+                        };
+                    };
+                    readonly objects: {
+                        readonly successFalse: {
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#OBJECTS#SUCCESSFALSE";
+                            readonly value: "successFalse";
+                        };
+                        readonly successTrue: {
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#OBJECTS#SUCCESSTRUE";
+                            readonly value: "successTrue";
+                        };
+                        readonly typeError: {
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#OBJECTS#TYPEERROR";
+                            readonly value: "typeError";
+                        };
+                        readonly typeWarning: {
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#OBJECTS#TYPEWARNING";
+                            readonly value: "typeWarning";
                         };
                     };
                     readonly functions: {
                         readonly makeSuccessFalseTypeError: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#MAKESUCCESSFALSETYPEERROR";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEERROR";
                             readonly value: "makeSuccessFalseTypeError";
                         };
                         readonly makeSuccessFalseTypeWarning: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING";
                             readonly value: "makeSuccessFalseTypeWarning";
                         };
                         readonly makeErrorTypeError: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#MAKEERRORTYPEERROR";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEERROR";
                             readonly value: "makeErrorTypeError";
                         };
                         readonly makeErrorTypeWarning: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#MAKEERRORTYPEWARNING";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEWARNING";
                             readonly value: "makeErrorTypeWarning";
                         };
                         readonly showVSCodeError: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#SHOWVSCODEERROR";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#SHOWVSCODEERROR";
                             readonly value: "showVSCodeError";
                         };
                         readonly treatVSCodeErrors: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#TREATVSCODEERRORS";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#TREATVSCODEERRORS";
                             readonly value: "treatVSCodeErrors";
                         };
                         readonly logCLIError: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#LOGCLIERROR";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#LOGCLIERROR";
                             readonly value: "logCLIError";
                         };
                         readonly escapeRegex: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#ESCAPEREGEX";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#ESCAPEREGEX";
                             readonly value: "escapeRegex";
                         };
                         readonly trimStringWithLimit: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#TRIMSTRINGWITHLIMIT";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#TRIMSTRINGWITHLIMIT";
                             readonly value: "trimStringWithLimit";
                         };
                         readonly spaceOutESLintMessage: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#SPACEOUTESLINTMESSAGE";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#SPACEOUTESLINTMESSAGE";
                             readonly value: "spaceOutESLintMessage";
                         };
                         readonly highlightFirstLineOfCode: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE";
                             readonly value: "highlightFirstLineOfCode";
                         };
                         readonly pathExistsAsAFile: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#PATHEXISTSASAFILE";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#PATHEXISTSASAFILE";
                             readonly value: "pathExistsAsAFile";
                         };
                         readonly pathExistsAsADirectory: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#FUNCTIONS#PATHEXISTSASADIRECTORY";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY";
                             readonly value: "pathExistsAsADirectory";
                         };
                     };
                     readonly arguments: {
                         readonly message: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#ARGUMENTS#MESSAGE";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#ARGUMENTS#MESSAGE";
                             readonly value: "message";
                         };
                         readonly status: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#ARGUMENTS#STATUS";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#ARGUMENTS#STATUS";
                             readonly value: "status";
                         };
                     };
-                    readonly keys: {
+                    readonly properties: {
                         readonly success: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#KEYS#SUCCESS";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#PROPERTIES#SUCCESS";
                             readonly value: "success";
                         };
                         readonly type: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#KEYS#TYPE";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#PROPERTIES#TYPE";
                             readonly value: "type";
                         };
                         readonly errors: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#KEYS#ERRORS";
+                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#PROPERTIES#ERRORS";
                             readonly value: "errors";
-                        };
-                    };
-                    readonly booleans: {
-                        readonly true: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#BOOLEANS#TRUE";
-                            readonly value: "true";
-                        };
-                        readonly false: {
-                            readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#NAMES#BOOLEANS#FALSE";
-                            readonly value: "false";
                         };
                     };
                 };
@@ -476,11 +599,11 @@ export declare const resolvedConfigData: {
                                 };
                                 readonly makeErrorTypeError: {
                                     readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR";
-                                    readonly value: "Crée un objet d'erreur de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+                                    readonly value: "Crée un objet d'erreur de `{type: error}` dont l'erreur est basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
                                 readonly makeErrorTypeWarning: {
                                     readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING";
-                                    readonly value: "Crée un objet d'erreur de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+                                    readonly value: "Crée un objet d'erreur de `{type: warning}` dont l'erreur est basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
                                 };
                                 readonly showVSCodeError: {
                                     readonly key: "FR#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR";
@@ -616,11 +739,11 @@ export declare const resolvedConfigData: {
                                 };
                                 readonly pathExistsAsAFile: {
                                     readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE";
-                                    readonly value: "`true` si le chemin est un fichier, `false` sinon.";
+                                    readonly value: "`true` si le chemin est un fichier, `false` le cas échéant.";
                                 };
                                 readonly pathExistsAsADirectory: {
                                     readonly key: "FR#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY";
-                                    readonly value: "`true` si le chemin est un dossier, `false` sinon.";
+                                    readonly value: "`true` si le chemin est un dossier, `false` le cas échéant.";
                                 };
                             };
                         };
@@ -628,11 +751,102 @@ export declare const resolvedConfigData: {
                 };
             };
         };
-        readonly composedVariablesExclusives: {
-            readonly error: {
-                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#ERROR";
-                readonly value: "erreur";
+        readonly templateFunctions: {
+            readonly applyLast: {
+                readonly successFalse: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#APPLYLAST#SUCCESSFALSE";
+                    readonly value: "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`.";
+                };
+                readonly successTrue: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#APPLYLAST#SUCCESSTRUE";
+                    readonly value: "À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`.";
+                };
+                readonly typeError: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#APPLYLAST#TYPEERROR";
+                    readonly value: "À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`.";
+                };
+                readonly typeWarning: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#APPLYLAST#TYPEWARNING";
+                    readonly value: "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.";
+                };
             };
+            readonly defMakeSuccessFalseType: {
+                readonly error: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#DEFMAKESUCCESSFALSETYPE#ERROR";
+                    readonly value: "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+                };
+                readonly warning: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#DEFMAKESUCCESSFALSETYPE#WARNING";
+                    readonly value: "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+                };
+            };
+            readonly defMakeErrorType: {
+                readonly error: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#DEFMAKEERRORTYPE#ERROR";
+                    readonly value: "Crée un objet d'erreur de `{type: error}` dont l'erreur est basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+                };
+                readonly warning: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#DEFMAKEERRORTYPE#WARNING";
+                    readonly value: "Crée un objet d'erreur de `{type: warning}` dont l'erreur est basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+                };
+            };
+            readonly defPathExistsAsA: {
+                readonly file: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#DEFPATHEXISTSASA#FILE";
+                    readonly value: "Informe de l'existence d'un chemin en tant que fichier.";
+                };
+                readonly directory: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#DEFPATHEXISTSASA#DIRECTORY";
+                    readonly value: "Informe de l'existence d'un chemin en tant que dossier.";
+                };
+            };
+            readonly returnMakeSuccessFalseType: {
+                readonly error: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#RETURNMAKESUCCESSFALSETYPE#ERROR";
+                    readonly value: "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.";
+                };
+                readonly warning: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#RETURNMAKESUCCESSFALSETYPE#WARNING";
+                    readonly value: "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
+                };
+            };
+            readonly returnMakeErrorType: {
+                readonly error: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#RETURNMAKEERRORTYPE#ERROR";
+                    readonly value: "Un objet d'erreur de `{type: error}`.";
+                };
+                readonly warning: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#RETURNMAKEERRORTYPE#WARNING";
+                    readonly value: "Un objet d'erreur de `{type: warning}`.";
+                };
+            };
+            readonly returnPathExistsAsA: {
+                readonly file: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#RETURNPATHEXISTSASA#FILE";
+                    readonly value: "`true` si le chemin est un fichier, `false` le cas échéant.";
+                };
+                readonly directory: {
+                    readonly key: "FR#TEMPLATEFUNCTIONS#RETURNPATHEXISTSASA#DIRECTORY";
+                    readonly value: "`true` si le chemin est un dossier, `false` le cas échéant.";
+                };
+            };
+        };
+        readonly composedVariablesExclusives: {
+            readonly words: {
+                readonly error: {
+                    readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#WORDS#ERROR";
+                    readonly value: "erreur";
+                };
+                readonly file: {
+                    readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#WORDS#FILE";
+                    readonly value: "fichier";
+                };
+                readonly directory: {
+                    readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#WORDS#DIRECTORY";
+                    readonly value: "dossier";
+                };
+            };
+            readonly phrases: {};
             readonly _applyLastWith: {
                 readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#_APPLYLASTWITH";
                 readonly value: "À apposer en dernier via";
@@ -644,10 +858,6 @@ export declare const resolvedConfigData: {
             readonly sitsAtTopLike: {
                 readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#SITSATTOPLIKE";
                 readonly value: "apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon";
-            };
-            readonly _enAnglais: {
-                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
-                readonly value: "En anglais à l'exécution";
             };
             readonly singleError: {
                 readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#SINGLEERROR";
@@ -668,6 +878,10 @@ export declare const resolvedConfigData: {
             readonly concernée: {
                 readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#CONCERNÉE";
                 readonly value: "concernée";
+            };
+            readonly _enAnglais: {
+                readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
+                readonly value: "En anglais à l'exécution";
             };
         };
     };

@@ -2,9 +2,9 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
-  TYPE_WARNING_NAME,
+  TYPE_WARNING_IDENTIFIER,
   WARNING,
-  TYPE_NAME,
+  TYPE_IDENTIFIER,
 } from "../../../comment-variables/items.js";
 
 /**
@@ -14,7 +14,7 @@ import {
 /* typeWarningSuite */
 
 export const typeWarningSuite = (/** @type {TypeWarning} */ typeWarning) => {
-  describe(TYPE_WARNING_NAME, () => {
+  describe(TYPE_WARNING_IDENTIFIER, () => {
     // initial tests
 
     it(`should be an object`, () => {
@@ -22,12 +22,12 @@ export const typeWarningSuite = (/** @type {TypeWarning} */ typeWarning) => {
       assert.strictEqual(typeWarningType, "object");
     });
 
-    it(`should have a value of \`"${WARNING}"\` at its \`${TYPE_NAME}\` key`, () => {
+    it(`should have a value of \`"${WARNING}"\` at its \`${TYPE_IDENTIFIER}\` key`, () => {
       const typeWarningTypeKeyValue = typeWarning.type;
       assert.strictEqual(typeWarningTypeKeyValue, WARNING);
     });
 
-    it(`should have no other keys than its \`${TYPE_NAME}\` key`, () => {
+    it(`should have no other keys than its \`${TYPE_IDENTIFIER}\` key`, () => {
       const typeWarningKeys = Object.keys(typeWarning);
       const typeWarningKeysLength = typeWarningKeys.length;
       assert.strictEqual(typeWarningKeysLength, 1);

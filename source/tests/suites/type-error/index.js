@@ -2,9 +2,9 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
-  TYPE_ERROR_NAME,
+  TYPE_ERROR_IDENTIFIER,
   ERROR,
-  TYPE_NAME,
+  TYPE_IDENTIFIER,
 } from "../../../comment-variables/items.js";
 
 /**
@@ -14,7 +14,7 @@ import {
 /* typeErrorSuite */
 
 export const typeErrorSuite = (/** @type {TypeError} */ typeError) => {
-  describe(TYPE_ERROR_NAME, () => {
+  describe(TYPE_ERROR_IDENTIFIER, () => {
     // initial tests
 
     it(`should be an object`, () => {
@@ -22,12 +22,12 @@ export const typeErrorSuite = (/** @type {TypeError} */ typeError) => {
       assert.strictEqual(typeErrorType, "object");
     });
 
-    it(`should have a value of \`"${ERROR}"\` at its \`${TYPE_NAME}\` key`, () => {
+    it(`should have a value of \`"${ERROR}"\` at its \`${TYPE_IDENTIFIER}\` key`, () => {
       const typeErrorTypeKeyValue = typeError.type;
       assert.strictEqual(typeErrorTypeKeyValue, ERROR);
     });
 
-    it(`should have no other keys than its \`${TYPE_NAME}\` key`, () => {
+    it(`should have no other keys than its \`${TYPE_IDENTIFIER}\` key`, () => {
       const typeErrorKeys = Object.keys(typeError);
       const typeErrorKeysLength = typeErrorKeys.length;
       assert.strictEqual(typeErrorKeysLength, 1);

@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { ERROR_NOT_STANDARDIZED_MESSAGE_NAME } from "../../../comment-variables/items.js";
+import { ERROR_NOT_STANDARDIZED_MESSAGE_IDENTIFIER } from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").ErrorNotStandardizedMessage} ErrorNotStandardizedMessage
@@ -12,7 +12,7 @@ import { ERROR_NOT_STANDARDIZED_MESSAGE_NAME } from "../../../comment-variables/
 export const errorNotStandardizedMessageSuite = (
   /** @type {ErrorNotStandardizedMessage} */ errorNotStandardizedMessage,
 ) => {
-  describe(ERROR_NOT_STANDARDIZED_MESSAGE_NAME, () => {
+  describe(ERROR_NOT_STANDARDIZED_MESSAGE_IDENTIFIER, () => {
     // initial tests
 
     it(`should be a string`, () => {

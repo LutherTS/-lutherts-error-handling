@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { HIGHLIGHT_FIRST_LINE_OF_CODE_NAME } from "../../../comment-variables/items.js";
+import { HIGHLIGHT_FIRST_LINE_OF_CODE_IDENTIFIER } from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").HighlightFirstLineOfCode} HighlightFirstLineOfCode
@@ -12,7 +12,7 @@ import { HIGHLIGHT_FIRST_LINE_OF_CODE_NAME } from "../../../comment-variables/it
 export const highlightFirstLineOfCodeSuite = (
   /** @type {HighlightFirstLineOfCode} */ highlightFirstLineOfCode,
 ) => {
-  describe(HIGHLIGHT_FIRST_LINE_OF_CODE_NAME, () => {
+  describe(HIGHLIGHT_FIRST_LINE_OF_CODE_IDENTIFIER, () => {
     // initial tests
 
     it(`should be a function`, () => {
@@ -20,11 +20,11 @@ export const highlightFirstLineOfCodeSuite = (
       assert.strictEqual(highlightFirstLineOfCodeType, "function");
     });
 
-    it.skip(`should be named \`${HIGHLIGHT_FIRST_LINE_OF_CODE_NAME}\``, () => {
+    it.skip(`should be named \`${HIGHLIGHT_FIRST_LINE_OF_CODE_IDENTIFIER}\``, () => {
       const highlightFirstLineOfCodeName = highlightFirstLineOfCode.name;
       assert.strictEqual(
         highlightFirstLineOfCodeName,
-        HIGHLIGHT_FIRST_LINE_OF_CODE_NAME,
+        HIGHLIGHT_FIRST_LINE_OF_CODE_IDENTIFIER,
       );
     });
 

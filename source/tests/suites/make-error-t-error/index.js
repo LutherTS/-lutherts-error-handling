@@ -2,11 +2,11 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
-  MAKE_ERROR_TYPE_ERROR_NAME,
-  TYPE_NAME,
+  MAKE_ERROR_TYPE_ERROR_IDENTIFIER,
+  TYPE_IDENTIFIER,
   ERROR,
-  MESSAGE_NAME,
-  STATUS_NAME,
+  MESSAGE_IDENTIFIER,
+  STATUS_IDENTIFIER,
 } from "../../../comment-variables/items.js";
 
 /**
@@ -18,7 +18,7 @@ import {
 export const makeErrorTypeErrorSuite = (
   /** @type {MakeErrorTypeError} */ makeErrorTypeError,
 ) => {
-  describe(MAKE_ERROR_TYPE_ERROR_NAME, () => {
+  describe(MAKE_ERROR_TYPE_ERROR_IDENTIFIER, () => {
     // initial tests
 
     it(`should be a function`, () => {
@@ -26,9 +26,12 @@ export const makeErrorTypeErrorSuite = (
       assert.strictEqual(makeErrorTypeErrorType, "function");
     });
 
-    it.skip(`should be named \`${MAKE_ERROR_TYPE_ERROR_NAME}\``, () => {
+    it.skip(`should be named \`${MAKE_ERROR_TYPE_ERROR_IDENTIFIER}\``, () => {
       const makeErrorTypeErrorName = makeErrorTypeError.name;
-      assert.strictEqual(makeErrorTypeErrorName, MAKE_ERROR_TYPE_ERROR_NAME);
+      assert.strictEqual(
+        makeErrorTypeErrorName,
+        MAKE_ERROR_TYPE_ERROR_IDENTIFIER,
+      );
     });
 
     // input validations tests
@@ -46,17 +49,17 @@ export const makeErrorTypeErrorSuite = (
       assert.strictEqual(resultsType, "object");
     });
 
-    it(`results should have a value of \`"${ERROR}"\` at their \`${TYPE_NAME}\` key`, () => {
+    it(`results should have a value of \`"${ERROR}"\` at their \`${TYPE_IDENTIFIER}\` key`, () => {
       const resultsTypeKeyValue = results.type;
       assert.strictEqual(resultsTypeKeyValue, ERROR);
     });
 
-    it(`results should have the value of \`testMessage\` at their \`${MESSAGE_NAME}\` key`, () => {
+    it(`results should have the value of \`testMessage\` at their \`${MESSAGE_IDENTIFIER}\` key`, () => {
       const resultsMessageKeyValue = results.message;
       assert.strictEqual(resultsMessageKeyValue, testMessage);
     });
 
-    it(`results should have the value of \`testStatus\` at their \`${STATUS_NAME}\` key`, () => {
+    it(`results should have the value of \`testStatus\` at their \`${STATUS_IDENTIFIER}\` key`, () => {
       const resultsStatusKeyValue = results.status;
       assert.strictEqual(resultsStatusKeyValue, testStatus);
     });

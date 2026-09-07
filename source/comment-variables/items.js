@@ -41,56 +41,56 @@ export const ELLIPSIS = miscellaneous.ellipsis.value;
 export const TRUE = miscellaneous.true.value;
 export const FALSE = miscellaneous.false.value;
 
-/* string names */
+/* string identifiers */
 
-export const ERROR_NOT_STANDARDIZED_MESSAGE_NAME =
+export const ERROR_NOT_STANDARDIZED_MESSAGE_IDENTIFIER =
   stringIdentifiers.errorNotStandardizedMessage.value;
-export const ERROR_NOT_STANDARDIZED_STATUS_NAME =
+export const ERROR_NOT_STANDARDIZED_STATUS_IDENTIFIER =
   stringIdentifiers.errorNotStandardizedStatus.value;
 
-export const ELLIPSIS_NAME = stringIdentifiers.ellipsis.value;
+export const ELLIPSIS_IDENTIFIER = stringIdentifiers.ellipsis.value;
 
-/* object names */
+/* object identifiers */
 
-export const SUCCESS_FALSE_NAME = objectIdentifiers.successFalse.value;
-export const SUCCESS_TRUE_NAME = objectIdentifiers.successTrue.value;
-export const TYPE_ERROR_NAME = objectIdentifiers.typeError.value;
-export const TYPE_WARNING_NAME = objectIdentifiers.typeWarning.value;
+export const SUCCESS_FALSE_IDENTIFIER = objectIdentifiers.successFalse.value;
+export const SUCCESS_TRUE_IDENTIFIER = objectIdentifiers.successTrue.value;
+export const TYPE_ERROR_IDENTIFIER = objectIdentifiers.typeError.value;
+export const TYPE_WARNING_IDENTIFIER = objectIdentifiers.typeWarning.value;
 
-/* function names */
+/* function identifiers */
 
-export const MAKE_SUCCESS_FALSE_TYPE_ERROR_NAME =
+export const MAKE_SUCCESS_FALSE_TYPE_ERROR_IDENTIFIER =
   functionIdentifiers.makeSuccessFalseTypeError.value;
-export const MAKE_SUCCESS_FALSE_TYPE_WARNING_NAME =
+export const MAKE_SUCCESS_FALSE_TYPE_WARNING_IDENTIFIER =
   functionIdentifiers.makeSuccessFalseTypeWarning.value;
-export const MAKE_ERROR_TYPE_ERROR_NAME =
+export const MAKE_ERROR_TYPE_ERROR_IDENTIFIER =
   functionIdentifiers.makeErrorTypeError.value;
-export const MAKE_ERROR_TYPE_WARNING_NAME =
+export const MAKE_ERROR_TYPE_WARNING_IDENTIFIER =
   functionIdentifiers.makeErrorTypeWarning.value;
-export const SHOW_VS_CODE_ERROR_NAME =
+export const SHOW_VS_CODE_ERROR_IDENTIFIER =
   functionIdentifiers.showVSCodeError.value;
-export const TREAT_VS_CODE_ERRORS_NAME =
+export const TREAT_VS_CODE_ERRORS_IDENTIFIER =
   functionIdentifiers.treatVSCodeErrors.value;
-export const LOG_CLI_ERROR_NAME = functionIdentifiers.logCLIError.value;
-export const ESCAPE_REGEX_NAME = functionIdentifiers.escapeRegex.value;
-export const TRIM_STRING_WITH_LIMIT_NAME =
+export const LOG_CLI_ERROR_IDENTIFIER = functionIdentifiers.logCLIError.value;
+export const ESCAPE_REGEX_IDENTIFIER = functionIdentifiers.escapeRegex.value;
+export const TRIM_STRING_WITH_LIMIT_IDENTIFIER =
   functionIdentifiers.trimStringWithLimit.value;
-export const SPACE_OUT_ESLINT_MESSAGE_NAME =
+export const SPACE_OUT_ESLINT_MESSAGE_IDENTIFIER =
   functionIdentifiers.spaceOutESLintMessage.value;
-export const HIGHLIGHT_FIRST_LINE_OF_CODE_NAME =
+export const HIGHLIGHT_FIRST_LINE_OF_CODE_IDENTIFIER =
   functionIdentifiers.highlightFirstLineOfCode.value;
-export const PATH_EXISTS_AS_A_FILE_NAME =
+export const PATH_EXISTS_AS_A_FILE_IDENTIFIER =
   functionIdentifiers.pathExistsAsAFile.value;
-export const PATH_EXISTS_AS_A_DIRECTORY_NAME =
+export const PATH_EXISTS_AS_A_DIRECTORY_IDENTIFIER =
   functionIdentifiers.pathExistsAsADirectory.value;
 
-/* argument names */
+/* argument identifiers */
 
-export const MESSAGE_NAME = argumentIdentifiers.message.value;
-export const STATUS_NAME = argumentIdentifiers.status.value;
+export const MESSAGE_IDENTIFIER = argumentIdentifiers.message.value;
+export const STATUS_IDENTIFIER = argumentIdentifiers.status.value;
 
-/* property names */
+/* property identifiers */
 
-export const SUCCESS_NAME = propertyIdentifiers.success.value;
-export const TYPE_NAME = propertyIdentifiers.type.value;
-export const ERRORS_NAME = propertyIdentifiers.errors.value;
+export const SUCCESS_IDENTIFIER = propertyIdentifiers.success.value;
+export const TYPE_IDENTIFIER = propertyIdentifiers.type.value;
+export const ERRORS_IDENTIFIER = propertyIdentifiers.errors.value;
