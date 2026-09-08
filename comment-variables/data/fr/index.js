@@ -165,12 +165,21 @@ export const frData = /** @type {const} */ ({
     },
   },
 
+  sharedVariables: {
+    public: {
+      // for now:
+      numberOfErrors:
+        "EN#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS" /* variations: $COMMENT#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS / core: $COMMENT#FR#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS */,
+    },
+  },
+
   composedVariablesExclusives: {
     words: {
       error:
         "erreur" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#WORDS#ERROR / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#WORDS#ERROR */,
       file: "fichier" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#WORDS#FILE / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#WORDS#FILE */,
-      directory: "dossier" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#WORDS#DIRECTORY / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#WORDS#DIRECTORY */,
+      directory:
+        "dossier" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#WORDS#DIRECTORY / core: $COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#WORDS#DIRECTORY */,
     },
     phrases: {},
 

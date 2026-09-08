@@ -292,6 +292,14 @@ export declare const resolvedConfigData: {
                 };
             };
         };
+        readonly sharedVariables: {
+            readonly public: {
+                readonly numberOfErrors: {
+                    readonly key: "EN#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS";
+                    readonly value: "3";
+                };
+            };
+        };
         readonly composedVariablesExclusives: {
             readonly words: {
                 readonly success: {
@@ -828,6 +836,14 @@ export declare const resolvedConfigData: {
                 readonly directory: {
                     readonly key: "FR#TEMPLATEFUNCTIONS#RETURNPATHEXISTSASA#DIRECTORY";
                     readonly value: "`true` si le chemin est un dossier, `false` le cas échéant.";
+                };
+            };
+        };
+        readonly sharedVariables: {
+            readonly public: {
+                readonly numberOfErrors: {
+                    readonly key: "FR#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS";
+                    readonly value: "3";
                 };
             };
         };

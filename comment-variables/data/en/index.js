@@ -173,6 +173,14 @@ export const enData = /** @type {const} */ ({
     },
   },
 
+  sharedVariables: {
+    public: {
+      // for now:
+      numberOfErrors:
+        "3" /* variations: $COMMENT#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS / core: $COMMENT#EN#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS */,
+    },
+  },
+
   composedVariablesExclusives: {
     words: {
       success:
@@ -216,7 +224,7 @@ export const enData = /** @type {const} */ ({
       },
       defaults: {
         numberOfErrors:
-          "3" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#DEFAULTS#NUMBEROFERRORS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#DEFAULTS#NUMBEROFERRORS */,
+          "EN#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#DEFAULTS#NUMBEROFERRORS / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#DEFAULTS#NUMBEROFERRORS */,
       },
       miscellaneous: {
         ellipsis:
@@ -326,4 +334,6 @@ export const enData = /** @type {const} */ ({
 
 /* manual composedVariablesExclusives */
 
-export const enComposedVariablesExclusives = /** @type {const} */ ([]);
+export const enComposedVariablesExclusives = /** @type {const} */ ([
+  "EN#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS",
+]);

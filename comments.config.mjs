@@ -293,6 +293,14 @@ export const resolvedConfigData = /** @type {const} */ ({
         }
       }
     },
+    "sharedVariables": {
+      "public": {
+        "numberOfErrors": {
+          "key": "EN#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS",
+          "value": "3"
+        }
+      }
+    },
     "composedVariablesExclusives": {
       "words": {
         "success": {
@@ -829,6 +837,14 @@ export const resolvedConfigData = /** @type {const} */ ({
         "directory": {
           "key": "FR#TEMPLATEFUNCTIONS#RETURNPATHEXISTSASA#DIRECTORY",
           "value": "`true` si le chemin est un dossier, `false` le cas échéant."
+        }
+      }
+    },
+    "sharedVariables": {
+      "public": {
+        "numberOfErrors": {
+          "key": "FR#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS",
+          "value": "3"
         }
       }
     },
