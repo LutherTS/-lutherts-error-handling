@@ -292,14 +292,6 @@ export declare const resolvedConfigData: {
                 };
             };
         };
-        readonly sharedVariables: {
-            readonly public: {
-                readonly numberOfErrors: {
-                    readonly key: "EN#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS";
-                    readonly value: "3";
-                };
-            };
-        };
         readonly composedVariablesExclusives: {
             readonly words: {
                 readonly success: {
@@ -557,6 +549,161 @@ export declare const resolvedConfigData: {
             readonly _Void: {
                 readonly key: "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID";
                 readonly value: "Void";
+            };
+        };
+        readonly sharedVariables: {
+            readonly words: {
+                readonly error: {
+                    readonly key: "EN#SHAREDVARIABLES#WORDS#ERROR";
+                    readonly value: "error";
+                };
+                readonly warning: {
+                    readonly key: "EN#SHAREDVARIABLES#WORDS#WARNING";
+                    readonly value: "warning";
+                };
+                readonly success: {
+                    readonly key: "EN#SHAREDVARIABLES#WORDS#SUCCESS";
+                    readonly value: "success";
+                };
+                readonly type: {
+                    readonly key: "EN#SHAREDVARIABLES#WORDS#TYPE";
+                    readonly value: "type";
+                };
+                readonly errors: {
+                    readonly key: "EN#SHAREDVARIABLES#WORDS#ERRORS";
+                    readonly value: "errors";
+                };
+            };
+            readonly phrases: {};
+            readonly public: {
+                readonly errors: {
+                    readonly messages: {
+                        readonly errorNotStandardized: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#ERRORS#MESSAGES#ERRORNOTSTANDARDIZED";
+                            readonly value: "The error encountered is not standardized.";
+                        };
+                    };
+                    readonly statuses: {
+                        readonly errorNotStandardized: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#ERRORS#STATUSES#ERRORNOTSTANDARDIZED";
+                            readonly value: "ERROR_NOT_STANDARDIZED";
+                        };
+                    };
+                    readonly types: {
+                        readonly error: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#ERROR";
+                            readonly value: "error";
+                        };
+                        readonly warning: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#WARNING";
+                            readonly value: "warning";
+                        };
+                    };
+                };
+                readonly defaults: {
+                    readonly numberOfErrors: {
+                        readonly key: "EN#SHAREDVARIABLES#PUBLIC#DEFAULTS#NUMBEROFERRORS";
+                        readonly value: "3";
+                    };
+                };
+                readonly identifiers: {
+                    readonly strings: {
+                        readonly errorNotStandardizedMessage: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDMESSAGE";
+                            readonly value: "ERROR_NOT_STANDARDIZED_MESSAGE";
+                        };
+                        readonly errorNotStandardizedStatus: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDSTATUS";
+                            readonly value: "ERROR_NOT_STANDARDIZED_STATUS";
+                        };
+                    };
+                    readonly objects: {
+                        readonly successFalse: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSFALSE";
+                            readonly value: "successFalse";
+                        };
+                        readonly successTrue: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSTRUE";
+                            readonly value: "successTrue";
+                        };
+                        readonly typeError: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEERROR";
+                            readonly value: "typeError";
+                        };
+                        readonly typeWarning: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEWARNING";
+                            readonly value: "typeWarning";
+                        };
+                    };
+                    readonly functions: {
+                        readonly makeSuccessFalseTypeError: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEERROR";
+                            readonly value: "makeSuccessFalseTypeError";
+                        };
+                        readonly makeSuccessFalseTypeWarning: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING";
+                            readonly value: "makeSuccessFalseTypeWarning";
+                        };
+                        readonly makeErrorTypeError: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEERROR";
+                            readonly value: "makeErrorTypeError";
+                        };
+                        readonly makeErrorTypeWarning: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEWARNING";
+                            readonly value: "makeErrorTypeWarning";
+                        };
+                        readonly showVSCodeError: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SHOWVSCODEERROR";
+                            readonly value: "showVSCodeError";
+                        };
+                        readonly treatVSCodeErrors: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TREATVSCODEERRORS";
+                            readonly value: "treatVSCodeErrors";
+                        };
+                        readonly logCLIError: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#LOGCLIERROR";
+                            readonly value: "logCLIError";
+                        };
+                        readonly escapeRegex: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#ESCAPEREGEX";
+                            readonly value: "escapeRegex";
+                        };
+                        readonly trimStringWithLimit: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TRIMSTRINGWITHLIMIT";
+                            readonly value: "trimStringWithLimit";
+                        };
+                        readonly spaceOutESLintMessage: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SPACEOUTESLINTMESSAGE";
+                            readonly value: "spaceOutESLintMessage";
+                        };
+                        readonly highlightFirstLineOfCode: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE";
+                            readonly value: "highlightFirstLineOfCode";
+                        };
+                        readonly pathExistsAsAFile: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASAFILE";
+                            readonly value: "pathExistsAsAFile";
+                        };
+                        readonly pathExistsAsADirectory: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY";
+                            readonly value: "pathExistsAsADirectory";
+                        };
+                    };
+                    readonly properties: {
+                        readonly success: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#SUCCESS";
+                            readonly value: "success";
+                        };
+                        readonly type: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#TYPE";
+                            readonly value: "type";
+                        };
+                        readonly errors: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS";
+                            readonly value: "errors";
+                        };
+                    };
+                };
             };
         };
     };
@@ -839,14 +986,6 @@ export declare const resolvedConfigData: {
                 };
             };
         };
-        readonly sharedVariables: {
-            readonly public: {
-                readonly numberOfErrors: {
-                    readonly key: "FR#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS";
-                    readonly value: "3";
-                };
-            };
-        };
         readonly composedVariablesExclusives: {
             readonly words: {
                 readonly error: {
@@ -898,6 +1037,161 @@ export declare const resolvedConfigData: {
             readonly _enAnglais: {
                 readonly key: "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS";
                 readonly value: "En anglais à l'exécution";
+            };
+        };
+        readonly sharedVariables: {
+            readonly words: {
+                readonly error: {
+                    readonly key: "FR#SHAREDVARIABLES#WORDS#ERROR";
+                    readonly value: "erreur";
+                };
+                readonly warning: {
+                    readonly key: "FR#SHAREDVARIABLES#WORDS#WARNING";
+                    readonly value: "avertissement";
+                };
+                readonly success: {
+                    readonly key: "FR#SHAREDVARIABLES#WORDS#SUCCESS";
+                    readonly value: "succès";
+                };
+                readonly type: {
+                    readonly key: "FR#SHAREDVARIABLES#WORDS#TYPE";
+                    readonly value: "type";
+                };
+                readonly errors: {
+                    readonly key: "FR#SHAREDVARIABLES#WORDS#ERRORS";
+                    readonly value: "erreurs";
+                };
+            };
+            readonly phrases: {};
+            readonly public: {
+                readonly errors: {
+                    readonly messages: {
+                        readonly errorNotStandardized: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#ERRORS#MESSAGES#ERRORNOTSTANDARDIZED";
+                            readonly value: "The error encountered is not standardized.";
+                        };
+                    };
+                    readonly statuses: {
+                        readonly errorNotStandardized: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#ERRORS#STATUSES#ERRORNOTSTANDARDIZED";
+                            readonly value: "ERROR_NOT_STANDARDIZED";
+                        };
+                    };
+                    readonly types: {
+                        readonly error: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#ERROR";
+                            readonly value: "error";
+                        };
+                        readonly warning: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#WARNING";
+                            readonly value: "warning";
+                        };
+                    };
+                };
+                readonly defaults: {
+                    readonly numberOfErrors: {
+                        readonly key: "FR#SHAREDVARIABLES#PUBLIC#DEFAULTS#NUMBEROFERRORS";
+                        readonly value: "3";
+                    };
+                };
+                readonly identifiers: {
+                    readonly strings: {
+                        readonly errorNotStandardizedMessage: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDMESSAGE";
+                            readonly value: "ERROR_NOT_STANDARDIZED_MESSAGE";
+                        };
+                        readonly errorNotStandardizedStatus: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDSTATUS";
+                            readonly value: "ERROR_NOT_STANDARDIZED_STATUS";
+                        };
+                    };
+                    readonly objects: {
+                        readonly successFalse: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSFALSE";
+                            readonly value: "successFalse";
+                        };
+                        readonly successTrue: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSTRUE";
+                            readonly value: "successTrue";
+                        };
+                        readonly typeError: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEERROR";
+                            readonly value: "typeError";
+                        };
+                        readonly typeWarning: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEWARNING";
+                            readonly value: "typeWarning";
+                        };
+                    };
+                    readonly functions: {
+                        readonly makeSuccessFalseTypeError: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEERROR";
+                            readonly value: "makeSuccessFalseTypeError";
+                        };
+                        readonly makeSuccessFalseTypeWarning: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING";
+                            readonly value: "makeSuccessFalseTypeWarning";
+                        };
+                        readonly makeErrorTypeError: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEERROR";
+                            readonly value: "makeErrorTypeError";
+                        };
+                        readonly makeErrorTypeWarning: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEWARNING";
+                            readonly value: "makeErrorTypeWarning";
+                        };
+                        readonly showVSCodeError: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SHOWVSCODEERROR";
+                            readonly value: "showVSCodeError";
+                        };
+                        readonly treatVSCodeErrors: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TREATVSCODEERRORS";
+                            readonly value: "treatVSCodeErrors";
+                        };
+                        readonly logCLIError: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#LOGCLIERROR";
+                            readonly value: "logCLIError";
+                        };
+                        readonly escapeRegex: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#ESCAPEREGEX";
+                            readonly value: "escapeRegex";
+                        };
+                        readonly trimStringWithLimit: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TRIMSTRINGWITHLIMIT";
+                            readonly value: "trimStringWithLimit";
+                        };
+                        readonly spaceOutESLintMessage: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SPACEOUTESLINTMESSAGE";
+                            readonly value: "spaceOutESLintMessage";
+                        };
+                        readonly highlightFirstLineOfCode: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE";
+                            readonly value: "highlightFirstLineOfCode";
+                        };
+                        readonly pathExistsAsAFile: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASAFILE";
+                            readonly value: "pathExistsAsAFile";
+                        };
+                        readonly pathExistsAsADirectory: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY";
+                            readonly value: "pathExistsAsADirectory";
+                        };
+                    };
+                    readonly properties: {
+                        readonly success: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#SUCCESS";
+                            readonly value: "success";
+                        };
+                        readonly type: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#TYPE";
+                            readonly value: "type";
+                        };
+                        readonly errors: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS";
+                            readonly value: "errors";
+                        };
+                    };
+                };
             };
         };
     };
