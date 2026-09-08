@@ -293,14 +293,6 @@ export const resolvedConfigData = /** @type {const} */ ({
         }
       }
     },
-    "sharedVariables": {
-      "public": {
-        "numberOfErrors": {
-          "key": "EN#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS",
-          "value": "3"
-        }
-      }
-    },
     "composedVariablesExclusives": {
       "words": {
         "success": {
@@ -558,6 +550,114 @@ export const resolvedConfigData = /** @type {const} */ ({
       "_Void": {
         "key": "EN#COMPOSEDVARIABLESEXCLUSIVES#_VOID",
         "value": "Void"
+      }
+    },
+    "sharedVariables": {
+      "public": {
+        "errors": {
+          "messages": {
+            "errorNotStandardized": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#ERRORS#MESSAGES#ERRORNOTSTANDARDIZED",
+              "value": "The error encountered is not standardized."
+            }
+          },
+          "statuses": {
+            "errorNotStandardized": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#ERRORS#STATUSES#ERRORNOTSTANDARDIZED",
+              "value": "ERROR_NOT_STANDARDIZED"
+            }
+          }
+        },
+        "defaults": {
+          "numberOfErrors": {
+            "key": "EN#SHAREDVARIABLES#PUBLIC#DEFAULTS#NUMBEROFERRORS",
+            "value": "3"
+          }
+        },
+        "identifiers": {
+          "strings": {
+            "errorNotStandardizedMessage": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDMESSAGE",
+              "value": "ERROR_NOT_STANDARDIZED_MESSAGE"
+            },
+            "errorNotStandardizedStatus": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDSTATUS",
+              "value": "ERROR_NOT_STANDARDIZED_STATUS"
+            }
+          },
+          "objects": {
+            "successFalse": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSFALSE",
+              "value": "successFalse"
+            },
+            "successTrue": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSTRUE",
+              "value": "successTrue"
+            },
+            "typeError": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEERROR",
+              "value": "typeError"
+            },
+            "typeWarning": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEWARNING",
+              "value": "typeWarning"
+            }
+          },
+          "functions": {
+            "makeSuccessFalseTypeError": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEERROR",
+              "value": "makeSuccessFalseTypeError"
+            },
+            "makeSuccessFalseTypeWarning": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING",
+              "value": "makeSuccessFalseTypeWarning"
+            },
+            "makeErrorTypeError": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEERROR",
+              "value": "makeErrorTypeError"
+            },
+            "makeErrorTypeWarning": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEWARNING",
+              "value": "makeErrorTypeWarning"
+            },
+            "showVSCodeError": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SHOWVSCODEERROR",
+              "value": "showVSCodeError"
+            },
+            "treatVSCodeErrors": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TREATVSCODEERRORS",
+              "value": "treatVSCodeErrors"
+            },
+            "logCLIError": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#LOGCLIERROR",
+              "value": "logCLIError"
+            },
+            "escapeRegex": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#ESCAPEREGEX",
+              "value": "escapeRegex"
+            },
+            "trimStringWithLimit": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TRIMSTRINGWITHLIMIT",
+              "value": "trimStringWithLimit"
+            },
+            "spaceOutESLintMessage": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SPACEOUTESLINTMESSAGE",
+              "value": "spaceOutESLintMessage"
+            },
+            "highlightFirstLineOfCode": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE",
+              "value": "highlightFirstLineOfCode"
+            },
+            "pathExistsAsAFile": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASAFILE",
+              "value": "pathExistsAsAFile"
+            },
+            "pathExistsAsADirectory": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY",
+              "value": "pathExistsAsADirectory"
+            }
+          }
+        }
       }
     }
   },
@@ -840,14 +940,6 @@ export const resolvedConfigData = /** @type {const} */ ({
         }
       }
     },
-    "sharedVariables": {
-      "public": {
-        "numberOfErrors": {
-          "key": "FR#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS",
-          "value": "3"
-        }
-      }
-    },
     "composedVariablesExclusives": {
       "words": {
         "error": {
@@ -899,6 +991,114 @@ export const resolvedConfigData = /** @type {const} */ ({
       "_enAnglais": {
         "key": "FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS",
         "value": "En anglais à l'exécution"
+      }
+    },
+    "sharedVariables": {
+      "public": {
+        "errors": {
+          "messages": {
+            "errorNotStandardized": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#ERRORS#MESSAGES#ERRORNOTSTANDARDIZED",
+              "value": "The error encountered is not standardized."
+            }
+          },
+          "statuses": {
+            "errorNotStandardized": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#ERRORS#STATUSES#ERRORNOTSTANDARDIZED",
+              "value": "ERROR_NOT_STANDARDIZED"
+            }
+          }
+        },
+        "defaults": {
+          "numberOfErrors": {
+            "key": "FR#SHAREDVARIABLES#PUBLIC#DEFAULTS#NUMBEROFERRORS",
+            "value": "3"
+          }
+        },
+        "identifiers": {
+          "strings": {
+            "errorNotStandardizedMessage": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDMESSAGE",
+              "value": "ERROR_NOT_STANDARDIZED_MESSAGE"
+            },
+            "errorNotStandardizedStatus": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDSTATUS",
+              "value": "ERROR_NOT_STANDARDIZED_STATUS"
+            }
+          },
+          "objects": {
+            "successFalse": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSFALSE",
+              "value": "successFalse"
+            },
+            "successTrue": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSTRUE",
+              "value": "successTrue"
+            },
+            "typeError": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEERROR",
+              "value": "typeError"
+            },
+            "typeWarning": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEWARNING",
+              "value": "typeWarning"
+            }
+          },
+          "functions": {
+            "makeSuccessFalseTypeError": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEERROR",
+              "value": "makeSuccessFalseTypeError"
+            },
+            "makeSuccessFalseTypeWarning": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING",
+              "value": "makeSuccessFalseTypeWarning"
+            },
+            "makeErrorTypeError": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEERROR",
+              "value": "makeErrorTypeError"
+            },
+            "makeErrorTypeWarning": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEWARNING",
+              "value": "makeErrorTypeWarning"
+            },
+            "showVSCodeError": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SHOWVSCODEERROR",
+              "value": "showVSCodeError"
+            },
+            "treatVSCodeErrors": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TREATVSCODEERRORS",
+              "value": "treatVSCodeErrors"
+            },
+            "logCLIError": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#LOGCLIERROR",
+              "value": "logCLIError"
+            },
+            "escapeRegex": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#ESCAPEREGEX",
+              "value": "escapeRegex"
+            },
+            "trimStringWithLimit": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TRIMSTRINGWITHLIMIT",
+              "value": "trimStringWithLimit"
+            },
+            "spaceOutESLintMessage": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SPACEOUTESLINTMESSAGE",
+              "value": "spaceOutESLintMessage"
+            },
+            "highlightFirstLineOfCode": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE",
+              "value": "highlightFirstLineOfCode"
+            },
+            "pathExistsAsAFile": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASAFILE",
+              "value": "pathExistsAsAFile"
+            },
+            "pathExistsAsADirectory": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY",
+              "value": "pathExistsAsADirectory"
+            }
+          }
+        }
       }
     }
   }
