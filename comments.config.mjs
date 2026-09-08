@@ -553,6 +553,29 @@ export const resolvedConfigData = /** @type {const} */ ({
       }
     },
     "sharedVariables": {
+      "words": {
+        "error": {
+          "key": "EN#SHAREDVARIABLES#WORDS#ERROR",
+          "value": "error"
+        },
+        "warning": {
+          "key": "EN#SHAREDVARIABLES#WORDS#WARNING",
+          "value": "warning"
+        },
+        "success": {
+          "key": "EN#SHAREDVARIABLES#WORDS#SUCCESS",
+          "value": "success"
+        },
+        "type": {
+          "key": "EN#SHAREDVARIABLES#WORDS#TYPE",
+          "value": "type"
+        },
+        "errors": {
+          "key": "EN#SHAREDVARIABLES#WORDS#ERRORS",
+          "value": "errors"
+        }
+      },
+      "phrases": {},
       "public": {
         "errors": {
           "messages": {
@@ -565,6 +588,16 @@ export const resolvedConfigData = /** @type {const} */ ({
             "errorNotStandardized": {
               "key": "EN#SHAREDVARIABLES#PUBLIC#ERRORS#STATUSES#ERRORNOTSTANDARDIZED",
               "value": "ERROR_NOT_STANDARDIZED"
+            }
+          },
+          "types": {
+            "error": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#ERROR",
+              "value": "error"
+            },
+            "warning": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#WARNING",
+              "value": "warning"
             }
           }
         },
@@ -655,6 +688,20 @@ export const resolvedConfigData = /** @type {const} */ ({
             "pathExistsAsADirectory": {
               "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY",
               "value": "pathExistsAsADirectory"
+            }
+          },
+          "properties": {
+            "success": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#SUCCESS",
+              "value": "success"
+            },
+            "type": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#TYPE",
+              "value": "type"
+            },
+            "errors": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS",
+              "value": "errors"
             }
           }
         }
@@ -994,6 +1041,29 @@ export const resolvedConfigData = /** @type {const} */ ({
       }
     },
     "sharedVariables": {
+      "words": {
+        "error": {
+          "key": "FR#SHAREDVARIABLES#WORDS#ERROR",
+          "value": "erreur"
+        },
+        "warning": {
+          "key": "FR#SHAREDVARIABLES#WORDS#WARNING",
+          "value": "avertissement"
+        },
+        "success": {
+          "key": "FR#SHAREDVARIABLES#WORDS#SUCCESS",
+          "value": "succès"
+        },
+        "type": {
+          "key": "FR#SHAREDVARIABLES#WORDS#TYPE",
+          "value": "type"
+        },
+        "errors": {
+          "key": "FR#SHAREDVARIABLES#WORDS#ERRORS",
+          "value": "erreurs"
+        }
+      },
+      "phrases": {},
       "public": {
         "errors": {
           "messages": {
@@ -1006,6 +1076,16 @@ export const resolvedConfigData = /** @type {const} */ ({
             "errorNotStandardized": {
               "key": "FR#SHAREDVARIABLES#PUBLIC#ERRORS#STATUSES#ERRORNOTSTANDARDIZED",
               "value": "ERROR_NOT_STANDARDIZED"
+            }
+          },
+          "types": {
+            "error": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#ERROR",
+              "value": "error"
+            },
+            "warning": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#WARNING",
+              "value": "warning"
             }
           }
         },
@@ -1096,6 +1176,20 @@ export const resolvedConfigData = /** @type {const} */ ({
             "pathExistsAsADirectory": {
               "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY",
               "value": "pathExistsAsADirectory"
+            }
+          },
+          "properties": {
+            "success": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#SUCCESS",
+              "value": "success"
+            },
+            "type": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#TYPE",
+              "value": "type"
+            },
+            "errors": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS",
+              "value": "errors"
             }
           }
         }
