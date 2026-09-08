@@ -41,7 +41,7 @@ const variations = Object.freeze({
   variant: EN,
   referenceData: enData,
   referenceVariant: EN,
-  allowIncompleteVariations: false,
+  allowIncompleteVariations: true,
   public: [EN, FR], // can be omitted, otherwise must include `variations.referenceVariant` as its first element
   docCommandData: Object.freeze({
     declarationDir: tsConfigJson.compilerOptions.declarationDir,

@@ -316,7 +316,7 @@ export const enData = /** @type {const} */ ({
 
     // tsDoc.src.lib.params
     atHand:
-      "at hand" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ATHAND / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND */,
+      "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND" /* variations: $COMMENT#COMPOSEDVARIABLESEXCLUSIVES#ATHAND / core: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND */,
 
     // tsDoc.src.lib.returns
     _Void:
@@ -423,10 +423,14 @@ export const enData = /** @type {const} */ ({
       },
 
       notRuntimeVariables: {
+        // tsDoc.src.lib.consts
         success_false:
           "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#PROPERTIES#SUCCESS: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#FALSE" /* variations: $COMMENT#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_FALSE / core: $COMMENT#EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_FALSE */,
         success_true:
           "$COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#PROPERTIES#SUCCESS: $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#TRUE" /* variations: $COMMENT#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_TRUE / core: $COMMENT#EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_TRUE */,
+        // tsDoc.src.lib.params
+        atHand:
+          "at hand" /* variations: $COMMENT#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND / core: $COMMENT#EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND */,
       },
     },
   }, // To explain what's going on here, these variables are both public, and composed variables exclusives thanks to them being explicit composed variables exclusives. Meanwhile, composedVariablesExclusives can still refer to them as aliases in order to keep its organization. And now, not only are the variables in runtimeVariables runtime variables, they are runtime variables whose values can also be used inside comments (and beyond!) as shared variables within consuming libraries.
@@ -468,4 +472,5 @@ export const enComposedVariablesExclusives = /** @type {const} */ ([
   "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY",
   "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_FALSE",
   "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_TRUE",
+  "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND",
 ]);

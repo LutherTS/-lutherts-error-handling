@@ -573,6 +573,14 @@ export declare const resolvedConfigData: {
                     readonly key: "EN#SHAREDVARIABLES#WORDS#ERRORS";
                     readonly value: "errors";
                 };
+                readonly message: {
+                    readonly key: "EN#SHAREDVARIABLES#WORDS#MESSAGE";
+                    readonly value: "message";
+                };
+                readonly status: {
+                    readonly key: "EN#SHAREDVARIABLES#WORDS#STATUS";
+                    readonly value: "status";
+                };
             };
             readonly phrases: {};
             readonly public: {
@@ -689,6 +697,16 @@ export declare const resolvedConfigData: {
                             readonly value: "pathExistsAsADirectory";
                         };
                     };
+                    readonly arguments: {
+                        readonly message: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#MESSAGE";
+                            readonly value: "message";
+                        };
+                        readonly status: {
+                            readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#STATUS";
+                            readonly value: "status";
+                        };
+                    };
                     readonly properties: {
                         readonly success: {
                             readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#SUCCESS";
@@ -702,6 +720,20 @@ export declare const resolvedConfigData: {
                             readonly key: "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS";
                             readonly value: "errors";
                         };
+                    };
+                };
+                readonly notRuntimeVariables: {
+                    readonly success_false: {
+                        readonly key: "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_FALSE";
+                        readonly value: "success: false";
+                    };
+                    readonly success_true: {
+                        readonly key: "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_TRUE";
+                        readonly value: "success: true";
+                    };
+                    readonly atHand: {
+                        readonly key: "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND";
+                        readonly value: "at hand";
                     };
                 };
             };
@@ -1177,6 +1209,16 @@ export declare const resolvedConfigData: {
                             readonly value: "pathExistsAsADirectory";
                         };
                     };
+                    readonly arguments: {
+                        readonly message: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#MESSAGE";
+                            readonly value: "message";
+                        };
+                        readonly status: {
+                            readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#STATUS";
+                            readonly value: "status";
+                        };
+                    };
                     readonly properties: {
                         readonly success: {
                             readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#SUCCESS";
@@ -1190,6 +1232,20 @@ export declare const resolvedConfigData: {
                             readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS";
                             readonly value: "errors";
                         };
+                    };
+                };
+                readonly notRuntimeVariables: {
+                    readonly success_false: {
+                        readonly key: "FR#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_FALSE";
+                        readonly value: "success: false";
+                    };
+                    readonly success_true: {
+                        readonly key: "FR#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_TRUE";
+                        readonly value: "success: true";
+                    };
+                    readonly atHand: {
+                        readonly key: "FR#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND";
+                        readonly value: "concerné(e)(s)";
                     };
                 };
             };
