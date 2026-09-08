@@ -573,6 +573,14 @@ export const resolvedConfigData = /** @type {const} */ ({
         "errors": {
           "key": "EN#SHAREDVARIABLES#WORDS#ERRORS",
           "value": "errors"
+        },
+        "message": {
+          "key": "EN#SHAREDVARIABLES#WORDS#MESSAGE",
+          "value": "message"
+        },
+        "status": {
+          "key": "EN#SHAREDVARIABLES#WORDS#STATUS",
+          "value": "status"
         }
       },
       "phrases": {},
@@ -690,6 +698,16 @@ export const resolvedConfigData = /** @type {const} */ ({
               "value": "pathExistsAsADirectory"
             }
           },
+          "arguments": {
+            "message": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#MESSAGE",
+              "value": "message"
+            },
+            "status": {
+              "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#STATUS",
+              "value": "status"
+            }
+          },
           "properties": {
             "success": {
               "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#SUCCESS",
@@ -703,6 +721,16 @@ export const resolvedConfigData = /** @type {const} */ ({
               "key": "EN#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS",
               "value": "errors"
             }
+          }
+        },
+        "notRuntimeVariables": {
+          "success_false": {
+            "key": "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_FALSE",
+            "value": "success: false"
+          },
+          "success_true": {
+            "key": "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_TRUE",
+            "value": "success: true"
           }
         }
       }
@@ -1176,6 +1204,16 @@ export const resolvedConfigData = /** @type {const} */ ({
             "pathExistsAsADirectory": {
               "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY",
               "value": "pathExistsAsADirectory"
+            }
+          },
+          "arguments": {
+            "message": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#MESSAGE",
+              "value": "message"
+            },
+            "status": {
+              "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#STATUS",
+              "value": "status"
             }
           },
           "properties": {
