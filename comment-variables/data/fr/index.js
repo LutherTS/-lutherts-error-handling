@@ -205,13 +205,13 @@ export const frData = /** @type {const} */ ({
     words: {
       error:
         "erreur" /* variations: $COMMENT#SHAREDVARIABLES#WORDS#ERROR / core: $COMMENT#FR#SHAREDVARIABLES#WORDS#ERROR */,
-      warning:
-        "avertissement" /* variations: $COMMENT#SHAREDVARIABLES#WORDS#WARNING / core: $COMMENT#FR#SHAREDVARIABLES#WORDS#WARNING */,
-      success:
-        "succès" /* variations: $COMMENT#SHAREDVARIABLES#WORDS#SUCCESS / core: $COMMENT#FR#SHAREDVARIABLES#WORDS#SUCCESS */,
-      type: "EN#SHAREDVARIABLES#WORDS#TYPE" /* variations: $COMMENT#SHAREDVARIABLES#WORDS#TYPE / core: $COMMENT#FR#SHAREDVARIABLES#WORDS#TYPE */,
-      errors:
-        "erreurs" /* variations: $COMMENT#SHAREDVARIABLES#WORDS#ERRORS / core: $COMMENT#FR#SHAREDVARIABLES#WORDS#ERRORS */,
+      // warning:
+      //   "avertissement" /* variations: $COMMENT#SHAREDVARIABLES#WORDS#WARNING / core: $COMMENT#FR#SHAREDVARIABLES#WORDS#WARNING */,
+      // success:
+      //   "succès" /* variations: $COMMENT#SHAREDVARIABLES#WORDS#SUCCESS / core: $COMMENT#FR#SHAREDVARIABLES#WORDS#SUCCESS */,
+      // type: "EN#SHAREDVARIABLES#WORDS#TYPE" /* variations: $COMMENT#SHAREDVARIABLES#WORDS#TYPE / core: $COMMENT#FR#SHAREDVARIABLES#WORDS#TYPE */,
+      // errors:
+      //   "erreurs" /* variations: $COMMENT#SHAREDVARIABLES#WORDS#ERRORS / core: $COMMENT#FR#SHAREDVARIABLES#WORDS#ERRORS */,
     },
     phrases: {},
 
@@ -314,7 +314,7 @@ export const frData = /** @type {const} */ ({
 
 export const frComposedVariablesExclusives = /** @type {const} */ ([
   "FR#SHAREDVARIABLES#WORDS#ERROR",
-  "FR#SHAREDVARIABLES#WORDS#WARNING",
-  "FR#SHAREDVARIABLES#WORDS#SUCCESS",
-  "FR#SHAREDVARIABLES#WORDS#ERRORS",
+  // "FR#SHAREDVARIABLES#WORDS#WARNING",
+  // "FR#SHAREDVARIABLES#WORDS#SUCCESS",
+  // "FR#SHAREDVARIABLES#WORDS#ERRORS",
 ]);

@@ -1077,22 +1077,6 @@ export const resolvedConfigData = /** @type {const} */ ({
         "error": {
           "key": "FR#SHAREDVARIABLES#WORDS#ERROR",
           "value": "erreur"
-        },
-        "warning": {
-          "key": "FR#SHAREDVARIABLES#WORDS#WARNING",
-          "value": "avertissement"
-        },
-        "success": {
-          "key": "FR#SHAREDVARIABLES#WORDS#SUCCESS",
-          "value": "succès"
-        },
-        "type": {
-          "key": "FR#SHAREDVARIABLES#WORDS#TYPE",
-          "value": "type"
-        },
-        "errors": {
-          "key": "FR#SHAREDVARIABLES#WORDS#ERRORS",
-          "value": "erreurs"
         }
       },
       "phrases": {},
