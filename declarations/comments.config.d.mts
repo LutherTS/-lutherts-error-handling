@@ -1077,22 +1077,6 @@ export declare const resolvedConfigData: {
                     readonly key: "FR#SHAREDVARIABLES#WORDS#ERROR";
                     readonly value: "erreur";
                 };
-                readonly warning: {
-                    readonly key: "FR#SHAREDVARIABLES#WORDS#WARNING";
-                    readonly value: "avertissement";
-                };
-                readonly success: {
-                    readonly key: "FR#SHAREDVARIABLES#WORDS#SUCCESS";
-                    readonly value: "succès";
-                };
-                readonly type: {
-                    readonly key: "FR#SHAREDVARIABLES#WORDS#TYPE";
-                    readonly value: "type";
-                };
-                readonly errors: {
-                    readonly key: "FR#SHAREDVARIABLES#WORDS#ERRORS";
-                    readonly value: "erreurs";
-                };
             };
             readonly phrases: {};
             readonly public: {

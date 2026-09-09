@@ -1,5 +1,11 @@
 import { SourceCode as SourceCode_2 } from 'eslint';
 
+/** @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ATHANDTEMPLATEFUNCTION */
+export declare const atHandTemplateFunction: {
+    beforeComposed: (string: string) => `${string} $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND.`;
+    afterComposed: (string: string) => string;
+};
+
 /** @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA */
 export declare const commentVariablesData: {
     readonly libraryKey: "_LUTHERTS_ERROR_HANDLING";
@@ -98,6 +104,7 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_MESSAGE": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ATHANDTEMPLATEFUNCTION": "";
         };
         readonly FR: {
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "En anglais à l'exécution : \"The error encountered is not standardized.\"";
@@ -193,6 +200,7 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_MESSAGE": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ATHANDTEMPLATEFUNCTION": "";
         };
     };
 };

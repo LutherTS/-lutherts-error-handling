@@ -96,6 +96,7 @@ export declare const resolvedPublicData: {
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_MESSAGE": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ATHANDTEMPLATEFUNCTION": "";
         };
         readonly FR: {
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "En anglais à l'exécution : \"The error encountered is not standardized.\"";
@@ -191,6 +192,7 @@ export declare const resolvedPublicData: {
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_MESSAGE": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ATHANDTEMPLATEFUNCTION": "";
         };
     };
 };
