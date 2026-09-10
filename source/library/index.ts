@@ -36,7 +36,7 @@ export {
 
 /* secondary exports */
 
-export { atHandTemplateFunction } from "../../comment-variables/template-functions/at-hand.js";
+export { atHandTemplateFunction } from "../../comment-variables/template-functions/en/at-hand.js";
 
 // Additionally, it showcases how to access a library's Comment Variables as keys and values.
 // For the JS version (typed with literals):
