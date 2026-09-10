@@ -274,8 +274,8 @@ export const runtimeVariables = /** @type {const} */ ([
 For part 1 you don't even need to specify the path, actually no. You do need to specify the path so that VS Code knows that this is the specific symbol we're looking for. Once ...
 ... 
 And if VS Code knows the specify symbol on a unique JavaScript file whose exports cannot collide... Then that's enough to be able to track everywhere, with 100% accuracy, that the runtime variables are used statically. 
-So no we don't need to go all the way towards stuff like groups and properties. They idea is that if you are using that from a group, that you're using it dynamically. If you are using that from the identifier, then you are using this statically. And that's all we care to track and all we can actually track.
-Then it just requires the discipline of actually using the identifiers instead of the groups when you want to track when the runtime variables are actually used.
+So no we don't need to go all the way towards stuff like groups and properties. The idea is that if you are using that from a group, that you're using it dynamically. (Not anymore in hindsight.) If you are using that from the identifier, then you are using this statically. And that's all we care to track and all we can actually track.
+Then it just requires the discipline of actually using the identifiers instead of the groups when you want to track when the runtime variables are actually used. (Not anymore in hindsight, the final implementation will support both items and groups with properties, with the ability to add as many of them as desired to track. If it's a non-first position array of two items it's an item (item, relativePath), of three items it's a group (group, relativePath, property).)
 
 Mais aussi en vrai, si c'est fort sur un utilisateur de nommer ses runtime variables, à défaut on peut toujours utiliser le même nom que celui de la Comment Variable key, qui a une absence de collision guarantie, et remplacer les # par des $. Je ne peux pas dire que je le recommande, mais c'est plausible. Qui plus est, si on en arrive là... attends... 
 ...
@@ -288,11 +288,11 @@ No need to define anything, everything gets defined just via that #RUNTIMEVARIAB
 Which then output that $EN$COMMENT$VARIABLE unique identifier in a unique file that be imported and use everywhere, and it doesn't matter if you adapt its name with `as`, it will still be tracked statically by VS Code.
 
 But so that means every single comment variable should be aware of each of its original segments. 
-But really this is the kind of exciting, native contraption that is actually 
-So really the name here won't be runtimeVariables. But any of the values can be used at runtime. These however will be special because they're automatically generated, automatically maintained, and automatically tracked.
+But really this is the kind of exciting, native contraption that is actually ...
+So really the name here won't be runtimeVariables. Because any of the values can be used at runtime. These however will be special because they're automatically generated, automatically maintained, and automatically tracked.
 So it will be:
 trackedVariables.
-No, we're keeping runtimeVariables, it's just sexier, and acts as a deterrent from using runtime variables any other way, effectively stating that using them any other way is undocumented and on your own accord. 
+...No, we're keeping runtimeVariables, it's just sexier, and acts as a deterrent from using runtime variables any other way, effectively stating that using them any other way is undocumented and on your own accord. 
 
 comments.runtime.js
 
@@ -309,7 +309,7 @@ But then if you want to export that variable with your own decorum you'll have t
 export const MY_VARIABLE = $EN$COMMENT$VARIABLE
 With your own description on top, etc. This won't be tracked, but you can use it to export it from your library's entrypoint. 
 But what if your variable, which you want to track, actually ... There you go. 
-This where the config for runtimeVariables comes around, because there, you can combine the name of a variable and the relative file it leaves in, and they will be added to the generated variable. This is yours to maintain manually.
+This is where the config for runtimeVariables comes around, because there, you can combine the name of a variable and the relative file it leaves in, and they will be added to the generated variable. This is yours to maintain manually.
 
 const runtimeVariables = ["EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#ERRORS#MESSAGES#ERRORNOTSTANDARDIZED", [["variable", "filename.js"], ["variable2", "filename2.js"], ["group3", "filename3.js", "property3"]]
 ...Which... brings it back full circle.
@@ -321,4 +321,14 @@ And that also brings back the idea of groups and properties.
 And is more in phase with the fact that actual runtime variables are not contained to those with the marker.
 
 After all, if Comment Variables can have aliases, so too should they be able to have some as runtime variables.
+
+So.
+The final decision is about manual.
+Also because as a matter of fact, tracking is an expensive operation, and will only ought to be done on demand, for specific variables. Meaning the flow is going to be:
+1) I want to know where this Comment Variable is used runtime.
+2) I register its items, and groups with properties.
+3) The system validates that the Comment Variable key I placed is indeed non-alias, OR a shared variable alias. (EXTREMELY IMPORTANT TO SUPPORT TRACKING SHARED VARIABLES IN RUNTIME.)
+4) Naturally the system also validates the shape of the entire runtimeVariables array I provide, so if there's no errors I'm good to go.
+5) Then I go at the source of truth for non-alias, or at any alias location of the shared variable being used. (May still need to be refined for shared variables.)
+6) I cmd+click the source of truth for references, and it triggers VS Code's reference or definition provider, which utilizes the data from runtimeVariables to find the right symbols in the right files and track their usage across the codebase.
 */
