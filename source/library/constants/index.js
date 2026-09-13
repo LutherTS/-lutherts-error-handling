@@ -6,14 +6,14 @@ import { ERROR, WARNING } from "../../comment-variables/items.js";
  * $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE
  * @public
  */
-export const successFalse = Object.freeze({
+export const successFalse = /** @type {const} */ ({
   success: false,
 });
 /**
  * $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE
  * @public
  */
-export const successTrue = Object.freeze({
+export const successTrue = /** @type {const} */ ({
   success: true,
 });
 
@@ -23,13 +23,13 @@ export const successTrue = Object.freeze({
  * $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR
  * @public
  */
-export const typeError = Object.freeze({
+export const typeError = /** @type {const} */ ({
   type: ERROR,
 });
 /**
  * $COMMENT#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING
  * @public
  */
-export const typeWarning = Object.freeze({
+export const typeWarning = /** @type {const} */ ({
   type: WARNING,
 });
