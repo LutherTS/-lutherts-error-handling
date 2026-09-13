@@ -5,7 +5,7 @@ import { frData } from "./fr/index.js";
 
 /* data */
 
-export const data = Object.freeze({
+export const data = /** @type {const} */ ({
   [EN]: enData,
   [FR]: frData,
 });

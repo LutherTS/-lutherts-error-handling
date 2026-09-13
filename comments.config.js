@@ -33,20 +33,20 @@ import { EN, ENGLISH, FR, FRANÇAIS } from "./comment-variables/index.js";
 import { enData } from "./comment-variables/data/en/index.js";
 import tsConfigJson from "./tsconfig.json" with { type: "json" };
 
-const variations = Object.freeze({
-  variants: Object.freeze({
-    [EN]: Object.freeze({ label: ENGLISH }),
-    [FR]: Object.freeze({ label: FRANÇAIS }),
-  }),
+const variations = /** @type {const} */ ({
+  variants: {
+    [EN]: { label: ENGLISH },
+    [FR]: { label: FRANÇAIS },
+  },
   variant: EN,
   referenceData: enData,
   referenceVariant: EN,
   allowIncompleteVariations: true,
   public: [EN, FR], // can be omitted, otherwise must include `variations.referenceVariant` as its first element
-  docCommandData: Object.freeze({
+  docCommandData: {
     declarationDir: tsConfigJson.compilerOptions.declarationDir,
     rootDir: tsConfigJson.compilerOptions.rootDir,
-  }), // can be omitted
+  }, // can be omitted
 });
 
 /* libraries */
