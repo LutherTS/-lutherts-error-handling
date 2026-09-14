@@ -430,6 +430,7 @@ export const enData = /** @type {const} */ ({
         },
       },
 
+      // TO BE REMOVED.
       notRuntimeVariables: {
         // tsDoc.src.lib.consts
         success_false:

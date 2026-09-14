@@ -53,9 +53,9 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE": "highlightFirstLineOfCode";
             readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASAFILE": "pathExistsAsAFile";
             readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY": "pathExistsAsADirectory";
-            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_FALSE": "success: false";
-            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_TRUE": "success: true";
-            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND": "at hand";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_FALSE": "success: false";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_TRUE": "success: true";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#ATHAND": "at hand";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
@@ -84,6 +84,9 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#SUCCESS": "success";
             readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#TYPE": "type";
             readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS": "errors";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_FALSE": "success: false";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_TRUE": "success: true";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND": "at hand";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "";
@@ -130,7 +133,7 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "La chaîne de caractères renseignée si sa longueur est plus petite ou égale à celle de la limite de longueur renseignée ; une version tronquée le cas échéant.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE": "La chaîne de caractères espacée, de sorte qu'un messsage de règle ESLint ait un peu de marge avant que le nom de son plugin et le nom de sa règle n'y soient ajoutés.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "Un objet `SourceLocation` (`loc`) servant de rangée effective pour la première ligne de code du fichier.";
-            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND": "concerné(e)(s)";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#ATHAND": "concerné(e)(s)";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE": "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`.";
             readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`.";
@@ -180,6 +183,9 @@ export declare const commentVariablesData: {
             readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS": "errors";
             readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_FALSE": "success: false";
             readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_TRUE": "success: true";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND": "concerné(e)(s)";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_FALSE": "success: false";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_TRUE": "success: true";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
             readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "";

@@ -293,6 +293,7 @@ export const frData = /** @type {const} */ ({
         },
       },
 
+      // TO BE REMOVED.
       notRuntimeVariables: {
         // tsDoc.src.lib.consts
         success_false:

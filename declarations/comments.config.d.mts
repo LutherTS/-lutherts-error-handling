@@ -583,6 +583,12 @@ export declare const resolvedConfigData: {
                 };
             };
             readonly phrases: {};
+            readonly wordsAndPhrases: {
+                readonly public: {
+                    readonly words: {};
+                    readonly phrases: {};
+                };
+            };
             readonly public: {
                 readonly errors: {
                     readonly messages: {
@@ -733,6 +739,22 @@ export declare const resolvedConfigData: {
                     };
                     readonly atHand: {
                         readonly key: "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND";
+                        readonly value: "at hand";
+                    };
+                };
+            };
+            readonly notRuntimeVariables: {
+                readonly public: {
+                    readonly success_false: {
+                        readonly key: "EN#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_FALSE";
+                        readonly value: "success: false";
+                    };
+                    readonly success_true: {
+                        readonly key: "EN#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_TRUE";
+                        readonly value: "success: true";
+                    };
+                    readonly atHand: {
+                        readonly key: "EN#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#ATHAND";
                         readonly value: "at hand";
                     };
                 };
@@ -1072,13 +1094,14 @@ export declare const resolvedConfigData: {
             };
         };
         readonly sharedVariables: {
-            readonly words: {
-                readonly error: {
-                    readonly key: "FR#SHAREDVARIABLES#WORDS#ERROR";
-                    readonly value: "erreur";
+            readonly words: {};
+            readonly phrases: {};
+            readonly wordsAndPhrases: {
+                readonly public: {
+                    readonly words: {};
+                    readonly phrases: {};
                 };
             };
-            readonly phrases: {};
             readonly public: {
                 readonly errors: {
                     readonly messages: {
@@ -1229,6 +1252,22 @@ export declare const resolvedConfigData: {
                     };
                     readonly atHand: {
                         readonly key: "FR#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND";
+                        readonly value: "concerné(e)(s)";
+                    };
+                };
+            };
+            readonly notRuntimeVariables: {
+                readonly public: {
+                    readonly success_false: {
+                        readonly key: "FR#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_FALSE";
+                        readonly value: "success: false";
+                    };
+                    readonly success_true: {
+                        readonly key: "FR#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_TRUE";
+                        readonly value: "success: true";
+                    };
+                    readonly atHand: {
+                        readonly key: "FR#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#ATHAND";
                         readonly value: "concerné(e)(s)";
                     };
                 };
