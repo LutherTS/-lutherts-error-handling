@@ -584,6 +584,12 @@ export const resolvedConfigData = /** @type {const} */ ({
         }
       },
       "phrases": {},
+      "wordsAndPhrases": {
+        "public": {
+          "words": {},
+          "phrases": {}
+        }
+      },
       "public": {
         "errors": {
           "messages": {
@@ -734,6 +740,22 @@ export const resolvedConfigData = /** @type {const} */ ({
           },
           "atHand": {
             "key": "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND",
+            "value": "at hand"
+          }
+        }
+      },
+      "notRuntimeVariables": {
+        "public": {
+          "success_false": {
+            "key": "EN#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_FALSE",
+            "value": "success: false"
+          },
+          "success_true": {
+            "key": "EN#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_TRUE",
+            "value": "success: true"
+          },
+          "atHand": {
+            "key": "EN#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#ATHAND",
             "value": "at hand"
           }
         }
@@ -1073,13 +1095,14 @@ export const resolvedConfigData = /** @type {const} */ ({
       }
     },
     "sharedVariables": {
-      "words": {
-        "error": {
-          "key": "FR#SHAREDVARIABLES#WORDS#ERROR",
-          "value": "erreur"
+      "words": {},
+      "phrases": {},
+      "wordsAndPhrases": {
+        "public": {
+          "words": {},
+          "phrases": {}
         }
       },
-      "phrases": {},
       "public": {
         "errors": {
           "messages": {
@@ -1230,6 +1253,22 @@ export const resolvedConfigData = /** @type {const} */ ({
           },
           "atHand": {
             "key": "FR#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND",
+            "value": "concerné(e)(s)"
+          }
+        }
+      },
+      "notRuntimeVariables": {
+        "public": {
+          "success_false": {
+            "key": "FR#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_FALSE",
+            "value": "success: false"
+          },
+          "success_true": {
+            "key": "FR#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_TRUE",
+            "value": "success: true"
+          },
+          "atHand": {
+            "key": "FR#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#ATHAND",
             "value": "concerné(e)(s)"
           }
         }
