@@ -728,20 +728,6 @@ export const resolvedConfigData = /** @type {const} */ ({
               "value": "errors"
             }
           }
-        },
-        "notRuntimeVariables": {
-          "success_false": {
-            "key": "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_FALSE",
-            "value": "success: false"
-          },
-          "success_true": {
-            "key": "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_TRUE",
-            "value": "success: true"
-          },
-          "atHand": {
-            "key": "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND",
-            "value": "at hand"
-          }
         }
       },
       "notRuntimeVariables": {
@@ -1240,20 +1226,6 @@ export const resolvedConfigData = /** @type {const} */ ({
               "key": "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS",
               "value": "errors"
             }
-          }
-        },
-        "notRuntimeVariables": {
-          "success_false": {
-            "key": "FR#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_FALSE",
-            "value": "success: false"
-          },
-          "success_true": {
-            "key": "FR#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_TRUE",
-            "value": "success: true"
-          },
-          "atHand": {
-            "key": "FR#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND",
-            "value": "concerné(e)(s)"
           }
         }
       },
