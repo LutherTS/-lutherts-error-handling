@@ -728,20 +728,6 @@ export declare const resolvedConfigData: {
                         };
                     };
                 };
-                readonly notRuntimeVariables: {
-                    readonly success_false: {
-                        readonly key: "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_FALSE";
-                        readonly value: "success: false";
-                    };
-                    readonly success_true: {
-                        readonly key: "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_TRUE";
-                        readonly value: "success: true";
-                    };
-                    readonly atHand: {
-                        readonly key: "EN#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND";
-                        readonly value: "at hand";
-                    };
-                };
             };
             readonly notRuntimeVariables: {
                 readonly public: {
@@ -1239,20 +1225,6 @@ export declare const resolvedConfigData: {
                             readonly key: "FR#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS";
                             readonly value: "errors";
                         };
-                    };
-                };
-                readonly notRuntimeVariables: {
-                    readonly success_false: {
-                        readonly key: "FR#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_FALSE";
-                        readonly value: "success: false";
-                    };
-                    readonly success_true: {
-                        readonly key: "FR#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#SUCCESS_TRUE";
-                        readonly value: "success: true";
-                    };
-                    readonly atHand: {
-                        readonly key: "FR#SHAREDVARIABLES#PUBLIC#NOTRUNTIMEVARIABLES#ATHAND";
-                        readonly value: "concerné(e)(s)";
                     };
                 };
             };
