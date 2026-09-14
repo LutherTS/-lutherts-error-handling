@@ -6,6 +6,7 @@ export const frData = /** @type {const} */ ({
       comvar: {
         items: {
           public: {
+            // errors.statuses
             ERROR_NOT_STANDARDIZED_STATUS:
               "$COMMENT#FR#COMPOSEDVARIABLESEXCLUSIVES#_ENANGLAIS : $COMMENT#EN#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS" /* variations: $COMMENT#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS / core: $COMMENT#FR#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS */,
           },
