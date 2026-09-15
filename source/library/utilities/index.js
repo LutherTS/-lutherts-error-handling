@@ -155,6 +155,7 @@ export const showVSCodeError =
 /**
  * $COMMENT#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS
  *
+ * @param vscode - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE
  * @param errors - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS
  * @param numberOfErrors - $COMMENT#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS
  * @returns $COMMENT#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR
@@ -162,6 +163,7 @@ export const showVSCodeError =
  * @public
  */
 export const treatVSCodeErrors = (
+  /** @type {unknown} */ vscode,
   /** @type {ReturnType<MakeErrorTypeError>[]} */ errors,
   /** @type {number} */ numberOfErrors = +DEFAULT_NUMBER_OF_ERRORS,
 ) => {
