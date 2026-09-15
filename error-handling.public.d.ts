@@ -1,210 +1,208 @@
-import { SourceCode as SourceCode_2 } from "eslint";
+import { SourceCode as SourceCode_2 } from 'eslint';
 
 /** @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#ATHANDTEMPLATEFUNCTION */
 export declare const atHandTemplateFunction: {
-  beforeComposed: (
-    string: string,
-  ) => `${string} $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND.`;
-  afterComposed: (string: string) => string;
+    beforeComposed: (string: string) => `${string} $COMMENT#EN#COMPOSEDVARIABLESEXCLUSIVES#ATHAND.`;
+    afterComposed: (string: string) => string;
 };
 
 /** @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA */
 export declare const commentVariablesData: {
-  readonly libraryKey: "_LUTHERTS_ERROR_HANDLING";
-  readonly libraryVariations: {
-    readonly EN: {
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": '"The error encountered is not standardized."';
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR": "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS": "Displays a set amount of errors via the `vscode.window.showErrorMessage` method (through the `showVSCodeError` utility).";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR": "Shows an error or warning message via the CLI's `console.error` or `console.warn` method depending on the `type` of the error provided.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX": 'Escapes all regex characters with a `"\\"` in a string to prepare said string for use in a regex.';
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "Trims a string with an ellipsis based on a provided length limit.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE": "Adds a single space to the end of a string, notably in the context of ESLint rule messages.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "Highlights the first line of code of a file via its ESLint `SourceCode` object to illustrate general linting errors.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE": "The human-readable message of the error.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS": "The static status text of the error.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE": "The VS Code API instance at hand, living in the VS Code Extension Host (and not in the extension's Node modules).";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR": 'The error object at hand, with either the value `"error"` or `"warning"` at its `type` key.';
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS": "The array of errors to be displayed.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS": "The number of errors to be displayed, instantiated at `3` by default to match the maximum amount of error messages VS Code displays simultaneously.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT": "The provided length limit. The string will be trimmed if its length is strictly superior to this given number.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR": "Void.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX": "The string with regex characters escaped.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "The provided string if its length is lower or equal to the provided length limit; a trimmed version of that string otherwise.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE": "The string spaced out, so that an ESLint rule message shown on hovered reports has a bit of breathing room before its plugin name and rule name are suffixed.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "A `SourceLocation` object (`loc`) as the effective range of the file's first line of code.";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#MESSAGES#ERRORNOTSTANDARDIZED": "The error encountered is not standardized.";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#STATUSES#ERRORNOTSTANDARDIZED": "ERROR_NOT_STANDARDIZED";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#DEFAULTS#NUMBEROFERRORS": "3";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDMESSAGE": "ERROR_NOT_STANDARDIZED_MESSAGE";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDSTATUS": "ERROR_NOT_STANDARDIZED_STATUS";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSFALSE": "successFalse";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSTRUE": "successTrue";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEERROR": "typeError";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEWARNING": "typeWarning";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEERROR": "makeSuccessFalseTypeError";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING": "makeSuccessFalseTypeWarning";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEERROR": "makeErrorTypeError";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEWARNING": "makeErrorTypeWarning";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SHOWVSCODEERROR": "showVSCodeError";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TREATVSCODEERRORS": "treatVSCodeErrors";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#LOGCLIERROR": "logCLIError";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#ESCAPEREGEX": "escapeRegex";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TRIMSTRINGWITHLIMIT": "trimStringWithLimit";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SPACEOUTESLINTMESSAGE": "spaceOutESLintMessage";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE": "highlightFirstLineOfCode";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASAFILE": "pathExistsAsAFile";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY": "pathExistsAsADirectory";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_FALSE": "success: false";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_TRUE": "success: true";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#ATHAND": "at hand";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "Makes an error object of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING": "Makes an error object of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE": "Tells if a path actually exists as a file.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY": "Tells if a path actually exists as a directory.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING": "The string at hand.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE": "The file's `SourceCode` object at hand.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH": "The absolute path at hand.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "An error object of `{type: error}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING": "An error object of `{type: warning}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TREATVSCODEERRORS": "Void.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR": "Void.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE": "`true` if the path is a file, `false` otherwise.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY": "`true` if the path is a directory, `false` otherwise.";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#ERROR": "error";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#WARNING": "warning";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#MESSAGE": "message";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#STATUS": "status";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#SUCCESS": "success";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#TYPE": "type";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS": "errors";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEERROR": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEWARNING": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TREATVSCODEERRORS": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SPACEOUTESLINTMESSAGE": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASAFILE": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASADIRECTORY": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_MESSAGE": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ATHANDTEMPLATEFUNCTION": "";
+    readonly libraryKey: "_LUTHERTS_ERROR_HANDLING";
+    readonly libraryVariations: {
+        readonly EN: {
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "\"The error encountered is not standardized.\"";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR": "Shows an error or warning message via VS Code's toast system depending on the `type` of the error provided.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS": "Displays a set amount of errors via the `vscode.window.showErrorMessage` method (through the `showVSCodeError` utility).";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR": "Shows an error or warning message via the CLI's `console.error` or `console.warn` method depending on the `type` of the error provided.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX": "Escapes all regex characters with a `\"\\\"` in a string to prepare said string for use in a regex.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "Trims a string with an ellipsis based on a provided length limit.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE": "Adds a single space to the end of a string, notably in the context of ESLint rule messages.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "Highlights the first line of code of a file via its ESLint `SourceCode` object to illustrate general linting errors.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE": "The human-readable message of the error.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS": "The static status text of the error.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE": "The VS Code API instance at hand, living in the VS Code Extension Host (and not in the extension's Node modules).";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR": "The error object at hand, with either the value `\"error\"` or `\"warning\"` at its `type` key.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS": "The array of errors to be displayed.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS": "The number of errors to be displayed, instantiated at `3` by default to match the maximum amount of error messages VS Code displays simultaneously.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT": "The provided length limit. The string will be trimmed if its length is strictly superior to this given number.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR": "Void.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX": "The string with regex characters escaped.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "The provided string if its length is lower or equal to the provided length limit; a trimmed version of that string otherwise.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE": "The string spaced out, so that an ESLint rule message shown on hovered reports has a bit of breathing room before its plugin name and rule name are suffixed.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "A `SourceLocation` object (`loc`) as the effective range of the file's first line of code.";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#MESSAGES#ERRORNOTSTANDARDIZED": "The error encountered is not standardized.";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#STATUSES#ERRORNOTSTANDARDIZED": "ERROR_NOT_STANDARDIZED";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#DEFAULTS#NUMBEROFERRORS": "3";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDMESSAGE": "ERROR_NOT_STANDARDIZED_MESSAGE";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDSTATUS": "ERROR_NOT_STANDARDIZED_STATUS";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSFALSE": "successFalse";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSTRUE": "successTrue";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEERROR": "typeError";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEWARNING": "typeWarning";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEERROR": "makeSuccessFalseTypeError";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING": "makeSuccessFalseTypeWarning";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEERROR": "makeErrorTypeError";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEWARNING": "makeErrorTypeWarning";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SHOWVSCODEERROR": "showVSCodeError";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TREATVSCODEERRORS": "treatVSCodeErrors";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#LOGCLIERROR": "logCLIError";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#ESCAPEREGEX": "escapeRegex";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TRIMSTRINGWITHLIMIT": "trimStringWithLimit";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SPACEOUTESLINTMESSAGE": "spaceOutESLintMessage";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE": "highlightFirstLineOfCode";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASAFILE": "pathExistsAsAFile";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY": "pathExistsAsADirectory";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_FALSE": "success: false";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_TRUE": "success: true";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#ATHAND": "at hand";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE": "Apply last with  `...successFalse` to ensure that `success: false` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successFalse}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "Apply last with  `...successTrue` to ensure that `success: true` sits at the top of its object's type definition, like `{propertyA, propertyB, ...successTrue}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "Apply last with  `...typeError` to ensure that `type: error` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeError}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING": "Apply last with  `...typeWarning` to ensure that `type: warning` sits at the top of its object's type definition, like `{propertyA, propertyB, ...typeWarning}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Makes a `{success: false}` object with a single error in its `errors` array of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "Makes an error object of `{type: error}` based on the `message` it is meant to display and on the `status` it is meant to have.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING": "Makes an error object of `{type: warning}` based on the `message` it is meant to display and on the `status` it is meant to have.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE": "Tells if a path actually exists as a file.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY": "Tells if a path actually exists as a directory.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING": "The string at hand.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE": "The file's `SourceCode` object at hand.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH": "The absolute path at hand.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "A `{success: false}` object with a single error in its `errors` array of `{type: error}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "A `{success: false}` object with a single error in its `errors` array of `{type: warning}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "An error object of `{type: error}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING": "An error object of `{type: warning}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TREATVSCODEERRORS": "Void.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR": "Void.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE": "`true` if the path is a file, `false` otherwise.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY": "`true` if the path is a directory, `false` otherwise.";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#ERROR": "error";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#WARNING": "warning";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#MESSAGE": "message";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#STATUS": "status";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#SUCCESS": "success";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#TYPE": "type";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS": "errors";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEERROR": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEWARNING": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TREATVSCODEERRORS": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SPACEOUTESLINTMESSAGE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASAFILE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASADIRECTORY": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_MESSAGE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ATHANDTEMPLATEFUNCTION": "";
+        };
+        readonly FR: {
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "En anglais à l'exécution : \"The error encountered is not standardized.\"";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR": "Affiche un message d'erreur ou d'avertissement via le système de toasts de VS Code dépendamment du `type` de l'erreur fournie.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS": "Affiche un nombre défini d'erreurs via la méthode `vscode.window.showErrorMessage` par le biais de l'utilitaire `showVSCodeError`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR": "Affiche un message d'erreur ou d'avertissement via les méthodes `console.error` et `console.warn` d'interface de ligne de commande dépendamment du `type` de l'erreur fournie.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX": "Échappe tous les caractères regex d'une chaîne de caractères avec un `\"\\\"` pour préparer cette dernière à être utilisée dans une regex.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "Tronque une chaîne de caractères par trois points de suspension en se basant sur la limite de longueur renseignée.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE": "Ajoute un seul espace à la fin d'une chaîne de caractères, notamment pour les messages des règles ESLint.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "Souligne la première ligne de code d'un fichier à partir de son objet `SourceCode` pour mettre en valeur ses erreurs générales d'analyse statique.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE": "Le message en clair de l'erreur.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS": "Le texte statique du statut de l'erreur.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE": "L'instance concernée de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR": "L'objet d'erreur concerné, avec `\"error\"` ou `\"warning\"` pour valeur à sa clé `type`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS": "La liste des erreurs qui doivent être affichées.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS": "Le nombre d'erreurs à afficher, instantié à `3` par défaut en accord avec le nombre maximum de messages d'erreur que VS Code peut afficher simultanément.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING": "La chaîne de caractères concernée.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT": "La limite de longueur renseignée. La chaîne de caractères sera tronquée si sa longueur est strictement supérieure à celle de ce nombre donné.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE": "L'objet `SourceCode` du fichier concerné.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH": "Le chemin absolu concerné.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR": "Void. (Aucun retour.)";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX": "La chaîne de caractères avec ses caractères regex échappés.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "La chaîne de caractères renseignée si sa longueur est plus petite ou égale à celle de la limite de longueur renseignée ; une version tronquée le cas échéant.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE": "La chaîne de caractères espacée, de sorte qu'un messsage de règle ESLint ait un peu de marge avant que le nom de son plugin et le nom de sa règle n'y soient ajoutés.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "Un objet `SourceLocation` (`loc`) servant de rangée effective pour la première ligne de code du fichier.";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#ATHAND": "concerné(e)(s)";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE": "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING": "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "Crée un objet d'erreur de `{type: error}` dont l'erreur est basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING": "Crée un objet d'erreur de `{type: warning}` dont l'erreur est basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE": "Informe de l'existence d'un chemin en tant que fichier.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY": "Informe de l'existence d'un chemin en tant que dossier.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "Un objet d'erreur de `{type: error}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING": "Un objet d'erreur de `{type: warning}`.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TREATVSCODEERRORS": "Void. (Aucun retour.)";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR": "Void. (Aucun retour.)";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE": "`true` si le chemin est un fichier, `false` le cas échéant.";
+            readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY": "`true` si le chemin est un dossier, `false` le cas échéant.";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#MESSAGES#ERRORNOTSTANDARDIZED": "The error encountered is not standardized.";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#STATUSES#ERRORNOTSTANDARDIZED": "ERROR_NOT_STANDARDIZED";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#ERROR": "error";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#WARNING": "warning";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#DEFAULTS#NUMBEROFERRORS": "3";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDMESSAGE": "ERROR_NOT_STANDARDIZED_MESSAGE";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDSTATUS": "ERROR_NOT_STANDARDIZED_STATUS";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSFALSE": "successFalse";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSTRUE": "successTrue";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEERROR": "typeError";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEWARNING": "typeWarning";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEERROR": "makeSuccessFalseTypeError";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING": "makeSuccessFalseTypeWarning";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEERROR": "makeErrorTypeError";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEWARNING": "makeErrorTypeWarning";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SHOWVSCODEERROR": "showVSCodeError";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TREATVSCODEERRORS": "treatVSCodeErrors";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#LOGCLIERROR": "logCLIError";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#ESCAPEREGEX": "escapeRegex";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TRIMSTRINGWITHLIMIT": "trimStringWithLimit";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SPACEOUTESLINTMESSAGE": "spaceOutESLintMessage";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE": "highlightFirstLineOfCode";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASAFILE": "pathExistsAsAFile";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY": "pathExistsAsADirectory";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#MESSAGE": "message";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#STATUS": "status";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#SUCCESS": "success";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#TYPE": "type";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS": "errors";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_FALSE": "success: false";
+            readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_TRUE": "success: true";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEERROR": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEWARNING": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TREATVSCODEERRORS": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SPACEOUTESLINTMESSAGE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASAFILE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASADIRECTORY": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_MESSAGE": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "";
+            readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ATHANDTEMPLATEFUNCTION": "";
+        };
     };
-    readonly FR: {
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#COMVAR#ITEMS#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": 'En anglais à l\'exécution : "The error encountered is not standardized."';
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SHOWVSCODEERROR": "Affiche un message d'erreur ou d'avertissement via le système de toasts de VS Code dépendamment du `type` de l'erreur fournie.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TREATVSCODEERRORS": "Affiche un nombre défini d'erreurs via la méthode `vscode.window.showErrorMessage` par le biais de l'utilitaire `showVSCodeError`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#LOGCLIERROR": "Affiche un message d'erreur ou d'avertissement via les méthodes `console.error` et `console.warn` d'interface de ligne de commande dépendamment du `type` de l'erreur fournie.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#ESCAPEREGEX": 'Échappe tous les caractères regex d\'une chaîne de caractères avec un `"\\"` pour préparer cette dernière à être utilisée dans une regex.';
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "Tronque une chaîne de caractères par trois points de suspension en se basant sur la limite de longueur renseignée.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE": "Ajoute un seul espace à la fin d'une chaîne de caractères, notamment pour les messages des règles ESLint.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "Souligne la première ligne de code d'un fichier à partir de son objet `SourceCode` pour mettre en valeur ses erreurs générales d'analyse statique.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#MESSAGE": "Le message en clair de l'erreur.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STATUS": "Le texte statique du statut de l'erreur.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#VSCODE": "L'instance concernée de l'API VS Code, vivant dans VS Code Extension Host (et non dans les Node modules de l'extension).";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERROR": 'L\'objet d\'erreur concerné, avec `"error"` ou `"warning"` pour valeur à sa clé `type`.';
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ERRORS": "La liste des erreurs qui doivent être affichées.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#NUMBEROFERRORS": "Le nombre d'erreurs à afficher, instantié à `3` par défaut en accord avec le nombre maximum de messages d'erreur que VS Code peut afficher simultanément.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#STRING": "La chaîne de caractères concernée.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#LIMIT": "La limite de longueur renseignée. La chaîne de caractères sera tronquée si sa longueur est strictement supérieure à celle de ce nombre donné.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#SOURCECODE": "L'objet `SourceCode` du fichier concerné.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#PARAMS#UTILS#PUBLIC#ABSOLUTEPATH": "Le chemin absolu concerné.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SHOWVSCODEERROR": "Void. (Aucun retour.)";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#ESCAPEREGEX": "La chaîne de caractères avec ses caractères regex échappés.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT": "La chaîne de caractères renseignée si sa longueur est plus petite ou égale à celle de la limite de longueur renseignée ; une version tronquée le cas échéant.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#SPACEOUTESLINTMESSAGE": "La chaîne de caractères espacée, de sorte qu'un messsage de règle ESLint ait un peu de marge avant que le nom de son plugin et le nom de sa règle n'y soient ajoutés.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "Un objet `SourceLocation` (`loc`) servant de rangée effective pour la première ligne de code du fichier.";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#ATHAND": "concerné(e)(s)";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE": "À apposer en dernier via  `...successFalse` pour s'assurer que `success: false` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successFalse}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSTRUE": "À apposer en dernier via  `...successTrue` pour s'assurer que `success: true` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...successTrue}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR": "À apposer en dernier via  `...typeError` pour s'assurer que `type: error` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeError}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEWARNING": "À apposer en dernier via  `...typeWarning` pour s'assurer que `type: warning` apparaisse au sommet de la définition du type de l'objet auquel il appartient, façon `{propertyA, propertyB, ...typeWarning}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Crée un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}` basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "Crée un objet d'erreur de `{type: error}` dont l'erreur est basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#MAKEERRORTYPEWARNING": "Crée un objet d'erreur de `{type: warning}` dont l'erreur est basée sur le `message` qu'elle doit montrer et sur le `status` qu'elle doit avoir.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASAFILE": "Informe de l'existence d'un chemin en tant que fichier.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY": "Informe de l'existence d'un chemin en tant que dossier.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEERROR": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: error}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "Un objet `{success: false}` avec une seule erreur dans son array `errors` de `{type: warning}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEERROR": "Un objet d'erreur de `{type: error}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#MAKEERRORTYPEWARNING": "Un objet d'erreur de `{type: warning}`.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#TREATVSCODEERRORS": "Void. (Aucun retour.)";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#LOGCLIERROR": "Void. (Aucun retour.)";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASAFILE": "`true` si le chemin est un fichier, `false` le cas échéant.";
-      readonly "_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#RETURNS#UTILS#PUBLIC#PATHEXISTSASADIRECTORY": "`true` si le chemin est un dossier, `false` le cas échéant.";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#MESSAGES#ERRORNOTSTANDARDIZED": "The error encountered is not standardized.";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#STATUSES#ERRORNOTSTANDARDIZED": "ERROR_NOT_STANDARDIZED";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#ERROR": "error";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#ERRORS#TYPES#WARNING": "warning";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#DEFAULTS#NUMBEROFERRORS": "3";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDMESSAGE": "ERROR_NOT_STANDARDIZED_MESSAGE";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDSTATUS": "ERROR_NOT_STANDARDIZED_STATUS";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSFALSE": "successFalse";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#SUCCESSTRUE": "successTrue";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEERROR": "typeError";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#OBJECTS#TYPEWARNING": "typeWarning";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEERROR": "makeSuccessFalseTypeError";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING": "makeSuccessFalseTypeWarning";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEERROR": "makeErrorTypeError";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEWARNING": "makeErrorTypeWarning";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SHOWVSCODEERROR": "showVSCodeError";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TREATVSCODEERRORS": "treatVSCodeErrors";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#LOGCLIERROR": "logCLIError";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#ESCAPEREGEX": "escapeRegex";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#TRIMSTRINGWITHLIMIT": "trimStringWithLimit";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#SPACEOUTESLINTMESSAGE": "spaceOutESLintMessage";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#HIGHLIGHTFIRSTLINEOFCODE": "highlightFirstLineOfCode";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASAFILE": "pathExistsAsAFile";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY": "pathExistsAsADirectory";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#MESSAGE": "message";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#ARGUMENTS#STATUS": "status";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#SUCCESS": "success";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#TYPE": "type";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#PUBLIC#IDENTIFIERS#PROPERTIES#ERRORS": "errors";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_FALSE": "success: false";
-      readonly "_LUTHERTS_ERROR_HANDLING#SHAREDVARIABLES#NOTRUNTIMEVARIABLES#PUBLIC#SUCCESS_TRUE": "success: true";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#RESOLVEDPUBLICDATA": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEWARNING": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEERROR": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEWARNING": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TREATVSCODEERRORS": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ESCAPEREGEX": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SPACEOUTESLINTMESSAGE": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASAFILE": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#PATHEXISTSASADIRECTORY": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_MESSAGE": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ERROR_NOT_STANDARDIZED_STATUS": "";
-      readonly "_LUTHERTS_ERROR_HANDLING#PUBLIC#ATHANDTEMPLATEFUNCTION": "";
-    };
-  };
 };
 
 declare const ERROR: "error";
@@ -237,14 +235,14 @@ export declare const escapeRegex: (string: string) => string;
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#HIGHLIGHTFIRSTLINEOFCODE
  */
 export declare const highlightFirstLineOfCode: (sourceCode: SourceCode) => {
-  start: {
-    line: number;
-    column: number;
-  };
-  end: {
-    line: number;
-    column: number;
-  };
+    start: {
+        line: number;
+        column: number;
+    };
+    end: {
+        line: number;
+        column: number;
+    };
 };
 
 /**
@@ -255,14 +253,10 @@ export declare const highlightFirstLineOfCode: (sourceCode: SourceCode) => {
  *
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#LOGCLIERROR
  */
-export declare const logCLIError: <
-  T extends string,
-  U extends string,
-  V extends typeof ERROR | typeof WARNING,
->(error: {
-  readonly type: V;
-  readonly message: T;
-  readonly status: U;
+export declare const logCLIError: <T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(error: {
+    readonly type: V;
+    readonly message: T;
+    readonly status: U;
 }) => void;
 
 declare type MakeErrorTypeError = MakeErrorTypeError_2;
@@ -276,13 +270,10 @@ declare type MakeErrorTypeError = MakeErrorTypeError_2;
  *
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEERROR
  */
-export declare const makeErrorTypeError: <T extends string, U extends string>(
-  message: T,
-  status: U,
-) => {
-  readonly type: "error";
-  readonly message: T;
-  readonly status: U;
+export declare const makeErrorTypeError: <T extends string, U extends string>(message: T, status: U) => {
+    readonly type: "error";
+    readonly message: T;
+    readonly status: U;
 };
 
 declare type MakeErrorTypeError_2 = typeof makeErrorTypeError;
@@ -296,13 +287,10 @@ declare type MakeErrorTypeError_2 = typeof makeErrorTypeError;
  *
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKEERRORTYPEWARNING
  */
-export declare const makeErrorTypeWarning: <T extends string, U extends string>(
-  message: T,
-  status: U,
-) => {
-  readonly type: "warning";
-  readonly message: T;
-  readonly status: U;
+export declare const makeErrorTypeWarning: <T extends string, U extends string>(message: T, status: U) => {
+    readonly type: "warning";
+    readonly message: T;
+    readonly status: U;
 };
 
 /**
@@ -314,21 +302,13 @@ export declare const makeErrorTypeWarning: <T extends string, U extends string>(
  *
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEERROR
  */
-export declare const makeSuccessFalseTypeError: <
-  T extends string,
-  U extends string,
->(
-  message: T,
-  status: U,
-) => {
-  readonly success: false;
-  readonly errors: readonly [
-    {
-      readonly type: "error";
-      readonly message: T;
-      readonly status: U;
-    },
-  ];
+export declare const makeSuccessFalseTypeError: <T extends string, U extends string>(message: T, status: U) => {
+    readonly success: false;
+    readonly errors: readonly [{
+        readonly type: "error";
+        readonly message: T;
+        readonly status: U;
+    }];
 };
 
 /**
@@ -340,21 +320,13 @@ export declare const makeSuccessFalseTypeError: <
  *
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#MAKESUCCESSFALSETYPEWARNING
  */
-export declare const makeSuccessFalseTypeWarning: <
-  T extends string,
-  U extends string,
->(
-  message: T,
-  status: U,
-) => {
-  readonly success: false;
-  readonly errors: readonly [
-    {
-      readonly type: "warning";
-      readonly message: T;
-      readonly status: U;
-    },
-  ];
+export declare const makeSuccessFalseTypeWarning: <T extends string, U extends string>(message: T, status: U) => {
+    readonly success: false;
+    readonly errors: readonly [{
+        readonly type: "warning";
+        readonly message: T;
+        readonly status: U;
+    }];
 };
 
 /**
@@ -386,18 +358,11 @@ export declare const pathExistsAsAFile: (absolutePath: string) => boolean;
  *
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SHOWVSCODEERROR
  */
-export declare const showVSCodeError: <
-  T extends string,
-  U extends string,
-  V extends typeof ERROR | typeof WARNING,
->(
-  vscode: unknown,
-  error: {
+export declare const showVSCodeError: <T extends string, U extends string, V extends typeof ERROR | typeof WARNING>(vscode: unknown, error: {
     readonly type: V;
     readonly message: T;
     readonly status: U;
-  },
-) => void;
+}) => void;
 
 declare type SourceCode = SourceCode_2;
 
@@ -409,16 +374,14 @@ declare type SourceCode = SourceCode_2;
  *
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SPACEOUTESLINTMESSAGE
  */
-export declare const spaceOutESLintMessage: <T extends string>(
-  string: T,
-) => `${T} `;
+export declare const spaceOutESLintMessage: <T extends string>(string: T) => `${T} `;
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#SUCCESSFALSE
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSFALSE
  */
 export declare const successFalse: {
-  readonly success: false;
+    readonly success: false;
 };
 
 /**
@@ -426,7 +389,7 @@ export declare const successFalse: {
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#SUCCESSTRUE
  */
 export declare const successTrue: {
-  readonly success: true;
+    readonly success: true;
 };
 
 /**
@@ -438,10 +401,7 @@ export declare const successTrue: {
  *
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TREATVSCODEERRORS
  */
-export declare const treatVSCodeErrors: (
-  errors: ReturnType<MakeErrorTypeError>[],
-  numberOfErrors?: number,
-) => void;
+export declare const treatVSCodeErrors: (errors: ReturnType<MakeErrorTypeError>[], numberOfErrors?: number) => void;
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#DEFS#UTILS#PUBLIC#TRIMSTRINGWITHLIMIT
@@ -452,17 +412,14 @@ export declare const treatVSCodeErrors: (
  *
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TRIMSTRINGWITHLIMIT
  */
-export declare const trimStringWithLimit: (
-  string: string,
-  limit: number,
-) => string;
+export declare const trimStringWithLimit: (string: string, limit: number) => string;
 
 /**
  * $COMMENT#_LUTHERTS_ERROR_HANDLING#TSDOC#SRC#LIB#CONSTS#PUBLIC#TYPEERROR
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEERROR
  */
 export declare const typeError: {
-  readonly type: "error";
+    readonly type: "error";
 };
 
 /**
@@ -470,9 +427,9 @@ export declare const typeError: {
  * @public $COMMENT#_LUTHERTS_ERROR_HANDLING#PUBLIC#TYPEWARNING
  */
 export declare const typeWarning: {
-  readonly type: "warning";
+    readonly type: "warning";
 };
 
 declare const WARNING: "warning";
 
-export {};
+export { }
