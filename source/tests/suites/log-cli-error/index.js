@@ -1,7 +1,10 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { LOG_CLI_ERROR_IDENTIFIER } from "../../../comment-variables/items.js";
+import {
+  // function identifiers
+  LOG_CLI_ERROR_IDENTIFIER,
+} from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").LogCLIError} LogCLIError

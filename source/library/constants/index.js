@@ -1,4 +1,8 @@
-import { ERROR, WARNING } from "../../comment-variables/items.js";
+import {
+  // error types
+  ERROR,
+  WARNING,
+} from "../../comment-variables/items.js";
 
 /* success objects */
 

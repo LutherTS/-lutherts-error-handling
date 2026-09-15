@@ -2,13 +2,18 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
+  // function identifiers
   MAKE_SUCCESS_FALSE_TYPE_WARNING_IDENTIFIER,
+  // argument identifiers
   MESSAGE_IDENTIFIER,
   STATUS_IDENTIFIER,
+  // property identifiers
   ERRORS_IDENTIFIER,
   SUCCESS_IDENTIFIER,
-  FALSE,
   TYPE_IDENTIFIER,
+  // miscellaneous
+  FALSE,
+  // error types
   WARNING,
 } from "../../../comment-variables/items.js";
 

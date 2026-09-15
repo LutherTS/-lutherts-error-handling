@@ -1,7 +1,10 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { ESCAPE_REGEX_IDENTIFIER } from "../../../comment-variables/items.js";
+import {
+  // function identifiers
+  ESCAPE_REGEX_IDENTIFIER,
+} from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").EscapeRegex} EscapeRegex

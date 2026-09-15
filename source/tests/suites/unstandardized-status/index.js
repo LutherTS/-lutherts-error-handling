@@ -1,7 +1,10 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { ERROR_NOT_STANDARDIZED_STATUS_IDENTIFIER } from "../../../comment-variables/items.js";
+import {
+  // string identifiers
+  ERROR_NOT_STANDARDIZED_STATUS_IDENTIFIER,
+} from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").ErrorNotStandardizedStatus} ErrorNotStandardizedStatus

@@ -2,9 +2,12 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
-  ELLIPSIS_IDENTIFIER,
-  ELLIPSIS,
+  // function identifiers
   TRIM_STRING_WITH_LIMIT_IDENTIFIER,
+  // string identifiers
+  ELLIPSIS_IDENTIFIER,
+  // miscellaneous
+  ELLIPSIS,
 } from "../../../comment-variables/items.js";
 
 /**

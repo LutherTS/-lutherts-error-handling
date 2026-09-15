@@ -5,6 +5,7 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
+  // function identifiers
   PATH_EXISTS_AS_A_FILE_IDENTIFIER,
   PATH_EXISTS_AS_A_DIRECTORY_IDENTIFIER,
 } from "../../../comment-variables/items.js";

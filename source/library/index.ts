@@ -3,7 +3,9 @@
 // This library exports the basic strings ...
 
 export {
+  // error messages
   ERROR_NOT_STANDARDIZED_MESSAGE,
+  // error statuses
   ERROR_NOT_STANDARDIZED_STATUS,
 } from "../comment-variables/items.js";
 

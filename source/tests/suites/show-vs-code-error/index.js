@@ -1,7 +1,10 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { SHOW_VS_CODE_ERROR_IDENTIFIER } from "../../../comment-variables/items.js";
+import {
+  // function identifiers
+  SHOW_VS_CODE_ERROR_IDENTIFIER,
+} from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").ShowVSCodeError} ShowVSCodeError

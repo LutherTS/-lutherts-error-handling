@@ -1,7 +1,10 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { SPACE_OUT_ESLINT_MESSAGE_IDENTIFIER } from "../../../comment-variables/items.js";
+import {
+  // function identifiers
+  SPACE_OUT_ESLINT_MESSAGE_IDENTIFIER,
+} from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").SpaceOutESLintMessage} SpaceOutESLintMessage

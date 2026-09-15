@@ -2,8 +2,10 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
+  // object identifiers
   SUCCESS_FALSE_IDENTIFIER,
   SUCCESS_IDENTIFIER,
+  // miscellaneous
   FALSE,
 } from "../../../comment-variables/items.js";
 

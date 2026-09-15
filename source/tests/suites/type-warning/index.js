@@ -2,8 +2,11 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
+  // object identifiers
   TYPE_WARNING_IDENTIFIER,
+  // error types
   WARNING,
+  // property identifiers
   TYPE_IDENTIFIER,
 } from "../../../comment-variables/items.js";
 

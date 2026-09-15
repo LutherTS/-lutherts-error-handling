@@ -1,7 +1,10 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 
-import { HIGHLIGHT_FIRST_LINE_OF_CODE_IDENTIFIER } from "../../../comment-variables/items.js";
+import {
+  // function identifiers
+  HIGHLIGHT_FIRST_LINE_OF_CODE_IDENTIFIER,
+} from "../../../comment-variables/items.js";
 
 /**
  * @typedef {import("../../../types/index.ts").HighlightFirstLineOfCode} HighlightFirstLineOfCode

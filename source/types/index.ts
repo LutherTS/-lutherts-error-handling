@@ -3,7 +3,9 @@ import type * as vscode from "vscode";
 import type { TSESTree } from "@typescript-eslint/utils";
 
 import type {
+  // error messages
   ERROR_NOT_STANDARDIZED_MESSAGE,
+  // error statuses
   ERROR_NOT_STANDARDIZED_STATUS,
 } from "../comment-variables/items.js";
 
