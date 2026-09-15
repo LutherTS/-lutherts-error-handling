@@ -444,7 +444,7 @@ export const enData = /** @type {const} */ ({
       },
     },
   }, // To explain what's going on here, these variables are both public, and composed variables exclusives thanks to them being explicit composed variables exclusives. Meanwhile, composedVariablesExclusives can still refer to them as aliases in order to keep its organization. And now, not only are the variables in runtimeVariables runtime variables, they are runtime variables whose values can also be used inside comments (and beyond!) as shared variables within consuming libraries.
-  // So say a library wants to say "uses the same limitation of $COMMENT#EN#SHAREDVARIABLES#PUBLIC#NUMBEROFERRORS (3) as the utility [utility's shared variable as name] from the library [library's shared variable as name]", as these values are used as runtime values in the imported library. If the limitation changes to 4, by simply updating the library not only does that limitation updates as a runtime value, it also updates as a comment in the documentation, syncing the code and the documentation of both libraries at the same time.
+  // So say a library wants to say "uses the same limitation of $COMMENT#EN#SHAREDVARIABLES#PUBLIC#DEFAULTS#NUMBEROFERRORS as the utility [utility's shared variable as name] from the library [library's shared variable as name]", as these values are used as runtime values in the imported library. If the limitation changes to 4, by simply updating the library not only does that limitation updates as a runtime value, it also updates as a comment in the documentation, syncing the code and the documentation of both libraries at the same time.
   // (I need to do this live for my talk of September 23.)
 });
 
