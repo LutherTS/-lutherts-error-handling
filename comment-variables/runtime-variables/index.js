@@ -1,57 +1,48 @@
 export const runtimeVariables = /** @type {const} */ ([
   // errorMessages
   [
+    // Comment Variables key
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#ERRORS#MESSAGES#ERRORNOTSTANDARDIZED",
-    ["ERROR_NOT_STANDARDIZED_MESSAGE", "source/comment-variables/items.js"],
     [
-      "errorMessages",
-      "source/comment-variables/groups.js",
-      "errorNotStandardized",
+      // item
+      "ERROR_NOT_STANDARDIZED_MESSAGE",
+      // relative path
+      "source/comment-variables/items.js",
     ],
-  ], // [key, ...[item, relativePath][], ...[group, relativePath, property][]]
+    // ...
+  ],
   // errorStatuses
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#ERRORS#STATUSES#ERRORNOTSTANDARDIZED",
     ["ERROR_NOT_STANDARDIZED_STATUS", "source/comment-variables/items.js"],
-    [
-      "errorStatuses",
-      "source/comment-variables/groups.js",
-      "errorNotStandardized",
-    ],
   ],
   // errorTypes
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#ERRORS#TYPES#ERROR",
     ["ERROR", "source/comment-variables/items.js"],
-    ["errorTypes", "source/comment-variables/groups.js", "error"],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#ERRORS#TYPES#WARNING",
     ["WARNING", "source/comment-variables/items.js"],
-    ["errorTypes", "source/comment-variables/groups.js", "warning"],
   ],
 
   // defaults
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#DEFAULTS#NUMBEROFERRORS",
     ["DEFAULT_NUMBER_OF_ERRORS", "source/comment-variables/items.js"],
-    ["defaults", "source/comment-variables/groups.js", "numberOfErrors"],
   ],
   // miscellaneous
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#ELLIPSIS",
     ["ELLIPSIS", "source/comment-variables/items.js"],
-    ["miscellaneous", "source/comment-variables/groups.js", "ellipsis"],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#TRUE",
     ["TRUE", "source/comment-variables/items.js"],
-    ["miscellaneous", "source/comment-variables/groups.js", "true"],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#MISCELLANEOUS#FALSE",
     ["FALSE", "source/comment-variables/items.js"],
-    ["miscellaneous", "source/comment-variables/groups.js", "false"],
   ],
   // stringIdentifiers
   [
@@ -60,11 +51,6 @@ export const runtimeVariables = /** @type {const} */ ([
       "ERROR_NOT_STANDARDIZED_MESSAGE_IDENTIFIER",
       "source/comment-variables/items.js",
     ],
-    [
-      "stringIdentifiers",
-      "source/comment-variables/groups.js",
-      "errorNotStandardizedMessage",
-    ],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#STRINGS#ERRORNOTSTANDARDIZEDSTATUS",
@@ -72,16 +58,10 @@ export const runtimeVariables = /** @type {const} */ ([
       "ERROR_NOT_STANDARDIZED_STATUS_IDENTIFIER",
       "source/comment-variables/items.js",
     ],
-    [
-      "stringIdentifiers",
-      "source/comment-variables/groups.js",
-      "errorNotStandardizedStatus",
-    ],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#STRINGS#ELLIPSIS",
     ["ELLIPSIS_IDENTIFIER", "source/comment-variables/items.js"],
-    ["stringIdentifiers", "source/comment-variables/groups.js", "ellipsis"],
   ],
   // objectIdentifiers
   [
@@ -92,17 +72,14 @@ export const runtimeVariables = /** @type {const} */ ([
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#OBJECTS#SUCCESSTRUE",
     ["SUCCESS_TRUE_IDENTIFIER", "source/comment-variables/items.js"],
-    ["objectIdentifiers", "source/comment-variables/groups.js", "successTrue"],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#OBJECTS#TYPEERROR",
     ["TYPE_ERROR_IDENTIFIER", "source/comment-variables/items.js"],
-    ["objectIdentifiers", "source/comment-variables/groups.js", "typeError"],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#OBJECTS#TYPEWARNING",
     ["TYPE_WARNING_IDENTIFIER", "source/comment-variables/items.js"],
-    ["objectIdentifiers", "source/comment-variables/groups.js", "typeWarning"],
   ],
   // functionIdentifiers
   [
@@ -111,11 +88,6 @@ export const runtimeVariables = /** @type {const} */ ([
       "MAKE_SUCCESS_FALSE_TYPE_ERROR_IDENTIFIER",
       "source/comment-variables/items.js",
     ],
-    [
-      "functionIdentifiers",
-      "source/comment-variables/groups.js",
-      "makeSuccessFalseTypeError",
-    ],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#MAKESUCCESSFALSETYPEWARNING",
@@ -123,85 +95,40 @@ export const runtimeVariables = /** @type {const} */ ([
       "MAKE_SUCCESS_FALSE_TYPE_WARNING_IDENTIFIER",
       "source/comment-variables/items.js",
     ],
-    [
-      "functionIdentifiers",
-      "source/comment-variables/groups.js",
-      "makeSuccessFalseTypeWarning",
-    ],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEERROR",
     ["MAKE_ERROR_TYPE_ERROR_IDENTIFIER", "source/comment-variables/items.js"],
-    [
-      "functionIdentifiers",
-      "source/comment-variables/groups.js",
-      "makeErrorTypeError",
-    ],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#MAKEERRORTYPEWARNING",
     ["MAKE_ERROR_TYPE_WARNING_IDENTIFIER", "source/comment-variables/items.js"],
-    [
-      "functionIdentifiers",
-      "source/comment-variables/groups.js",
-      "makeErrorTypeWarning",
-    ],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#SHOWVSCODEERROR",
     ["SHOW_VS_CODE_ERROR_IDENTIFIER", "source/comment-variables/items.js"],
-    [
-      "functionIdentifiers",
-      "source/comment-variables/groups.js",
-      "showVSCodeError",
-    ],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#TREATVSCODEERRORS",
     ["TREAT_VS_CODE_ERRORS_IDENTIFIER", "source/comment-variables/items.js"],
-    [
-      "functionIdentifiers",
-      "source/comment-variables/groups.js",
-      "treatVSCodeErrors",
-    ],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#LOGCLIERROR",
     ["LOG_CLI_ERROR_IDENTIFIER", "source/comment-variables/items.js"],
-    [
-      "functionIdentifiers",
-      "source/comment-variables/groups.js",
-      "logCLIError",
-    ],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#ESCAPEREGEX",
     ["ESCAPE_REGEX_IDENTIFIER", "source/comment-variables/items.js"],
-    [
-      "functionIdentifiers",
-      "source/comment-variables/groups.js",
-      "escapeRegex",
-    ],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#TRIMSTRINGWITHLIMIT",
     ["TRIM_STRING_WITH_LIMIT_IDENTIFIER", "source/comment-variables/items.js"],
-    [
-      "functionIdentifiers",
-      "source/comment-variables/groups.js",
-      "trimStringWithLimit",
-    ],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#SPACEOUTESLINTMESSAGE",
     [
       "SPACE_OUT_ESLINT_MESSAGE_IDENTIFIER",
       "source/comment-variables/items.js",
-    ],
-    [
-      "functionIdentifiers",
-      "source/comment-variables/groups.js",
-      "spaceOutESLintMessage",
     ],
   ],
   [
@@ -210,20 +137,10 @@ export const runtimeVariables = /** @type {const} */ ([
       "HIGHLIGHT_FIRST_LINE_OF_CODE_IDENTIFIER",
       "source/comment-variables/items.js",
     ],
-    [
-      "functionIdentifiers",
-      "source/comment-variables/groups.js",
-      "highlightFirstLineOfCode",
-    ],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#PATHEXISTSASAFILE",
     ["PATH_EXISTS_AS_A_FILE_IDENTIFIER", "source/comment-variables/items.js"],
-    [
-      "functionIdentifiers",
-      "source/comment-variables/groups.js",
-      "pathExistsAsAFile",
-    ],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#FUNCTIONS#PATHEXISTSASADIRECTORY",
@@ -231,38 +148,28 @@ export const runtimeVariables = /** @type {const} */ ([
       "PATH_EXISTS_AS_A_DIRECTORY_IDENTIFIER",
       "source/comment-variables/items.js",
     ],
-    [
-      "functionIdentifiers",
-      "source/comment-variables/groups.js",
-      "pathExistsAsADirectory",
-    ],
   ],
   // argumentIdentifiers
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#ARGUMENTS#MESSAGE",
     ["MESSAGE_IDENTIFIER", "source/comment-variables/items.js"],
-    ["argumentIdentifiers", "source/comment-variables/groups.js", "message"],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#ARGUMENTS#STATUS",
     ["STATUS_IDENTIFIER", "source/comment-variables/items.js"],
-    ["argumentIdentifiers", "source/comment-variables/groups.js", "status"],
   ],
   // propertyIdentifiers
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#PROPERTIES#SUCCESS",
     ["SUCCESS_IDENTIFIER", "source/comment-variables/items.js"],
-    ["propertyIdentifiers", "source/comment-variables/groups.js", "success"],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#PROPERTIES#TYPE",
     ["TYPE_IDENTIFIER", "source/comment-variables/items.js"],
-    ["propertyIdentifiers", "source/comment-variables/groups.js", "type"],
   ],
   [
     "EN#COMPOSEDVARIABLESEXCLUSIVES#RUNTIMEVARIABLES#IDENTIFIERS#PROPERTIES#ERRORS",
     ["ERRORS_IDENTIFIER", "source/comment-variables/items.js"],
-    ["propertyIdentifiers", "source/comment-variables/groups.js", "errors"],
   ],
 ]);
 

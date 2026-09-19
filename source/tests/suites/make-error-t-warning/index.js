@@ -2,15 +2,15 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
-  // function identifiers
-  MAKE_ERROR_TYPE_ERROR_IDENTIFIER,
-  // property identifiers
-  TYPE_IDENTIFIER,
   // error types
   WARNING,
+  // function identifiers
+  MAKE_ERROR_TYPE_ERROR_IDENTIFIER,
   // argument identifiers
   MESSAGE_IDENTIFIER,
   STATUS_IDENTIFIER,
+  // property identifiers
+  TYPE_IDENTIFIER,
 } from "../../../comment-variables/items.js";
 
 /**

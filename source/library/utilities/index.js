@@ -2,17 +2,17 @@ import fs from "fs";
 import path from "path";
 
 import {
-  // error types
-  ERROR,
-  WARNING,
-  // miscellaneous
-  ELLIPSIS,
   // error messages
   ERROR_NOT_STANDARDIZED_MESSAGE,
   //  error statuses
   ERROR_NOT_STANDARDIZED_STATUS,
+  // error types
+  ERROR,
+  WARNING,
   // defaults
   DEFAULT_NUMBER_OF_ERRORS,
+  // miscellaneous
+  ELLIPSIS,
 } from "../../comment-variables/items.js";
 
 import { successFalse, typeError, typeWarning } from "../constants/index.js";

@@ -2,11 +2,11 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
+  // miscellaneous
+  TRUE,
   // object identifiers
   SUCCESS_TRUE_IDENTIFIER,
   SUCCESS_IDENTIFIER,
-  // miscellaneous
-  TRUE,
 } from "../../../comment-variables/items.js";
 
 /**

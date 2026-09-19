@@ -2,6 +2,10 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 
 import {
+  // error types
+  WARNING,
+  // miscellaneous
+  FALSE,
   // function identifiers
   MAKE_SUCCESS_FALSE_TYPE_WARNING_IDENTIFIER,
   // argument identifiers
@@ -11,10 +15,6 @@ import {
   ERRORS_IDENTIFIER,
   SUCCESS_IDENTIFIER,
   TYPE_IDENTIFIER,
-  // miscellaneous
-  FALSE,
-  // error types
-  WARNING,
 } from "../../../comment-variables/items.js";
 
 /**
